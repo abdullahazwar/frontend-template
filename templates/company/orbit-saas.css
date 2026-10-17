@@ -1,0 +1,10 @@
+/* Page theme and layout: orbit-saas. */
+
+:root {
+  --bg: #f7f7fb;
+  --surface: #ffffff;
+  --ink: #252632;
+  --muted: #626574;
+  --accent: #554cc1;
+  --soft: #efedf9;
+}

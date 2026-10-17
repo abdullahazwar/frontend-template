@@ -19,19 +19,11 @@
       rel="stylesheet"
       href="../../../assets/portfolio.css"
     />
-    <style>
-      :root {
-        --bg: #eaf1f4;
-        --surface: #f9fcfe;
-        --ink: #17384b;
-        --muted: #506d7e;
-        --accent: #216a88;
-        --soft: #ccdfe7;
-        --line: #ccdfe7;
-        --accent-ink: #ffffff;
-        color-scheme: light;
-      }
-    </style>
+
+    <link
+      rel="stylesheet"
+      href="./notebook-data.css"
+    />
     <script
       src="../../../assets/core.js"
       defer
@@ -107,13 +99,13 @@
             aria-label="Data demo: 12 pesanan dibayar, 5 menunggu, 3 batal"
           >
             <div>
-              <span>Dibayar</span><b style="--value: 100%"></b><span>12</span>
+              <span>Dibayar</span><b class="orders-paid"></b><span>12</span>
             </div>
             <div>
-              <span>Menunggu</span><b style="--value: 41.67%"></b><span>5</span>
+              <span>Menunggu</span><b class="orders-pending"></b><span>5</span>
             </div>
             <div>
-              <span>Batal</span><b style="--value: 25%"></b><span>3</span>
+              <span>Batal</span><b class="orders-cancelled"></b><span>3</span>
             </div>
             <figcaption class="small muted">
               Fixture demonstrasi. Jumlah pesanan, bukan data bisnis.

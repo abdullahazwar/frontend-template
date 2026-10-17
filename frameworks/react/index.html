@@ -15,37 +15,11 @@
       rel="stylesheet"
       href="../../assets/base.css"
     />
-    <style>
-      :root {
-        --accent: #554cc1;
-        --soft: #efedf9;
-      }
-      #react-root:empty {
-        min-height: 70vh;
-      }
-      .react-chart {
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        gap: 12px;
-        align-items: end;
-        height: 180px;
-      }
-      .react-chart > div {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        gap: 7px;
-        text-align: center;
-        font-size: 0.7rem;
-        min-width: 0;
-      }
-      .react-chart b {
-        background: var(--accent);
-        height: var(--bar);
-        border-radius: 4px 4px 0 0;
-      }
-    </style>
+
+    <link
+      rel="stylesheet"
+      href="./styles.css"
+    />
     <script src="../../assets/core.js"></script>
     <script type="importmap">
       {
@@ -81,12 +55,9 @@
         </p>
       </main>
     </div>
-    <script type="module">
-      import('./app.js').catch(() => {
-        document.getElementById('load-status').textContent =
-          'Library tidak dapat dimuat. Jalankan npm start, ' +
-          'periksa koneksi CDN, lalu muat ulang halaman.';
-      });
-    </script>
+    <script
+      type="module"
+      src="./loader.js"
+    ></script>
   </body>
 </html>

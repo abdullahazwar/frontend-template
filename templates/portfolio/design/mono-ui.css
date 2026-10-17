@@ -1,0 +1,13 @@
+/* Page theme and layout: mono-ui. */
+
+:root {
+  --bg: #f4f3ef;
+  --surface: #ffffff;
+  --ink: #252521;
+  --muted: #67675f;
+  --accent: #42423a;
+  --soft: #e3e3d9;
+  --line: #e3e3d9;
+  --accent-ink: #ffffff;
+  color-scheme: light;
+}

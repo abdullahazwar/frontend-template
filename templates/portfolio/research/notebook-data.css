@@ -1,0 +1,25 @@
+/* Page theme and layout: notebook-data. */
+
+:root {
+  --bg: #eaf1f4;
+  --surface: #f9fcfe;
+  --ink: #17384b;
+  --muted: #506d7e;
+  --accent: #216a88;
+  --soft: #ccdfe7;
+  --line: #ccdfe7;
+  --accent-ink: #ffffff;
+  color-scheme: light;
+}
+
+.orders-paid {
+  --value: 100%;
+}
+
+.orders-pending {
+  --value: 41.67%;
+}
+
+.orders-cancelled {
+  --value: 25%;
+}

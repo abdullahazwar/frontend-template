@@ -1,0 +1,13 @@
+/* Page theme and layout: atelier-architect. */
+
+:root {
+  --bg: #f6f3eb;
+  --surface: #fffdf7;
+  --ink: #282923;
+  --muted: #65685e;
+  --accent: #86502d;
+  --soft: #e6dfcf;
+  --line: #e6dfcf;
+  --accent-ink: #ffffff;
+  color-scheme: light;
+}

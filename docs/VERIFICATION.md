@@ -1,6 +1,6 @@
 # Verifikasi
 
-Diperiksa pada 17 Oktober 2026 untuk pembaruan koleksi 1.1.0.
+Diperiksa pada 17 Oktober 2026 untuk versi 1.2.0, pemisahan aset halaman.
 
 ## Perintah
 
@@ -13,63 +13,82 @@ git diff --check
 Pemeriksaan utama memakai Node.js 20+ dan Python 3. Formatter pengembangan
 memakai Prettier 3.6.2 yang dipatok pada manifest dan lockfile.
 
-## Cakupan otomatis
+## Struktur dan aset
 
 - 90 ID template unik dalam 10 kategori.
-- 36 portofolio, sembilan kategori profesi, enam adaptasi MIT.
-- Metadata galeri dan exporter harus sama.
-- Enam pengalihan URL lama mengarah ke template kanonis yang tersedia.
-- 99 dokumen HTML: galeri, 90 template, enam redirect, dan dua framework.
-- Struktur HTML, ID, anchor, referensi file, label, alt, main, h1, dan title.
-- Sintaks 13 file JavaScript dan MJS.
-- 15 tes fungsi dan ekspor, seluruhnya lulus.
-- Gabungan pencarian, profesi, asal kode, favorit, dan hasil kosong.
-- Aturan transaksi, periode, nilai nol, stok, varian, dan escaping CSV.
-- Ekspor seluruh 90 template, termasuk folder bertingkat.
-- Aset lokal digabung dan anchor hasil ekspor tetap tersedia.
-- Ekspor adaptasi mempertahankan komentar lisensi MIT.
-- Tiga hasil ekspor juga dibuka lewat file lokal di browser: Casebook Product,
-  Paper Writer, dan Build Developer. Aset terdekode serta pencarian, keadaan
-  kosong, dan reset pada dua model baru berfungsi.
+- 36 portofolio dalam sembilan kategori profesi, dengan enam adaptasi MIT.
+- Setiap template mempunyai stylesheet dengan nama yang sama di foldernya.
+- Metadata `stylesheet` sesuai dengan file yang dirujuk HTML.
+- 92 blok CSS dipindahkan ke 90 stylesheet template dan dua stylesheet
+  framework.
+- 11 atribut style statis diubah menjadi class dengan nama sesuai fungsinya.
+- Dua loader framework dipindahkan ke file `loader.js` masing-masing.
+- HTML sumber tidak memuat `<style>`, atribut style statis, event handler
+  inline, atau JavaScript yang berjalan tanpa src.
+- Dua import map tetap berupa JSON dan diperiksa validitasnya.
+- 99 dokumen HTML diperiksa: galeri, 90 template, enam redirect, dua framework.
+- Nesting, ID, anchor, referensi lokal, label, alt, main, h1, dan title
+  diperiksa.
+- Sintaks seluruh 15 file JavaScript dan MJS diperiksa.
 - Prettier memeriksa HTML, CSS, JS, MJS, JSON, SVG, dan Markdown.
-- Python dirapikan dengan indentasi empat spasi.
+- Python memakai indentasi empat spasi.
 
-## Browser
+## Fungsi dan ekspor
+
+15 tes fungsi dan ekspor lulus, mencakup:
+
+- Filter gabungan kategori, profesi, asal kode, query, dan favorit.
+- Keadaan hasil kosong dan pembatasan filter khusus portofolio.
+- Ringkasan transaksi, periode, nilai nol, stok, varian, dan escaping CSV.
+- Ekspor seluruh 90 template dengan CSS pasangannya.
+- Tidak ada ketergantungan file tetangga pada hasil ekspor mandiri.
+- Gambar SVG lokal disertakan, anchor tersedia, dan lisensi MIT dipertahankan.
+
+Tiga hasil ekspor dibuka sebagai file lokal dalam browser: Pulse Sales, Member
+Warm, dan Casebook Product. Tema halaman terpasang dan interaksi pencarian
+Casebook tetap berfungsi setelah CSS dan JS digabung ke hasil ekspor.
+
+## Perbandingan tampilan
 
 Chromium 133.0.6943.0 melalui Playwright, headless pada Linux.
 
-- 252 kunjungan viewport terhadap 90 template.
-- Semua 36 portofolio: lebar 320, 360, 768, dan 1440 piksel.
-- 54 template lain: lebar 360 dan 1365 piksel.
-- Tidak menemukan exception JavaScript atau request lokal dengan status 4xx/5xx.
-- Tidak menemukan overflow horizontal pada lebar yang diperiksa.
-- 30 portofolio baru: pencarian, hasil kosong, reset, dan filter jenis karya.
-- Detail proses dibuka dengan keyboard.
-- Dialog ilustrasi dibuka dengan keyboard, ditutup melalui Escape, dan
-  mengembalikan fokus ke tombol pembuka.
-- Unduh profil menghasilkan `.txt` dengan nama template dan penanda demo.
-- Tombol salin kontak memberikan status atau fallback pemilihan teks.
-- Galeri: kategori, profesi, sumber, query, reload URL, dan favorit.
-- Pratinjau: buka, ukuran HP, Escape, serta reset ukuran saat dibuka kembali.
-- Seluruh enam URL lama berhasil berpindah ke folder kanonis.
-- Pemeriksaan gambar membedakan media yang menunggu lazy loading dari file yang
-  gagal dimuat. Gambar lazy diminta dan didekode saat pemeriksaan lanjut.
+90 template dibandingkan dengan commit sebelumnya pada lebar 360 dan 1365
+piksel. Total 180 pasangan perbandingan, atau 360 pemuatan halaman.
 
-Screenshot desktop dan HP diperiksa untuk galeri, Casebook Product, Atelier
-Architecture, Shell Backend, dan Paper Writer. Judul pada hero split diperkecil
-setelah tinjauan visual agar ritme teks lebih proporsional.
+Pemeriksaan membandingkan kotak elemen serta nilai style terhitung, termasuk
+font, warna, latar, padding, margin, border, grid, gap, alignment, dan ukuran.
+Gambar diminta dan didekode sebelum pengambilan nilai. Hasil:
+
+- 180 pasangan sama, tanpa perubahan style atau geometri elemen yang diperiksa.
+- Tidak ditemukan exception JavaScript.
+
+Screenshot HP ditinjau untuk Pulse Sales, Member Warm, Notebook Data, dan
+Casebook Product. Ini pemeriksaan hasil render, bukan audit pixel menyeluruh
+atau bukti kepatuhan aksesibilitas.
+
+## Alur browser
+
+- Galeri: profesi dan sumber, dialog pratinjau, iframe, dan ukuran HP.
+- Preview portofolio memuat ketiga stylesheet lokal yang diperlukan.
+- Dashboard: periode harian mengubah pendapatan menjadi Rp450.000 dan CSV
+  memakai periode aktif.
+- Toko: tambah produk, buka keranjang, lihat baris, dan tutup dialog.
+- Login: tombol tampilkan password mengubah tipe input.
+- Portofolio: pencarian kosong, reset, dialog ilustrasi, Escape, dan unduh
+  profil.
+- React dan Vue: loader eksternal menampilkan pesan saat request library CDN
+  sengaja digagalkan oleh pemeriksaan.
+- Tidak ditemukan request lokal 4xx/5xx atau exception JavaScript pada alur ini.
 
 ## Batas cakupan
 
 Viewport merupakan simulasi browser desktop, bukan perangkat fisik. Tidak
-melakukan audit screen reader, pengukuran Core Web Vitals, atau menyatakan
-kepatuhan WCAG secara menyeluruh.
+melakukan audit screen reader atau pengukuran Core Web Vitals. Tidak mengklaim
+kepatuhan WCAG menyeluruh.
 
-Contoh React dan Vue mempertahankan versi CDN yang sudah ada. Nomor versi
-tersedia pada registry, tetapi pemuatan CDN keduanya belum diuji end-to-end.
-Perubahan Vue menandai literal template HTML agar formatter dapat merapikan
-markup yang sebelumnya memanjang pada satu baris.
+Alur gagal memuat CDN diuji pada React dan Vue. Pemuatan CDN keduanya sampai
+aplikasi berjalan belum diuji end-to-end pada pembaruan ini. Versi library dan
+komponen aplikasi tidak berubah.
 
 Tidak ada backend, autentikasi, pembayaran, pengiriman formulir, atau data
-produksi yang termasuk dalam pengujian. Seluruh profil baru, karya, dan angka
-adalah demonstrasi.
+produksi yang termasuk dalam pengujian. Seluruh profil dan karya adalah demo.

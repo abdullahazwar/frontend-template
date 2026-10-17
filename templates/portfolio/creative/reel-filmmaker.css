@@ -1,0 +1,13 @@
+/* Page theme and layout: reel-filmmaker. */
+
+:root {
+  --bg: #161419;
+  --surface: #231e29;
+  --ink: #f4edf7;
+  --muted: #c6b6cc;
+  --accent: #d6b1e7;
+  --soft: #3b2d46;
+  --line: #3b2d46;
+  --accent-ink: #172118;
+  color-scheme: dark;
+}

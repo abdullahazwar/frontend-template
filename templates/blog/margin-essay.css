@@ -1,0 +1,23 @@
+/* Page theme and layout: margin-essay. */
+
+:root {
+  --bg: #f5eee1;
+  --surface: #fffbf3;
+  --ink: #3e352c;
+  --muted: #766b5f;
+  --accent: #7b4b32;
+  --soft: #ebe0ce;
+}
+.article-body {
+  font-size: 1.25rem;
+  line-height: 1.95;
+}
+
+.essay-header {
+  margin-inline: auto;
+  padding-top: 70px;
+}
+
+.essay-body {
+  margin-inline: auto;
+}

@@ -1,0 +1,10 @@
+/* Page theme and layout: rak-inventory. */
+
+:root {
+  --bg: #f7f8f4;
+  --surface: #ffffff;
+  --ink: #23382d;
+  --muted: #5e6f62;
+  --accent: #286148;
+  --soft: #e6eee4;
+}

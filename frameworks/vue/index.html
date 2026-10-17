@@ -15,42 +15,11 @@
       rel="stylesheet"
       href="../../assets/base.css"
     />
-    <style>
-      :root {
-        --accent: #286148;
-        --soft: #e6eee4;
-        --bg: #f7f8f4;
-      }
-      [v-cloak] {
-        display: none;
-      }
-      .vue-shop {
-        display: grid;
-        grid-template-columns: minmax(0, 1fr) 310px;
-        gap: 35px;
-      }
-      .vue-cart {
-        align-self: start;
-        position: sticky;
-        top: 24px;
-      }
-      .vue-cart .cart-line {
-        align-items: start;
-      }
-      @media (max-width: 900px) {
-        .vue-shop {
-          grid-template-columns: 1fr;
-        }
-        .vue-cart {
-          position: static;
-        }
-      }
-      @media (max-width: 480px) {
-        .vue-products {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
+
+    <link
+      rel="stylesheet"
+      href="./styles.css"
+    />
     <script src="../../assets/core.js"></script>
     <script type="importmap">
       {
@@ -85,12 +54,9 @@
         </p>
       </main>
     </div>
-    <script type="module">
-      import('./app.js').catch(() => {
-        document.getElementById('load-status').textContent =
-          'Library tidak dapat dimuat. Jalankan npm start, ' +
-          'periksa koneksi CDN, lalu muat ulang halaman.';
-      });
-    </script>
+    <script
+      type="module"
+      src="./loader.js"
+    ></script>
   </body>
 </html>

@@ -89,3 +89,15 @@ Tidak menggunakan persentase skill, testimoni, klien, hasil bisnis, atau
 publikasi nyata yang dibuat-buat. Setiap karya ditandai konsep dan profil
 ditandai demonstrasi. SVG baru merupakan ilustrasi, bukan foto contoh milik
 pihak lain. Kontrol media hanya memperbesar ilustrasi yang tersedia.
+
+## Pemisahan aset versi 1.2.0
+
+Tema dan aturan khusus tiap template dipindahkan ke file CSS dengan nama sama.
+Semua stylesheet bersama dimuat lebih dahulu, diikuti CSS halaman. 92 blok
+stylesheet dan 11 style statis dipisahkan dari HTML. Dua loader framework
+sekarang berada di `loader.js`. Aturan visual tetap mengikuti desain yang sudah
+ada. Tidak menambahkan dependency runtime baru.
+
+Lebar grafik dan warna thumbnail yang dihitung dari data tetap memakai custom
+property CSS yang diisi oleh JavaScript eksternal. Konfigurasi import map
+React/Vue tetap berupa JSON, terpisah dari kode aplikasi.

@@ -23,6 +23,20 @@ for (const category of categories) {
     category === 'portfolio' ? 36 : 6,
   );
 }
+for (const template of manifest) {
+  assert.equal(
+    template.stylesheet,
+    template.path.replace(/\.html$/, '.css'),
+    'Page stylesheet must share its template name',
+  );
+  const html = await readFile(resolve(root, template.path), 'utf8');
+  const css = await readFile(resolve(root, template.stylesheet), 'utf8');
+  assert.ok(css.trim(), 'Page stylesheet must not be empty');
+  assert.ok(
+    html.includes(`href="./${template.id}.css"`),
+    'Template must load its page stylesheet',
+  );
+}
 const portfolios = manifest.filter((t) => t.category === 'portfolio');
 assert.equal(new Set(portfolios.map((t) => t.portfolioType)).size, 9);
 assert.equal(

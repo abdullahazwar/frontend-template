@@ -1,0 +1,14 @@
+/* Page theme and layout: civic-consulting. */
+
+:root {
+  --bg: #f7f8f4;
+  --surface: #ffffff;
+  --ink: #23382d;
+  --muted: #5e6f62;
+  --accent: #286148;
+  --soft: #e6eee4;
+}
+.consult-note {
+  padding: 30px 0 30px 35px;
+  border-left: 1px solid var(--line);
+}

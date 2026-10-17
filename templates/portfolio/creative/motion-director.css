@@ -1,0 +1,24 @@
+/* Page theme and layout: motion-director. */
+
+:root {
+  --bg: #131415;
+  --surface: #1c1e20;
+  --ink: #f1f0eb;
+  --muted: #b2b3af;
+  --accent: #d5e7a5;
+  --soft: #30392a;
+  --line: #3c4b55;
+  --accent-ink: #13251e;
+  --good: #b3d5c3;
+  color-scheme: dark;
+}
+.film-row {
+  display: grid;
+  grid-template-columns: 60px 1fr auto;
+  gap: 20px;
+  padding: 30px 0;
+  border-top: 1px solid var(--line);
+}
+.film-row h2 {
+  font-size: clamp(1.7rem, 4vw, 3rem);
+}

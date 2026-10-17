@@ -1,0 +1,13 @@
+/* Page theme and layout: campus-graduate. */
+
+:root {
+  --bg: #f3eef4;
+  --surface: #fffcff;
+  --ink: #3e2847;
+  --muted: #74617b;
+  --accent: #7f3e86;
+  --soft: #e5d7e8;
+  --line: #e5d7e8;
+  --accent-ink: #ffffff;
+  color-scheme: light;
+}

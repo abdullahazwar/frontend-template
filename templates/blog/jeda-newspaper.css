@@ -1,0 +1,32 @@
+/* Page theme and layout: jeda-newspaper. */
+
+:root {
+  --bg: #f4f3ee;
+  --surface: #ffffff;
+  --ink: #222321;
+  --muted: #62635c;
+  --accent: #363c35;
+  --soft: #e5e6de;
+}
+.newspaper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 38px;
+}
+.newspaper aside {
+  border-left: 1px solid var(--line);
+  padding-left: 30px;
+}
+@media (max-width: 760px) {
+  .newspaper {
+    grid-template-columns: 1fr;
+  }
+  .newspaper aside {
+    border-left: 0;
+    padding-left: 0;
+  }
+}
+
+.article-headline {
+  font-size: 2.7rem;
+}

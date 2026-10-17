@@ -1,0 +1,14 @@
+/* Page theme and layout: summit-event. */
+
+:root {
+  --bg: #fbf9ef;
+  --surface: #ffffff;
+  --ink: #353424;
+  --muted: #716c50;
+  --accent: #746118;
+  --soft: #f2edcf;
+}
+
+.ticket-price {
+  margin-left: auto;
+}

@@ -24,3 +24,10 @@ Enam URL lama tetap tersedia sebagai halaman pengalihan ke folder baru. Pemetaan
 terdapat pada `../../portfolio-redirects.json`.
 
 [Sumber dan lisensi](../../docs/PORTFOLIO-SOURCES.md)
+
+## File untuk pemeliharaan
+
+Setiap template HTML mempunyai file CSS dengan nama sama dalam foldernya. Simpan
+pasangan file tersebut ketika menyalin template. Interaksi bersama memakai
+`../../assets/portfolio.js`, `runtime.js`, dan `core.js` melalui src. Lihat
+[panduan pemeliharaan](../../docs/MAINTENANCE.md).

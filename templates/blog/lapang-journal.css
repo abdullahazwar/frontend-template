@@ -1,0 +1,15 @@
+/* Page theme and layout: lapang-journal. */
+
+:root {
+  --bg: #f7f8f4;
+  --surface: #ffffff;
+  --ink: #23382d;
+  --muted: #5e6f62;
+  --accent: #286148;
+  --soft: #e6eee4;
+}
+h1,
+h2 {
+  font-family: var(--serif);
+  font-weight: 400;
+}

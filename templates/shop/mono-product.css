@@ -1,0 +1,10 @@
+/* Page theme and layout: mono-product. */
+
+:root {
+  --bg: #f4f3ee;
+  --surface: #ffffff;
+  --ink: #222321;
+  --muted: #62635c;
+  --accent: #363c35;
+  --soft: #e5e6de;
+}

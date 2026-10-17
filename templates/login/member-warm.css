@@ -1,0 +1,27 @@
+/* Page theme and layout: member-warm. */
+
+:root {
+  --bg: #f5eee1;
+  --surface: #fffbf3;
+  --ink: #3e352c;
+  --muted: #766b5f;
+  --accent: #7b4b32;
+  --soft: #ebe0ce;
+}
+.auth-form h1 {
+  font-size: 2.1rem;
+}
+.auth-form .lead {
+  font-size: 1rem;
+}
+.auth-form {
+  width: 100%;
+  padding: 8px;
+}
+.auth-form h1 {
+  font-family: var(--serif);
+}
+
+.member-panel {
+  width: min(480px, calc(100% - 36px));
+}

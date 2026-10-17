@@ -1,0 +1,10 @@
+/* Page theme and layout: tepat-local. */
+
+:root {
+  --bg: #f3f8f8;
+  --surface: #ffffff;
+  --ink: #21373c;
+  --muted: #5c7277;
+  --accent: #216676;
+  --soft: #e1eff0;
+}

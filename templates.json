@@ -14,7 +14,8 @@
       "#efedf9"
     ],
     "features": ["period", "csv", "chart"],
-    "path": "templates/dashboard/pulse-sales.html"
+    "path": "templates/dashboard/pulse-sales.html",
+    "stylesheet": "templates/dashboard/pulse-sales.css"
   },
   {
     "id": "runway-finance",
@@ -31,7 +32,8 @@
       "#253f42"
     ],
     "features": [],
-    "path": "templates/dashboard/runway-finance.html"
+    "path": "templates/dashboard/runway-finance.html",
+    "stylesheet": "templates/dashboard/runway-finance.css"
   },
   {
     "id": "orchard-analytics",
@@ -48,7 +50,8 @@
       "#e6eee4"
     ],
     "features": [],
-    "path": "templates/dashboard/orchard-analytics.html"
+    "path": "templates/dashboard/orchard-analytics.html",
+    "stylesheet": "templates/dashboard/orchard-analytics.css"
   },
   {
     "id": "dispatch-logistics",
@@ -65,7 +68,8 @@
       "#f4e7da"
     ],
     "features": [],
-    "path": "templates/dashboard/dispatch-logistics.html"
+    "path": "templates/dashboard/dispatch-logistics.html",
+    "stylesheet": "templates/dashboard/dispatch-logistics.css"
   },
   {
     "id": "sprint-projects",
@@ -82,7 +86,8 @@
       "#efedf9"
     ],
     "features": ["kanban"],
-    "path": "templates/dashboard/sprint-projects.html"
+    "path": "templates/dashboard/sprint-projects.html",
+    "stylesheet": "templates/dashboard/sprint-projects.css"
   },
   {
     "id": "kelas-education",
@@ -99,7 +104,8 @@
       "#f2edcf"
     ],
     "features": [],
-    "path": "templates/dashboard/kelas-education.html"
+    "path": "templates/dashboard/kelas-education.html",
+    "stylesheet": "templates/dashboard/kelas-education.css"
   },
   {
     "id": "atlas-users",
@@ -116,7 +122,8 @@
       "#e7edf9"
     ],
     "features": ["search", "status"],
-    "path": "templates/admin/atlas-users.html"
+    "path": "templates/admin/atlas-users.html",
+    "stylesheet": "templates/admin/atlas-users.css"
   },
   {
     "id": "rak-inventory",
@@ -133,7 +140,8 @@
       "#e6eee4"
     ],
     "features": ["search", "stock"],
-    "path": "templates/admin/rak-inventory.html"
+    "path": "templates/admin/rak-inventory.html",
+    "stylesheet": "templates/admin/rak-inventory.css"
   },
   {
     "id": "pressroom-cms",
@@ -150,7 +158,8 @@
       "#e5e6de"
     ],
     "features": [],
-    "path": "templates/admin/pressroom-cms.html"
+    "path": "templates/admin/pressroom-cms.html",
+    "stylesheet": "templates/admin/pressroom-cms.css"
   },
   {
     "id": "relay-support",
@@ -167,7 +176,8 @@
       "#e1eff0"
     ],
     "features": ["inbox", "reply"],
-    "path": "templates/admin/relay-support.html"
+    "path": "templates/admin/relay-support.html",
+    "stylesheet": "templates/admin/relay-support.css"
   },
   {
     "id": "roster-team",
@@ -184,7 +194,8 @@
       "#ebe0ce"
     ],
     "features": [],
-    "path": "templates/admin/roster-team.html"
+    "path": "templates/admin/roster-team.html",
+    "stylesheet": "templates/admin/roster-team.css"
   },
   {
     "id": "access-permissions",
@@ -201,7 +212,8 @@
       "#e5e6de"
     ],
     "features": [],
-    "path": "templates/admin/access-permissions.html"
+    "path": "templates/admin/access-permissions.html",
+    "stylesheet": "templates/admin/access-permissions.css"
   },
   {
     "id": "nook-profile",
@@ -218,7 +230,8 @@
       "#f5e4e6"
     ],
     "features": ["bookmark"],
-    "path": "templates/user/nook-profile.html"
+    "path": "templates/user/nook-profile.html",
+    "stylesheet": "templates/user/nook-profile.css"
   },
   {
     "id": "parcel-orders",
@@ -235,7 +248,8 @@
       "#f4e7da"
     ],
     "features": [],
-    "path": "templates/user/parcel-orders.html"
+    "path": "templates/user/parcel-orders.html",
+    "stylesheet": "templates/user/parcel-orders.css"
   },
   {
     "id": "pocket-wallet",
@@ -252,7 +266,8 @@
       "#e6eee4"
     ],
     "features": [],
-    "path": "templates/user/pocket-wallet.html"
+    "path": "templates/user/pocket-wallet.html",
+    "stylesheet": "templates/user/pocket-wallet.css"
   },
   {
     "id": "course-learning",
@@ -269,7 +284,8 @@
       "#e7edf9"
     ],
     "features": ["progress"],
-    "path": "templates/user/course-learning.html"
+    "path": "templates/user/course-learning.html",
+    "stylesheet": "templates/user/course-learning.css"
   },
   {
     "id": "desk-settings",
@@ -286,7 +302,8 @@
       "#e5e6de"
     ],
     "features": [],
-    "path": "templates/user/desk-settings.html"
+    "path": "templates/user/desk-settings.html",
+    "stylesheet": "templates/user/desk-settings.css"
   },
   {
     "id": "ruang-membership",
@@ -303,7 +320,8 @@
       "#f2edcf"
     ],
     "features": [],
-    "path": "templates/user/ruang-membership.html"
+    "path": "templates/user/ruang-membership.html",
+    "stylesheet": "templates/user/ruang-membership.css"
   },
   {
     "id": "rakit-market",
@@ -320,7 +338,8 @@
       "#e7edf9"
     ],
     "features": ["search", "cart"],
-    "path": "templates/shop/rakit-market.html"
+    "path": "templates/shop/rakit-market.html",
+    "stylesheet": "templates/shop/rakit-market.css"
   },
   {
     "id": "sumber-wholesale",
@@ -337,7 +356,8 @@
       "#f4e7da"
     ],
     "features": ["cart", "rfq"],
-    "path": "templates/shop/sumber-wholesale.html"
+    "path": "templates/shop/sumber-wholesale.html",
+    "stylesheet": "templates/shop/sumber-wholesale.css"
   },
   {
     "id": "sela-furniture",
@@ -354,7 +374,8 @@
       "#ebe0ce"
     ],
     "features": ["cart"],
-    "path": "templates/shop/sela-furniture.html"
+    "path": "templates/shop/sela-furniture.html",
+    "stylesheet": "templates/shop/sela-furniture.css"
   },
   {
     "id": "pagi-grocery",
@@ -371,7 +392,8 @@
       "#e6eee4"
     ],
     "features": ["cart", "quantity"],
-    "path": "templates/shop/pagi-grocery.html"
+    "path": "templates/shop/pagi-grocery.html",
+    "stylesheet": "templates/shop/pagi-grocery.css"
   },
   {
     "id": "mono-product",
@@ -388,7 +410,8 @@
       "#e5e6de"
     ],
     "features": ["cart", "variant", "quantity"],
-    "path": "templates/shop/mono-product.html"
+    "path": "templates/shop/mono-product.html",
+    "stylesheet": "templates/shop/mono-product.css"
   },
   {
     "id": "edisi-fashion",
@@ -405,7 +428,8 @@
       "#f5e4e6"
     ],
     "features": ["cart"],
-    "path": "templates/shop/edisi-fashion.html"
+    "path": "templates/shop/edisi-fashion.html",
+    "stylesheet": "templates/shop/edisi-fashion.css"
   },
   {
     "id": "paper-split",
@@ -422,7 +446,8 @@
       "#e6eee4"
     ],
     "features": ["form", "password-toggle"],
-    "path": "templates/login/paper-split.html"
+    "path": "templates/login/paper-split.html",
+    "stylesheet": "templates/login/paper-split.css"
   },
   {
     "id": "terminal-dev",
@@ -439,7 +464,8 @@
       "#253f42"
     ],
     "features": ["form", "password-toggle"],
-    "path": "templates/login/terminal-dev.html"
+    "path": "templates/login/terminal-dev.html",
+    "stylesheet": "templates/login/terminal-dev.css"
   },
   {
     "id": "studio-minimal",
@@ -456,7 +482,8 @@
       "#e5e6de"
     ],
     "features": ["form", "password-toggle"],
-    "path": "templates/login/studio-minimal.html"
+    "path": "templates/login/studio-minimal.html",
+    "stylesheet": "templates/login/studio-minimal.css"
   },
   {
     "id": "member-warm",
@@ -473,7 +500,8 @@
       "#ebe0ce"
     ],
     "features": ["form", "password-toggle"],
-    "path": "templates/login/member-warm.html"
+    "path": "templates/login/member-warm.html",
+    "stylesheet": "templates/login/member-warm.css"
   },
   {
     "id": "workspace-account",
@@ -490,7 +518,8 @@
       "#e7edf9"
     ],
     "features": ["form", "password-toggle"],
-    "path": "templates/login/workspace-account.html"
+    "path": "templates/login/workspace-account.html",
+    "stylesheet": "templates/login/workspace-account.css"
   },
   {
     "id": "link-passwordless",
@@ -507,7 +536,8 @@
       "#f5e4e6"
     ],
     "features": ["form"],
-    "path": "templates/login/link-passwordless.html"
+    "path": "templates/login/link-passwordless.html",
+    "stylesheet": "templates/login/link-passwordless.css"
   },
   {
     "id": "folio-graphic",
@@ -530,7 +560,8 @@
     "source": {
       "kind": "original",
       "references": []
-    }
+    },
+    "stylesheet": "templates/portfolio/design/folio-graphic.css"
   },
   {
     "id": "frame-photography",
@@ -553,7 +584,8 @@
     "source": {
       "kind": "original",
       "references": []
-    }
+    },
+    "stylesheet": "templates/portfolio/photography/frame-photography.css"
   },
   {
     "id": "build-developer",
@@ -576,7 +608,8 @@
     "source": {
       "kind": "original",
       "references": []
-    }
+    },
+    "stylesheet": "templates/portfolio/developer/build-developer.css"
   },
   {
     "id": "space-architect",
@@ -599,7 +632,8 @@
     "source": {
       "kind": "original",
       "references": []
-    }
+    },
+    "stylesheet": "templates/portfolio/architecture/space-architect.css"
   },
   {
     "id": "motion-director",
@@ -622,7 +656,8 @@
     "source": {
       "kind": "original",
       "references": []
-    }
+    },
+    "stylesheet": "templates/portfolio/creative/motion-director.css"
   },
   {
     "id": "craft-illustrator",
@@ -645,7 +680,8 @@
     "source": {
       "kind": "original",
       "references": []
-    }
+    },
+    "stylesheet": "templates/portfolio/creative/craft-illustrator.css"
   },
   {
     "id": "civic-consulting",
@@ -662,7 +698,8 @@
       "#e6eee4"
     ],
     "features": [],
-    "path": "templates/company/civic-consulting.html"
+    "path": "templates/company/civic-consulting.html",
+    "stylesheet": "templates/company/civic-consulting.css"
   },
   {
     "id": "forge-industrial",
@@ -679,7 +716,8 @@
       "#e7edf9"
     ],
     "features": [],
-    "path": "templates/company/forge-industrial.html"
+    "path": "templates/company/forge-industrial.html",
+    "stylesheet": "templates/company/forge-industrial.css"
   },
   {
     "id": "meja-restaurant",
@@ -696,7 +734,8 @@
       "#ebe0ce"
     ],
     "features": [],
-    "path": "templates/company/meja-restaurant.html"
+    "path": "templates/company/meja-restaurant.html",
+    "stylesheet": "templates/company/meja-restaurant.css"
   },
   {
     "id": "habitat-studio",
@@ -713,7 +752,8 @@
       "#e5e6de"
     ],
     "features": [],
-    "path": "templates/company/habitat-studio.html"
+    "path": "templates/company/habitat-studio.html",
+    "stylesheet": "templates/company/habitat-studio.css"
   },
   {
     "id": "orbit-saas",
@@ -730,7 +770,8 @@
       "#efedf9"
     ],
     "features": [],
-    "path": "templates/company/orbit-saas.html"
+    "path": "templates/company/orbit-saas.html",
+    "stylesheet": "templates/company/orbit-saas.css"
   },
   {
     "id": "tepat-local",
@@ -747,7 +788,8 @@
       "#e1eff0"
     ],
     "features": [],
-    "path": "templates/company/tepat-local.html"
+    "path": "templates/company/tepat-local.html",
+    "stylesheet": "templates/company/tepat-local.css"
   },
   {
     "id": "jeda-newspaper",
@@ -764,7 +806,8 @@
       "#e5e6de"
     ],
     "features": [],
-    "path": "templates/blog/jeda-newspaper.html"
+    "path": "templates/blog/jeda-newspaper.html",
+    "stylesheet": "templates/blog/jeda-newspaper.css"
   },
   {
     "id": "lapang-journal",
@@ -781,7 +824,8 @@
       "#e6eee4"
     ],
     "features": [],
-    "path": "templates/blog/lapang-journal.html"
+    "path": "templates/blog/lapang-journal.html",
+    "stylesheet": "templates/blog/lapang-journal.css"
   },
   {
     "id": "byte-engineering",
@@ -798,7 +842,8 @@
       "#e7edf9"
     ],
     "features": [],
-    "path": "templates/blog/byte-engineering.html"
+    "path": "templates/blog/byte-engineering.html",
+    "stylesheet": "templates/blog/byte-engineering.css"
   },
   {
     "id": "margin-essay",
@@ -815,7 +860,8 @@
       "#ebe0ce"
     ],
     "features": [],
-    "path": "templates/blog/margin-essay.html"
+    "path": "templates/blog/margin-essay.html",
+    "stylesheet": "templates/blog/margin-essay.css"
   },
   {
     "id": "signal-magazine",
@@ -832,7 +878,8 @@
       "#30392a"
     ],
     "features": [],
-    "path": "templates/blog/signal-magazine.html"
+    "path": "templates/blog/signal-magazine.html",
+    "stylesheet": "templates/blog/signal-magazine.css"
   },
   {
     "id": "indeks-newsletter",
@@ -849,7 +896,8 @@
       "#f5e4e6"
     ],
     "features": [],
-    "path": "templates/blog/indeks-newsletter.html"
+    "path": "templates/blog/indeks-newsletter.html",
+    "stylesheet": "templates/blog/indeks-newsletter.css"
   },
   {
     "id": "commons-topics",
@@ -866,7 +914,8 @@
       "#e7edf9"
     ],
     "features": [],
-    "path": "templates/forum/commons-topics.html"
+    "path": "templates/forum/commons-topics.html",
+    "stylesheet": "templates/forum/commons-topics.css"
   },
   {
     "id": "thread-community",
@@ -883,7 +932,8 @@
       "#f4e7da"
     ],
     "features": ["vote"],
-    "path": "templates/forum/thread-community.html"
+    "path": "templates/forum/thread-community.html",
+    "stylesheet": "templates/forum/thread-community.css"
   },
   {
     "id": "jawab-qa",
@@ -900,7 +950,8 @@
       "#e6eee4"
     ],
     "features": ["vote"],
-    "path": "templates/forum/jawab-qa.html"
+    "path": "templates/forum/jawab-qa.html",
+    "stylesheet": "templates/forum/jawab-qa.css"
   },
   {
     "id": "lobby-gaming",
@@ -917,7 +968,8 @@
       "#30392a"
     ],
     "features": [],
-    "path": "templates/forum/lobby-gaming.html"
+    "path": "templates/forum/lobby-gaming.html",
+    "stylesheet": "templates/forum/lobby-gaming.css"
   },
   {
     "id": "circle-makers",
@@ -934,7 +986,8 @@
       "#f5e4e6"
     ],
     "features": ["bookmark"],
-    "path": "templates/forum/circle-makers.html"
+    "path": "templates/forum/circle-makers.html",
+    "stylesheet": "templates/forum/circle-makers.css"
   },
   {
     "id": "sekitar-neighborhood",
@@ -951,7 +1004,8 @@
       "#ebe0ce"
     ],
     "features": [],
-    "path": "templates/forum/sekitar-neighborhood.html"
+    "path": "templates/forum/sekitar-neighborhood.html",
+    "stylesheet": "templates/forum/sekitar-neighborhood.css"
   },
   {
     "id": "summit-event",
@@ -968,7 +1022,8 @@
       "#f2edcf"
     ],
     "features": ["form", "ticket-total"],
-    "path": "templates/registration/summit-event.html"
+    "path": "templates/registration/summit-event.html",
+    "stylesheet": "templates/registration/summit-event.css"
   },
   {
     "id": "launch-onboarding",
@@ -985,7 +1040,8 @@
       "#efedf9"
     ],
     "features": ["wizard", "form"],
-    "path": "templates/registration/launch-onboarding.html"
+    "path": "templates/registration/launch-onboarding.html",
+    "stylesheet": "templates/registration/launch-onboarding.css"
   },
   {
     "id": "apply-career",
@@ -1002,7 +1058,8 @@
       "#e5e6de"
     ],
     "features": ["form"],
-    "path": "templates/registration/apply-career.html"
+    "path": "templates/registration/apply-career.html",
+    "stylesheet": "templates/registration/apply-career.css"
   },
   {
     "id": "kampus-admissions",
@@ -1019,7 +1076,8 @@
       "#e7edf9"
     ],
     "features": ["form"],
-    "path": "templates/registration/kampus-admissions.html"
+    "path": "templates/registration/kampus-admissions.html",
+    "stylesheet": "templates/registration/kampus-admissions.css"
   },
   {
     "id": "sesi-booking",
@@ -1036,7 +1094,8 @@
       "#e6eee4"
     ],
     "features": ["form"],
-    "path": "templates/registration/sesi-booking.html"
+    "path": "templates/registration/sesi-booking.html",
+    "stylesheet": "templates/registration/sesi-booking.css"
   },
   {
     "id": "teman-community",
@@ -1053,7 +1112,8 @@
       "#f5e4e6"
     ],
     "features": ["form"],
-    "path": "templates/registration/teman-community.html"
+    "path": "templates/registration/teman-community.html",
+    "stylesheet": "templates/registration/teman-community.css"
   },
   {
     "id": "simple-developer",
@@ -1084,7 +1144,8 @@
       "license": "MIT",
       "upstream": "cobiwave/simplefolio",
       "ref": "af03c0cb90d03844de2b5a4cf2045aa0f72c2442"
-    }
+    },
+    "stylesheet": "templates/portfolio/developer/simple-developer.css"
   },
   {
     "id": "timeline-engineer",
@@ -1115,7 +1176,8 @@
       "license": "MIT",
       "upstream": "RyanFitzgerald/devportfolio",
       "ref": "852d650fb0a8cf0c98f874af5a56a0a9b7d7d4b7"
-    }
+    },
+    "stylesheet": "templates/portfolio/developer/timeline-engineer.css"
   },
   {
     "id": "terminal-backend",
@@ -1143,7 +1205,8 @@
     "source": {
       "kind": "original",
       "references": ["framer-portfolio"]
-    }
+    },
+    "stylesheet": "templates/portfolio/developer/terminal-backend.css"
   },
   {
     "id": "split-fullstack",
@@ -1171,7 +1234,8 @@
     "source": {
       "kind": "original",
       "references": ["framer-portfolio"]
-    }
+    },
+    "stylesheet": "templates/portfolio/developer/split-fullstack.css"
   },
   {
     "id": "cli-maintainer",
@@ -1199,7 +1263,8 @@
     "source": {
       "kind": "original",
       "references": ["simplefolio"]
-    }
+    },
+    "stylesheet": "templates/portfolio/developer/cli-maintainer.css"
   },
   {
     "id": "case-product",
@@ -1227,7 +1292,8 @@
     "source": {
       "kind": "original",
       "references": ["framer-portfolio"]
-    }
+    },
+    "stylesheet": "templates/portfolio/design/case-product.css"
   },
   {
     "id": "mono-ui",
@@ -1255,7 +1321,8 @@
     "source": {
       "kind": "original",
       "references": ["framer-portfolio"]
-    }
+    },
+    "stylesheet": "templates/portfolio/design/mono-ui.css"
   },
   {
     "id": "index-brand",
@@ -1283,7 +1350,8 @@
     "source": {
       "kind": "original",
       "references": ["framer-portfolio"]
-    }
+    },
+    "stylesheet": "templates/portfolio/design/index-brand.css"
   },
   {
     "id": "systems-designer",
@@ -1311,7 +1379,8 @@
     "source": {
       "kind": "original",
       "references": ["framer-portfolio"]
-    }
+    },
+    "stylesheet": "templates/portfolio/design/systems-designer.css"
   },
   {
     "id": "contact-sheet",
@@ -1339,7 +1408,8 @@
     "source": {
       "kind": "original",
       "references": ["photographer-tnc"]
-    }
+    },
+    "stylesheet": "templates/portfolio/photography/contact-sheet.css"
   },
   {
     "id": "story-documentary",
@@ -1367,7 +1437,8 @@
     "source": {
       "kind": "original",
       "references": ["photographer-tnc"]
-    }
+    },
+    "stylesheet": "templates/portfolio/photography/story-documentary.css"
   },
   {
     "id": "dark-editorial",
@@ -1395,7 +1466,8 @@
     "source": {
       "kind": "original",
       "references": ["photographer-tnc"]
-    }
+    },
+    "stylesheet": "templates/portfolio/photography/dark-editorial.css"
   },
   {
     "id": "atelier-architect",
@@ -1423,7 +1495,8 @@
     "source": {
       "kind": "original",
       "references": ["woodland"]
-    }
+    },
+    "stylesheet": "templates/portfolio/architecture/atelier-architect.css"
   },
   {
     "id": "material-interior",
@@ -1451,7 +1524,8 @@
     "source": {
       "kind": "original",
       "references": ["woodland"]
-    }
+    },
+    "stylesheet": "templates/portfolio/architecture/material-interior.css"
   },
   {
     "id": "object-industrial",
@@ -1479,7 +1553,8 @@
     "source": {
       "kind": "original",
       "references": ["woodland"]
-    }
+    },
+    "stylesheet": "templates/portfolio/architecture/object-industrial.css"
   },
   {
     "id": "reel-filmmaker",
@@ -1507,7 +1582,8 @@
     "source": {
       "kind": "original",
       "references": ["framer-portfolio"]
-    }
+    },
+    "stylesheet": "templates/portfolio/creative/reel-filmmaker.css"
   },
   {
     "id": "score-composer",
@@ -1535,7 +1611,8 @@
     "source": {
       "kind": "original",
       "references": ["framer-portfolio"]
-    }
+    },
+    "stylesheet": "templates/portfolio/creative/score-composer.css"
   },
   {
     "id": "play-gameartist",
@@ -1563,7 +1640,8 @@
     "source": {
       "kind": "original",
       "references": ["framer-portfolio"]
-    }
+    },
+    "stylesheet": "templates/portfolio/creative/play-gameartist.css"
   },
   {
     "id": "type-artdirector",
@@ -1591,7 +1669,8 @@
     "source": {
       "kind": "original",
       "references": ["framer-portfolio"]
-    }
+    },
+    "stylesheet": "templates/portfolio/creative/type-artdirector.css"
   },
   {
     "id": "paper-writer",
@@ -1622,7 +1701,8 @@
       "license": "MIT",
       "upstream": "satnaing/astro-paper",
       "ref": "35cfa7fbe0b897306d27670d3819e55d5205f3dd"
-    }
+    },
+    "stylesheet": "templates/portfolio/writing/paper-writer.css"
   },
   {
     "id": "dispatch-journalist",
@@ -1650,7 +1730,8 @@
     "source": {
       "kind": "original",
       "references": ["framer-portfolio"]
-    }
+    },
+    "stylesheet": "templates/portfolio/writing/dispatch-journalist.css"
   },
   {
     "id": "script-copywriter",
@@ -1678,7 +1759,8 @@
     "source": {
       "kind": "original",
       "references": ["framer-portfolio"]
-    }
+    },
+    "stylesheet": "templates/portfolio/writing/script-copywriter.css"
   },
   {
     "id": "citation-academic",
@@ -1709,7 +1791,8 @@
       "license": "MIT",
       "upstream": "satnaing/astro-paper",
       "ref": "35cfa7fbe0b897306d27670d3819e55d5205f3dd"
-    }
+    },
+    "stylesheet": "templates/portfolio/research/citation-academic.css"
   },
   {
     "id": "lab-researcher",
@@ -1737,7 +1820,8 @@
     "source": {
       "kind": "original",
       "references": ["framer-portfolio"]
-    }
+    },
+    "stylesheet": "templates/portfolio/research/lab-researcher.css"
   },
   {
     "id": "notebook-data",
@@ -1765,7 +1849,8 @@
     "source": {
       "kind": "original",
       "references": ["framer-portfolio"]
-    }
+    },
+    "stylesheet": "templates/portfolio/research/notebook-data.css"
   },
   {
     "id": "ledger-consultant",
@@ -1793,7 +1878,8 @@
     "source": {
       "kind": "original",
       "references": ["framer-portfolio"]
-    }
+    },
+    "stylesheet": "templates/portfolio/professional/ledger-consultant.css"
   },
   {
     "id": "field-engineer",
@@ -1821,7 +1907,8 @@
     "source": {
       "kind": "original",
       "references": ["woodland"]
-    }
+    },
+    "stylesheet": "templates/portfolio/professional/field-engineer.css"
   },
   {
     "id": "campus-graduate",
@@ -1852,7 +1939,8 @@
       "license": "MIT",
       "upstream": "RyanFitzgerald/devportfolio",
       "ref": "852d650fb0a8cf0c98f874af5a56a0a9b7d7d4b7"
-    }
+    },
+    "stylesheet": "templates/portfolio/student/campus-graduate.css"
   },
   {
     "id": "apprentice-tkj",
@@ -1880,7 +1968,8 @@
     "source": {
       "kind": "original",
       "references": ["framer-portfolio"]
-    }
+    },
+    "stylesheet": "templates/portfolio/student/apprentice-tkj.css"
   },
   {
     "id": "focus-freelance",
@@ -1911,6 +2000,7 @@
       "license": "MIT",
       "upstream": "cobiwave/simplefolio",
       "ref": "af03c0cb90d03844de2b5a4cf2045aa0f72c2442"
-    }
+    },
+    "stylesheet": "templates/portfolio/professional/focus-freelance.css"
   }
 ]

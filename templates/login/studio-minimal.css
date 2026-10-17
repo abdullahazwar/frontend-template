@@ -1,0 +1,22 @@
+/* Page theme and layout: studio-minimal. */
+
+:root {
+  --bg: #f4f3ee;
+  --surface: #ffffff;
+  --ink: #222321;
+  --muted: #62635c;
+  --accent: #363c35;
+  --soft: #e5e6de;
+}
+.auth-form h1 {
+  font-size: 2.1rem;
+}
+.auth-form .lead {
+  font-size: 1rem;
+}
+.auth-form {
+  border-top: 3px solid var(--ink);
+}
+.brand {
+  letter-spacing: 0.1em;
+}

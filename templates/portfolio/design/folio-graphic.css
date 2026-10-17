@@ -1,0 +1,25 @@
+/* Page theme and layout: folio-graphic. */
+
+:root {
+  --bg: #f6f1e9;
+  --surface: #fffaf1;
+  --ink: #2c2725;
+  --muted: #75665e;
+  --accent: #ad382b;
+  --soft: #f0e0d5;
+}
+.folio-project {
+  display: grid;
+  grid-template-columns: 40px 1fr 1fr;
+  gap: 28px;
+  padding: 40px 0;
+  border-top: 1px solid var(--line);
+}
+@media (max-width: 760px) {
+  .folio-project {
+    grid-template-columns: 28px 1fr;
+  }
+  .folio-project img {
+    grid-column: 2;
+  }
+}

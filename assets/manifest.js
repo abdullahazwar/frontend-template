@@ -8,6 +8,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f7f7fb', '#ffffff', '#252632', '#626574', '#554cc1', '#efedf9'],
     features: ['period', 'csv', 'chart'],
     path: 'templates/dashboard/pulse-sales.html',
+    stylesheet: 'templates/dashboard/pulse-sales.css',
   },
   {
     id: 'runway-finance',
@@ -19,6 +20,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#111e2b', '#172837', '#eef2f5', '#b1bec8', '#b3d5c3', '#253f42'],
     features: [],
     path: 'templates/dashboard/runway-finance.html',
+    stylesheet: 'templates/dashboard/runway-finance.css',
   },
   {
     id: 'orchard-analytics',
@@ -30,6 +32,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f7f8f4', '#ffffff', '#23382d', '#5e6f62', '#286148', '#e6eee4'],
     features: [],
     path: 'templates/dashboard/orchard-analytics.html',
+    stylesheet: 'templates/dashboard/orchard-analytics.css',
   },
   {
     id: 'dispatch-logistics',
@@ -41,6 +44,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#faf7f1', '#ffffff', '#342e28', '#70675c', '#a64c22', '#f4e7da'],
     features: [],
     path: 'templates/dashboard/dispatch-logistics.html',
+    stylesheet: 'templates/dashboard/dispatch-logistics.css',
   },
   {
     id: 'sprint-projects',
@@ -51,6 +55,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f7f7fb', '#ffffff', '#252632', '#626574', '#554cc1', '#efedf9'],
     features: ['kanban'],
     path: 'templates/dashboard/sprint-projects.html',
+    stylesheet: 'templates/dashboard/sprint-projects.css',
   },
   {
     id: 'kelas-education',
@@ -62,6 +67,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#fbf9ef', '#ffffff', '#353424', '#716c50', '#746118', '#f2edcf'],
     features: [],
     path: 'templates/dashboard/kelas-education.html',
+    stylesheet: 'templates/dashboard/kelas-education.css',
   },
   {
     id: 'atlas-users',
@@ -73,6 +79,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f5f7fb', '#ffffff', '#22314b', '#586880', '#315fa3', '#e7edf9'],
     features: ['search', 'status'],
     path: 'templates/admin/atlas-users.html',
+    stylesheet: 'templates/admin/atlas-users.css',
   },
   {
     id: 'rak-inventory',
@@ -84,6 +91,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f7f8f4', '#ffffff', '#23382d', '#5e6f62', '#286148', '#e6eee4'],
     features: ['search', 'stock'],
     path: 'templates/admin/rak-inventory.html',
+    stylesheet: 'templates/admin/rak-inventory.css',
   },
   {
     id: 'pressroom-cms',
@@ -94,6 +102,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f4f3ee', '#ffffff', '#222321', '#62635c', '#363c35', '#e5e6de'],
     features: [],
     path: 'templates/admin/pressroom-cms.html',
+    stylesheet: 'templates/admin/pressroom-cms.css',
   },
   {
     id: 'relay-support',
@@ -105,6 +114,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f3f8f8', '#ffffff', '#21373c', '#5c7277', '#216676', '#e1eff0'],
     features: ['inbox', 'reply'],
     path: 'templates/admin/relay-support.html',
+    stylesheet: 'templates/admin/relay-support.css',
   },
   {
     id: 'roster-team',
@@ -116,6 +126,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f5eee1', '#fffbf3', '#3e352c', '#766b5f', '#7b4b32', '#ebe0ce'],
     features: [],
     path: 'templates/admin/roster-team.html',
+    stylesheet: 'templates/admin/roster-team.css',
   },
   {
     id: 'access-permissions',
@@ -127,6 +138,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f4f3ee', '#ffffff', '#222321', '#62635c', '#363c35', '#e5e6de'],
     features: [],
     path: 'templates/admin/access-permissions.html',
+    stylesheet: 'templates/admin/access-permissions.css',
   },
   {
     id: 'nook-profile',
@@ -137,6 +149,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#fbf5f3', '#ffffff', '#3d292b', '#796063', '#a23f50', '#f5e4e6'],
     features: ['bookmark'],
     path: 'templates/user/nook-profile.html',
+    stylesheet: 'templates/user/nook-profile.css',
   },
   {
     id: 'parcel-orders',
@@ -148,6 +161,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#faf7f1', '#ffffff', '#342e28', '#70675c', '#a64c22', '#f4e7da'],
     features: [],
     path: 'templates/user/parcel-orders.html',
+    stylesheet: 'templates/user/parcel-orders.css',
   },
   {
     id: 'pocket-wallet',
@@ -158,6 +172,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f7f8f4', '#ffffff', '#23382d', '#5e6f62', '#286148', '#e6eee4'],
     features: [],
     path: 'templates/user/pocket-wallet.html',
+    stylesheet: 'templates/user/pocket-wallet.css',
   },
   {
     id: 'course-learning',
@@ -169,6 +184,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f5f7fb', '#ffffff', '#22314b', '#586880', '#315fa3', '#e7edf9'],
     features: ['progress'],
     path: 'templates/user/course-learning.html',
+    stylesheet: 'templates/user/course-learning.css',
   },
   {
     id: 'desk-settings',
@@ -180,6 +196,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f4f3ee', '#ffffff', '#222321', '#62635c', '#363c35', '#e5e6de'],
     features: [],
     path: 'templates/user/desk-settings.html',
+    stylesheet: 'templates/user/desk-settings.css',
   },
   {
     id: 'ruang-membership',
@@ -190,6 +207,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#fbf9ef', '#ffffff', '#353424', '#716c50', '#746118', '#f2edcf'],
     features: [],
     path: 'templates/user/ruang-membership.html',
+    stylesheet: 'templates/user/ruang-membership.css',
   },
   {
     id: 'rakit-market',
@@ -201,6 +219,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f5f7fb', '#ffffff', '#22314b', '#586880', '#315fa3', '#e7edf9'],
     features: ['search', 'cart'],
     path: 'templates/shop/rakit-market.html',
+    stylesheet: 'templates/shop/rakit-market.css',
   },
   {
     id: 'sumber-wholesale',
@@ -211,6 +230,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#faf7f1', '#ffffff', '#342e28', '#70675c', '#a64c22', '#f4e7da'],
     features: ['cart', 'rfq'],
     path: 'templates/shop/sumber-wholesale.html',
+    stylesheet: 'templates/shop/sumber-wholesale.css',
   },
   {
     id: 'sela-furniture',
@@ -222,6 +242,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f5eee1', '#fffbf3', '#3e352c', '#766b5f', '#7b4b32', '#ebe0ce'],
     features: ['cart'],
     path: 'templates/shop/sela-furniture.html',
+    stylesheet: 'templates/shop/sela-furniture.css',
   },
   {
     id: 'pagi-grocery',
@@ -233,6 +254,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f7f8f4', '#ffffff', '#23382d', '#5e6f62', '#286148', '#e6eee4'],
     features: ['cart', 'quantity'],
     path: 'templates/shop/pagi-grocery.html',
+    stylesheet: 'templates/shop/pagi-grocery.css',
   },
   {
     id: 'mono-product',
@@ -243,6 +265,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f4f3ee', '#ffffff', '#222321', '#62635c', '#363c35', '#e5e6de'],
     features: ['cart', 'variant', 'quantity'],
     path: 'templates/shop/mono-product.html',
+    stylesheet: 'templates/shop/mono-product.css',
   },
   {
     id: 'edisi-fashion',
@@ -254,6 +277,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#fbf5f3', '#ffffff', '#3d292b', '#796063', '#a23f50', '#f5e4e6'],
     features: ['cart'],
     path: 'templates/shop/edisi-fashion.html',
+    stylesheet: 'templates/shop/edisi-fashion.css',
   },
   {
     id: 'paper-split',
@@ -265,6 +289,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f7f8f4', '#ffffff', '#23382d', '#5e6f62', '#286148', '#e6eee4'],
     features: ['form', 'password-toggle'],
     path: 'templates/login/paper-split.html',
+    stylesheet: 'templates/login/paper-split.css',
   },
   {
     id: 'terminal-dev',
@@ -276,6 +301,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#111e2b', '#172837', '#eef2f5', '#b1bec8', '#b3d5c3', '#253f42'],
     features: ['form', 'password-toggle'],
     path: 'templates/login/terminal-dev.html',
+    stylesheet: 'templates/login/terminal-dev.css',
   },
   {
     id: 'studio-minimal',
@@ -286,6 +312,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f4f3ee', '#ffffff', '#222321', '#62635c', '#363c35', '#e5e6de'],
     features: ['form', 'password-toggle'],
     path: 'templates/login/studio-minimal.html',
+    stylesheet: 'templates/login/studio-minimal.css',
   },
   {
     id: 'member-warm',
@@ -297,6 +324,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f5eee1', '#fffbf3', '#3e352c', '#766b5f', '#7b4b32', '#ebe0ce'],
     features: ['form', 'password-toggle'],
     path: 'templates/login/member-warm.html',
+    stylesheet: 'templates/login/member-warm.css',
   },
   {
     id: 'workspace-account',
@@ -307,6 +335,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f5f7fb', '#ffffff', '#22314b', '#586880', '#315fa3', '#e7edf9'],
     features: ['form', 'password-toggle'],
     path: 'templates/login/workspace-account.html',
+    stylesheet: 'templates/login/workspace-account.css',
   },
   {
     id: 'link-passwordless',
@@ -317,6 +346,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#fbf5f3', '#ffffff', '#3d292b', '#796063', '#a23f50', '#f5e4e6'],
     features: ['form'],
     path: 'templates/login/link-passwordless.html',
+    stylesheet: 'templates/login/link-passwordless.css',
   },
   {
     id: 'folio-graphic',
@@ -333,6 +363,7 @@ window.TEMPLATE_MANIFEST = [
       kind: 'original',
       references: [],
     },
+    stylesheet: 'templates/portfolio/design/folio-graphic.css',
   },
   {
     id: 'frame-photography',
@@ -349,6 +380,7 @@ window.TEMPLATE_MANIFEST = [
       kind: 'original',
       references: [],
     },
+    stylesheet: 'templates/portfolio/photography/frame-photography.css',
   },
   {
     id: 'build-developer',
@@ -365,6 +397,7 @@ window.TEMPLATE_MANIFEST = [
       kind: 'original',
       references: [],
     },
+    stylesheet: 'templates/portfolio/developer/build-developer.css',
   },
   {
     id: 'space-architect',
@@ -382,6 +415,7 @@ window.TEMPLATE_MANIFEST = [
       kind: 'original',
       references: [],
     },
+    stylesheet: 'templates/portfolio/architecture/space-architect.css',
   },
   {
     id: 'motion-director',
@@ -398,6 +432,7 @@ window.TEMPLATE_MANIFEST = [
       kind: 'original',
       references: [],
     },
+    stylesheet: 'templates/portfolio/creative/motion-director.css',
   },
   {
     id: 'craft-illustrator',
@@ -415,6 +450,7 @@ window.TEMPLATE_MANIFEST = [
       kind: 'original',
       references: [],
     },
+    stylesheet: 'templates/portfolio/creative/craft-illustrator.css',
   },
   {
     id: 'civic-consulting',
@@ -426,6 +462,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f7f8f4', '#ffffff', '#23382d', '#5e6f62', '#286148', '#e6eee4'],
     features: [],
     path: 'templates/company/civic-consulting.html',
+    stylesheet: 'templates/company/civic-consulting.css',
   },
   {
     id: 'forge-industrial',
@@ -437,6 +474,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f5f7fb', '#ffffff', '#22314b', '#586880', '#315fa3', '#e7edf9'],
     features: [],
     path: 'templates/company/forge-industrial.html',
+    stylesheet: 'templates/company/forge-industrial.css',
   },
   {
     id: 'meja-restaurant',
@@ -448,6 +486,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f5eee1', '#fffbf3', '#3e352c', '#766b5f', '#7b4b32', '#ebe0ce'],
     features: [],
     path: 'templates/company/meja-restaurant.html',
+    stylesheet: 'templates/company/meja-restaurant.css',
   },
   {
     id: 'habitat-studio',
@@ -459,6 +498,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f4f3ee', '#ffffff', '#222321', '#62635c', '#363c35', '#e5e6de'],
     features: [],
     path: 'templates/company/habitat-studio.html',
+    stylesheet: 'templates/company/habitat-studio.css',
   },
   {
     id: 'orbit-saas',
@@ -470,6 +510,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f7f7fb', '#ffffff', '#252632', '#626574', '#554cc1', '#efedf9'],
     features: [],
     path: 'templates/company/orbit-saas.html',
+    stylesheet: 'templates/company/orbit-saas.css',
   },
   {
     id: 'tepat-local',
@@ -480,6 +521,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f3f8f8', '#ffffff', '#21373c', '#5c7277', '#216676', '#e1eff0'],
     features: [],
     path: 'templates/company/tepat-local.html',
+    stylesheet: 'templates/company/tepat-local.css',
   },
   {
     id: 'jeda-newspaper',
@@ -491,6 +533,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f4f3ee', '#ffffff', '#222321', '#62635c', '#363c35', '#e5e6de'],
     features: [],
     path: 'templates/blog/jeda-newspaper.html',
+    stylesheet: 'templates/blog/jeda-newspaper.css',
   },
   {
     id: 'lapang-journal',
@@ -501,6 +544,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f7f8f4', '#ffffff', '#23382d', '#5e6f62', '#286148', '#e6eee4'],
     features: [],
     path: 'templates/blog/lapang-journal.html',
+    stylesheet: 'templates/blog/lapang-journal.css',
   },
   {
     id: 'byte-engineering',
@@ -512,6 +556,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f5f7fb', '#ffffff', '#22314b', '#586880', '#315fa3', '#e7edf9'],
     features: [],
     path: 'templates/blog/byte-engineering.html',
+    stylesheet: 'templates/blog/byte-engineering.css',
   },
   {
     id: 'margin-essay',
@@ -523,6 +568,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f5eee1', '#fffbf3', '#3e352c', '#766b5f', '#7b4b32', '#ebe0ce'],
     features: [],
     path: 'templates/blog/margin-essay.html',
+    stylesheet: 'templates/blog/margin-essay.css',
   },
   {
     id: 'signal-magazine',
@@ -534,6 +580,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#131415', '#1c1e20', '#f1f0eb', '#b2b3af', '#d5e7a5', '#30392a'],
     features: [],
     path: 'templates/blog/signal-magazine.html',
+    stylesheet: 'templates/blog/signal-magazine.css',
   },
   {
     id: 'indeks-newsletter',
@@ -544,6 +591,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#fbf5f3', '#ffffff', '#3d292b', '#796063', '#a23f50', '#f5e4e6'],
     features: [],
     path: 'templates/blog/indeks-newsletter.html',
+    stylesheet: 'templates/blog/indeks-newsletter.css',
   },
   {
     id: 'commons-topics',
@@ -555,6 +603,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f5f7fb', '#ffffff', '#22314b', '#586880', '#315fa3', '#e7edf9'],
     features: [],
     path: 'templates/forum/commons-topics.html',
+    stylesheet: 'templates/forum/commons-topics.css',
   },
   {
     id: 'thread-community',
@@ -566,6 +615,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#faf7f1', '#ffffff', '#342e28', '#70675c', '#a64c22', '#f4e7da'],
     features: ['vote'],
     path: 'templates/forum/thread-community.html',
+    stylesheet: 'templates/forum/thread-community.css',
   },
   {
     id: 'jawab-qa',
@@ -577,6 +627,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f7f8f4', '#ffffff', '#23382d', '#5e6f62', '#286148', '#e6eee4'],
     features: ['vote'],
     path: 'templates/forum/jawab-qa.html',
+    stylesheet: 'templates/forum/jawab-qa.css',
   },
   {
     id: 'lobby-gaming',
@@ -587,6 +638,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#131415', '#1c1e20', '#f1f0eb', '#b2b3af', '#d5e7a5', '#30392a'],
     features: [],
     path: 'templates/forum/lobby-gaming.html',
+    stylesheet: 'templates/forum/lobby-gaming.css',
   },
   {
     id: 'circle-makers',
@@ -598,6 +650,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#fbf5f3', '#ffffff', '#3d292b', '#796063', '#a23f50', '#f5e4e6'],
     features: ['bookmark'],
     path: 'templates/forum/circle-makers.html',
+    stylesheet: 'templates/forum/circle-makers.css',
   },
   {
     id: 'sekitar-neighborhood',
@@ -609,6 +662,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f5eee1', '#fffbf3', '#3e352c', '#766b5f', '#7b4b32', '#ebe0ce'],
     features: [],
     path: 'templates/forum/sekitar-neighborhood.html',
+    stylesheet: 'templates/forum/sekitar-neighborhood.css',
   },
   {
     id: 'summit-event',
@@ -620,6 +674,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#fbf9ef', '#ffffff', '#353424', '#716c50', '#746118', '#f2edcf'],
     features: ['form', 'ticket-total'],
     path: 'templates/registration/summit-event.html',
+    stylesheet: 'templates/registration/summit-event.css',
   },
   {
     id: 'launch-onboarding',
@@ -631,6 +686,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f7f7fb', '#ffffff', '#252632', '#626574', '#554cc1', '#efedf9'],
     features: ['wizard', 'form'],
     path: 'templates/registration/launch-onboarding.html',
+    stylesheet: 'templates/registration/launch-onboarding.css',
   },
   {
     id: 'apply-career',
@@ -642,6 +698,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f4f3ee', '#ffffff', '#222321', '#62635c', '#363c35', '#e5e6de'],
     features: ['form'],
     path: 'templates/registration/apply-career.html',
+    stylesheet: 'templates/registration/apply-career.css',
   },
   {
     id: 'kampus-admissions',
@@ -652,6 +709,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f5f7fb', '#ffffff', '#22314b', '#586880', '#315fa3', '#e7edf9'],
     features: ['form'],
     path: 'templates/registration/kampus-admissions.html',
+    stylesheet: 'templates/registration/kampus-admissions.css',
   },
   {
     id: 'sesi-booking',
@@ -663,6 +721,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#f7f8f4', '#ffffff', '#23382d', '#5e6f62', '#286148', '#e6eee4'],
     features: ['form'],
     path: 'templates/registration/sesi-booking.html',
+    stylesheet: 'templates/registration/sesi-booking.css',
   },
   {
     id: 'teman-community',
@@ -674,6 +733,7 @@ window.TEMPLATE_MANIFEST = [
     colors: ['#fbf5f3', '#ffffff', '#3d292b', '#796063', '#a23f50', '#f5e4e6'],
     features: ['form'],
     path: 'templates/registration/teman-community.html',
+    stylesheet: 'templates/registration/teman-community.css',
   },
   {
     id: 'simple-developer',
@@ -693,6 +753,7 @@ window.TEMPLATE_MANIFEST = [
       upstream: 'cobiwave/simplefolio',
       ref: 'af03c0cb90d03844de2b5a4cf2045aa0f72c2442',
     },
+    stylesheet: 'templates/portfolio/developer/simple-developer.css',
   },
   {
     id: 'timeline-engineer',
@@ -712,6 +773,7 @@ window.TEMPLATE_MANIFEST = [
       upstream: 'RyanFitzgerald/devportfolio',
       ref: '852d650fb0a8cf0c98f874af5a56a0a9b7d7d4b7',
     },
+    stylesheet: 'templates/portfolio/developer/timeline-engineer.css',
   },
   {
     id: 'terminal-backend',
@@ -728,6 +790,7 @@ window.TEMPLATE_MANIFEST = [
       kind: 'original',
       references: ['framer-portfolio'],
     },
+    stylesheet: 'templates/portfolio/developer/terminal-backend.css',
   },
   {
     id: 'split-fullstack',
@@ -744,6 +807,7 @@ window.TEMPLATE_MANIFEST = [
       kind: 'original',
       references: ['framer-portfolio'],
     },
+    stylesheet: 'templates/portfolio/developer/split-fullstack.css',
   },
   {
     id: 'cli-maintainer',
@@ -760,6 +824,7 @@ window.TEMPLATE_MANIFEST = [
       kind: 'original',
       references: ['simplefolio'],
     },
+    stylesheet: 'templates/portfolio/developer/cli-maintainer.css',
   },
   {
     id: 'case-product',
@@ -776,6 +841,7 @@ window.TEMPLATE_MANIFEST = [
       kind: 'original',
       references: ['framer-portfolio'],
     },
+    stylesheet: 'templates/portfolio/design/case-product.css',
   },
   {
     id: 'mono-ui',
@@ -792,6 +858,7 @@ window.TEMPLATE_MANIFEST = [
       kind: 'original',
       references: ['framer-portfolio'],
     },
+    stylesheet: 'templates/portfolio/design/mono-ui.css',
   },
   {
     id: 'index-brand',
@@ -808,6 +875,7 @@ window.TEMPLATE_MANIFEST = [
       kind: 'original',
       references: ['framer-portfolio'],
     },
+    stylesheet: 'templates/portfolio/design/index-brand.css',
   },
   {
     id: 'systems-designer',
@@ -824,6 +892,7 @@ window.TEMPLATE_MANIFEST = [
       kind: 'original',
       references: ['framer-portfolio'],
     },
+    stylesheet: 'templates/portfolio/design/systems-designer.css',
   },
   {
     id: 'contact-sheet',
@@ -841,6 +910,7 @@ window.TEMPLATE_MANIFEST = [
       kind: 'original',
       references: ['photographer-tnc'],
     },
+    stylesheet: 'templates/portfolio/photography/contact-sheet.css',
   },
   {
     id: 'story-documentary',
@@ -857,6 +927,7 @@ window.TEMPLATE_MANIFEST = [
       kind: 'original',
       references: ['photographer-tnc'],
     },
+    stylesheet: 'templates/portfolio/photography/story-documentary.css',
   },
   {
     id: 'dark-editorial',
@@ -873,6 +944,7 @@ window.TEMPLATE_MANIFEST = [
       kind: 'original',
       references: ['photographer-tnc'],
     },
+    stylesheet: 'templates/portfolio/photography/dark-editorial.css',
   },
   {
     id: 'atelier-architect',
@@ -889,6 +961,7 @@ window.TEMPLATE_MANIFEST = [
       kind: 'original',
       references: ['woodland'],
     },
+    stylesheet: 'templates/portfolio/architecture/atelier-architect.css',
   },
   {
     id: 'material-interior',
@@ -905,6 +978,7 @@ window.TEMPLATE_MANIFEST = [
       kind: 'original',
       references: ['woodland'],
     },
+    stylesheet: 'templates/portfolio/architecture/material-interior.css',
   },
   {
     id: 'object-industrial',
@@ -921,6 +995,7 @@ window.TEMPLATE_MANIFEST = [
       kind: 'original',
       references: ['woodland'],
     },
+    stylesheet: 'templates/portfolio/architecture/object-industrial.css',
   },
   {
     id: 'reel-filmmaker',
@@ -937,6 +1012,7 @@ window.TEMPLATE_MANIFEST = [
       kind: 'original',
       references: ['framer-portfolio'],
     },
+    stylesheet: 'templates/portfolio/creative/reel-filmmaker.css',
   },
   {
     id: 'score-composer',
@@ -953,6 +1029,7 @@ window.TEMPLATE_MANIFEST = [
       kind: 'original',
       references: ['framer-portfolio'],
     },
+    stylesheet: 'templates/portfolio/creative/score-composer.css',
   },
   {
     id: 'play-gameartist',
@@ -970,6 +1047,7 @@ window.TEMPLATE_MANIFEST = [
       kind: 'original',
       references: ['framer-portfolio'],
     },
+    stylesheet: 'templates/portfolio/creative/play-gameartist.css',
   },
   {
     id: 'type-artdirector',
@@ -986,6 +1064,7 @@ window.TEMPLATE_MANIFEST = [
       kind: 'original',
       references: ['framer-portfolio'],
     },
+    stylesheet: 'templates/portfolio/creative/type-artdirector.css',
   },
   {
     id: 'paper-writer',
@@ -1005,6 +1084,7 @@ window.TEMPLATE_MANIFEST = [
       upstream: 'satnaing/astro-paper',
       ref: '35cfa7fbe0b897306d27670d3819e55d5205f3dd',
     },
+    stylesheet: 'templates/portfolio/writing/paper-writer.css',
   },
   {
     id: 'dispatch-journalist',
@@ -1021,6 +1101,7 @@ window.TEMPLATE_MANIFEST = [
       kind: 'original',
       references: ['framer-portfolio'],
     },
+    stylesheet: 'templates/portfolio/writing/dispatch-journalist.css',
   },
   {
     id: 'script-copywriter',
@@ -1038,6 +1119,7 @@ window.TEMPLATE_MANIFEST = [
       kind: 'original',
       references: ['framer-portfolio'],
     },
+    stylesheet: 'templates/portfolio/writing/script-copywriter.css',
   },
   {
     id: 'citation-academic',
@@ -1057,6 +1139,7 @@ window.TEMPLATE_MANIFEST = [
       upstream: 'satnaing/astro-paper',
       ref: '35cfa7fbe0b897306d27670d3819e55d5205f3dd',
     },
+    stylesheet: 'templates/portfolio/research/citation-academic.css',
   },
   {
     id: 'lab-researcher',
@@ -1073,6 +1156,7 @@ window.TEMPLATE_MANIFEST = [
       kind: 'original',
       references: ['framer-portfolio'],
     },
+    stylesheet: 'templates/portfolio/research/lab-researcher.css',
   },
   {
     id: 'notebook-data',
@@ -1089,6 +1173,7 @@ window.TEMPLATE_MANIFEST = [
       kind: 'original',
       references: ['framer-portfolio'],
     },
+    stylesheet: 'templates/portfolio/research/notebook-data.css',
   },
   {
     id: 'ledger-consultant',
@@ -1105,6 +1190,7 @@ window.TEMPLATE_MANIFEST = [
       kind: 'original',
       references: ['framer-portfolio'],
     },
+    stylesheet: 'templates/portfolio/professional/ledger-consultant.css',
   },
   {
     id: 'field-engineer',
@@ -1121,6 +1207,7 @@ window.TEMPLATE_MANIFEST = [
       kind: 'original',
       references: ['woodland'],
     },
+    stylesheet: 'templates/portfolio/professional/field-engineer.css',
   },
   {
     id: 'campus-graduate',
@@ -1140,6 +1227,7 @@ window.TEMPLATE_MANIFEST = [
       upstream: 'RyanFitzgerald/devportfolio',
       ref: '852d650fb0a8cf0c98f874af5a56a0a9b7d7d4b7',
     },
+    stylesheet: 'templates/portfolio/student/campus-graduate.css',
   },
   {
     id: 'apprentice-tkj',
@@ -1157,6 +1245,7 @@ window.TEMPLATE_MANIFEST = [
       kind: 'original',
       references: ['framer-portfolio'],
     },
+    stylesheet: 'templates/portfolio/student/apprentice-tkj.css',
   },
   {
     id: 'focus-freelance',
@@ -1176,5 +1265,6 @@ window.TEMPLATE_MANIFEST = [
       upstream: 'cobiwave/simplefolio',
       ref: 'af03c0cb90d03844de2b5a4cf2045aa0f72c2442',
     },
+    stylesheet: 'templates/portfolio/professional/focus-freelance.css',
   },
 ];

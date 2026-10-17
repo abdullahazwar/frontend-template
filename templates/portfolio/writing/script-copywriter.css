@@ -1,0 +1,13 @@
+/* Page theme and layout: script-copywriter. */
+
+:root {
+  --bg: #e9eddf;
+  --surface: #f5f7ef;
+  --ink: #273122;
+  --muted: #5c6654;
+  --accent: #455c21;
+  --soft: #d4ddbd;
+  --line: #d4ddbd;
+  --accent-ink: #ffffff;
+  color-scheme: light;
+}

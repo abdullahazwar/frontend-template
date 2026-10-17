@@ -1,0 +1,10 @@
+/* Page theme and layout: indeks-newsletter. */
+
+:root {
+  --bg: #fbf5f3;
+  --surface: #ffffff;
+  --ink: #3d292b;
+  --muted: #796063;
+  --accent: #a23f50;
+  --soft: #f5e4e6;
+}

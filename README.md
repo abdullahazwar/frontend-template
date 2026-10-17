@@ -12,7 +12,8 @@ Pemberitahuan lisensi dan sumber tersimpan bersama proyek.
 1. Unduh repo dan buka `index.html` untuk menjelajahi galeri.
 2. Pilih kategori Portofolio. Saring profesi, asal kode, atau kata pencarian.
 3. Buka halaman langsung atau gunakan pratinjau desktop dan HP.
-4. Edit file HTML yang dipilih. Semua template memakai aset lokal.
+4. Edit konten pada HTML dan tampilan pada file CSS pasangannya. Semua template
+   memakai aset lokal.
 
 Tanpa instalasi dependency atau build untuk menjalankan template HTML. Server
 lokal opsional memakai Node.js 20+:
@@ -61,6 +62,30 @@ kanonis baru ada di `templates/portfolio/<profesi>/`.
 
 [Panduan portofolio](templates/portfolio/README.md)
 
+## Pemisahan HTML, CSS, dan JavaScript
+
+Setiap template mempunyai pasangan file dengan nama yang sama. Contohnya:
+
+```text
+templates/portfolio/design/case-product.html
+templates/portfolio/design/case-product.css
+```
+
+HTML memuat CSS melalui `<link rel="stylesheet" href="./case-product.css">`.
+JavaScript dimuat melalui `<script src="..." defer></script>`. Kode interaksi
+bersama tetap berada di `assets/`, sehingga perbaikan berlaku ke halaman
+terkait.
+
+90 template dan dua contoh framework memakai stylesheet terpisah. Style statis
+sudah menjadi class CSS. Tidak ada blok CSS atau kode JavaScript yang berjalan
+di dalam HTML sumber. Dua import map framework tetap berupa konfigurasi JSON.
+
+Saat menyalin template, sertakan file CSS pasangannya serta aset bersama yang
+direferensikan. Desain memakai CSS native. Pemisahan file mempertahankan
+komposisi koleksi yang sudah tersedia.
+
+[Panduan pemeliharaan](docs/MAINTENANCE.md)
+
 ## Struktur
 
 ```text
@@ -76,6 +101,9 @@ assets/
   portfolio.js
   art/
 templates/
+  dashboard/
+    pulse-sales.html
+    pulse-sales.css
   portfolio/
     developer/
     design/
@@ -88,7 +116,15 @@ templates/
     student/
 frameworks/
   react/
+    index.html
+    styles.css
+    loader.js
+    app.js
   vue/
+    index.html
+    styles.css
+    loader.js
+    app.js
 scripts/
 docs/
 licenses/
@@ -106,6 +142,8 @@ npm run export -- all
 Exporter menggabungkan stylesheet, JavaScript, dan ilustrasi ke satu HTML.
 Folder bertingkat tetap didukung. Hasil di `exports/` dapat dibuka offline.
 Pemberitahuan MIT pada template adaptasi tetap berada dalam hasil ekspor.
+Penyatuan CSS dan JavaScript hanya terjadi pada hasil ekspor mandiri. File
+sumber untuk pemeliharaan tetap terpisah.
 
 ## Format kode
 
@@ -143,7 +181,8 @@ halaman.
 Contoh React memakai komponen dashboard native dengan state, periode, dan CSV.
 Contoh Vue memakai Composition API untuk pencarian serta keranjang. Versi CDN
 mengikuti contoh yang sudah ada, React 19.3.0 dan Vue 3.5.44. Tidak mengganti
-stack keduanya dalam pembaruan koleksi portofolio ini.
+stack keduanya. `styles.css` menangani tampilan, `loader.js` menangani pemuatan
+dan kegagalannya, sedangkan `app.js` menyimpan komponen aplikasi.
 
 ## Isi demonstrasi
 

@@ -3,6 +3,7 @@
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
+import json
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -29,9 +30,21 @@ class Document(HTMLParser):
         self.errors = []
         self.stack = []
         self.counts = {}
+        self.import_map_buffer = None
 
     def handle_starttag(self, tag, attrs):
         data = dict(attrs)
+        if tag == 'style':
+            self.errors.append('move stylesheet into a linked CSS file')
+        if 'style' in data:
+            self.errors.append('move static style into a CSS class')
+        if any(name.startswith('on') for name in data):
+            self.errors.append('move event handler into external JavaScript')
+        if tag == 'script' and 'src' not in data:
+            if data.get('type') == 'importmap':
+                self.import_map_buffer = []
+            else:
+                self.errors.append('move executable script into a JS file')
         self.counts[tag] = self.counts.get(tag, 0) + 1
         if tag not in VOID:
             self.stack.append(tag)
@@ -54,6 +67,14 @@ class Document(HTMLParser):
             self.references.append(value)
 
     def handle_endtag(self, tag):
+        if tag == 'script' and self.import_map_buffer is not None:
+            try:
+                value = json.loads(''.join(self.import_map_buffer))
+                if not isinstance(value.get('imports'), dict):
+                    self.errors.append('import map must define imports')
+            except (ValueError, AttributeError):
+                self.errors.append('import map must contain valid JSON')
+            self.import_map_buffer = None
         if tag in VOID:
             return
         if self.stack and self.stack[-1] == tag:
@@ -67,6 +88,10 @@ class Document(HTMLParser):
             while self.stack and self.stack[-1] != tag:
                 self.stack.pop()
             self.stack.pop()
+
+    def handle_data(self, data):
+        if self.import_map_buffer is not None:
+            self.import_map_buffer.append(data)
 
     def handle_startendtag(self, tag, attrs):
         self.handle_starttag(tag, attrs)

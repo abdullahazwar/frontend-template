@@ -1,0 +1,16 @@
+/* Page theme and layout: sesi-booking. */
+
+:root {
+  --bg: #f7f8f4;
+  --surface: #ffffff;
+  --ink: #23382d;
+  --muted: #5e6f62;
+  --accent: #286148;
+  --soft: #e6eee4;
+}
+
+.booking-fields {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}

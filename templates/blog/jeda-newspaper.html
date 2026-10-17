@@ -15,34 +15,11 @@
       rel="stylesheet"
       href="../../assets/base.css"
     />
-    <style>
-      :root {
-        --bg: #f4f3ee;
-        --surface: #ffffff;
-        --ink: #222321;
-        --muted: #62635c;
-        --accent: #363c35;
-        --soft: #e5e6de;
-      }
-      .newspaper {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        gap: 38px;
-      }
-      .newspaper aside {
-        border-left: 1px solid var(--line);
-        padding-left: 30px;
-      }
-      @media (max-width: 760px) {
-        .newspaper {
-          grid-template-columns: 1fr;
-        }
-        .newspaper aside {
-          border-left: 0;
-          padding-left: 0;
-        }
-      }
-    </style>
+
+    <link
+      rel="stylesheet"
+      href="./jeda-newspaper.css"
+    />
     <script
       src="../../assets/core.js"
       defer
@@ -99,10 +76,7 @@
               loading="lazy"
             />
             <p class="eyebrow">Kota / Esai contoh</p>
-            <h2
-              class="serif"
-              style="font-size: 2.7rem"
-            >
+            <h2 class="serif article-headline">
               Kota yang memberi ruang untuk berhenti.
             </h2>
             <p class="lead">

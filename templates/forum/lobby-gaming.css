@@ -1,0 +1,22 @@
+/* Page theme and layout: lobby-gaming. */
+
+:root {
+  --bg: #131415;
+  --surface: #1c1e20;
+  --ink: #f1f0eb;
+  --muted: #b2b3af;
+  --accent: #d5e7a5;
+  --soft: #30392a;
+  --line: #3c4b55;
+  --accent-ink: #13251e;
+  --good: #b3d5c3;
+  color-scheme: dark;
+}
+.channel {
+  padding: 28px 0;
+  border-top: 1px solid var(--line);
+}
+.channel h2 {
+  font-size: 2rem;
+  margin-block: 14px;
+}

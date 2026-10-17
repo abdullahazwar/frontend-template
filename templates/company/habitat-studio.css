@@ -1,0 +1,15 @@
+/* Page theme and layout: habitat-studio. */
+
+:root {
+  --bg: #f4f3ee;
+  --surface: #ffffff;
+  --ink: #222321;
+  --muted: #62635c;
+  --accent: #363c35;
+  --soft: #e5e6de;
+}
+.habitat-cover {
+  width: 100%;
+  height: clamp(260px, 42vw, 480px);
+  object-fit: cover;
+}

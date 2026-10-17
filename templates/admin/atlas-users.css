@@ -1,0 +1,10 @@
+/* Page theme and layout: atlas-users. */
+
+:root {
+  --bg: #f5f7fb;
+  --surface: #ffffff;
+  --ink: #22314b;
+  --muted: #586880;
+  --accent: #315fa3;
+  --soft: #e7edf9;
+}

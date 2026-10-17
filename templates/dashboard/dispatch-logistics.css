@@ -1,0 +1,10 @@
+/* Page theme and layout: dispatch-logistics. */
+
+:root {
+  --bg: #faf7f1;
+  --surface: #ffffff;
+  --ink: #342e28;
+  --muted: #70675c;
+  --accent: #a64c22;
+  --soft: #f4e7da;
+}

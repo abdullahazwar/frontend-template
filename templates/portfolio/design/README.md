@@ -37,10 +37,11 @@ Setiap file HTML dapat dibuka langsung atau melalui `npm start`.
 
 ## Mengubah isi
 
-Edit nama, peran, pengantar, dan bagian `data-work` pada file HTML. Warna ada
-pada token `:root`. Model komposisi ditandai oleh `data-model`. Foto dan karya
-dapat menggantikan SVG pada `../../../assets/art/`. Pertahankan alt, caption,
-dan hak penggunaan aset. Kontak memakai alamat contoh.
+Edit nama, peran, pengantar, dan bagian `data-work` pada file HTML. Warna dan
+layout khusus berada pada file `.css` dengan nama yang sama. Token warna berada
+pada `:root`. Model komposisi ditandai oleh `data-model`. Foto dan karya dapat
+menggantikan SVG pada `../../../assets/art/`. Pertahankan alt, caption, dan hak
+penggunaan aset. Kontak memakai alamat contoh.
 
 Pencarian, filter, dialog ilustrasi, dan unduh profil memakai
 `../../../assets/portfolio.js`. Enam model lama memakai runtime asalnya.

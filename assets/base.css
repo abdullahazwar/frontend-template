@@ -1,5 +1,10 @@
 @layer reset, base, layout, components, responsive;
 @layer reset {
+  .artwork {
+    width: 800px;
+    height: 600px;
+    aspect-ratio: auto 4 / 3;
+  }
   *,
   *::before,
   *::after {
@@ -777,7 +782,7 @@
     display: block;
     width: 100%;
     max-width: 55px;
-    height: var(--bar);
+    height: calc(var(--data-ratio, 0) * 80%);
     background: var(--accent);
     border-radius: 4px 4px 0 0;
   }

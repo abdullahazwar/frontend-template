@@ -98,6 +98,18 @@ stylesheet dan 11 style statis dipisahkan dari HTML. Dua loader framework
 sekarang berada di `loader.js`. Aturan visual tetap mengikuti desain yang sudah
 ada. Tidak menambahkan dependency runtime baru.
 
-Lebar grafik dan warna thumbnail yang dihitung dari data tetap memakai custom
-property CSS yang diisi oleh JavaScript eksternal. Konfigurasi import map
-React/Vue tetap berupa JSON, terpisah dari kode aplikasi.
+Pada versi ini, tinggi grafik dan warna thumbnail masih memakai custom property
+CSS yang diisi oleh JavaScript eksternal. Aturan tersebut digantikan oleh
+pemisahan visual pada versi 1.3.0. Konfigurasi import map React/Vue tetap berupa
+JSON, terpisah dari kode aplikasi.
+
+## Aturan visual versi 1.3.0
+
+Aturan visual pratinjau berpindah dari renderer SVG JavaScript ke CSS. Struktur
+sketsa berada pada template HTML. Metadata menyimpan identitas dan fungsi
+halaman. Tema pratinjau diturunkan dari CSS halaman, bukan nilai warna pada
+JSON. Grafik memakai data-level dan layout kolom otomatis dalam CSS.
+
+Atribut ukuran gambar dipindahkan ke class reset `.artwork`. Tampilan komponen
+khusus mengikuti CSS yang sudah ada. Ekspor menghasilkan folder HTML, CSS,
+JavaScript, serta aset, dengan tanggung jawab yang tetap terpisah.

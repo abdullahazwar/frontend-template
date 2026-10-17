@@ -19,6 +19,12 @@
       currency: 'IDR',
       maximumFractionDigits: 0,
     }).format(amount);
+  function valueLevel(value, maximum) {
+    if (!Number.isFinite(value) || !Number.isFinite(maximum) || maximum <= 0) {
+      return 0;
+    }
+    return Math.round(Math.min(1, Math.max(0, value / maximum)) * 100);
+  }
   function salesSummary(period, source = orders) {
     const rows = source.filter((o) =>
       period === 'day'
@@ -89,6 +95,7 @@
   root.TemplateCore = Object.freeze({
     orders,
     money,
+    valueLevel,
     salesSummary,
     matches,
     cartAdd,

@@ -1,0 +1,404 @@
+/* Normalized data levels. Component CSS owns chart orientation and size. */
+[data-level='0'] {
+  --data-ratio: 0;
+}
+
+[data-level='1'] {
+  --data-ratio: 0.01;
+}
+
+[data-level='2'] {
+  --data-ratio: 0.02;
+}
+
+[data-level='3'] {
+  --data-ratio: 0.03;
+}
+
+[data-level='4'] {
+  --data-ratio: 0.04;
+}
+
+[data-level='5'] {
+  --data-ratio: 0.05;
+}
+
+[data-level='6'] {
+  --data-ratio: 0.06;
+}
+
+[data-level='7'] {
+  --data-ratio: 0.07;
+}
+
+[data-level='8'] {
+  --data-ratio: 0.08;
+}
+
+[data-level='9'] {
+  --data-ratio: 0.09;
+}
+
+[data-level='10'] {
+  --data-ratio: 0.1;
+}
+
+[data-level='11'] {
+  --data-ratio: 0.11;
+}
+
+[data-level='12'] {
+  --data-ratio: 0.12;
+}
+
+[data-level='13'] {
+  --data-ratio: 0.13;
+}
+
+[data-level='14'] {
+  --data-ratio: 0.14;
+}
+
+[data-level='15'] {
+  --data-ratio: 0.15;
+}
+
+[data-level='16'] {
+  --data-ratio: 0.16;
+}
+
+[data-level='17'] {
+  --data-ratio: 0.17;
+}
+
+[data-level='18'] {
+  --data-ratio: 0.18;
+}
+
+[data-level='19'] {
+  --data-ratio: 0.19;
+}
+
+[data-level='20'] {
+  --data-ratio: 0.2;
+}
+
+[data-level='21'] {
+  --data-ratio: 0.21;
+}
+
+[data-level='22'] {
+  --data-ratio: 0.22;
+}
+
+[data-level='23'] {
+  --data-ratio: 0.23;
+}
+
+[data-level='24'] {
+  --data-ratio: 0.24;
+}
+
+[data-level='25'] {
+  --data-ratio: 0.25;
+}
+
+[data-level='26'] {
+  --data-ratio: 0.26;
+}
+
+[data-level='27'] {
+  --data-ratio: 0.27;
+}
+
+[data-level='28'] {
+  --data-ratio: 0.28;
+}
+
+[data-level='29'] {
+  --data-ratio: 0.29;
+}
+
+[data-level='30'] {
+  --data-ratio: 0.3;
+}
+
+[data-level='31'] {
+  --data-ratio: 0.31;
+}
+
+[data-level='32'] {
+  --data-ratio: 0.32;
+}
+
+[data-level='33'] {
+  --data-ratio: 0.33;
+}
+
+[data-level='34'] {
+  --data-ratio: 0.34;
+}
+
+[data-level='35'] {
+  --data-ratio: 0.35;
+}
+
+[data-level='36'] {
+  --data-ratio: 0.36;
+}
+
+[data-level='37'] {
+  --data-ratio: 0.37;
+}
+
+[data-level='38'] {
+  --data-ratio: 0.38;
+}
+
+[data-level='39'] {
+  --data-ratio: 0.39;
+}
+
+[data-level='40'] {
+  --data-ratio: 0.4;
+}
+
+[data-level='41'] {
+  --data-ratio: 0.41;
+}
+
+[data-level='42'] {
+  --data-ratio: 0.42;
+}
+
+[data-level='43'] {
+  --data-ratio: 0.43;
+}
+
+[data-level='44'] {
+  --data-ratio: 0.44;
+}
+
+[data-level='45'] {
+  --data-ratio: 0.45;
+}
+
+[data-level='46'] {
+  --data-ratio: 0.46;
+}
+
+[data-level='47'] {
+  --data-ratio: 0.47;
+}
+
+[data-level='48'] {
+  --data-ratio: 0.48;
+}
+
+[data-level='49'] {
+  --data-ratio: 0.49;
+}
+
+[data-level='50'] {
+  --data-ratio: 0.5;
+}
+
+[data-level='51'] {
+  --data-ratio: 0.51;
+}
+
+[data-level='52'] {
+  --data-ratio: 0.52;
+}
+
+[data-level='53'] {
+  --data-ratio: 0.53;
+}
+
+[data-level='54'] {
+  --data-ratio: 0.54;
+}
+
+[data-level='55'] {
+  --data-ratio: 0.55;
+}
+
+[data-level='56'] {
+  --data-ratio: 0.56;
+}
+
+[data-level='57'] {
+  --data-ratio: 0.57;
+}
+
+[data-level='58'] {
+  --data-ratio: 0.58;
+}
+
+[data-level='59'] {
+  --data-ratio: 0.59;
+}
+
+[data-level='60'] {
+  --data-ratio: 0.6;
+}
+
+[data-level='61'] {
+  --data-ratio: 0.61;
+}
+
+[data-level='62'] {
+  --data-ratio: 0.62;
+}
+
+[data-level='63'] {
+  --data-ratio: 0.63;
+}
+
+[data-level='64'] {
+  --data-ratio: 0.64;
+}
+
+[data-level='65'] {
+  --data-ratio: 0.65;
+}
+
+[data-level='66'] {
+  --data-ratio: 0.66;
+}
+
+[data-level='67'] {
+  --data-ratio: 0.67;
+}
+
+[data-level='68'] {
+  --data-ratio: 0.68;
+}
+
+[data-level='69'] {
+  --data-ratio: 0.69;
+}
+
+[data-level='70'] {
+  --data-ratio: 0.7;
+}
+
+[data-level='71'] {
+  --data-ratio: 0.71;
+}
+
+[data-level='72'] {
+  --data-ratio: 0.72;
+}
+
+[data-level='73'] {
+  --data-ratio: 0.73;
+}
+
+[data-level='74'] {
+  --data-ratio: 0.74;
+}
+
+[data-level='75'] {
+  --data-ratio: 0.75;
+}
+
+[data-level='76'] {
+  --data-ratio: 0.76;
+}
+
+[data-level='77'] {
+  --data-ratio: 0.77;
+}
+
+[data-level='78'] {
+  --data-ratio: 0.78;
+}
+
+[data-level='79'] {
+  --data-ratio: 0.79;
+}
+
+[data-level='80'] {
+  --data-ratio: 0.8;
+}
+
+[data-level='81'] {
+  --data-ratio: 0.81;
+}
+
+[data-level='82'] {
+  --data-ratio: 0.82;
+}
+
+[data-level='83'] {
+  --data-ratio: 0.83;
+}
+
+[data-level='84'] {
+  --data-ratio: 0.84;
+}
+
+[data-level='85'] {
+  --data-ratio: 0.85;
+}
+
+[data-level='86'] {
+  --data-ratio: 0.86;
+}
+
+[data-level='87'] {
+  --data-ratio: 0.87;
+}
+
+[data-level='88'] {
+  --data-ratio: 0.88;
+}
+
+[data-level='89'] {
+  --data-ratio: 0.89;
+}
+
+[data-level='90'] {
+  --data-ratio: 0.9;
+}
+
+[data-level='91'] {
+  --data-ratio: 0.91;
+}
+
+[data-level='92'] {
+  --data-ratio: 0.92;
+}
+
+[data-level='93'] {
+  --data-ratio: 0.93;
+}
+
+[data-level='94'] {
+  --data-ratio: 0.94;
+}
+
+[data-level='95'] {
+  --data-ratio: 0.95;
+}
+
+[data-level='96'] {
+  --data-ratio: 0.96;
+}
+
+[data-level='97'] {
+  --data-ratio: 0.97;
+}
+
+[data-level='98'] {
+  --data-ratio: 0.98;
+}
+
+[data-level='99'] {
+  --data-ratio: 0.99;
+}
+
+[data-level='100'] {
+  --data-ratio: 1;
+}

@@ -38,6 +38,11 @@ class Document(HTMLParser):
             self.errors.append('move stylesheet into a linked CSS file')
         if 'style' in data:
             self.errors.append('move static style into a CSS class')
+        if any(name in data for name in (
+            'width', 'height', 'bgcolor', 'align', 'valign', 'cellpadding',
+            'cellspacing', 'fill', 'stroke',
+        )):
+            self.errors.append('move presentation attributes into CSS')
         if any(name.startswith('on') for name in data):
             self.errors.append('move event handler into external JavaScript')
         if tag == 'script' and 'src' not in data:

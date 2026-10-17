@@ -2,10 +2,22 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile, mkdtemp, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
-import { join } from 'node:path';
+import { dirname, join, resolve, sep } from 'node:path';
 import '../assets/core.js';
 import { exportTemplate } from './export.mjs';
 const C = globalThis.TemplateCore;
+
+test('normalized chart data handles zero, invalid values, and range limits', () => {
+  assert.equal(C.valueLevel(25, 100), 25);
+  assert.equal(C.valueLevel(1, 3), 33);
+  assert.equal(C.valueLevel(200, 100), 100);
+  assert.equal(C.valueLevel(-5, 100), 0);
+  for (const maximum of [0, -1, NaN, Infinity]) {
+    assert.equal(C.valueLevel(10, maximum), 0);
+  }
+  assert.equal(C.valueLevel(NaN, 100), 0);
+  assert.equal(C.valueLevel(Infinity, 100), 0);
+});
 
 test('weekly totals include paid orders only and equal chart sum', () => {
   const result = C.salesSummary('week');
@@ -94,7 +106,7 @@ test('CSV escapes commas, quotes, newlines and spreadsheet formulas', () => {
   );
 });
 test('empty cart total is zero', () => assert.equal(C.cartTotal([]), 0));
-test('all 90 exports inline code and images and resolve internal destinations', async () => {
+test('all 90 exports keep portable HTML, CSS, JS, and image files separate', async () => {
   const directory = await mkdtemp(join(tmpdir(), 'frontend-exports-'));
   const manifest = JSON.parse(
     await readFile(new URL('../templates.json', import.meta.url), 'utf8'),
@@ -108,12 +120,19 @@ test('all 90 exports inline code and images and resolve internal destinations', 
         /(?:src|href)="\.\.\//,
         template.id + ' must not require sibling files',
       );
-      assert.doesNotMatch(
-        html,
-        /<script src=/,
-        template.id + ' must inline scripts',
-      );
-      assert.match(html, /TemplateCore/);
+      assert.doesNotMatch(html, /<style\b|\bstyle=/);
+      assert.match(html, /href="\.\/styles\.css"/);
+      assert.match(html, /src="\.\/script\.js"/);
+      const css = await readFile(join(dirname(file), 'styles.css'), 'utf8');
+      const js = await readFile(join(dirname(file), 'script.js'), 'utf8');
+      assert.match(css, /--bg:/);
+      assert.match(js, /TemplateCore/);
+      for (const [, reference] of html.matchAll(/(?:src|href)="([^\"]+)"/g)) {
+        if (/^(#|[a-z]+:|\/\/)/i.test(reference)) continue;
+        const path = resolve(dirname(file), reference);
+        assert.ok(path.startsWith(resolve(directory) + sep));
+        await readFile(path);
+      }
       const ids = new Set(
         [...html.matchAll(/\bid="([^\"]+)"/g)].map((m) => m[1]),
       );

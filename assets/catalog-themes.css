@@ -1,0 +1,810 @@
+/* Generated from page CSS. Run npm run sync:previews after theme edits. */
+.template-thumb[data-template='pulse-sales'] {
+  --preview-bg: #f7f7fb;
+  --preview-surface: #ffffff;
+  --preview-ink: #252632;
+  --preview-muted: #626574;
+  --preview-accent: #554cc1;
+  --preview-soft: #efedf9;
+}
+
+.template-thumb[data-template='runway-finance'] {
+  --preview-bg: #111e2b;
+  --preview-surface: #172837;
+  --preview-ink: #eef2f5;
+  --preview-muted: #b1bec8;
+  --preview-accent: #b3d5c3;
+  --preview-soft: #253f42;
+}
+
+.template-thumb[data-template='orchard-analytics'] {
+  --preview-bg: #f7f8f4;
+  --preview-surface: #ffffff;
+  --preview-ink: #23382d;
+  --preview-muted: #5e6f62;
+  --preview-accent: #286148;
+  --preview-soft: #e6eee4;
+}
+
+.template-thumb[data-template='dispatch-logistics'] {
+  --preview-bg: #faf7f1;
+  --preview-surface: #ffffff;
+  --preview-ink: #342e28;
+  --preview-muted: #70675c;
+  --preview-accent: #a64c22;
+  --preview-soft: #f4e7da;
+}
+
+.template-thumb[data-template='sprint-projects'] {
+  --preview-bg: #f7f7fb;
+  --preview-surface: #ffffff;
+  --preview-ink: #252632;
+  --preview-muted: #626574;
+  --preview-accent: #554cc1;
+  --preview-soft: #efedf9;
+}
+
+.template-thumb[data-template='kelas-education'] {
+  --preview-bg: #fbf9ef;
+  --preview-surface: #ffffff;
+  --preview-ink: #353424;
+  --preview-muted: #716c50;
+  --preview-accent: #746118;
+  --preview-soft: #f2edcf;
+}
+
+.template-thumb[data-template='atlas-users'] {
+  --preview-bg: #f5f7fb;
+  --preview-surface: #ffffff;
+  --preview-ink: #22314b;
+  --preview-muted: #586880;
+  --preview-accent: #315fa3;
+  --preview-soft: #e7edf9;
+}
+
+.template-thumb[data-template='rak-inventory'] {
+  --preview-bg: #f7f8f4;
+  --preview-surface: #ffffff;
+  --preview-ink: #23382d;
+  --preview-muted: #5e6f62;
+  --preview-accent: #286148;
+  --preview-soft: #e6eee4;
+}
+
+.template-thumb[data-template='pressroom-cms'] {
+  --preview-bg: #f4f3ee;
+  --preview-surface: #ffffff;
+  --preview-ink: #222321;
+  --preview-muted: #62635c;
+  --preview-accent: #363c35;
+  --preview-soft: #e5e6de;
+}
+
+.template-thumb[data-template='relay-support'] {
+  --preview-bg: #f3f8f8;
+  --preview-surface: #ffffff;
+  --preview-ink: #21373c;
+  --preview-muted: #5c7277;
+  --preview-accent: #216676;
+  --preview-soft: #e1eff0;
+}
+
+.template-thumb[data-template='roster-team'] {
+  --preview-bg: #f5eee1;
+  --preview-surface: #fffbf3;
+  --preview-ink: #3e352c;
+  --preview-muted: #766b5f;
+  --preview-accent: #7b4b32;
+  --preview-soft: #ebe0ce;
+}
+
+.template-thumb[data-template='access-permissions'] {
+  --preview-bg: #f4f3ee;
+  --preview-surface: #ffffff;
+  --preview-ink: #222321;
+  --preview-muted: #62635c;
+  --preview-accent: #363c35;
+  --preview-soft: #e5e6de;
+}
+
+.template-thumb[data-template='nook-profile'] {
+  --preview-bg: #fbf5f3;
+  --preview-surface: #ffffff;
+  --preview-ink: #3d292b;
+  --preview-muted: #796063;
+  --preview-accent: #a23f50;
+  --preview-soft: #f5e4e6;
+}
+
+.template-thumb[data-template='parcel-orders'] {
+  --preview-bg: #faf7f1;
+  --preview-surface: #ffffff;
+  --preview-ink: #342e28;
+  --preview-muted: #70675c;
+  --preview-accent: #a64c22;
+  --preview-soft: #f4e7da;
+}
+
+.template-thumb[data-template='pocket-wallet'] {
+  --preview-bg: #f7f8f4;
+  --preview-surface: #ffffff;
+  --preview-ink: #23382d;
+  --preview-muted: #5e6f62;
+  --preview-accent: #286148;
+  --preview-soft: #e6eee4;
+}
+
+.template-thumb[data-template='course-learning'] {
+  --preview-bg: #f5f7fb;
+  --preview-surface: #ffffff;
+  --preview-ink: #22314b;
+  --preview-muted: #586880;
+  --preview-accent: #315fa3;
+  --preview-soft: #e7edf9;
+}
+
+.template-thumb[data-template='desk-settings'] {
+  --preview-bg: #f4f3ee;
+  --preview-surface: #ffffff;
+  --preview-ink: #222321;
+  --preview-muted: #62635c;
+  --preview-accent: #363c35;
+  --preview-soft: #e5e6de;
+}
+
+.template-thumb[data-template='ruang-membership'] {
+  --preview-bg: #fbf9ef;
+  --preview-surface: #ffffff;
+  --preview-ink: #353424;
+  --preview-muted: #716c50;
+  --preview-accent: #746118;
+  --preview-soft: #f2edcf;
+}
+
+.template-thumb[data-template='rakit-market'] {
+  --preview-bg: #f5f7fb;
+  --preview-surface: #ffffff;
+  --preview-ink: #22314b;
+  --preview-muted: #586880;
+  --preview-accent: #315fa3;
+  --preview-soft: #e7edf9;
+}
+
+.template-thumb[data-template='sumber-wholesale'] {
+  --preview-bg: #faf7f1;
+  --preview-surface: #ffffff;
+  --preview-ink: #342e28;
+  --preview-muted: #70675c;
+  --preview-accent: #a64c22;
+  --preview-soft: #f4e7da;
+}
+
+.template-thumb[data-template='sela-furniture'] {
+  --preview-bg: #f5eee1;
+  --preview-surface: #fffbf3;
+  --preview-ink: #3e352c;
+  --preview-muted: #766b5f;
+  --preview-accent: #7b4b32;
+  --preview-soft: #ebe0ce;
+}
+
+.template-thumb[data-template='pagi-grocery'] {
+  --preview-bg: #f7f8f4;
+  --preview-surface: #ffffff;
+  --preview-ink: #23382d;
+  --preview-muted: #5e6f62;
+  --preview-accent: #286148;
+  --preview-soft: #e6eee4;
+}
+
+.template-thumb[data-template='mono-product'] {
+  --preview-bg: #f4f3ee;
+  --preview-surface: #ffffff;
+  --preview-ink: #222321;
+  --preview-muted: #62635c;
+  --preview-accent: #363c35;
+  --preview-soft: #e5e6de;
+}
+
+.template-thumb[data-template='edisi-fashion'] {
+  --preview-bg: #fbf5f3;
+  --preview-surface: #ffffff;
+  --preview-ink: #3d292b;
+  --preview-muted: #796063;
+  --preview-accent: #a23f50;
+  --preview-soft: #f5e4e6;
+}
+
+.template-thumb[data-template='paper-split'] {
+  --preview-bg: #f7f8f4;
+  --preview-surface: #ffffff;
+  --preview-ink: #23382d;
+  --preview-muted: #5e6f62;
+  --preview-accent: #286148;
+  --preview-soft: #e6eee4;
+}
+
+.template-thumb[data-template='terminal-dev'] {
+  --preview-bg: #111e2b;
+  --preview-surface: #172837;
+  --preview-ink: #eef2f5;
+  --preview-muted: #b1bec8;
+  --preview-accent: #b3d5c3;
+  --preview-soft: #253f42;
+}
+
+.template-thumb[data-template='studio-minimal'] {
+  --preview-bg: #f4f3ee;
+  --preview-surface: #ffffff;
+  --preview-ink: #222321;
+  --preview-muted: #62635c;
+  --preview-accent: #363c35;
+  --preview-soft: #e5e6de;
+}
+
+.template-thumb[data-template='member-warm'] {
+  --preview-bg: #f5eee1;
+  --preview-surface: #fffbf3;
+  --preview-ink: #3e352c;
+  --preview-muted: #766b5f;
+  --preview-accent: #7b4b32;
+  --preview-soft: #ebe0ce;
+}
+
+.template-thumb[data-template='workspace-account'] {
+  --preview-bg: #f5f7fb;
+  --preview-surface: #ffffff;
+  --preview-ink: #22314b;
+  --preview-muted: #586880;
+  --preview-accent: #315fa3;
+  --preview-soft: #e7edf9;
+}
+
+.template-thumb[data-template='link-passwordless'] {
+  --preview-bg: #fbf5f3;
+  --preview-surface: #ffffff;
+  --preview-ink: #3d292b;
+  --preview-muted: #796063;
+  --preview-accent: #a23f50;
+  --preview-soft: #f5e4e6;
+}
+
+.template-thumb[data-template='folio-graphic'] {
+  --preview-bg: #f6f1e9;
+  --preview-surface: #fffaf1;
+  --preview-ink: #2c2725;
+  --preview-muted: #75665e;
+  --preview-accent: #ad382b;
+  --preview-soft: #f0e0d5;
+}
+
+.template-thumb[data-template='frame-photography'] {
+  --preview-bg: #f4f3ee;
+  --preview-surface: #ffffff;
+  --preview-ink: #222321;
+  --preview-muted: #62635c;
+  --preview-accent: #363c35;
+  --preview-soft: #e5e6de;
+}
+
+.template-thumb[data-template='build-developer'] {
+  --preview-bg: #111e2b;
+  --preview-surface: #172837;
+  --preview-ink: #eef2f5;
+  --preview-muted: #b1bec8;
+  --preview-accent: #b3d5c3;
+  --preview-soft: #253f42;
+}
+
+.template-thumb[data-template='space-architect'] {
+  --preview-bg: #f5eee1;
+  --preview-surface: #fffbf3;
+  --preview-ink: #3e352c;
+  --preview-muted: #766b5f;
+  --preview-accent: #7b4b32;
+  --preview-soft: #ebe0ce;
+}
+
+.template-thumb[data-template='motion-director'] {
+  --preview-bg: #131415;
+  --preview-surface: #1c1e20;
+  --preview-ink: #f1f0eb;
+  --preview-muted: #b2b3af;
+  --preview-accent: #d5e7a5;
+  --preview-soft: #30392a;
+}
+
+.template-thumb[data-template='craft-illustrator'] {
+  --preview-bg: #fbf9ef;
+  --preview-surface: #ffffff;
+  --preview-ink: #353424;
+  --preview-muted: #716c50;
+  --preview-accent: #746118;
+  --preview-soft: #f2edcf;
+}
+
+.template-thumb[data-template='civic-consulting'] {
+  --preview-bg: #f7f8f4;
+  --preview-surface: #ffffff;
+  --preview-ink: #23382d;
+  --preview-muted: #5e6f62;
+  --preview-accent: #286148;
+  --preview-soft: #e6eee4;
+}
+
+.template-thumb[data-template='forge-industrial'] {
+  --preview-bg: #f5f7fb;
+  --preview-surface: #ffffff;
+  --preview-ink: #22314b;
+  --preview-muted: #586880;
+  --preview-accent: #315fa3;
+  --preview-soft: #e7edf9;
+}
+
+.template-thumb[data-template='meja-restaurant'] {
+  --preview-bg: #f5eee1;
+  --preview-surface: #fffbf3;
+  --preview-ink: #3e352c;
+  --preview-muted: #766b5f;
+  --preview-accent: #7b4b32;
+  --preview-soft: #ebe0ce;
+}
+
+.template-thumb[data-template='habitat-studio'] {
+  --preview-bg: #f4f3ee;
+  --preview-surface: #ffffff;
+  --preview-ink: #222321;
+  --preview-muted: #62635c;
+  --preview-accent: #363c35;
+  --preview-soft: #e5e6de;
+}
+
+.template-thumb[data-template='orbit-saas'] {
+  --preview-bg: #f7f7fb;
+  --preview-surface: #ffffff;
+  --preview-ink: #252632;
+  --preview-muted: #626574;
+  --preview-accent: #554cc1;
+  --preview-soft: #efedf9;
+}
+
+.template-thumb[data-template='tepat-local'] {
+  --preview-bg: #f3f8f8;
+  --preview-surface: #ffffff;
+  --preview-ink: #21373c;
+  --preview-muted: #5c7277;
+  --preview-accent: #216676;
+  --preview-soft: #e1eff0;
+}
+
+.template-thumb[data-template='jeda-newspaper'] {
+  --preview-bg: #f4f3ee;
+  --preview-surface: #ffffff;
+  --preview-ink: #222321;
+  --preview-muted: #62635c;
+  --preview-accent: #363c35;
+  --preview-soft: #e5e6de;
+}
+
+.template-thumb[data-template='lapang-journal'] {
+  --preview-bg: #f7f8f4;
+  --preview-surface: #ffffff;
+  --preview-ink: #23382d;
+  --preview-muted: #5e6f62;
+  --preview-accent: #286148;
+  --preview-soft: #e6eee4;
+}
+
+.template-thumb[data-template='byte-engineering'] {
+  --preview-bg: #f5f7fb;
+  --preview-surface: #ffffff;
+  --preview-ink: #22314b;
+  --preview-muted: #586880;
+  --preview-accent: #315fa3;
+  --preview-soft: #e7edf9;
+}
+
+.template-thumb[data-template='margin-essay'] {
+  --preview-bg: #f5eee1;
+  --preview-surface: #fffbf3;
+  --preview-ink: #3e352c;
+  --preview-muted: #766b5f;
+  --preview-accent: #7b4b32;
+  --preview-soft: #ebe0ce;
+}
+
+.template-thumb[data-template='signal-magazine'] {
+  --preview-bg: #131415;
+  --preview-surface: #1c1e20;
+  --preview-ink: #f1f0eb;
+  --preview-muted: #b2b3af;
+  --preview-accent: #d5e7a5;
+  --preview-soft: #30392a;
+}
+
+.template-thumb[data-template='indeks-newsletter'] {
+  --preview-bg: #fbf5f3;
+  --preview-surface: #ffffff;
+  --preview-ink: #3d292b;
+  --preview-muted: #796063;
+  --preview-accent: #a23f50;
+  --preview-soft: #f5e4e6;
+}
+
+.template-thumb[data-template='commons-topics'] {
+  --preview-bg: #f5f7fb;
+  --preview-surface: #ffffff;
+  --preview-ink: #22314b;
+  --preview-muted: #586880;
+  --preview-accent: #315fa3;
+  --preview-soft: #e7edf9;
+}
+
+.template-thumb[data-template='thread-community'] {
+  --preview-bg: #faf7f1;
+  --preview-surface: #ffffff;
+  --preview-ink: #342e28;
+  --preview-muted: #70675c;
+  --preview-accent: #a64c22;
+  --preview-soft: #f4e7da;
+}
+
+.template-thumb[data-template='jawab-qa'] {
+  --preview-bg: #f7f8f4;
+  --preview-surface: #ffffff;
+  --preview-ink: #23382d;
+  --preview-muted: #5e6f62;
+  --preview-accent: #286148;
+  --preview-soft: #e6eee4;
+}
+
+.template-thumb[data-template='lobby-gaming'] {
+  --preview-bg: #131415;
+  --preview-surface: #1c1e20;
+  --preview-ink: #f1f0eb;
+  --preview-muted: #b2b3af;
+  --preview-accent: #d5e7a5;
+  --preview-soft: #30392a;
+}
+
+.template-thumb[data-template='circle-makers'] {
+  --preview-bg: #fbf5f3;
+  --preview-surface: #ffffff;
+  --preview-ink: #3d292b;
+  --preview-muted: #796063;
+  --preview-accent: #a23f50;
+  --preview-soft: #f5e4e6;
+}
+
+.template-thumb[data-template='sekitar-neighborhood'] {
+  --preview-bg: #f5eee1;
+  --preview-surface: #fffbf3;
+  --preview-ink: #3e352c;
+  --preview-muted: #766b5f;
+  --preview-accent: #7b4b32;
+  --preview-soft: #ebe0ce;
+}
+
+.template-thumb[data-template='summit-event'] {
+  --preview-bg: #fbf9ef;
+  --preview-surface: #ffffff;
+  --preview-ink: #353424;
+  --preview-muted: #716c50;
+  --preview-accent: #746118;
+  --preview-soft: #f2edcf;
+}
+
+.template-thumb[data-template='launch-onboarding'] {
+  --preview-bg: #f7f7fb;
+  --preview-surface: #ffffff;
+  --preview-ink: #252632;
+  --preview-muted: #626574;
+  --preview-accent: #554cc1;
+  --preview-soft: #efedf9;
+}
+
+.template-thumb[data-template='apply-career'] {
+  --preview-bg: #f4f3ee;
+  --preview-surface: #ffffff;
+  --preview-ink: #222321;
+  --preview-muted: #62635c;
+  --preview-accent: #363c35;
+  --preview-soft: #e5e6de;
+}
+
+.template-thumb[data-template='kampus-admissions'] {
+  --preview-bg: #f5f7fb;
+  --preview-surface: #ffffff;
+  --preview-ink: #22314b;
+  --preview-muted: #586880;
+  --preview-accent: #315fa3;
+  --preview-soft: #e7edf9;
+}
+
+.template-thumb[data-template='sesi-booking'] {
+  --preview-bg: #f7f8f4;
+  --preview-surface: #ffffff;
+  --preview-ink: #23382d;
+  --preview-muted: #5e6f62;
+  --preview-accent: #286148;
+  --preview-soft: #e6eee4;
+}
+
+.template-thumb[data-template='teman-community'] {
+  --preview-bg: #fbf5f3;
+  --preview-surface: #ffffff;
+  --preview-ink: #3d292b;
+  --preview-muted: #796063;
+  --preview-accent: #a23f50;
+  --preview-soft: #f5e4e6;
+}
+
+.template-thumb[data-template='simple-developer'] {
+  --preview-bg: #f3f6f1;
+  --preview-surface: #ffffff;
+  --preview-ink: #20392f;
+  --preview-muted: #53675b;
+  --preview-accent: #23614d;
+  --preview-soft: #dfeadf;
+}
+
+.template-thumb[data-template='timeline-engineer'] {
+  --preview-bg: #f1f3f8;
+  --preview-surface: #ffffff;
+  --preview-ink: #14284c;
+  --preview-muted: #576682;
+  --preview-accent: #214fa0;
+  --preview-soft: #dce4f4;
+}
+
+.template-thumb[data-template='terminal-backend'] {
+  --preview-bg: #101715;
+  --preview-surface: #18211d;
+  --preview-ink: #f1f4ed;
+  --preview-muted: #b6c4b8;
+  --preview-accent: #c0df9d;
+  --preview-soft: #2a382d;
+}
+
+.template-thumb[data-template='split-fullstack'] {
+  --preview-bg: #f6f3eb;
+  --preview-surface: #fffdf7;
+  --preview-ink: #282923;
+  --preview-muted: #65685e;
+  --preview-accent: #86502d;
+  --preview-soft: #e6dfcf;
+}
+
+.template-thumb[data-template='cli-maintainer'] {
+  --preview-bg: #141b25;
+  --preview-surface: #1d2938;
+  --preview-ink: #edf1f6;
+  --preview-muted: #bac5d5;
+  --preview-accent: #a9cbef;
+  --preview-soft: #2b3f57;
+}
+
+.template-thumb[data-template='case-product'] {
+  --preview-bg: #eee9df;
+  --preview-surface: #f8f4ed;
+  --preview-ink: #3f2921;
+  --preview-muted: #766153;
+  --preview-accent: #9b3e25;
+  --preview-soft: #dfd1bf;
+}
+
+.template-thumb[data-template='mono-ui'] {
+  --preview-bg: #f4f3ef;
+  --preview-surface: #ffffff;
+  --preview-ink: #252521;
+  --preview-muted: #67675f;
+  --preview-accent: #42423a;
+  --preview-soft: #e3e3d9;
+}
+
+.template-thumb[data-template='index-brand'] {
+  --preview-bg: #e9eddf;
+  --preview-surface: #f5f7ef;
+  --preview-ink: #273122;
+  --preview-muted: #5c6654;
+  --preview-accent: #455c21;
+  --preview-soft: #d4ddbd;
+}
+
+.template-thumb[data-template='systems-designer'] {
+  --preview-bg: #f1f3f8;
+  --preview-surface: #ffffff;
+  --preview-ink: #14284c;
+  --preview-muted: #576682;
+  --preview-accent: #214fa0;
+  --preview-soft: #dce4f4;
+}
+
+.template-thumb[data-template='contact-sheet'] {
+  --preview-bg: #f4f3ef;
+  --preview-surface: #ffffff;
+  --preview-ink: #252521;
+  --preview-muted: #67675f;
+  --preview-accent: #42423a;
+  --preview-soft: #e3e3d9;
+}
+
+.template-thumb[data-template='story-documentary'] {
+  --preview-bg: #f0e9dc;
+  --preview-surface: #fbf6ec;
+  --preview-ink: #3f372b;
+  --preview-muted: #706654;
+  --preview-accent: #695b32;
+  --preview-soft: #dfd2b9;
+}
+
+.template-thumb[data-template='dark-editorial'] {
+  --preview-bg: #181a19;
+  --preview-surface: #242823;
+  --preview-ink: #eeefdf;
+  --preview-muted: #bdc1ad;
+  --preview-accent: #d2cc90;
+  --preview-soft: #393c2c;
+}
+
+.template-thumb[data-template='atelier-architect'] {
+  --preview-bg: #f6f3eb;
+  --preview-surface: #fffdf7;
+  --preview-ink: #282923;
+  --preview-muted: #65685e;
+  --preview-accent: #86502d;
+  --preview-soft: #e6dfcf;
+}
+
+.template-thumb[data-template='material-interior'] {
+  --preview-bg: #eee9df;
+  --preview-surface: #f8f4ed;
+  --preview-ink: #3f2921;
+  --preview-muted: #766153;
+  --preview-accent: #9b3e25;
+  --preview-soft: #dfd1bf;
+}
+
+.template-thumb[data-template='object-industrial'] {
+  --preview-bg: #eaf1f4;
+  --preview-surface: #f9fcfe;
+  --preview-ink: #17384b;
+  --preview-muted: #506d7e;
+  --preview-accent: #216a88;
+  --preview-soft: #ccdfe7;
+}
+
+.template-thumb[data-template='reel-filmmaker'] {
+  --preview-bg: #161419;
+  --preview-surface: #231e29;
+  --preview-ink: #f4edf7;
+  --preview-muted: #c6b6cc;
+  --preview-accent: #d6b1e7;
+  --preview-soft: #3b2d46;
+}
+
+.template-thumb[data-template='score-composer'] {
+  --preview-bg: #f7f1ea;
+  --preview-surface: #fffaf5;
+  --preview-ink: #43272a;
+  --preview-muted: #785d60;
+  --preview-accent: #8b3542;
+  --preview-soft: #eadbd8;
+}
+
+.template-thumb[data-template='play-gameartist'] {
+  --preview-bg: #141b25;
+  --preview-surface: #1d2938;
+  --preview-ink: #edf1f6;
+  --preview-muted: #bac5d5;
+  --preview-accent: #a9cbef;
+  --preview-soft: #2b3f57;
+}
+
+.template-thumb[data-template='type-artdirector'] {
+  --preview-bg: #f6ecea;
+  --preview-surface: #fff8f7;
+  --preview-ink: #402b2c;
+  --preview-muted: #775b5d;
+  --preview-accent: #9b3e4b;
+  --preview-soft: #e8d2d3;
+}
+
+.template-thumb[data-template='paper-writer'] {
+  --preview-bg: #f6f3eb;
+  --preview-surface: #fffdf7;
+  --preview-ink: #282923;
+  --preview-muted: #65685e;
+  --preview-accent: #86502d;
+  --preview-soft: #e6dfcf;
+}
+
+.template-thumb[data-template='dispatch-journalist'] {
+  --preview-bg: #f4f3ef;
+  --preview-surface: #ffffff;
+  --preview-ink: #252521;
+  --preview-muted: #67675f;
+  --preview-accent: #42423a;
+  --preview-soft: #e3e3d9;
+}
+
+.template-thumb[data-template='script-copywriter'] {
+  --preview-bg: #e9eddf;
+  --preview-surface: #f5f7ef;
+  --preview-ink: #273122;
+  --preview-muted: #5c6654;
+  --preview-accent: #455c21;
+  --preview-soft: #d4ddbd;
+}
+
+.template-thumb[data-template='citation-academic'] {
+  --preview-bg: #f1f3f8;
+  --preview-surface: #ffffff;
+  --preview-ink: #14284c;
+  --preview-muted: #576682;
+  --preview-accent: #214fa0;
+  --preview-soft: #dce4f4;
+}
+
+.template-thumb[data-template='lab-researcher'] {
+  --preview-bg: #f3f6f1;
+  --preview-surface: #ffffff;
+  --preview-ink: #20392f;
+  --preview-muted: #53675b;
+  --preview-accent: #23614d;
+  --preview-soft: #dfeadf;
+}
+
+.template-thumb[data-template='notebook-data'] {
+  --preview-bg: #eaf1f4;
+  --preview-surface: #f9fcfe;
+  --preview-ink: #17384b;
+  --preview-muted: #506d7e;
+  --preview-accent: #216a88;
+  --preview-soft: #ccdfe7;
+}
+
+.template-thumb[data-template='ledger-consultant'] {
+  --preview-bg: #f6f3eb;
+  --preview-surface: #fffdf7;
+  --preview-ink: #282923;
+  --preview-muted: #65685e;
+  --preview-accent: #86502d;
+  --preview-soft: #e6dfcf;
+}
+
+.template-thumb[data-template='field-engineer'] {
+  --preview-bg: #eaf1f4;
+  --preview-surface: #f9fcfe;
+  --preview-ink: #17384b;
+  --preview-muted: #506d7e;
+  --preview-accent: #216a88;
+  --preview-soft: #ccdfe7;
+}
+
+.template-thumb[data-template='campus-graduate'] {
+  --preview-bg: #f3eef4;
+  --preview-surface: #fffcff;
+  --preview-ink: #3e2847;
+  --preview-muted: #74617b;
+  --preview-accent: #7f3e86;
+  --preview-soft: #e5d7e8;
+}
+
+.template-thumb[data-template='apprentice-tkj'] {
+  --preview-bg: #f1f3f8;
+  --preview-surface: #ffffff;
+  --preview-ink: #14284c;
+  --preview-muted: #576682;
+  --preview-accent: #214fa0;
+  --preview-soft: #dce4f4;
+}
+
+.template-thumb[data-template='focus-freelance'] {
+  --preview-bg: #f7f1ea;
+  --preview-surface: #fffaf5;
+  --preview-ink: #43272a;
+  --preview-muted: #785d60;
+  --preview-accent: #8b3542;
+  --preview-soft: #eadbd8;
+}

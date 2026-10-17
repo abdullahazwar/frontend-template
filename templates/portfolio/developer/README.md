@@ -52,7 +52,7 @@ penggunaan aset. Kontak memakai alamat contoh.
 Pencarian, filter, dialog ilustrasi, dan unduh profil memakai
 `../../../assets/portfolio.js`. Enam model lama memakai runtime asalnya.
 
-Ekspor mandiri: `npm run export -- <id-template>`. Untuk adaptasi MIT,
+Ekspor folder mandiri: `npm run export -- <id-template>`. Untuk adaptasi MIT,
 pertahankan pemberitahuan lisensi pada HTML dan hasil ekspor.
 
 Lihat [asal dan lisensi](../../../docs/PORTFOLIO-SOURCES.md).

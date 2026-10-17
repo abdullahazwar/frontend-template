@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile, mkdtemp, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
-import { join } from 'node:path';
+import { dirname, join } from 'node:path';
 import '../assets/catalog-core.js';
 import { exportTemplate } from './export.mjs';
 
@@ -54,7 +54,7 @@ test('portfolio-only filters do not hide unrelated categories', () => {
   );
 });
 
-test('nested portfolio exports preserve scripts, artwork, and MIT notices', async () => {
+test('nested portfolio packages preserve scripts, artwork, and MIT notices', async () => {
   const directory = await mkdtemp(join(tmpdir(), 'portfolio-export-'));
   try {
     for (const id of [
@@ -66,11 +66,11 @@ test('nested portfolio exports preserve scripts, artwork, and MIT notices', asyn
       const file = await exportTemplate(id, directory);
       const html = await readFile(file, 'utf8');
       assert.doesNotMatch(html, /(?:src|href)="\.\.\//);
-      assert.doesNotMatch(html, /<link\b[^>]*rel="stylesheet"/);
+      assert.doesNotMatch(html, /<style\b/);
       assert.match(html, /data-profile-download/);
-      assert.match(html, /function filterWorks/);
-      if (id === 'case-product')
-        assert.match(html, /data:image\/svg\+xml;base64,/);
+      const js = await readFile(join(dirname(file), 'script.js'), 'utf8');
+      assert.match(js, /function filterWorks/);
+      if (id === 'case-product') assert.match(html, /src="\.\/assets\/art\//);
       else assert.match(html, /MIT License/);
     }
   } finally {

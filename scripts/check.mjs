@@ -4,10 +4,16 @@ import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
 import assert from 'node:assert/strict';
 import { runInNewContext } from 'node:vm';
+import { catalogThemes } from './sync-previews.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const manifest = JSON.parse(
   await readFile(resolve(root, 'templates.json'), 'utf8'),
+);
+assert.equal(
+  await readFile(resolve(root, 'assets/catalog-themes.css'), 'utf8'),
+  await catalogThemes(),
+  'Gallery CSS must match page themes. Run npm run sync:previews.',
 );
 assert.equal(manifest.length, 90, 'The collection must contain 90 designs');
 assert.equal(
@@ -24,6 +30,8 @@ for (const category of categories) {
   );
 }
 for (const template of manifest) {
+  assert.ok(!Object.hasOwn(template, 'colors'));
+  assert.ok(!Object.hasOwn(template, 'palette'));
   assert.equal(
     template.stylesheet,
     template.path.replace(/\.html$/, '.css'),
@@ -93,6 +101,17 @@ async function walk(directory) {
 let checked = 0;
 for (const path of await walk(root)) {
   if (!/\.(m?js)$/.test(path)) continue;
+  if (
+    path.startsWith(resolve(root, 'assets') + '/') ||
+    path.startsWith(resolve(root, 'frameworks') + '/')
+  ) {
+    const source = await readFile(path, 'utf8');
+    assert.doesNotMatch(
+      source,
+      /\.style\b|\bstyle\s*:\s*\{|setAttribute\(\s*['"]style['"]|<style\b/,
+      'Runtime JavaScript must not write presentation: ' + path,
+    );
+  }
   const result = spawnSync(process.execPath, ['--check', path], {
     encoding: 'utf8',
   });

@@ -20,7 +20,6 @@ function SalesChart({ points }) {
       'div',
       {
         className: 'react-chart',
-        style: { gridTemplateColumns: `repeat(${points.length},1fr)` },
         role: 'img',
         'aria-label': points
           .map((p) => `${p.date}: ${C.money(p.amount)}`)
@@ -31,7 +30,7 @@ function SalesChart({ points }) {
           'div',
           { key: p.date },
           h('span', null, p.amount / 1000),
-          h('b', { style: { '--bar': `${(p.amount / max) * 75}%` } }),
+          h('b', { 'data-level': C.valueLevel(p.amount, max) }),
           h('span', null, p.date.slice(-2) + ' Okt'),
         ),
       ),

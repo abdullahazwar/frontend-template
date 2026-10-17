@@ -91,7 +91,7 @@
     summary.chart.forEach((point) => {
       const col = node('div', undefined, 'bar-col');
       const bar = node('b');
-      bar.style.setProperty('--bar', `${(point.amount / max) * 80}%`);
+      bar.dataset.level = C.valueLevel(point.amount, max);
       col.append(
         node(
           'span',

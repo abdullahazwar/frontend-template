@@ -121,11 +121,9 @@ createApp({
             class="product"
           >
             <img
-              class="product-media"
+              class="artwork product-media"
               :src="'../../assets/art/' + p.id + '.svg'"
               :alt="p.name"
-              width="800"
-              height="600"
               loading="lazy"
             />
             <div>

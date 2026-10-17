@@ -84,6 +84,17 @@ Saat menyalin template, sertakan file CSS pasangannya serta aset bersama yang
 direferensikan. Desain memakai CSS native. Pemisahan file mempertahankan
 komposisi koleksi yang sudah tersedia.
 
+JavaScript tidak menyimpan warna, ukuran, posisi, atau aturan layout. Grafik
+mengirim data terukur melalui `data-level`; CSS menentukan tampilannya. Galeri
+memakai struktur HTML dan stylesheet untuk komposisi serta tema. Nilai warna
+tidak disimpan dalam metadata template.
+
+Tema galeri mengikuti CSS halaman. Setelah mengubah tema, jalankan:
+
+```sh
+npm run sync:previews
+```
+
 [Panduan pemeliharaan](docs/MAINTENANCE.md)
 
 ## Struktur
@@ -97,6 +108,9 @@ assets/
   catalog-core.js
   catalog.js
   catalog.css
+  catalog-previews.css
+  catalog-themes.css
+  chart-scale.css
   portfolio.css
   portfolio.js
   art/
@@ -132,18 +146,26 @@ templates.json
 portfolio-redirects.json
 ```
 
-## Ekspor satu HTML mandiri
+## Ekspor folder template mandiri
 
 ```sh
 npm run export -- case-product
 npm run export -- all
 ```
 
-Exporter menggabungkan stylesheet, JavaScript, dan ilustrasi ke satu HTML.
-Folder bertingkat tetap didukung. Hasil di `exports/` dapat dibuka offline.
-Pemberitahuan MIT pada template adaptasi tetap berada dalam hasil ekspor.
-Penyatuan CSS dan JavaScript hanya terjadi pada hasil ekspor mandiri. File
-sumber untuk pemeliharaan tetap terpisah.
+Exporter membuat folder portabel dengan file terpisah:
+
+```text
+exports/case-product/
+  index.html
+  styles.css
+  script.js
+  assets/art/
+```
+
+Buka `index.html` dalam folder tersebut, atau bagikan seluruh foldernya. HTML
+hasil ekspor hanya memuat struktur, CSS menyimpan desain, dan JavaScript
+menyimpan logika. Aset lokal serta pemberitahuan lisensi tetap disertakan.
 
 ## Format kode
 

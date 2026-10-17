@@ -1,0 +1,421 @@
+/* Catalog composition sketches. All geometry and colors are CSS-owned. */
+.template-thumb {
+  --thumb-bg: var(--preview-soft);
+  --thumb-ink: var(--preview-ink);
+}
+.sketch {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: var(--preview-surface);
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px #00000009;
+}
+.sketch-header {
+  position: absolute;
+  inset: 6% 5% auto;
+  height: 4%;
+  display: flex;
+  justify-content: end;
+  gap: 5%;
+}
+.sketch-header i {
+  width: 8%;
+  background: var(--preview-muted);
+}
+.sketch-header i:first-child {
+  width: 14%;
+  margin-right: auto;
+  background: var(--preview-ink);
+}
+.sketch-sidebar {
+  display: none;
+  position: absolute;
+  inset: 18% auto 0 0;
+  width: 18%;
+  padding: 7% 3%;
+  background: var(--preview-bg);
+}
+.sketch-sidebar i {
+  display: block;
+  height: 4%;
+  margin-bottom: 25%;
+  background: var(--preview-soft);
+}
+.sketch-body {
+  position: absolute;
+  inset: 20% 5% 8%;
+}
+.sketch-title,
+.sketch-copy {
+  display: block;
+  height: 9%;
+  width: 72%;
+  background: var(--preview-ink);
+}
+.sketch-copy {
+  height: 4%;
+  width: 88%;
+  margin-top: 7%;
+  background: var(--preview-soft);
+}
+.sketch-media {
+  display: none;
+  position: absolute;
+  background: var(--preview-soft);
+}
+.sketch-tiles {
+  position: absolute;
+  inset: 34% 0 auto;
+  height: 30%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 7%;
+}
+.sketch-tiles i {
+  position: relative;
+  display: block;
+  min-width: 0;
+  background: var(--preview-bg);
+}
+.sketch-tiles i::after {
+  content: '';
+  position: absolute;
+  inset: 25% 14%;
+  background: var(--preview-accent);
+}
+.sketch-tiles i:nth-child(even)::after {
+  background: var(--preview-muted);
+}
+.sketch-lines {
+  position: absolute;
+  inset: 75% 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sketch-lines i {
+  display: block;
+  width: 100%;
+  height: 8%;
+  background: var(--preview-soft);
+}
+.sketch-lines i:nth-child(even) {
+  width: 83%;
+}
+.sketch-bars,
+.sketch-fields {
+  display: none;
+}
+
+/* Operational pages. */
+.template-thumb:is(
+    [data-category='dashboard'],
+    [data-category='admin'],
+    [data-category='user']
+  ):is([data-variant='0'], [data-variant='2'], [data-variant='4'])
+  .sketch-sidebar {
+  display: block;
+}
+.template-thumb:is(
+    [data-category='dashboard'],
+    [data-category='admin'],
+    [data-category='user']
+  ):is([data-variant='0'], [data-variant='2'], [data-variant='4'])
+  .sketch-body {
+  left: 23%;
+}
+.template-thumb[data-category='dashboard'] .sketch-lines {
+  display: none;
+}
+.template-thumb[data-category='dashboard'] .sketch-bars {
+  position: absolute;
+  inset: 73% 0 0;
+  display: flex;
+  align-items: end;
+  gap: 6%;
+}
+.sketch-bars i {
+  flex: 1;
+  height: 40%;
+  background: var(--preview-accent);
+}
+.sketch-bars i:nth-child(2) {
+  height: 65%;
+}
+.sketch-bars i:nth-child(3) {
+  height: 48%;
+}
+.sketch-bars i:nth-child(4) {
+  height: 90%;
+}
+.sketch-bars i:nth-child(5) {
+  height: 74%;
+}
+.sketch-bars i:nth-child(6) {
+  height: 100%;
+}
+.sketch-bars i:nth-child(7) {
+  height: 82%;
+}
+.template-thumb[data-category='dashboard'][data-variant='4'] .sketch-bars {
+  display: none;
+}
+.template-thumb[data-category='dashboard'][data-variant='4'] .sketch-tiles {
+  height: 64%;
+}
+
+/* Forms use a story area and vertically ordered fields. */
+.template-thumb:is([data-category='login'], [data-category='registration'])
+  .sketch-body {
+  left: 28%;
+  right: 22%;
+}
+.template-thumb:is([data-category='login'], [data-category='registration'])
+  .sketch-tiles,
+.template-thumb:is([data-category='login'], [data-category='registration'])
+  .sketch-lines {
+  display: none;
+}
+.template-thumb:is([data-category='login'], [data-category='registration'])
+  .sketch-fields {
+  position: absolute;
+  inset: 25% 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sketch-fields i {
+  height: 19%;
+  background: var(--preview-bg);
+  border: 1px solid var(--preview-soft);
+}
+.sketch-fields i:last-child {
+  background: var(--preview-accent);
+}
+.template-thumb:is([data-category='login'], [data-category='registration']):is(
+    [data-variant='0'],
+    [data-variant='2'],
+    [data-variant='4']
+  )
+  .sketch-sidebar {
+  display: block;
+  width: 45%;
+  background: var(--preview-soft);
+}
+.template-thumb:is([data-category='login'], [data-category='registration']):is(
+    [data-variant='0'],
+    [data-variant='2'],
+    [data-variant='4']
+  )
+  .sketch-body {
+  left: 55%;
+  right: 5%;
+}
+
+/* Commerce and media grids. */
+.template-thumb[data-category='shop'] .sketch-tiles {
+  height: 55%;
+}
+.template-thumb[data-category='shop'] .sketch-lines {
+  inset-block-start: 94%;
+}
+.template-thumb[data-category='shop']:is(
+    [data-variant='2'],
+    [data-variant='4'],
+    [data-variant='5']
+  )
+  .sketch-media {
+  display: block;
+  inset: 0 52% 30% 0;
+}
+.template-thumb[data-category='shop']:is(
+    [data-variant='2'],
+    [data-variant='4'],
+    [data-variant='5']
+  )
+  .sketch-title,
+.template-thumb[data-category='shop']:is(
+    [data-variant='2'],
+    [data-variant='4'],
+    [data-variant='5']
+  )
+  .sketch-copy {
+  width: 44%;
+  margin-left: 56%;
+}
+.template-thumb[data-category='shop']:is(
+    [data-variant='2'],
+    [data-variant='4'],
+    [data-variant='5']
+  )
+  .sketch-tiles {
+  inset-block-start: 78%;
+  height: 20%;
+}
+.template-thumb[data-category='portfolio']:is(
+    [data-model='contact-sheet'],
+    [data-model='masonry'],
+    [data-model='illustration-grid']
+  )
+  .sketch-tiles {
+  inset-block-start: 26%;
+  height: 72%;
+}
+.template-thumb[data-category='portfolio']:is(
+    [data-model='contact-sheet'],
+    [data-model='masonry'],
+    [data-model='illustration-grid']
+  )
+  .sketch-lines {
+  display: none;
+}
+.template-thumb[data-category='portfolio']:is(
+    [data-model='contact-sheet'],
+    [data-model='masonry'],
+    [data-model='illustration-grid']
+  )
+  .sketch-tiles
+  i::after {
+  inset: 7%;
+}
+
+/* Text-led portfolios and technical notebooks. */
+.template-thumb[data-category='portfolio']:is(
+    [data-model='writer'],
+    [data-model='academic'],
+    [data-model='ledger'],
+    [data-model='resume'],
+    [data-model='copy']
+  )
+  .sketch-body {
+  inset-inline: 16%;
+}
+.template-thumb[data-category='portfolio']:is(
+    [data-model='writer'],
+    [data-model='academic'],
+    [data-model='ledger'],
+    [data-model='resume'],
+    [data-model='copy']
+  )
+  .sketch-tiles {
+  display: none;
+}
+.template-thumb[data-category='portfolio']:is(
+    [data-model='writer'],
+    [data-model='academic'],
+    [data-model='ledger'],
+    [data-model='resume'],
+    [data-model='copy']
+  )
+  .sketch-lines {
+  inset-block-start: 35%;
+}
+.template-thumb[data-category='portfolio']:is(
+    [data-model='terminal'],
+    [data-model='changelog'],
+    [data-model='notebook']
+  )
+  .sketch-tiles {
+  display: none;
+}
+.template-thumb[data-category='portfolio']:is(
+    [data-model='terminal'],
+    [data-model='changelog'],
+    [data-model='notebook']
+  )
+  .sketch-media {
+  display: block;
+  inset: 30% 0 0;
+  background: var(--preview-bg);
+}
+.template-thumb[data-category='portfolio']:is(
+    [data-model='terminal'],
+    [data-model='changelog'],
+    [data-model='notebook']
+  )
+  .sketch-lines {
+  inset: 40% 8% 8%;
+}
+.template-thumb[data-category='portfolio']:is(
+    [data-model='terminal'],
+    [data-model='changelog'],
+    [data-model='notebook']
+  )
+  .sketch-lines
+  i {
+  background: var(--preview-muted);
+}
+.template-thumb[data-category='portfolio']:is(
+    [data-model='documentary'],
+    [data-model='cinema']
+  )
+  .sketch-tiles {
+  display: none;
+}
+.template-thumb[data-category='portfolio']:is(
+    [data-model='documentary'],
+    [data-model='cinema']
+  )
+  .sketch-media {
+  display: block;
+  inset: 32% 0 0;
+  background: var(--preview-soft);
+}
+.template-thumb[data-category='portfolio']:is(
+    [data-model='documentary'],
+    [data-model='cinema']
+  )
+  .sketch-title,
+.template-thumb[data-category='portfolio']:is(
+    [data-model='documentary'],
+    [data-model='cinema']
+  )
+  .sketch-copy {
+  margin-inline: auto;
+}
+.template-thumb[data-category='portfolio'][data-model='sidebar']
+  .sketch-sidebar {
+  display: block;
+  background: var(--preview-surface);
+}
+.template-thumb[data-category='portfolio'][data-model='sidebar'] .sketch-body {
+  left: 35%;
+}
+
+/* Articles, discussions, and service profiles. */
+.template-thumb[data-category='forum'] .sketch-tiles,
+.template-thumb[data-category='blog'] .sketch-tiles,
+.template-thumb[data-category='company'] .sketch-tiles {
+  display: none;
+}
+.template-thumb[data-category='forum'] .sketch-lines {
+  inset: 35% 0 0 12%;
+}
+.template-thumb[data-category='forum'] .sketch-lines i {
+  position: relative;
+}
+.template-thumb[data-category='forum'] .sketch-lines i::before {
+  content: '';
+  position: absolute;
+  inset: -70% auto -70% -12%;
+  width: 7%;
+  border-radius: 50%;
+  background: var(--preview-accent);
+}
+.template-thumb:is([data-category='blog'], [data-category='company'])
+  .sketch-media {
+  display: block;
+  inset: 25% 52% 0 0;
+}
+.template-thumb:is([data-category='blog'], [data-category='company'])
+  .sketch-lines {
+  inset: 30% 0 0 55%;
+}
+.template-thumb[data-category='blog'][data-variant='3'] .sketch-media {
+  display: none;
+}
+.template-thumb[data-category='blog'][data-variant='3'] .sketch-lines {
+  inset-inline: 10%;
+}

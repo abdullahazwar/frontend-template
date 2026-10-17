@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pulse React / Frontend Template</title>
+  <meta name="description" content="Contoh dashboard React native dengan filter periode, ringkasan konsisten, dan ekspor CSV.">
+  <link rel="stylesheet" href="../../assets/base.css">
+  <style>:root{--accent:#554cc1;--soft:#efedf9}#react-root:empty{min-height:70vh}.react-chart{display:grid;grid-template-columns:repeat(7,1fr);gap:12px;align-items:end;height:180px}.react-chart>div{height:100%;display:flex;flex-direction:column;justify-content:end;gap:7px;text-align:center;font-size:.7rem;min-width:0}.react-chart b{background:var(--accent);height:var(--bar);border-radius:4px 4px 0 0}</style>
+  <script src="../../assets/core.js"></script>
+  <script type="importmap">{"imports":{"react":"https://esm.sh/react@19.3.0","react-dom/client":"https://esm.sh/react-dom@19.3.0/client?external=react"}}</script>
+</head>
+<body>
+  <a class="skip" href="#main">Lewati ke konten</a>
+  <div class="demo-bar"><a href="../../index.html">← Koleksi template</a><span>Native React · Data ilustrasi</span></div>
+  <div id="react-root"><main id="main" class="wrap page"><h1>Memuat contoh React.</h1><p id="load-status" class="lead space" role="status">Memerlukan koneksi CDN dan server HTTP lokal.</p></main></div>
+  <script type="module">import('./app.js').catch(() => { document.getElementById('load-status').textContent = 'Library React tidak dapat dimuat. Jalankan npm start, periksa koneksi CDN, lalu muat ulang halaman.'; });</script>
+</body>
+</html>

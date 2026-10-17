@@ -1,0 +1,14 @@
+{
+  "name": "frontend-template-collection",
+  "version": "1.0.0",
+  "private": true,
+  "description": "60 original HTML frontend templates and two native framework examples",
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "check": "node scripts/check.mjs && node --test scripts/core.test.mjs && python3 scripts/check_html.py",
+    "export": "node scripts/export.mjs"
+  },
+  "engines": { "node": ">=20" },
+  "license": "MIT"
+}

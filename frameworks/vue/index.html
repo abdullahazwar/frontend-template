@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Rakit Vue / Frontend Template</title>
+  <meta name="description" content="Contoh toko Vue native dengan pencarian, computed total, batas stok, dan keranjang lokal.">
+  <link rel="stylesheet" href="../../assets/base.css">
+  <style>:root{--accent:#286148;--soft:#e6eee4;--bg:#f7f8f4}[v-cloak]{display:none}.vue-shop{display:grid;grid-template-columns:minmax(0,1fr) 310px;gap:35px}.vue-cart{align-self:start;position:sticky;top:24px}.vue-cart .cart-line{align-items:start}@media(max-width:900px){.vue-shop{grid-template-columns:1fr}.vue-cart{position:static}}@media(max-width:480px){.vue-products{grid-template-columns:1fr}}</style>
+  <script src="../../assets/core.js"></script>
+  <script type="importmap">{"imports":{"vue":"https://unpkg.com/vue@3.5.44/dist/vue.esm-browser.prod.js"}}</script>
+</head>
+<body>
+  <a class="skip" href="#main">Lewati ke konten</a>
+  <div class="demo-bar"><a href="../../index.html">← Koleksi template</a><span>Native Vue · Data ilustrasi</span></div>
+  <div id="vue-root">
+    <main id="main" class="wrap page"><h1>Memuat contoh Vue.</h1><p id="load-status" class="lead space" role="status">Memerlukan koneksi CDN dan server HTTP lokal.</p></main>
+  </div>
+  <script type="module">import('./app.js').catch(() => { document.getElementById('load-status').textContent = 'Library Vue tidak dapat dimuat. Jalankan npm start, periksa koneksi CDN, lalu muat ulang halaman.'; });</script>
+</body>
+</html>

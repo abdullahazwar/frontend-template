@@ -384,6 +384,163 @@
   left: 35%;
 }
 
+/* Extended portfolios: document, panorama, studio, and paired-text models. */
+.template-thumb[data-category='portfolio']:is(
+    [data-model='evidence'],
+    [data-model='proof'],
+    [data-model='protocol'],
+    [data-model='thesis']
+  )
+  .sketch-body {
+  inset-inline: 16%;
+}
+.template-thumb[data-category='portfolio']:is(
+    [data-model='evidence'],
+    [data-model='proof'],
+    [data-model='protocol'],
+    [data-model='thesis']
+  )
+  .sketch-tiles {
+  display: none;
+}
+.template-thumb[data-category='portfolio']:is(
+    [data-model='evidence'],
+    [data-model='proof'],
+    [data-model='protocol'],
+    [data-model='thesis']
+  )
+  .sketch-lines {
+  inset-block-start: 35%;
+}
+.template-thumb[data-category='portfolio']:is(
+    [data-model='field-atlas'],
+    [data-model='section']
+  )
+  .sketch-tiles {
+  display: none;
+}
+.template-thumb[data-category='portfolio']:is(
+    [data-model='field-atlas'],
+    [data-model='section']
+  )
+  .sketch-media {
+  display: block;
+  inset: 30% 0 26%;
+}
+.template-thumb[data-category='portfolio']:is(
+    [data-model='field-atlas'],
+    [data-model='section']
+  )
+  .sketch-lines {
+  inset-block-start: 82%;
+}
+.template-thumb[data-category='portfolio']:is(
+    [data-model='light-table'],
+    [data-model='flash-sheet']
+  )
+  .sketch-tiles {
+  inset-block-start: 30%;
+  height: 68%;
+}
+.template-thumb[data-category='portfolio']:is(
+    [data-model='light-table'],
+    [data-model='flash-sheet']
+  )
+  .sketch-tiles
+  i::after {
+  inset: 10%;
+}
+.template-thumb[data-category='portfolio']:is(
+    [data-model='light-table'],
+    [data-model='flash-sheet']
+  )
+  .sketch-lines {
+  display: none;
+}
+.template-thumb[data-category='portfolio']:is(
+    [data-model='runbook'],
+    [data-model='research-log'],
+    [data-model='accessibility'],
+    [data-model='site-plan'],
+    [data-model='craft'],
+    [data-model='atlas'],
+    [data-model='lesson'],
+    [data-model='menu-notes'],
+    [data-model='workshop']
+  )
+  .sketch-media {
+  display: block;
+  inset: 0 0 26% 55%;
+}
+.template-thumb[data-category='portfolio']:is(
+    [data-model='runbook'],
+    [data-model='research-log'],
+    [data-model='accessibility'],
+    [data-model='site-plan'],
+    [data-model='craft'],
+    [data-model='atlas'],
+    [data-model='lesson'],
+    [data-model='menu-notes'],
+    [data-model='workshop']
+  )
+  :is(.sketch-title, .sketch-copy) {
+  width: 45%;
+}
+.template-thumb[data-category='portfolio']:is(
+    [data-model='runbook'],
+    [data-model='research-log'],
+    [data-model='accessibility'],
+    [data-model='site-plan'],
+    [data-model='craft'],
+    [data-model='atlas'],
+    [data-model='lesson'],
+    [data-model='menu-notes'],
+    [data-model='workshop']
+  )
+  .sketch-tiles {
+  inset-block-start: 84%;
+  height: 14%;
+}
+.template-thumb[data-category='portfolio']:is(
+    [data-model='runbook'],
+    [data-model='research-log'],
+    [data-model='accessibility'],
+    [data-model='site-plan'],
+    [data-model='craft'],
+    [data-model='atlas'],
+    [data-model='lesson'],
+    [data-model='menu-notes'],
+    [data-model='workshop']
+  )
+  .sketch-lines {
+  inset: 40% 55% 35% 0;
+}
+.template-thumb[data-category='portfolio'][data-model='craft'] .sketch-media {
+  border-radius: 45% 45% 0 0;
+}
+.template-thumb[data-category='portfolio'][data-model='menu-notes']
+  .sketch-media {
+  border-radius: 50%;
+}
+.template-thumb[data-category='portfolio'][data-model='parallel']
+  .sketch-tiles {
+  inset-block-start: 35%;
+  height: 60%;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.template-thumb[data-category='portfolio'][data-model='parallel']
+  .sketch-tiles
+  i::after {
+  inset: 20% 10% 30%;
+}
+.template-thumb[data-category='portfolio'][data-model='parallel']
+  .sketch-tiles
+  i:last-child,
+.template-thumb[data-category='portfolio'][data-model='parallel']
+  .sketch-lines {
+  display: none;
+}
+
 /* Articles, discussions, and service profiles. */
 .template-thumb[data-category='forum'] .sketch-tiles,
 .template-thumb[data-category='blog'] .sketch-tiles,

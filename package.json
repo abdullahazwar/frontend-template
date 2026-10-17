@@ -1,8 +1,8 @@
 {
   "name": "frontend-template-collection",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "private": true,
-  "description": "90 HTML frontend templates, 36 categorized portfolios, React and Vue examples",
+  "description": "108 HTML frontend templates, 54 categorized portfolios, React and Vue examples",
   "type": "module",
   "scripts": {
     "start": "node scripts/serve.mjs",

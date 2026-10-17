@@ -1,0 +1,86 @@
+/* Page theme and composition: bridge-translator. */
+:root {
+  --bg: #eaf0f1;
+  --surface: #f8fbfb;
+  --ink: #243e46;
+  --muted: #4b666e;
+  --accent: #2e6577;
+  --soft: #d4e3e7;
+  --line: #b9cfd6;
+  --accent-ink: #ffffff;
+  color-scheme: light;
+}
+
+.folio-shell {
+  max-width: 1080px;
+}
+.folio-intro h1 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  max-width: 18ch;
+  font-size: clamp(2.7rem, 5.6vw, 5.1rem);
+}
+.folio-example {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+  padding-block: 30px;
+}
+.folio-example > div + div {
+  border-left: 1px solid var(--line);
+  padding-left: 32px;
+}
+.folio-example small {
+  display: block;
+  font:
+    0.78rem system-ui,
+    sans-serif;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+.folio-work-grid {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+.folio-project {
+  display: grid;
+  grid-template-columns: minmax(0, 0.5fr) minmax(0, 1fr);
+  gap: 44px;
+  border-top: 1px solid var(--line);
+  padding-block: 36px;
+}
+.folio-cover {
+  align-self: start;
+}
+.folio-cover img {
+  aspect-ratio: 1.15;
+}
+.folio-project h3 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+.folio-process {
+  border-top: 1px solid var(--line);
+  margin-top: 20px;
+}
+@media (max-width: 760px) {
+  .folio-project {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .folio-cover img {
+    aspect-ratio: 1.7;
+  }
+}
+@media (max-width: 480px) {
+  .folio-example {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .folio-example > div + div {
+    padding-left: 0;
+    padding-top: 24px;
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
+}

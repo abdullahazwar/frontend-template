@@ -1,0 +1,83 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="800"
+  height="600"
+  viewBox="0 0 800 600"
+>
+  <title>Ilustrasi bentang dan jalur konseptual</title>
+  <rect
+    width="800"
+    height="600"
+    fill="#dfe5cd"
+  />
+  <path
+    d="M0 80C160 165 170 65 360 120S630 235 800 110V600H0Z"
+    fill="#a9b995"
+  />
+  <path
+    d="M0 260C150 130 300 325 490 240S675 240 800 315V600H0Z"
+    fill="#738c65"
+  />
+  <path
+    d="M0 470C180 310 280 465 430 405S680 315 800 400V600H0Z"
+    fill="#415f46"
+  />
+  <path
+    d="M-20 175C155 265 200 85 370 180S615 310 825 175M-20 205C155 295 200 115 370 210S615 340 825 205M-20 235C155 325 200 145 370 240S615 370 825 235"
+    fill="none"
+    stroke="#eef0da"
+    stroke-width="2"
+    opacity=".6"
+  />
+  <path
+    d="M145 600C155 465 370 500 405 375S600 260 620 0"
+    fill="none"
+    stroke="#e8e7c7"
+    stroke-width="26"
+  />
+  <path
+    d="M145 600C155 465 370 500 405 375S600 260 620 0"
+    fill="none"
+    stroke="#9b8e5f"
+    stroke-width="2"
+    stroke-dasharray="9 9"
+  />
+  <circle
+    cx="405"
+    cy="375"
+    r="15"
+    fill="#e6b370"
+    stroke="#314837"
+    stroke-width="5"
+  />
+  <circle
+    cx="610"
+    cy="135"
+    r="15"
+    fill="#e6b370"
+    stroke="#314837"
+    stroke-width="5"
+  />
+  <path
+    d="M705 85V145M685 105L705 85L725 105"
+    fill="none"
+    stroke="#314837"
+    stroke-width="4"
+  />
+  <rect
+    x="45"
+    y="45"
+    width="265"
+    height="50"
+    fill="#f4f2de"
+  />
+  <text
+    x="63"
+    y="77"
+    fill="#314837"
+    font-family="monospace"
+    font-size="19"
+  >
+    CONCEPT / NOT A MAP
+  </text>
+</svg>

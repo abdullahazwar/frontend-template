@@ -28,6 +28,20 @@ Setiap file HTML dapat dibuka langsung atau melalui `npm start`.
 - Kegunaan: Editorial photographer. Model editorial, karya dan proses.
 - Sumber: implementasi orisinal.
 
+### [Still / Product Photography](still-productphoto.html)
+
+- Model: `light-table`.
+- Kegunaan: Fotografer produk.
+- File desain: [still-productphoto.css](still-productphoto.css).
+- Sumber: implementasi orisinal.
+
+### [Trail / Nature](trail-nature.html)
+
+- Model: `field-atlas`.
+- Kegunaan: Fotografer alam dan perjalanan.
+- File desain: [trail-nature.css](trail-nature.css).
+- Sumber: implementasi orisinal.
+
 ## Mengubah isi
 
 Edit nama, peran, pengantar, dan bagian `data-work` pada file HTML. Warna dan

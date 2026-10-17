@@ -15,7 +15,7 @@ assert.equal(
   await catalogThemes(),
   'Gallery CSS must match page themes. Run npm run sync:previews.',
 );
-assert.equal(manifest.length, 90, 'The collection must contain 90 designs');
+assert.equal(manifest.length, 108, 'The collection must contain 108 designs');
 assert.equal(
   new Set(manifest.map((t) => t.id)).size,
   manifest.length,
@@ -26,7 +26,7 @@ assert.equal(categories.length, 10);
 for (const category of categories) {
   assert.equal(
     manifest.filter((t) => t.category === category).length,
-    category === 'portfolio' ? 36 : 6,
+    category === 'portfolio' ? 54 : 6,
   );
 }
 for (const template of manifest) {
@@ -103,7 +103,8 @@ for (const path of await walk(root)) {
   if (!/\.(m?js)$/.test(path)) continue;
   if (
     path.startsWith(resolve(root, 'assets') + '/') ||
-    path.startsWith(resolve(root, 'frameworks') + '/')
+    path.startsWith(resolve(root, 'frameworks') + '/') ||
+    path.startsWith(resolve(root, 'templates') + '/')
   ) {
     const source = await readFile(path, 'utf8');
     assert.doesNotMatch(
@@ -119,6 +120,6 @@ for (const path of await walk(root)) {
   checked++;
 }
 console.log(
-  'Manifest: 90 templates, 10 categories, 36 portfolios in 9 subcategories. ' +
+  'Manifest: 108 templates, 10 categories, 54 portfolios in 9 subcategories. ' +
     `Syntax: ${checked} JavaScript files passed.`,
 );

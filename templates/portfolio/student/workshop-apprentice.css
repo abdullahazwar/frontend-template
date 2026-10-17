@@ -1,0 +1,96 @@
+/* Page theme and composition: workshop-apprentice. */
+:root {
+  --bg: #f0eddb;
+  --surface: #fcfaef;
+  --ink: #353323;
+  --muted: #625e45;
+  --accent: #79601d;
+  --soft: #e2dcb9;
+  --line: #cfc59b;
+  --accent-ink: #ffffff;
+  color-scheme: light;
+}
+
+.folio-shell {
+  max-width: 1200px;
+}
+.folio-nav {
+  border-bottom: 3px solid var(--ink);
+}
+.folio-hero-grid {
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+}
+.folio-intro h1 {
+  font-size: clamp(2.7rem, 5.2vw, 5rem);
+  max-width: 17ch;
+  letter-spacing: -0.045em;
+}
+.folio-hero-media {
+  border: 1px solid var(--line);
+  padding: 16px;
+}
+.folio-steps {
+  gap: 0;
+  background: var(--ink);
+  color: var(--bg);
+}
+.folio-steps li {
+  padding: 24px;
+  border: 0;
+}
+.folio-steps li + li {
+  border-left: 1px solid var(--muted);
+}
+.folio-steps p,
+.folio-steps li::before {
+  color: var(--soft);
+}
+.folio-kicker,
+.folio-project-meta {
+  font-family: ui-monospace, Consolas, monospace;
+}
+.folio-work-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+.folio-cover img {
+  aspect-ratio: 1.1;
+}
+.folio-project-copy {
+  padding-top: 22px;
+}
+.folio-project h3 {
+  font-size: clamp(1.4rem, 2.3vw, 1.9rem);
+}
+@media (max-width: 900px) {
+  .folio-work-grid {
+    grid-template-columns: 1fr;
+  }
+  .folio-project {
+    display: grid;
+    grid-template-columns: minmax(0, 0.65fr) minmax(0, 1fr);
+    gap: 28px;
+  }
+  .folio-project-copy {
+    padding-top: 0;
+  }
+}
+@media (max-width: 760px) {
+  .folio-hero-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .folio-project {
+    display: block;
+  }
+  .folio-project-copy {
+    padding-top: 22px;
+  }
+}
+@media (max-width: 480px) {
+  .folio-steps li + li {
+    border-left: 0;
+    border-top: 1px solid var(--muted);
+  }
+}

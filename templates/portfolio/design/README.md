@@ -35,6 +35,20 @@ Setiap file HTML dapat dibuka langsung atau melalui `npm start`.
 - Kegunaan: Design systems designer. Model systems, karya dan proses.
 - Sumber: implementasi orisinal.
 
+### [Fieldwork / UX Research](fieldwork-ux.html)
+
+- Model: `research-log`.
+- Kegunaan: UX researcher.
+- File desain: [fieldwork-ux.css](fieldwork-ux.css).
+- Sumber: implementasi orisinal.
+
+### [Access / Inclusive Design](access-inclusive.html)
+
+- Model: `accessibility`.
+- Kegunaan: Desainer antarmuka inklusif.
+- File desain: [access-inclusive.css](access-inclusive.css).
+- Sumber: implementasi orisinal.
+
 ## Mengubah isi
 
 Edit nama, peran, pengantar, dan bagian `data-work` pada file HTML. Warna dan

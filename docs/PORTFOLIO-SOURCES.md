@@ -139,9 +139,59 @@ komersial tidak dilabeli sebagai sumber kode MIT.
 - [Focus / Freelance](../templates/portfolio/professional/focus-freelance.html):
   adaptasi kode MIT, `simplefolio`.
 
+## Tambahan orisinal versi 1.4.0
+
+Referensi metadata `collection-original-2026` menandai 18 implementasi yang
+dibuat khusus untuk repo ini. Tidak mengadaptasi kode atau aset pihak ketiga.
+Model, komposisi, konten demonstrasi, HTML, dan CSS ditulis untuk koleksi ini.
+
+- [Trace / DevOps](../templates/portfolio/developer/trace-devops.html):
+  `developer`, model `runbook`, devops dan reliability engineer.
+- [Audit / Security](../templates/portfolio/developer/audit-security.html):
+  `developer`, model `evidence`, security engineer.
+- [Fieldwork / UX Research](../templates/portfolio/design/fieldwork-ux.html):
+  `design`, model `research-log`, ux researcher.
+- [Access / Inclusive Design](../templates/portfolio/design/access-inclusive.html):
+  `design`, model `accessibility`, desainer antarmuka inklusif.
+- [Still / Product Photography](../templates/portfolio/photography/still-productphoto.html):
+  `photography`, model `light-table`, fotografer produk.
+- [Trail / Nature](../templates/portfolio/photography/trail-nature.html):
+  `photography`, model `field-atlas`, fotografer alam dan perjalanan.
+- [Terrain / Landscape](../templates/portfolio/architecture/terrain-landscape.html):
+  `architecture`, model `site-plan`, desainer lanskap.
+- [Section / Spatial](../templates/portfolio/architecture/section-spatial.html):
+  `architecture`, model `section`, desainer ruang dan pameran.
+- [Ink / Tattoo Art](../templates/portfolio/creative/ink-tattoo.html):
+  `creative`, model `flash-sheet`, ilustrator dan tattoo artist.
+- [Clay / Ceramic](../templates/portfolio/creative/clay-ceramic.html):
+  `creative`, model `craft`, seniman keramik.
+- [Proof / Editor](../templates/portfolio/writing/proof-editor.html): `writing`,
+  model `proof`, editor naskah.
+- [Bridge / Translator](../templates/portfolio/writing/bridge-translator.html):
+  `writing`, model `parallel`, penerjemah dan pelokalan.
+- [Atlas / Geospatial](../templates/portfolio/research/atlas-geospatial.html):
+  `research`, model `atlas`, analis geospasial.
+- [Bench / Scientist](../templates/portfolio/research/bench-scientist.html):
+  `research`, model `protocol`, peneliti dan asisten laboratorium.
+- [Lesson / Educator](../templates/portfolio/professional/lesson-educator.html):
+  `professional`, model `lesson`, pengajar dan perancang pembelajaran.
+- [Table / Culinary](../templates/portfolio/professional/table-culinary.html):
+  `professional`, model `menu-notes`, perancang menu dan kreator kuliner.
+- [Thesis / Student](../templates/portfolio/student/thesis-student.html):
+  `student`, model `thesis`, mahasiswa dan peneliti pemula.
+- [Workshop / Apprentice](../templates/portfolio/student/workshop-apprentice.html):
+  `student`, model `workshop`, pelajar teknik dan peserta magang.
+
+Sembilan SVG orisinal tambahan: `pipeline-study.svg`, `field-survey.svg`,
+`terrain-study.svg`, `section-study.svg`, `flash-study.svg`, `vessel-study.svg`,
+`harvest-study.svg`, `parallel-study.svg`, serta `workshop-study.svg`.
+Seluruhnya merupakan ilustrasi konsep lokal, bukan foto, data geografis, hasil
+penelitian, atau gambar kerja konstruksi. Kode dan aset orisinal mengikuti MIT
+pada repo.
+
 ## Aset dan konten
 
-Sebelas SVG tambahan dibuat khusus untuk koleksi ini. Semua SVG lokal adalah
-ilustrasi konsep, bukan foto atau hasil pekerjaan klien. Identitas, pengalaman,
-publikasi, dan proyek bersifat demonstrasi. Tidak ada data kontak pribadi,
-lisensi font komersial, atau aset berbayar.
+SVG tambahan dibuat khusus untuk koleksi ini. Semua SVG lokal adalah ilustrasi
+konsep, bukan foto atau hasil pekerjaan klien. Identitas, pengalaman, publikasi,
+dan proyek bersifat demonstrasi. Tidak ada data kontak pribadi, lisensi font
+komersial, atau aset berbayar.

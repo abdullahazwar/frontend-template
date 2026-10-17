@@ -7,7 +7,7 @@ warna dari landing page yang sama. Sasaran: programmer yang membutuhkan HTML
 mudah diubah dan contoh framework yang memperlihatkan pengelolaan state secara
 native.
 
-Hasil: 90 komposisi HTML dalam 10 kategori, termasuk 36 portofolio. Dua contoh
+Hasil: 108 komposisi HTML dalam 10 kategori, termasuk 54 portofolio. Dua contoh
 framework tambahan tidak dihitung sebagai desain baru.
 
 ## Arah komposisi
@@ -113,3 +113,17 @@ JSON. Grafik memakai data-level dan layout kolom otomatis dalam CSS.
 Atribut ukuran gambar dipindahkan ke class reset `.artwork`. Tampilan komponen
 khusus mengikuti CSS yang sudah ada. Ekspor menghasilkan folder HTML, CSS,
 JavaScript, serta aset, dengan tanggung jawab yang tetap terpisah.
+
+## Penambahan model versi 1.4.0
+
+Dua model ditambahkan pada setiap kategori profesi. Halaman berbasis bukti
+seperti runbook, dossier, suntingan, dan protokol mengutamakan catatan
+keputusan. Model light table, atlas lapangan, flash sheet, dan keramik memberi
+ruang lebih besar untuk media. Teks paralel menjelaskan konteks penerjemahan.
+Model tugas akhir serta jurnal praktik memisahkan kontribusi pribadi dari hasil
+kelompok.
+
+Setiap halaman mempunyai pasangan CSS sendiri. Primitive baru di
+`assets/portfolio.css` memakai class yang belum digunakan halaman lama.
+Komposisi hero, urutan proyek, crop media, lebar baca, dan responsive ditentukan
+oleh CSS halaman. Tidak menambahkan dependency atau JavaScript runtime baru.

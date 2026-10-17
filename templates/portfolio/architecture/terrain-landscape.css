@@ -1,0 +1,66 @@
+/* Page theme and composition: terrain-landscape. */
+:root {
+  --bg: #eceee3;
+  --surface: #f9faf1;
+  --ink: #303b2e;
+  --muted: #5a6551;
+  --accent: #50683b;
+  --soft: #dce2cb;
+  --line: #c6d0b7;
+  --accent-ink: #ffffff;
+  color-scheme: light;
+}
+
+.folio-shell {
+  max-width: 1240px;
+}
+.folio-hero-grid {
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+}
+.folio-intro h1 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(2.6rem, 4.6vw, 4.6rem);
+}
+.folio-hero-media {
+  border: 1px solid var(--line);
+  padding: 18px;
+}
+.folio-hero-media img {
+  aspect-ratio: 1.1;
+  object-fit: contain;
+  background: var(--soft);
+}
+.folio-dossier > div {
+  grid-template-columns: 90px minmax(0, 1fr);
+}
+.folio-work-grid {
+  grid-template-columns: 1fr;
+}
+.folio-project {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
+  gap: 48px;
+  padding-block: 24px;
+  border-top: 1px solid var(--line);
+}
+.folio-cover img {
+  aspect-ratio: 1.4;
+}
+.folio-project h3 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+.folio-project-copy {
+  align-self: center;
+}
+@media (max-width: 760px) {
+  .folio-hero-grid,
+  .folio-project {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .folio-hero-media img {
+    aspect-ratio: 1.35;
+  }
+}

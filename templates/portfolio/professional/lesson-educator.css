@@ -1,0 +1,70 @@
+/* Page theme and composition: lesson-educator. */
+:root {
+  --bg: #f4ede3;
+  --surface: #fffbf5;
+  --ink: #3b302b;
+  --muted: #6c5c50;
+  --accent: #9a4c30;
+  --soft: #e8dbca;
+  --line: #d6c3ac;
+  --accent-ink: #ffffff;
+  color-scheme: light;
+}
+
+.folio-shell {
+  max-width: 1180px;
+}
+.folio-hero-grid {
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+}
+.folio-intro h1 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(2.7rem, 5.2vw, 5rem);
+}
+.folio-hero-media {
+  padding: 18px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+.folio-steps {
+  gap: 30px;
+}
+.folio-steps li::before {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+}
+.folio-work-grid {
+  grid-template-columns: 1fr;
+  gap: 44px;
+}
+.folio-project {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
+  gap: 44px;
+}
+.folio-project-copy {
+  border-top: 1px solid var(--line);
+  padding-top: 24px;
+}
+.folio-cover {
+  align-self: start;
+}
+.folio-cover img {
+  aspect-ratio: 1.4;
+}
+.folio-project h3 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+@media (max-width: 760px) {
+  .folio-hero-grid,
+  .folio-project {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}

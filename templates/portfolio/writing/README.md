@@ -1,4 +1,4 @@
-# Penulis, jurnalis, dan copywriter
+# Penulis, editor, dan penerjemah
 
 Setiap file HTML dapat dibuka langsung atau melalui `npm start`.
 
@@ -20,6 +20,20 @@ Setiap file HTML dapat dibuka langsung atau melalui `npm start`.
 
 - Model: `copy`.
 - Kegunaan: Copywriter and content designer. Model copy, karya dan proses.
+- Sumber: implementasi orisinal.
+
+### [Proof / Editor](proof-editor.html)
+
+- Model: `proof`.
+- Kegunaan: Editor naskah.
+- File desain: [proof-editor.css](proof-editor.css).
+- Sumber: implementasi orisinal.
+
+### [Bridge / Translator](bridge-translator.html)
+
+- Model: `parallel`.
+- Kegunaan: Penerjemah dan pelokalan.
+- File desain: [bridge-translator.css](bridge-translator.css).
 - Sumber: implementasi orisinal.
 
 ## Mengubah isi

@@ -41,6 +41,20 @@ Setiap file HTML dapat dibuka langsung atau melalui `npm start`.
 - Kegunaan: Open source maintainer. Model changelog, karya dan proses.
 - Sumber: implementasi orisinal.
 
+### [Trace / DevOps](trace-devops.html)
+
+- Model: `runbook`.
+- Kegunaan: DevOps dan reliability engineer.
+- File desain: [trace-devops.css](trace-devops.css).
+- Sumber: implementasi orisinal.
+
+### [Audit / Security](audit-security.html)
+
+- Model: `evidence`.
+- Kegunaan: Security engineer.
+- File desain: [audit-security.css](audit-security.css).
+- Sumber: implementasi orisinal.
+
 ## Mengubah isi
 
 Edit nama, peran, pengantar, dan bagian `data-work` pada file HTML. Warna dan

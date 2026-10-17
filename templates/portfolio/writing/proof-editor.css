@@ -1,0 +1,79 @@
+/* Page theme and composition: proof-editor. */
+:root {
+  --bg: #f4f0e7;
+  --surface: #fffdf7;
+  --ink: #37332d;
+  --muted: #676057;
+  --accent: #8e4035;
+  --soft: #e8dfd0;
+  --line: #d5c9b6;
+  --accent-ink: #ffffff;
+  color-scheme: light;
+}
+
+.folio-shell {
+  max-width: 880px;
+}
+.folio-intro h1,
+.folio-project h3 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+.folio-intro h1 {
+  max-width: 17ch;
+  font-size: clamp(2.7rem, 5vw, 4.8rem);
+}
+.folio-example {
+  border-top: 3px double var(--ink);
+  border-bottom: 3px double var(--ink);
+  line-height: 1.65;
+}
+.folio-example small {
+  font:
+    0.75rem system-ui,
+    sans-serif;
+  display: block;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.folio-work-grid {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+.folio-project {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 140px;
+  gap: 32px;
+  border-top: 1px solid var(--ink);
+  padding-block: 32px;
+}
+.folio-project .folio-cover {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: start;
+}
+.folio-project-copy {
+  grid-column: 1;
+  grid-row: 1;
+}
+.folio-cover img {
+  aspect-ratio: 0.8;
+}
+.folio-cover button {
+  position: static;
+  width: 100%;
+}
+.folio-cover figcaption {
+  display: none;
+}
+.folio-project h3 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+}
+@media (max-width: 600px) {
+  .folio-project {
+    display: block;
+  }
+  .folio-project .folio-cover {
+    display: none;
+  }
+}

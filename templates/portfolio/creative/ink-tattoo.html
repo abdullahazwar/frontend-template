@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <meta
+      name="description"
+      content="Ilustrator dan tattoo artist. Model flash-sheet dengan karya, proses, dan kontak contoh."
+    />
+    <title>Ink / Tattoo Art / Frontend Template</title>
+    <link
+      rel="stylesheet"
+      href="../../../assets/base.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../../assets/portfolio.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./ink-tattoo.css"
+    />
+    <script
+      src="../../../assets/core.js"
+      defer
+    ></script>
+    <script
+      src="../../../assets/runtime.js"
+      defer
+    ></script>
+    <script
+      src="../../../assets/portfolio.js"
+      defer
+    ></script>
+  </head>
+  <body
+    class="folio-page"
+    data-template="ink-tattoo"
+    data-model="flash-sheet"
+  >
+    <a
+      class="skip"
+      href="#main"
+      >Lewati ke konten</a
+    >
+    <div class="demo-bar">
+      <a href="../../../index.html?category=portfolio&amp;type=creative"
+        >← Koleksi portofolio</a
+      ><span>Profil dan karya demonstrasi</span>
+    </div>
+    <div class="folio-shell">
+      <header class="folio-nav">
+        <a
+          class="folio-wordmark"
+          href="#main"
+          >Aksa Rupa /</a
+        >
+        <nav aria-label="Navigasi portofolio">
+          <a href="#karya">Karya</a><a href="#tentang">Tentang</a
+          ><a href="#kontak">Kontak</a>
+        </nav>
+      </header>
+      <main id="main">
+        <section class="folio-intro">
+          <div class="folio-intro-content">
+            <p class="folio-kicker">Aksa Rupa / Ilustrator dan tattoo artist</p>
+            <h1>Garis yang sederhana. Karakter yang tinggal.</h1>
+            <p
+              class="lead"
+              data-profile-summary
+            >
+              Lembar flash, studi motif, dan catatan pengembangan ilustrasi.
+              Karya pada halaman ini adalah konsep visual, bukan dokumentasi
+              layanan tato.
+            </p>
+            <div class="folio-actions">
+              <a
+                class="btn"
+                href="#karya"
+                >Lihat karya ↓</a
+              >
+              <button
+                class="btn secondary"
+                type="button"
+                data-profile-download
+              >
+                Unduh profil contoh (.txt)
+              </button>
+            </div>
+          </div>
+          <div class="folio-art-index">
+            <figure>
+              <img
+                class="artwork"
+                src="../../../assets/art/flash-study.svg"
+                alt="Ilustrasi konsep / 01 / Botani"
+              />
+              <figcaption>01 / Botani / ilustrasi</figcaption>
+            </figure>
+            <figure>
+              <img
+                class="artwork"
+                src="../../../assets/art/abstract.svg"
+                alt="Ilustrasi konsep / 02 / Abstrak"
+              />
+              <figcaption>02 / Abstrak / ilustrasi</figcaption>
+            </figure>
+            <figure>
+              <img
+                class="artwork"
+                src="../../../assets/art/type-study.svg"
+                alt="Ilustrasi konsep / 03 / Huruf"
+              />
+              <figcaption>03 / Huruf / ilustrasi</figcaption>
+            </figure>
+          </div>
+        </section>
+        <section
+          id="karya"
+          class="folio-section"
+          data-portfolio
+          aria-labelledby="work-title"
+        >
+          <div class="folio-section-head">
+            <div>
+              <p class="folio-kicker">Pilihan / arsip karya</p>
+              <h2 id="work-title">Karya dan proses.</h2>
+            </div>
+            <p
+              class="small muted"
+              role="status"
+              data-work-count
+            >
+              3 karya ditampilkan
+            </p>
+          </div>
+          <div class="folio-work-controls">
+            <label for="work-search"
+              >Cari karya<input
+                id="work-search"
+                type="search"
+                placeholder="Cari judul atau proses..."
+                data-work-search
+            /></label>
+            <div
+              class="folio-filters"
+              aria-label="Filter jenis karya"
+            >
+              <button
+                type="button"
+                data-work-filter="all"
+                aria-pressed="true"
+              >
+                Semua</button
+              ><button
+                type="button"
+                data-work-filter="Flash"
+                aria-pressed="false"
+              >
+                Flash</button
+              ><button
+                type="button"
+                data-work-filter="Eksplorasi"
+                aria-pressed="false"
+              >
+                Eksplorasi
+              </button>
+            </div>
+          </div>
+          <div class="folio-work-grid">
+            <article
+              class="folio-project"
+              data-work
+              data-kind="Flash"
+            >
+              <figure class="folio-cover">
+                <img
+                  class="artwork"
+                  src="../../../assets/art/flash-study.svg"
+                  alt="Ilustrasi konsep: Botani dalam Garis"
+                  loading="lazy"
+                />
+                <button
+                  type="button"
+                  data-art-open
+                  aria-label="Perbesar ilustrasi Botani dalam Garis"
+                >
+                  Perbesar ↗
+                </button>
+                <figcaption>Studi konsep / 01 / media ilustrasi</figcaption>
+              </figure>
+              <div class="folio-project-copy">
+                <p class="folio-project-meta">01 / Flash</p>
+                <h3>Botani dalam Garis</h3>
+                <p>
+                  Latihan ilustrasi menyederhanakan bentuk tumbuhan tanpa
+                  kehilangan karakter utama.
+                </p>
+                <p class="folio-outcome">
+                  Artefak: lembar konsep motif botani.
+                </p>
+                <details
+                  class="folio-process"
+                  id="proses-1"
+                >
+                  <summary>Baca proses: Botani dalam Garis</summary>
+                  <h4>Konteks dan peran</h4>
+                  <p>
+                    Studi mandiri demonstrasi. Peran: ilustrator dan tattoo
+                    artist. Latihan ilustrasi menyederhanakan bentuk tumbuhan
+                    tanpa kehilangan karakter utama.
+                  </p>
+                  <h4>Keputusan</h4>
+                  <p>
+                    Uji siluet, jarak antargaris, dan keseimbangan bidang gelap
+                    pada media kertas.
+                  </p>
+                  <h4>Langkah berikutnya</h4>
+                  <p>
+                    Catat revisi dan penggunaan berizin saat dikembangkan
+                    menjadi karya nyata.
+                  </p>
+                </details>
+              </div>
+            </article>
+            <article
+              class="folio-project"
+              data-work
+              data-kind="Eksplorasi"
+            >
+              <figure class="folio-cover">
+                <img
+                  class="artwork"
+                  src="../../../assets/art/abstract.svg"
+                  alt="Ilustrasi konsep: Ritme Bentuk Abstrak"
+                  loading="lazy"
+                />
+                <button
+                  type="button"
+                  data-art-open
+                  aria-label="Perbesar ilustrasi Ritme Bentuk Abstrak"
+                >
+                  Perbesar ↗
+                </button>
+                <figcaption>Studi konsep / 02 / media ilustrasi</figcaption>
+              </figure>
+              <div class="folio-project-copy">
+                <p class="folio-project-meta">02 / Eksplorasi</p>
+                <h3>Ritme Bentuk Abstrak</h3>
+                <p>
+                  Studi mencari komposisi yang tetap terbaca dalam ukuran kecil.
+                </p>
+                <p class="folio-outcome">Artefak: variasi komposisi abstrak.</p>
+                <details
+                  class="folio-process"
+                  id="proses-2"
+                >
+                  <summary>Baca proses: Ritme Bentuk Abstrak</summary>
+                  <h4>Konteks dan peran</h4>
+                  <p>
+                    Studi mandiri demonstrasi. Peran: ilustrator dan tattoo
+                    artist. Studi mencari komposisi yang tetap terbaca dalam
+                    ukuran kecil.
+                  </p>
+                  <h4>Keputusan</h4>
+                  <p>
+                    Batasi jumlah bentuk dan bandingkan hubungan ruang kosong
+                    dengan massa warna.
+                  </p>
+                  <h4>Langkah berikutnya</h4>
+                  <p>
+                    Uji cetak ukuran sebenarnya dan dokumentasikan alasan
+                    seleksi.
+                  </p>
+                </details>
+              </div>
+            </article>
+            <article
+              class="folio-project"
+              data-work
+              data-kind="Flash"
+            >
+              <figure class="folio-cover">
+                <img
+                  class="artwork"
+                  src="../../../assets/art/type-study.svg"
+                  alt="Ilustrasi konsep: Huruf sebagai Motif"
+                  loading="lazy"
+                />
+                <button
+                  type="button"
+                  data-art-open
+                  aria-label="Perbesar ilustrasi Huruf sebagai Motif"
+                >
+                  Perbesar ↗
+                </button>
+                <figcaption>Studi konsep / 03 / media ilustrasi</figcaption>
+              </figure>
+              <div class="folio-project-copy">
+                <p class="folio-project-meta">03 / Flash</p>
+                <h3>Huruf sebagai Motif</h3>
+                <p>
+                  Eksplorasi tipografi menggabungkan karakter huruf dengan
+                  susunan ilustratif.
+                </p>
+                <p class="folio-outcome">
+                  Artefak: studi huruf dan sketsa komposisi.
+                </p>
+                <details
+                  class="folio-process"
+                  id="proses-3"
+                >
+                  <summary>Baca proses: Huruf sebagai Motif</summary>
+                  <h4>Konteks dan peran</h4>
+                  <p>
+                    Studi mandiri demonstrasi. Peran: ilustrator dan tattoo
+                    artist. Eksplorasi tipografi menggabungkan karakter huruf
+                    dengan susunan ilustratif.
+                  </p>
+                  <h4>Keputusan</h4>
+                  <p>
+                    Mulai dari keterbacaan, kemudian uji pertemuan garis serta
+                    jarak antarhuruf.
+                  </p>
+                  <h4>Langkah berikutnya</h4>
+                  <p>
+                    Gunakan lettering orisinal atau typeface dengan hak
+                    penggunaan yang sesuai.
+                  </p>
+                </details>
+              </div>
+            </article>
+          </div>
+          <div
+            class="folio-empty"
+            data-work-empty
+            hidden
+          >
+            <p>Tidak ada karya yang cocok dengan filter.</p>
+            <button
+              class="btn secondary"
+              type="button"
+              data-work-reset
+            >
+              Reset pencarian
+            </button>
+          </div>
+        </section>
+        <section
+          id="tentang"
+          class="folio-section folio-about-grid"
+        >
+          <div>
+            <p class="folio-kicker">Tentang / pendekatan</p>
+            <h2>Alasan di balik pekerjaan.</h2>
+          </div>
+          <div>
+            <p class="lead">
+              Saya mengembangkan motif melalui sketsa dan penyederhanaan bentuk.
+              Portofolio menunjukkan proses visual; informasi layanan,
+              perawatan, dan kualifikasi harus diisi pemilik sebenarnya.
+            </p>
+            <dl class="folio-facts">
+              <div>
+                <dt>Fokus</dt>
+                <dd>Ilustrator dan tattoo artist</dd>
+              </div>
+              <div>
+                <dt>Dokumentasi</dt>
+                <dd>Konteks, artefak, dan tindak lanjut</dd>
+              </div>
+            </dl>
+            <p class="folio-note">
+              Identitas dan proyek bersifat fiktif. Ganti dengan karya,
+              kontribusi, dan informasi pemilik yang benar sebelum publikasi.
+            </p>
+          </div>
+        </section>
+        <section
+          id="kontak"
+          class="folio-section folio-contact"
+        >
+          <div>
+            <p class="folio-kicker">Kontak contoh</p>
+            <h2>Mulai percakapan.</h2>
+          </div>
+          <div class="stack">
+            <code data-contact-address>halo@example.com</code>
+            <p class="small muted">
+              Alamat demonstrasi. Ganti dengan kontak pemilik portofolio.
+            </p>
+            <div>
+              <button
+                class="btn secondary"
+                type="button"
+                data-copy-contact
+              >
+                Salin alamat contoh
+              </button>
+            </div>
+            <p
+              class="small"
+              role="status"
+              data-contact-status
+            ></p>
+          </div>
+        </section>
+      </main>
+      <footer class="folio-footer">
+        <span>Aksa Rupa / Profil demonstrasi</span
+        ><a href="#main">Kembali ke atas ↑</a>
+      </footer>
+    </div>
+    <dialog
+      class="folio-lightbox"
+      data-art-dialog
+      aria-labelledby="art-dialog-title"
+    >
+      <div class="dialog-head">
+        <h2 id="art-dialog-title">Ilustrasi konsep</h2>
+        <button
+          class="btn secondary"
+          type="button"
+          data-art-close
+        >
+          Tutup
+        </button>
+      </div>
+      <figure>
+        <img
+          class="artwork"
+          src="../../../assets/art/flash-study.svg"
+          alt="Ilustrasi konsep terpilih"
+        />
+        <figcaption>Ilustrasi konsep.</figcaption>
+      </figure>
+    </dialog>
+  </body>
+</html>

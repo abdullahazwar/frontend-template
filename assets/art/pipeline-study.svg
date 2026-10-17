@@ -1,0 +1,88 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="800"
+  height="600"
+  viewBox="0 0 800 600"
+>
+  <title>Ilustrasi alur rilis dengan titik pemeriksaan</title>
+  <rect
+    width="800"
+    height="600"
+    fill="#21343d"
+  />
+  <path
+    d="M100 180H700M100 420H700"
+    stroke="#425d66"
+    stroke-width="2"
+  />
+  <path
+    d="M170 300H630M630 300V470H170V360"
+    fill="none"
+    stroke="#cbdc8b"
+    stroke-width="5"
+  />
+  <path
+    d="M156 380L170 358L184 380"
+    fill="none"
+    stroke="#cbdc8b"
+    stroke-width="5"
+  />
+  <rect
+    x="80"
+    y="230"
+    width="180"
+    height="140"
+    rx="6"
+    fill="#edf1e7"
+  />
+  <rect
+    x="310"
+    y="230"
+    width="180"
+    height="140"
+    rx="6"
+    fill="#92b4b0"
+  />
+  <rect
+    x="540"
+    y="230"
+    width="180"
+    height="140"
+    rx="6"
+    fill="#cbdc8b"
+  />
+  <path
+    d="M120 275H220M120 300H195M120 325H210"
+    stroke="#34505b"
+    stroke-width="9"
+  />
+  <path
+    d="M370 300L392 320L435 275"
+    fill="none"
+    stroke="#21343d"
+    stroke-width="10"
+  />
+  <path
+    d="M590 300H670M630 260V340"
+    stroke="#21343d"
+    stroke-width="9"
+  />
+  <text
+    x="80"
+    y="125"
+    fill="#edf1e7"
+    font-family="monospace"
+    font-size="24"
+  >
+    OBSERVE / VERIFY / RELEASE
+  </text>
+  <text
+    x="80"
+    y="525"
+    fill="#bdccca"
+    font-family="monospace"
+    font-size="18"
+  >
+    CONCEPT DIAGRAM
+  </text>
+</svg>

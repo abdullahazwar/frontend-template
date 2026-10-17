@@ -1,6 +1,6 @@
 # Katalog template
 
-90 halaman HTML. Portofolio memiliki 36 model dalam sembilan kategori profesi.
+108 halaman HTML. Portofolio memiliki 54 model dalam sembilan kategori profesi.
 
 Buka `index.html` untuk mencari, memfilter, menyimpan, dan melihat pratinjau.
 
@@ -191,6 +191,94 @@ Buka `index.html` untuk mencari, memfilter, menyimpan, dan melihat pratinjau.
 - [Focus / Freelance](../templates/portfolio/professional/focus-freelance.html)
   Independent web designer. Model minimal, karya dan proses. Kategori:
   `professional`. Model: `minimal`. Asal: adaptasi MIT.
+
+- [Trace / DevOps](../templates/portfolio/developer/trace-devops.html) DevOps
+  dan reliability engineer. Model runbook: Catatan tentang rilis, pemulihan, dan
+  kebiasaan mendokumentasikan keputusan. Kategori: `developer`. Model:
+  `runbook`. Asal: orisinal.
+
+- [Audit / Security](../templates/portfolio/developer/audit-security.html)
+  Security engineer. Model evidence: Portofolio studi defensif: memetakan izin,
+  meninjau formulir, dan menulis temuan yang bisa ditindaklanjuti. Kategori:
+  `developer`. Model: `evidence`. Asal: orisinal.
+
+- [Fieldwork / UX Research](../templates/portfolio/design/fieldwork-ux.html) UX
+  researcher. Model research-log: Rencana riset, catatan pengamatan, dan
+  sintesis yang menjaga hubungan antara temuan dengan sumbernya. Kategori:
+  `design`. Model: `research-log`. Asal: orisinal.
+
+- [Access / Inclusive Design](../templates/portfolio/design/access-inclusive.html)
+  Desainer antarmuka inklusif. Model accessibility: Studi antarmuka dengan
+  perhatian pada bahasa, keyboard, serta informasi yang tetap jelas ketika ruang
+  layar terbatas.. Kategori: `design`. Model: `accessibility`. Asal: orisinal.
+
+- [Still / Product Photography](../templates/portfolio/photography/still-productphoto.html)
+  Fotografer produk. Model light-table: Susunan studi produk, arah cahaya, dan
+  catatan pengambilan gambar. Kategori: `photography`. Model: `light-table`.
+  Asal: orisinal.
+
+- [Trail / Nature](../templates/portfolio/photography/trail-nature.html)
+  Fotografer alam dan perjalanan. Model field-atlas: Rangkaian cerita visual
+  tentang bentang, cahaya, dan perjalanan pelan. Kategori: `photography`. Model:
+  `field-atlas`. Asal: orisinal.
+
+- [Terrain / Landscape](../templates/portfolio/architecture/terrain-landscape.html)
+  Desainer lanskap. Model site-plan: Studi tapak, jalur, dan hubungan tanaman
+  dengan ruang bersama. Kategori: `architecture`. Model: `site-plan`. Asal:
+  orisinal.
+
+- [Section / Spatial](../templates/portfolio/architecture/section-spatial.html)
+  Desainer ruang dan pameran. Model section: Koleksi konsep ruang kecil,
+  pameran, dan jalur pengunjung. Kategori: `architecture`. Model: `section`.
+  Asal: orisinal.
+
+- [Ink / Tattoo Art](../templates/portfolio/creative/ink-tattoo.html) Ilustrator
+  dan tattoo artist. Model flash-sheet: Lembar flash, studi motif, dan catatan
+  pengembangan ilustrasi. Kategori: `creative`. Model: `flash-sheet`. Asal:
+  orisinal.
+
+- [Clay / Ceramic](../templates/portfolio/creative/clay-ceramic.html) Seniman
+  keramik. Model craft: Studi wadah, permukaan, dan seri benda kecil. Kategori:
+  `creative`. Model: `craft`. Asal: orisinal.
+
+- [Proof / Editor](../templates/portfolio/writing/proof-editor.html) Editor
+  naskah. Model proof: Catatan penyuntingan tentang urutan gagasan, kejelasan
+  kalimat, dan konsistensi istilah. Kategori: `writing`. Model: `proof`. Asal:
+  orisinal.
+
+- [Bridge / Translator](../templates/portfolio/writing/bridge-translator.html)
+  Penerjemah dan pelokalan. Model parallel: Studi penerjemahan antarmuka dan
+  teks pendek. Kategori: `writing`. Model: `parallel`. Asal: orisinal.
+
+- [Atlas / Geospatial](../templates/portfolio/research/atlas-geospatial.html)
+  Analis geospasial. Model atlas: Studi pemetaan dengan catatan sumber, satuan,
+  dan keterbatasan. Kategori: `research`. Model: `atlas`. Asal: orisinal.
+
+- [Bench / Scientist](../templates/portfolio/research/bench-scientist.html)
+  Peneliti dan asisten laboratorium. Model protocol: Portofolio latihan
+  dokumentasi penelitian: merumuskan pertanyaan, menyimpan prosedur, dan
+  membedakan pengamatan dari interpretasi.. Kategori: `research`. Model:
+  `protocol`. Asal: orisinal.
+
+- [Lesson / Educator](../templates/portfolio/professional/lesson-educator.html)
+  Pengajar dan perancang pembelajaran. Model lesson: Rancangan kegiatan belajar,
+  contoh bahan ajar, dan refleksi. Kategori: `professional`. Model: `lesson`.
+  Asal: orisinal.
+
+- [Table / Culinary](../templates/portfolio/professional/table-culinary.html)
+  Perancang menu dan kreator kuliner. Model menu-notes: Studi pengembangan menu,
+  penyajian, serta dokumentasi proses dapur. Kategori: `professional`. Model:
+  `menu-notes`. Asal: orisinal.
+
+- [Thesis / Student](../templates/portfolio/student/thesis-student.html)
+  Mahasiswa dan peneliti pemula. Model thesis: Portofolio tugas akhir, proyek
+  kuliah, dan refleksi metode. Kategori: `student`. Model: `thesis`. Asal:
+  orisinal.
+
+- [Workshop / Apprentice](../templates/portfolio/student/workshop-apprentice.html)
+  Pelajar teknik dan peserta magang. Model workshop: Catatan praktik tentang
+  pengamatan, pelaksanaan, dan pemeriksaan hasil. Kategori: `student`. Model:
+  `workshop`. Asal: orisinal.
 
 ## Perusahaan
 

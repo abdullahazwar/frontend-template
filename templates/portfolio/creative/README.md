@@ -42,6 +42,20 @@ Setiap file HTML dapat dibuka langsung atau melalui `npm start`.
 - Kegunaan: Art director. Model art-type, karya dan proses.
 - Sumber: implementasi orisinal.
 
+### [Ink / Tattoo Art](ink-tattoo.html)
+
+- Model: `flash-sheet`.
+- Kegunaan: Ilustrator dan tattoo artist.
+- File desain: [ink-tattoo.css](ink-tattoo.css).
+- Sumber: implementasi orisinal.
+
+### [Clay / Ceramic](clay-ceramic.html)
+
+- Model: `craft`.
+- Kegunaan: Seniman keramik.
+- File desain: [clay-ceramic.css](clay-ceramic.css).
+- Sumber: implementasi orisinal.
+
 ## Mengubah isi
 
 Edit nama, peran, pengantar, dan bagian `data-work` pada file HTML. Warna dan

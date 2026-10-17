@@ -1,0 +1,81 @@
+/* Page theme and composition: atlas-geospatial. */
+:root {
+  --bg: #1e303a;
+  --surface: #29414b;
+  --ink: #eef3ed;
+  --muted: #bfced0;
+  --accent: #9ddbd0;
+  --soft: #3b535b;
+  --line: #516a70;
+  --accent-ink: #1e303a;
+  color-scheme: dark;
+}
+
+.folio-shell {
+  max-width: 1220px;
+}
+.folio-hero-grid {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
+.folio-intro h1 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(2.7rem, 5vw, 4.9rem);
+  max-width: 17ch;
+}
+.folio-hero-media {
+  border: 1px solid var(--line);
+  padding: 14px;
+}
+.folio-hero-media img {
+  aspect-ratio: 1;
+  object-fit: contain;
+  background: var(--soft);
+}
+.folio-kicker,
+.folio-dossier dt {
+  font-family: ui-monospace, Consolas, monospace;
+}
+.folio-work-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 48px 32px;
+}
+.folio-project:first-child {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  gap: 40px;
+  align-items: center;
+}
+.folio-project-copy {
+  padding-top: 24px;
+}
+.folio-project:first-child .folio-project-copy {
+  padding-top: 0;
+}
+.folio-cover img {
+  aspect-ratio: 1.4;
+}
+.folio-project h3 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+@media (max-width: 760px) {
+  .folio-hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .folio-project:first-child {
+    display: block;
+  }
+  .folio-project:first-child .folio-project-copy {
+    padding-top: 24px;
+  }
+  .folio-hero-media img {
+    aspect-ratio: 1.4;
+  }
+}
+@media (max-width: 480px) {
+  .folio-work-grid {
+    grid-template-columns: 1fr;
+  }
+}

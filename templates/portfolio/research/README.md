@@ -22,6 +22,20 @@ Setiap file HTML dapat dibuka langsung atau melalui `npm start`.
 - Kegunaan: Data analyst. Model notebook, karya dan proses.
 - Sumber: implementasi orisinal.
 
+### [Atlas / Geospatial](atlas-geospatial.html)
+
+- Model: `atlas`.
+- Kegunaan: Analis geospasial.
+- File desain: [atlas-geospatial.css](atlas-geospatial.css).
+- Sumber: implementasi orisinal.
+
+### [Bench / Scientist](bench-scientist.html)
+
+- Model: `protocol`.
+- Kegunaan: Peneliti dan asisten laboratorium.
+- File desain: [bench-scientist.css](bench-scientist.css).
+- Sumber: implementasi orisinal.
+
 ## Mengubah isi
 
 Edit nama, peran, pengantar, dan bagian `data-work` pada file HTML. Warna dan

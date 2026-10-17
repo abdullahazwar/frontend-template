@@ -1,0 +1,65 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="800"
+  height="600"
+  viewBox="0 0 800 600"
+>
+  <title>Ilustrasi tiga bentuk wadah keramik</title>
+  <rect
+    width="800"
+    height="600"
+    fill="#e5d8c8"
+  />
+  <path
+    d="M0 440H800V600H0Z"
+    fill="#bca58a"
+  />
+  <ellipse
+    cx="405"
+    cy="470"
+    rx="285"
+    ry="42"
+    fill="#927b64"
+    opacity=".3"
+  />
+  <path
+    d="M170 270H285L310 415Q310 460 225 460Q140 460 145 415Z"
+    fill="#a55e3e"
+  />
+  <ellipse
+    cx="227"
+    cy="270"
+    rx="58"
+    ry="16"
+    fill="#643d2e"
+  />
+  <path
+    d="M365 170H445L450 250Q520 295 495 415Q485 465 405 465Q325 465 315 415Q290 295 360 250Z"
+    fill="#f3e8d4"
+  />
+  <ellipse
+    cx="405"
+    cy="170"
+    rx="40"
+    ry="12"
+    fill="#a39379"
+  />
+  <path
+    d="M545 320H665L685 420Q685 460 605 460Q525 460 525 420Z"
+    fill="#376573"
+  />
+  <ellipse
+    cx="605"
+    cy="320"
+    rx="60"
+    ry="17"
+    fill="#254954"
+  />
+  <path
+    d="M180 310L170 400M350 300Q325 355 350 405M555 355L550 410"
+    fill="none"
+    stroke="#f8eee0"
+    stroke-width="5"
+    opacity=".4"
+  />
+</svg>

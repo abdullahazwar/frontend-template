@@ -1,4 +1,4 @@
-/* Shared portfolio primitives. Page tokens and compositions live in each HTML. */
+/* Shared portfolio primitives. Page tokens and compositions live in page CSS. */
 .folio-page {
   overflow-wrap: anywhere;
 }
@@ -385,6 +385,119 @@
   font-size: 1.15rem;
   margin-top: 10px;
 }
+/* Primitives used by the extended portfolio collection. */
+.folio-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  align-items: center;
+  gap: 48px;
+}
+.folio-hero-media img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.folio-hero-media figcaption {
+  color: var(--muted);
+  font-size: 0.75rem;
+  margin-top: 12px;
+}
+.folio-steps {
+  list-style: none;
+  padding: 0;
+  margin: 32px 0 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  counter-reset: stage;
+}
+.folio-steps li {
+  counter-increment: stage;
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
+}
+.folio-steps li::before {
+  content: '0' counter(stage);
+  display: block;
+  color: var(--accent);
+  font-size: 0.78rem;
+  margin-bottom: 12px;
+}
+.folio-steps p {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-top: 8px;
+}
+.folio-dossier {
+  margin-top: 32px;
+  border-block: 1px solid var(--line);
+}
+.folio-dossier > div {
+  display: grid;
+  grid-template-columns: minmax(100px, 0.4fr) minmax(0, 1fr);
+  gap: 16px;
+  padding-block: 12px;
+}
+.folio-dossier > div + div {
+  border-top: 1px solid var(--line);
+}
+.folio-dossier dt {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.folio-example {
+  margin-top: 32px;
+  padding: 24px 0;
+  border-block: 1px solid var(--line);
+  font-family: Georgia, serif;
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+}
+.folio-example p + p {
+  margin-top: 16px;
+}
+.folio-example del {
+  color: var(--muted);
+}
+.folio-example ins {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
+}
+.folio-project-copy {
+  min-width: 0;
+}
+.folio-project-copy > p:not(.folio-project-meta) {
+  color: var(--muted);
+}
+.folio-project-copy .folio-project-meta {
+  margin-top: 0;
+}
+.folio-outcome {
+  padding-left: 14px;
+  border-left: 2px solid var(--accent);
+  margin-block: 16px;
+  font-size: 0.88rem;
+}
+.folio-art-index {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+.folio-art-index figure {
+  min-width: 0;
+}
+.folio-art-index img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 0.85;
+  object-fit: cover;
+}
+.folio-art-index figcaption {
+  margin-top: 10px;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
 /* Composition variants, shared where the information structure is the same. */
 [data-model='minimal'] .folio-intro {
   min-height: 58vh;
@@ -543,6 +656,7 @@
     font-size: clamp(2.6rem, 9vw, 4.4rem);
   }
   .folio-poster,
+  .folio-hero-grid,
   .folio-about-grid,
   .folio-contact,
   [data-model='sidebar'] .folio-intro {
@@ -569,6 +683,9 @@
     grid-template-columns: 1fr;
   }
   .folio-index {
+    grid-template-columns: 1fr;
+  }
+  .folio-steps {
     grid-template-columns: 1fr;
   }
   .folio-swatch-row {

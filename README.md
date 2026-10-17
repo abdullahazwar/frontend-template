@@ -1,10 +1,10 @@
 # Frontend Template
 
-90 template HTML dalam 10 kategori. Koleksi portofolio berisi 36 model,
+108 template HTML dalam 10 kategori. Koleksi portofolio berisi 54 model,
 dikelompokkan ke sembilan profesi. Tersedia juga contoh native React dan Vue.
 
-30 portofolio tambahan mencakup 24 implementasi orisinal dan enam adaptasi
-bagian kode Simplefolio, DevPortfolio, serta AstroPaper yang berlisensi MIT.
+Koleksi portofolio mencakup enam model awal, 42 tambahan orisinal, dan enam
+adaptasi bagian kode Simplefolio, DevPortfolio, serta AstroPaper berlisensi MIT.
 Pemberitahuan lisensi dan sumber tersimpan bersama proyek.
 
 ## Mulai
@@ -32,7 +32,7 @@ contoh framework memerlukan server HTTP dan koneksi CDN.
 - User: 6 halaman akun dan aktivitas.
 - Toko daring: 6 model katalog dan produk.
 - Login: 6 model akses akun.
-- Portofolio: 36 model dengan kategori dan asal kode.
+- Portofolio: 54 model dengan kategori dan asal kode.
 - Perusahaan: 6 halaman bisnis dan layanan.
 - Blog: 6 model tulisan dan publikasi.
 - Forum: 6 model diskusi.
@@ -42,20 +42,21 @@ contoh framework memerlukan server HTTP dan koneksi CDN.
 
 ## Model portofolio
 
-- `developer/`: 6 model, termasuk minimal, timeline, terminal, dan release log.
-- `design/`: 5 model untuk UI, UX, brand, dan sistem desain.
-- `photography/`: 4 model lembar kontak, dokumenter, masonry, dan editorial.
-- `architecture/`: 4 model arsitektur, interior, dan desain produk.
-- `creative/`: 6 model film, komposer, game art, ilustrasi, dan art direction.
-- `writing/`: 3 model esai, jurnalistik, dan copywriting.
-- `research/`: 3 model akademik, penelitian, dan analisis data.
-- `professional/`: 3 model konsultan, engineer lapangan, dan freelancer.
-- `student/`: 2 model lulusan serta pelajar TKJ.
+- `developer/`: 8 model, termasuk DevOps, keamanan, terminal, dan release log.
+- `design/`: 7 model untuk UI, UX, brand, riset, serta desain inklusif.
+- `photography/`: 6 model termasuk fotografi produk dan seri alam.
+- `architecture/`: 6 model arsitektur, interior, lanskap, dan desain ruang.
+- `creative/`: 8 model film, musik, ilustrasi, tattoo art, serta keramik.
+- `writing/`: 5 model esai, jurnalistik, copywriting, editor, dan penerjemah.
+- `research/`: 5 model akademik, laboratorium, data, dan geospasial.
+- `professional/`: 5 model konsultan, engineer, freelancer, pengajar, dan
+  kuliner.
+- `student/`: 4 model lulusan, pelajar TKJ, tugas akhir, serta peserta magang.
 
-Setiap folder memuat README yang menjelaskan model dan cara mengubah isi. 30
-halaman baru memiliki pencarian karya, filter, detail proses, kontak contoh yang
-bisa disalin, dan unduh profil demonstrasi sebagai `.txt`. Model visual memiliki
-dialog untuk memperbesar ilustrasi.
+Setiap folder memuat README yang menjelaskan model dan cara mengubah isi. 48
+halaman tambahan memiliki pencarian karya, filter, detail proses, kontak contoh
+yang bisa disalin, dan unduh profil demonstrasi sebagai `.txt`. Model visual
+memiliki dialog untuk memperbesar ilustrasi.
 
 Enam alamat portofolio lama tetap berfungsi melalui halaman pengalihan. Lokasi
 kanonis baru ada di `templates/portfolio/<profesi>/`.
@@ -76,7 +77,7 @@ JavaScript dimuat melalui `<script src="..." defer></script>`. Kode interaksi
 bersama tetap berada di `assets/`, sehingga perbaikan berlaku ke halaman
 terkait.
 
-90 template dan dua contoh framework memakai stylesheet terpisah. Style statis
+108 template dan dua contoh framework memakai stylesheet terpisah. Style statis
 sudah menjadi class CSS. Tidak ada blok CSS atau kode JavaScript yang berjalan
 di dalam HTML sumber. Dua import map framework tetap berupa konfigurasi JSON.
 
@@ -96,6 +97,9 @@ npm run sync:previews
 ```
 
 [Panduan pemeliharaan](docs/MAINTENANCE.md)
+
+[AGENTS.md](AGENTS.md) menetapkan pemisahan HTML, CSS, dan JavaScript sebagai
+aturan untuk setiap perubahan antarmuka berikutnya dalam repo ini.
 
 ## Struktur
 
@@ -192,7 +196,7 @@ npm run check
 ```
 
 Node.js 20+ dan Python 3. Tidak perlu dependency runtime. Pemeriksaan mencakup
-metadata, 90 template kanonis, 99 halaman HTML, redirect lama, sintaks JS,
+metadata, 108 template kanonis, 117 halaman HTML, redirect lama, sintaks JS,
 referensi lokal, gabungan filter galeri, aturan data demo, dan ekspor seluruh
 halaman.
 

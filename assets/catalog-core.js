@@ -7,7 +7,7 @@
     photography: 'Fotografi',
     architecture: 'Arsitektur, interior, produk',
     creative: 'Film, musik, dan seni',
-    writing: 'Penulis dan jurnalis',
+    writing: 'Penulis, editor, dan penerjemah',
     research: 'Akademik, riset, data',
     professional: 'Profesional dan freelancer',
     student: 'Mahasiswa dan pelajar',

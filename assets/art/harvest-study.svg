@@ -1,0 +1,67 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="800"
+  height="600"
+  viewBox="0 0 800 600"
+>
+  <title>Ilustrasi bahan dan komposisi hidangan</title>
+  <rect
+    width="800"
+    height="600"
+    fill="#dfe4c9"
+  />
+  <circle
+    cx="400"
+    cy="315"
+    r="230"
+    fill="#f7f5e8"
+  />
+  <circle
+    cx="400"
+    cy="315"
+    r="185"
+    fill="none"
+    stroke="#c7c6ae"
+    stroke-width="3"
+  />
+  <path
+    d="M300 410C220 355 235 235 345 210C355 305 355 360 300 410Z"
+    fill="#607d42"
+  />
+  <path
+    d="M300 410L330 245"
+    stroke="#b1c28a"
+    stroke-width="5"
+  />
+  <path
+    d="M390 405C360 320 425 220 535 245C485 335 450 395 390 405Z"
+    fill="#8c9b54"
+  />
+  <path
+    d="M390 405L505 265"
+    stroke="#d0d5a1"
+    stroke-width="5"
+  />
+  <circle
+    cx="475"
+    cy="375"
+    r="55"
+    fill="#bb6846"
+  />
+  <circle
+    cx="495"
+    cy="360"
+    r="17"
+    fill="#e4b16d"
+  />
+  <path
+    d="M485 315L500 295L510 320L535 310L525 335"
+    fill="#45603e"
+  />
+  <path
+    d="M120 135V440M100 135V215Q100 245 120 245Q140 245 140 215V135M680 135V440M680 135Q640 195 680 260"
+    fill="none"
+    stroke="#7a7254"
+    stroke-width="9"
+  />
+</svg>

@@ -16,6 +16,20 @@ Setiap file HTML dapat dibuka langsung atau melalui `npm start`.
 - Kegunaan: Pelajar TKJ dan teknisi pemula. Model terminal, karya dan proses.
 - Sumber: implementasi orisinal.
 
+### [Thesis / Student](thesis-student.html)
+
+- Model: `thesis`.
+- Kegunaan: Mahasiswa dan peneliti pemula.
+- File desain: [thesis-student.css](thesis-student.css).
+- Sumber: implementasi orisinal.
+
+### [Workshop / Apprentice](workshop-apprentice.html)
+
+- Model: `workshop`.
+- Kegunaan: Pelajar teknik dan peserta magang.
+- File desain: [workshop-apprentice.css](workshop-apprentice.css).
+- Sumber: implementasi orisinal.
+
 ## Mengubah isi
 
 Edit nama, peran, pengantar, dan bagian `data-work` pada file HTML. Warna dan

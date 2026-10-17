@@ -24,7 +24,7 @@ test('profession, source, search, and favorites compose without changing input',
     selectTemplates(manifest, options).map((t) => t.id),
     ['simple-developer'],
   );
-  assert.equal(manifest.length, 90);
+  assert.equal(manifest.length, 108);
   assert.equal(
     selectTemplates(manifest, { ...options, query: 'nonexistent' }).length,
     0,
@@ -44,7 +44,7 @@ test('portfolio-only filters do not hide unrelated categories', () => {
     }).length,
     6,
   );
-  assert.equal(selectTemplates(manifest, { category: 'portfolio' }).length, 36);
+  assert.equal(selectTemplates(manifest, { category: 'portfolio' }).length, 54);
   assert.equal(
     selectTemplates(manifest, {
       category: 'portfolio',

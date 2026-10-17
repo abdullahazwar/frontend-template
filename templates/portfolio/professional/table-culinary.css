@@ -1,0 +1,84 @@
+/* Page theme and composition: table-culinary. */
+:root {
+  --bg: #eef0e2;
+  --surface: #fafbf2;
+  --ink: #35402c;
+  --muted: #5a6649;
+  --accent: #536d36;
+  --soft: #dfe5c9;
+  --line: #c7d0ae;
+  --accent-ink: #ffffff;
+  color-scheme: light;
+}
+
+.folio-shell {
+  max-width: 1180px;
+}
+.folio-hero-grid {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: end;
+}
+.folio-intro h1 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(2.8rem, 5.4vw, 5rem);
+  max-width: 16ch;
+}
+.folio-hero-media img {
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+.folio-hero-media figcaption {
+  text-align: center;
+}
+.folio-work-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 48px 32px;
+}
+.folio-project:first-child {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  gap: 40px;
+  align-items: center;
+}
+.folio-project-copy {
+  padding-top: 22px;
+}
+.folio-project:first-child .folio-project-copy {
+  padding-top: 0;
+}
+.folio-cover {
+  background: transparent;
+}
+.folio-cover img {
+  aspect-ratio: 1.4;
+}
+.folio-cover figcaption {
+  padding-left: 0;
+}
+.folio-project h3 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+@media (max-width: 760px) {
+  .folio-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .folio-project:first-child {
+    display: block;
+  }
+  .folio-project:first-child .folio-project-copy {
+    padding-top: 22px;
+  }
+  .folio-hero-media {
+    max-width: 500px;
+    margin-inline: auto;
+  }
+}
+@media (max-width: 480px) {
+  .folio-work-grid {
+    grid-template-columns: 1fr;
+  }
+}

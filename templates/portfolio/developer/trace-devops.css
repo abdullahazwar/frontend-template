@@ -1,0 +1,65 @@
+/* Page theme and composition: trace-devops. */
+:root {
+  --bg: #18272f;
+  --surface: #22353e;
+  --ink: #edf2e9;
+  --muted: #bdccc8;
+  --accent: #cadc88;
+  --soft: #344a52;
+  --line: #455d63;
+  --accent-ink: #18272f;
+  color-scheme: dark;
+}
+
+.folio-shell {
+  max-width: 1120px;
+}
+.folio-intro h1 {
+  font-size: clamp(2.6rem, 5vw, 4.8rem);
+  max-width: 18ch;
+}
+.folio-kicker,
+.folio-project-meta,
+.folio-steps li::before {
+  font-family: ui-monospace, Consolas, monospace;
+}
+.folio-hero-grid {
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
+}
+.folio-hero-media {
+  border: 1px solid var(--line);
+  padding: 12px;
+}
+.folio-steps {
+  margin-top: 40px;
+}
+.folio-work-grid {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+.folio-project {
+  display: grid;
+  grid-template-columns: minmax(0, 0.6fr) minmax(0, 1fr);
+  gap: 32px;
+  padding-block: 32px;
+  border-top: 1px solid var(--line);
+}
+.folio-cover {
+  align-self: start;
+}
+.folio-cover img {
+  aspect-ratio: 1.5;
+}
+.folio-project h3 {
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: clamp(1.4rem, 2.4vw, 2rem);
+}
+@media (max-width: 760px) {
+  .folio-hero-grid,
+  .folio-project {
+    grid-template-columns: 1fr;
+  }
+  .folio-hero-media {
+    max-width: 520px;
+  }
+}

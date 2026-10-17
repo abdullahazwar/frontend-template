@@ -106,7 +106,7 @@ test('CSV escapes commas, quotes, newlines and spreadsheet formulas', () => {
   );
 });
 test('empty cart total is zero', () => assert.equal(C.cartTotal([]), 0));
-test('all 90 exports keep portable HTML, CSS, JS, and image files separate', async () => {
+test('all template exports keep portable HTML, CSS, JS, and image files separate', async () => {
   const directory = await mkdtemp(join(tmpdir(), 'frontend-exports-'));
   const manifest = JSON.parse(
     await readFile(new URL('../templates.json', import.meta.url), 'utf8'),

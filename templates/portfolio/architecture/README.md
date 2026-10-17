@@ -29,6 +29,20 @@ Setiap file HTML dapat dibuka langsung atau melalui `npm start`.
 - Kegunaan: Industrial designer. Model object, karya dan proses.
 - Sumber: implementasi orisinal.
 
+### [Terrain / Landscape](terrain-landscape.html)
+
+- Model: `site-plan`.
+- Kegunaan: Desainer lanskap.
+- File desain: [terrain-landscape.css](terrain-landscape.css).
+- Sumber: implementasi orisinal.
+
+### [Section / Spatial](section-spatial.html)
+
+- Model: `section`.
+- Kegunaan: Desainer ruang dan pameran.
+- File desain: [section-spatial.css](section-spatial.css).
+- Sumber: implementasi orisinal.
+
 ## Mengubah isi
 
 Edit nama, peran, pengantar, dan bagian `data-work` pada file HTML. Warna dan

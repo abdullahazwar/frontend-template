@@ -1,0 +1,78 @@
+/* Page theme and composition: fieldwork-ux. */
+:root {
+  --bg: #f3ebe0;
+  --surface: #fcf7ef;
+  --ink: #3d3028;
+  --muted: #6c5a4b;
+  --accent: #994c30;
+  --soft: #e6d8c5;
+  --line: #d6c5b0;
+  --accent-ink: #ffffff;
+  color-scheme: light;
+}
+
+.folio-shell {
+  max-width: 1120px;
+}
+.folio-hero-grid {
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  align-items: start;
+}
+.folio-intro h1 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(2.6rem, 4.8vw, 4.6rem);
+}
+.folio-hero-media {
+  padding: 22px;
+  background: var(--surface);
+  transform: rotate(1deg);
+}
+.folio-example {
+  border-left: 3px solid var(--accent);
+  border-block: 0;
+  padding: 8px 0 8px 24px;
+}
+.folio-example small {
+  font-family: system-ui, sans-serif;
+  display: block;
+  color: var(--muted);
+  font-size: 0.75rem;
+  margin-top: 12px;
+}
+.folio-work-grid {
+  grid-template-columns: 1fr;
+  gap: 48px;
+}
+.folio-project {
+  display: grid;
+  grid-template-columns: minmax(0, 0.45fr) minmax(0, 1fr);
+  gap: 44px;
+}
+.folio-cover {
+  align-self: start;
+}
+.folio-cover img {
+  aspect-ratio: 0.95;
+}
+.folio-project-copy {
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+}
+.folio-project h3 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+@media (max-width: 760px) {
+  .folio-hero-grid,
+  .folio-project {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .folio-hero-media {
+    transform: none;
+  }
+  .folio-cover img {
+    aspect-ratio: 1.6;
+  }
+}

@@ -1,0 +1,50 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="800"
+  height="600"
+  viewBox="0 0 800 600"
+>
+  <title>Ilustrasi motif botani dalam garis hitam</title>
+  <rect
+    width="800"
+    height="600"
+    fill="#f0e9da"
+  />
+  <path
+    d="M400 505V250M400 430C305 440 265 385 260 345C340 335 382 375 400 430ZM400 365C485 375 530 320 535 285C465 280 425 315 400 365Z"
+    fill="none"
+    stroke="#302c28"
+    stroke-width="8"
+  />
+  <path
+    d="M400 295C300 270 285 185 335 165C315 85 395 70 420 130C470 65 535 115 495 175C570 210 520 285 450 260C440 290 420 300 400 295Z"
+    fill="#f8f3e9"
+    stroke="#302c28"
+    stroke-width="8"
+  />
+  <circle
+    cx="415"
+    cy="215"
+    r="48"
+    fill="#ad493c"
+    stroke="#302c28"
+    stroke-width="7"
+  />
+  <path
+    d="M300 505H500M295 100L310 115M540 430L555 445M235 255L250 270M550 100L535 115"
+    stroke="#302c28"
+    stroke-width="5"
+  />
+  <circle
+    cx="240"
+    cy="430"
+    r="7"
+    fill="#ad493c"
+  />
+  <circle
+    cx="560"
+    cy="220"
+    r="7"
+    fill="#ad493c"
+  />
+</svg>

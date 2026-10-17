@@ -1,0 +1,85 @@
+/* Page theme and composition: thesis-student. */
+:root {
+  --bg: #eaf0f5;
+  --surface: #f9fbfd;
+  --ink: #2b3d56;
+  --muted: #53657a;
+  --accent: #345d91;
+  --soft: #dbe5ef;
+  --line: #bdcede;
+  --accent-ink: #ffffff;
+  color-scheme: light;
+}
+
+.folio-shell {
+  max-width: 980px;
+}
+.folio-intro {
+  padding-block: 48px;
+}
+.folio-hero-grid {
+  grid-template-columns: minmax(0, 1fr) 240px;
+  align-items: start;
+}
+.folio-intro h1 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  max-width: 18ch;
+  font-size: clamp(2.6rem, 4.8vw, 4.4rem);
+}
+.folio-hero-media {
+  padding: 12px;
+  border: 1px solid var(--line);
+}
+.folio-dossier {
+  font-size: 0.88rem;
+}
+.folio-work-grid {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+.folio-project {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 36px;
+  padding-block: 32px;
+  border-top: 1px solid var(--ink);
+}
+.folio-cover {
+  align-self: start;
+}
+.folio-cover img {
+  aspect-ratio: 0.85;
+}
+.folio-cover button {
+  position: static;
+  width: 100%;
+}
+.folio-project h3 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+.folio-project .folio-project-meta {
+  font-family: ui-monospace, Consolas, monospace;
+}
+@media (max-width: 760px) {
+  .folio-hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .folio-hero-media {
+    max-width: 360px;
+  }
+}
+@media (max-width: 600px) {
+  .folio-project {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .folio-cover img {
+    aspect-ratio: 1.7;
+  }
+  .folio-cover button {
+    position: absolute;
+    width: auto;
+  }
+}

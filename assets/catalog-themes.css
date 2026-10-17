@@ -808,3 +808,165 @@
   --preview-accent: #8b3542;
   --preview-soft: #eadbd8;
 }
+
+.template-thumb[data-template='trace-devops'] {
+  --preview-bg: #18272f;
+  --preview-surface: #22353e;
+  --preview-ink: #edf2e9;
+  --preview-muted: #bdccc8;
+  --preview-accent: #cadc88;
+  --preview-soft: #344a52;
+}
+
+.template-thumb[data-template='audit-security'] {
+  --preview-bg: #f0f0e6;
+  --preview-surface: #fbfbf5;
+  --preview-ink: #25332e;
+  --preview-muted: #55655c;
+  --preview-accent: #32684b;
+  --preview-soft: #dfe5d7;
+}
+
+.template-thumb[data-template='fieldwork-ux'] {
+  --preview-bg: #f3ebe0;
+  --preview-surface: #fcf7ef;
+  --preview-ink: #3d3028;
+  --preview-muted: #6c5a4b;
+  --preview-accent: #994c30;
+  --preview-soft: #e6d8c5;
+}
+
+.template-thumb[data-template='access-inclusive'] {
+  --preview-bg: #edf2f6;
+  --preview-surface: #ffffff;
+  --preview-ink: #233a49;
+  --preview-muted: #506877;
+  --preview-accent: #285d83;
+  --preview-soft: #dce8ef;
+}
+
+.template-thumb[data-template='still-productphoto'] {
+  --preview-bg: #f4f2ec;
+  --preview-surface: #ffffff;
+  --preview-ink: #36342d;
+  --preview-muted: #676258;
+  --preview-accent: #77603e;
+  --preview-soft: #e6e0d4;
+}
+
+.template-thumb[data-template='trail-nature'] {
+  --preview-bg: #1f3029;
+  --preview-surface: #2b4035;
+  --preview-ink: #f0efe2;
+  --preview-muted: #becbbc;
+  --preview-accent: #d5d99d;
+  --preview-soft: #3d5142;
+}
+
+.template-thumb[data-template='terrain-landscape'] {
+  --preview-bg: #eceee3;
+  --preview-surface: #f9faf1;
+  --preview-ink: #303b2e;
+  --preview-muted: #5a6551;
+  --preview-accent: #50683b;
+  --preview-soft: #dce2cb;
+}
+
+.template-thumb[data-template='section-spatial'] {
+  --preview-bg: #f5f3ed;
+  --preview-surface: #ffffff;
+  --preview-ink: #34312f;
+  --preview-muted: #655f5a;
+  --preview-accent: #97472f;
+  --preview-soft: #e7ddd0;
+}
+
+.template-thumb[data-template='ink-tattoo'] {
+  --preview-bg: #f1ede4;
+  --preview-surface: #fbf8f1;
+  --preview-ink: #272523;
+  --preview-muted: #645d53;
+  --preview-accent: #a33731;
+  --preview-soft: #e3dbcd;
+}
+
+.template-thumb[data-template='clay-ceramic'] {
+  --preview-bg: #eee6dc;
+  --preview-surface: #f9f3eb;
+  --preview-ink: #49352b;
+  --preview-muted: #6a5445;
+  --preview-accent: #36626b;
+  --preview-soft: #dfcfbc;
+}
+
+.template-thumb[data-template='proof-editor'] {
+  --preview-bg: #f4f0e7;
+  --preview-surface: #fffdf7;
+  --preview-ink: #37332d;
+  --preview-muted: #676057;
+  --preview-accent: #8e4035;
+  --preview-soft: #e8dfd0;
+}
+
+.template-thumb[data-template='bridge-translator'] {
+  --preview-bg: #eaf0f1;
+  --preview-surface: #f8fbfb;
+  --preview-ink: #243e46;
+  --preview-muted: #4b666e;
+  --preview-accent: #2e6577;
+  --preview-soft: #d4e3e7;
+}
+
+.template-thumb[data-template='atlas-geospatial'] {
+  --preview-bg: #1e303a;
+  --preview-surface: #29414b;
+  --preview-ink: #eef3ed;
+  --preview-muted: #bfced0;
+  --preview-accent: #9ddbd0;
+  --preview-soft: #3b535b;
+}
+
+.template-thumb[data-template='bench-scientist'] {
+  --preview-bg: #f0ecf0;
+  --preview-surface: #fcfafc;
+  --preview-ink: #3d303c;
+  --preview-muted: #685a68;
+  --preview-accent: #805267;
+  --preview-soft: #e3d8e0;
+}
+
+.template-thumb[data-template='lesson-educator'] {
+  --preview-bg: #f4ede3;
+  --preview-surface: #fffbf5;
+  --preview-ink: #3b302b;
+  --preview-muted: #6c5c50;
+  --preview-accent: #9a4c30;
+  --preview-soft: #e8dbca;
+}
+
+.template-thumb[data-template='table-culinary'] {
+  --preview-bg: #eef0e2;
+  --preview-surface: #fafbf2;
+  --preview-ink: #35402c;
+  --preview-muted: #5a6649;
+  --preview-accent: #536d36;
+  --preview-soft: #dfe5c9;
+}
+
+.template-thumb[data-template='thesis-student'] {
+  --preview-bg: #eaf0f5;
+  --preview-surface: #f9fbfd;
+  --preview-ink: #2b3d56;
+  --preview-muted: #53657a;
+  --preview-accent: #345d91;
+  --preview-soft: #dbe5ef;
+}
+
+.template-thumb[data-template='workshop-apprentice'] {
+  --preview-bg: #f0eddb;
+  --preview-surface: #fcfaef;
+  --preview-ink: #353323;
+  --preview-muted: #625e45;
+  --preview-accent: #79601d;
+  --preview-soft: #e2dcb9;
+}

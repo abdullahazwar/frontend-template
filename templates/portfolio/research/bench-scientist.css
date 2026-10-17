@@ -1,0 +1,81 @@
+/* Page theme and composition: bench-scientist. */
+:root {
+  --bg: #f0ecf0;
+  --surface: #fcfafc;
+  --ink: #3d303c;
+  --muted: #685a68;
+  --accent: #805267;
+  --soft: #e3d8e0;
+  --line: #cebecb;
+  --accent-ink: #ffffff;
+  color-scheme: light;
+}
+
+.folio-shell {
+  max-width: 1060px;
+}
+.folio-hero-grid {
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.7fr);
+  align-items: start;
+}
+.folio-intro h1 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(2.6rem, 4.8vw, 4.5rem);
+  max-width: 17ch;
+}
+.folio-hero-media {
+  border-left: 1px solid var(--line);
+  padding-left: 24px;
+}
+.folio-steps li {
+  border-top: 2px solid var(--accent);
+}
+.folio-work-grid {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+.folio-project {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 40px;
+  padding-block: 32px;
+  border-top: 1px solid var(--line);
+}
+.folio-cover {
+  align-self: start;
+}
+.folio-cover img {
+  aspect-ratio: 1;
+}
+.folio-cover button {
+  position: static;
+  width: 100%;
+}
+.folio-project h3 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+@media (max-width: 760px) {
+  .folio-hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .folio-hero-media {
+    border-left: 0;
+    padding-left: 0;
+    max-width: 420px;
+  }
+}
+@media (max-width: 600px) {
+  .folio-project {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .folio-cover img {
+    aspect-ratio: 1.7;
+  }
+  .folio-cover button {
+    position: absolute;
+    width: auto;
+  }
+}

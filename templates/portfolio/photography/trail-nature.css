@@ -1,0 +1,87 @@
+/* Page theme and composition: trail-nature. */
+:root {
+  --bg: #1f3029;
+  --surface: #2b4035;
+  --ink: #f0efe2;
+  --muted: #becbbc;
+  --accent: #d5d99d;
+  --soft: #3d5142;
+  --line: #52634f;
+  --accent-ink: #1f3029;
+  color-scheme: dark;
+}
+
+.folio-shell {
+  max-width: 1240px;
+}
+.folio-intro {
+  padding-block: 48px;
+}
+.folio-intro h1 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  max-width: 16ch;
+  font-size: clamp(2.9rem, 6.4vw, 5.8rem);
+}
+.folio-intro .lead {
+  max-width: 62ch;
+}
+.folio-hero-media {
+  margin-top: 42px;
+}
+.folio-hero-media img {
+  aspect-ratio: 2.2;
+}
+.folio-dossier {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.folio-dossier > div {
+  display: block;
+  padding: 18px 20px 18px 0;
+}
+.folio-dossier > div + div {
+  border-top: 0;
+}
+.folio-dossier dd {
+  margin-top: 8px;
+}
+.folio-work-grid {
+  grid-template-columns: 1fr;
+  gap: 60px;
+}
+.folio-cover img {
+  aspect-ratio: 2.1;
+}
+.folio-project-copy {
+  display: grid;
+  grid-template-columns: minmax(0, 0.6fr) minmax(0, 1fr);
+  gap: 0 48px;
+  margin-top: 24px;
+}
+.folio-project-meta {
+  grid-column: 1;
+}
+.folio-project h3 {
+  grid-column: 1;
+  margin-top: 8px;
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+.folio-project-copy > p:not(.folio-project-meta),
+.folio-project-copy details {
+  grid-column: 2;
+}
+@media (max-width: 760px) {
+  .folio-project-copy,
+  .folio-dossier {
+    display: block;
+  }
+  .folio-dossier > div + div {
+    border-top: 1px solid var(--line);
+  }
+  .folio-hero-media img,
+  .folio-cover img {
+    aspect-ratio: 1.35;
+  }
+}

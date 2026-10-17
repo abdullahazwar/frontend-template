@@ -1,0 +1,92 @@
+/* Page theme and composition: ink-tattoo. */
+:root {
+  --bg: #f1ede4;
+  --surface: #fbf8f1;
+  --ink: #272523;
+  --muted: #645d53;
+  --accent: #a33731;
+  --soft: #e3dbcd;
+  --line: #cfc4b3;
+  --accent-ink: #ffffff;
+  color-scheme: light;
+}
+
+.folio-shell {
+  max-width: 1160px;
+}
+.folio-nav {
+  text-transform: uppercase;
+}
+.folio-intro {
+  text-align: center;
+  padding-block: 52px;
+}
+.folio-intro h1 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  max-width: 16ch;
+  margin-inline: auto;
+  font-size: clamp(3rem, 6.8vw, 6.5rem);
+}
+.folio-intro .lead {
+  margin-inline: auto;
+}
+.folio-actions {
+  justify-content: center;
+}
+.folio-art-index {
+  gap: 1px;
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  margin-top: 48px;
+}
+.folio-art-index figure {
+  background: var(--bg);
+  padding: 16px;
+}
+.folio-art-index img {
+  aspect-ratio: 1;
+}
+.folio-work-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+}
+.folio-cover {
+  background: transparent;
+}
+.folio-cover img {
+  aspect-ratio: 0.8;
+}
+.folio-project-copy {
+  border-top: 1px solid var(--ink);
+  padding-top: 20px;
+  margin-top: 20px;
+}
+.folio-project h3 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+@media (max-width: 900px) {
+  .folio-work-grid {
+    grid-template-columns: 1fr;
+  }
+  .folio-project {
+    display: grid;
+    grid-template-columns: minmax(0, 0.7fr) minmax(0, 1fr);
+    gap: 28px;
+  }
+}
+@media (max-width: 600px) {
+  .folio-project {
+    display: block;
+  }
+  .folio-art-index figure {
+    padding: 8px;
+  }
+  .folio-art-index figcaption {
+    font-size: 0.68rem;
+  }
+  .folio-cover img {
+    aspect-ratio: 1.1;
+  }
+}

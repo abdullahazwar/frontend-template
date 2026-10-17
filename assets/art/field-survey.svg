@@ -1,0 +1,86 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="800"
+  height="600"
+  viewBox="0 0 800 600"
+>
+  <title>Ilustrasi catatan observasi dan sintesis</title>
+  <rect
+    width="800"
+    height="600"
+    fill="#e7dac6"
+  />
+  <rect
+    x="90"
+    y="75"
+    width="410"
+    height="450"
+    fill="#fcf8ef"
+  />
+  <rect
+    x="135"
+    y="120"
+    width="210"
+    height="20"
+    fill="#754e3e"
+  />
+  <path
+    d="M135 180H440M135 205H390M135 230H420"
+    stroke="#b6aa95"
+    stroke-width="10"
+  />
+  <rect
+    x="135"
+    y="285"
+    width="125"
+    height="125"
+    fill="#b9c4a7"
+  />
+  <rect
+    x="285"
+    y="285"
+    width="155"
+    height="125"
+    fill="#d8b793"
+  />
+  <path
+    d="M135 455H360"
+    stroke="#b6aa95"
+    stroke-width="10"
+  />
+  <path
+    d="M500 185H605V315"
+    fill="none"
+    stroke="#774d3a"
+    stroke-width="3"
+    stroke-dasharray="8 7"
+  />
+  <rect
+    x="475"
+    y="330"
+    width="235"
+    height="180"
+    fill="#f6d083"
+    transform="rotate(-5 592 420)"
+  />
+  <path
+    d="M520 385H665M520 420H640M520 455H655"
+    stroke="#8a683a"
+    stroke-width="9"
+  />
+  <circle
+    cx="605"
+    cy="170"
+    r="40"
+    fill="#9a5039"
+  />
+  <text
+    x="595"
+    y="183"
+    fill="#fff7ea"
+    font-family="Georgia, serif"
+    font-size="40"
+  >
+    ?
+  </text>
+</svg>

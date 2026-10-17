@@ -1,0 +1,74 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="800"
+  height="600"
+  viewBox="0 0 800 600"
+>
+  <title>Ilustrasi naskah dua bahasa yang dibaca berdampingan</title>
+  <rect
+    width="800"
+    height="600"
+    fill="#dce8ea"
+  />
+  <rect
+    x="80"
+    y="90"
+    width="290"
+    height="420"
+    fill="#fbfcf5"
+  />
+  <rect
+    x="430"
+    y="90"
+    width="290"
+    height="420"
+    fill="#fbfcf5"
+  />
+  <text
+    x="120"
+    y="180"
+    fill="#315566"
+    font-family="Georgia, serif"
+    font-size="58"
+  >
+    Aa
+  </text>
+  <text
+    x="470"
+    y="180"
+    fill="#315566"
+    font-family="Georgia, serif"
+    font-size="58"
+  >
+    Aa
+  </text>
+  <path
+    d="M120 230H325M120 265H300M120 300H315M120 370H325M120 405H280M470 230H675M470 265H650M470 300H665M470 370H675M470 405H630"
+    stroke="#aebfc3"
+    stroke-width="11"
+  />
+  <path
+    d="M350 335H450M430 320L450 335L430 350"
+    fill="none"
+    stroke="#a76242"
+    stroke-width="6"
+  />
+  <text
+    x="120"
+    y="470"
+    fill="#60757b"
+    font-family="monospace"
+    font-size="17"
+  >
+    SOURCE / CONTEXT
+  </text>
+  <text
+    x="470"
+    y="470"
+    fill="#60757b"
+    font-family="monospace"
+    font-size="17"
+  >
+    MEANING / READER
+  </text>
+</svg>

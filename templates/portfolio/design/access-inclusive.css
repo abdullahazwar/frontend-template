@@ -1,0 +1,86 @@
+/* Page theme and composition: access-inclusive. */
+:root {
+  --bg: #edf2f6;
+  --surface: #ffffff;
+  --ink: #233a49;
+  --muted: #506877;
+  --accent: #285d83;
+  --soft: #dce8ef;
+  --line: #c2d3df;
+  --accent-ink: #ffffff;
+  color-scheme: light;
+}
+
+.folio-shell {
+  max-width: 1200px;
+}
+.folio-intro h1 {
+  font-size: clamp(2.6rem, 4.6vw, 4.6rem);
+  max-width: 18ch;
+}
+.folio-hero-grid {
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 0.6fr);
+}
+.folio-hero-media {
+  background: var(--surface);
+  border: 2px solid var(--ink);
+  padding: 18px;
+}
+.folio-steps {
+  gap: 0;
+  border: 1px solid var(--line);
+}
+.folio-steps li {
+  border: 0;
+  padding: 24px;
+}
+.folio-steps li + li {
+  border-left: 1px solid var(--line);
+}
+.folio-work-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+.folio-project {
+  border-top: 3px solid var(--accent);
+  padding-top: 20px;
+}
+.folio-project h3 {
+  font-size: clamp(1.3rem, 2vw, 1.7rem);
+}
+.folio-project-copy {
+  padding-top: 24px;
+}
+.folio-cover img {
+  aspect-ratio: 1.5;
+}
+@media (max-width: 900px) {
+  .folio-work-grid {
+    grid-template-columns: 1fr;
+  }
+  .folio-project {
+    display: grid;
+    grid-template-columns: minmax(0, 0.6fr) minmax(0, 1fr);
+    gap: 24px;
+  }
+  .folio-project-copy {
+    padding-top: 0;
+  }
+}
+@media (max-width: 760px) {
+  .folio-hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .folio-project {
+    display: block;
+  }
+  .folio-project-copy {
+    padding-top: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .folio-steps li + li {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
+}

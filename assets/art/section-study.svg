@@ -1,0 +1,85 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="800"
+  height="600"
+  viewBox="0 0 800 600"
+>
+  <title>Ilustrasi potongan ruang dan rak</title>
+  <rect
+    width="800"
+    height="600"
+    fill="#eee7da"
+  />
+  <rect
+    x="80"
+    y="145"
+    width="640"
+    height="320"
+    fill="#faf8f0"
+  />
+  <path
+    d="M80 465V145H720V465M55 465H745"
+    fill="none"
+    stroke="#403d37"
+    stroke-width="9"
+  />
+  <path
+    d="M80 265H720M400 145V465"
+    stroke="#403d37"
+    stroke-width="5"
+  />
+  <rect
+    x="140"
+    y="315"
+    width="160"
+    height="18"
+    fill="#a96242"
+  />
+  <path
+    d="M155 333V440M285 333V440"
+    stroke="#a96242"
+    stroke-width="10"
+  />
+  <rect
+    x="455"
+    y="310"
+    width="180"
+    height="135"
+    fill="#d6c8b2"
+    stroke="#806d53"
+    stroke-width="4"
+  />
+  <path
+    d="M455 355H635M455 400H635M515 310V445M575 310V445"
+    stroke="#806d53"
+    stroke-width="4"
+  />
+  <path
+    d="M190 145V265M300 145V265M510 145V265M620 145V265"
+    stroke="#c2cdbb"
+    stroke-width="12"
+  />
+  <path
+    d="M80 510H720M80 500V520M720 500V520"
+    stroke="#958b7b"
+    stroke-width="2"
+  />
+  <text
+    x="80"
+    y="95"
+    fill="#6b6154"
+    font-family="monospace"
+    font-size="20"
+  >
+    SECTION STUDY / CONCEPT ONLY
+  </text>
+  <text
+    x="80"
+    y="550"
+    fill="#6b6154"
+    font-family="monospace"
+    font-size="17"
+  >
+    NOT A CONSTRUCTION DRAWING
+  </text>
+</svg>

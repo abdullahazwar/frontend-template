@@ -1,4 +1,4 @@
-# Konsultan, engineer, dan freelancer
+# Profesional, pengajar, dan kuliner
 
 Setiap file HTML dapat dibuka langsung atau melalui `npm start`.
 
@@ -21,6 +21,20 @@ Setiap file HTML dapat dibuka langsung atau melalui `npm start`.
 - Model: `minimal`.
 - Kegunaan: Independent web designer. Model minimal, karya dan proses.
 - Sumber: adaptasi kode MIT.
+
+### [Lesson / Educator](lesson-educator.html)
+
+- Model: `lesson`.
+- Kegunaan: Pengajar dan perancang pembelajaran.
+- File desain: [lesson-educator.css](lesson-educator.css).
+- Sumber: implementasi orisinal.
+
+### [Table / Culinary](table-culinary.html)
+
+- Model: `menu-notes`.
+- Kegunaan: Perancang menu dan kreator kuliner.
+- File desain: [table-culinary.css](table-culinary.css).
+- Sumber: implementasi orisinal.
 
 ## Mengubah isi
 

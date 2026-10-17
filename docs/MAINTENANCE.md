@@ -1,6 +1,7 @@
 # Pemeliharaan template
 
-Versi 1.3.0 memisahkan konten, tampilan, dan perilaku pada seluruh koleksi.
+Versi 1.4.0 mempertahankan pemisahan konten, tampilan, dan perilaku pada seluruh
+koleksi. Aturan permanen repo tercatat pada [AGENTS.md](../AGENTS.md).
 
 ## Tanggung jawab file
 

@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <meta
+      name="description"
+      content="Data analyst. Model notebook, karya dan proses."
+    />
+    <title>Notebook / Data / Frontend Template</title>
+    <link
+      rel="stylesheet"
+      href="../../../assets/base.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../../assets/portfolio.css"
+    />
+    <style>
+      :root {
+        --bg: #eaf1f4;
+        --surface: #f9fcfe;
+        --ink: #17384b;
+        --muted: #506d7e;
+        --accent: #216a88;
+        --soft: #ccdfe7;
+        --line: #ccdfe7;
+        --accent-ink: #ffffff;
+        color-scheme: light;
+      }
+    </style>
+    <script
+      src="../../../assets/core.js"
+      defer
+    ></script>
+    <script
+      src="../../../assets/runtime.js"
+      defer
+    ></script>
+    <script
+      src="../../../assets/portfolio.js"
+      defer
+    ></script>
+  </head>
+  <body
+    class="folio-page"
+    data-template="notebook-data"
+    data-model="notebook"
+  >
+    <a
+      class="skip"
+      href="#main"
+      >Lewati ke konten</a
+    >
+    <div class="demo-bar">
+      <a href="../../../index.html?category=portfolio">← Koleksi portofolio</a
+      ><span>Profil dan karya demonstrasi</span>
+    </div>
+    <div class="folio-shell">
+      <header class="folio-nav">
+        <a
+          class="folio-wordmark"
+          href="#main"
+          >Adit Nugraha /</a
+        >
+        <nav aria-label="Navigasi portofolio">
+          <a href="#karya">Karya</a><a href="#tentang">Tentang</a
+          ><a href="#kontak">Kontak</a>
+        </nav>
+      </header>
+      <main id="main">
+        <section class="folio-intro">
+          <div>
+            <p class="folio-kicker">Adit Nugraha / Data analyst</p>
+            <h1>Angka dengan definisi dan konteks.</h1>
+            <p
+              class="lead"
+              data-profile-summary
+            >
+              Studi analisis menggunakan fixture demonstrasi. Tidak ada klaim
+              kinerja bisnis atau hasil penelitian nyata.
+            </p>
+            <div class="folio-actions">
+              <a
+                class="btn"
+                href="#karya"
+                >Jelajahi karya ↓</a
+              >
+              <button
+                class="btn secondary"
+                type="button"
+                data-profile-download
+              >
+                Unduh profil contoh (.txt)
+              </button>
+            </div>
+          </div>
+          <div class="folio-notebook">
+            <span>In [1]</span><code>orders.groupby("status").size()</code
+            ><span>Out</span><code>dibayar: 12 / menunggu: 5 / batal: 3</code>
+          </div>
+          <figure
+            class="folio-bars"
+            aria-label="Data demo: 12 pesanan dibayar, 5 menunggu, 3 batal"
+          >
+            <div>
+              <span>Dibayar</span><b style="--value: 100%"></b><span>12</span>
+            </div>
+            <div>
+              <span>Menunggu</span><b style="--value: 41.67%"></b><span>5</span>
+            </div>
+            <div>
+              <span>Batal</span><b style="--value: 25%"></b><span>3</span>
+            </div>
+            <figcaption class="small muted">
+              Fixture demonstrasi. Jumlah pesanan, bukan data bisnis.
+            </figcaption>
+          </figure>
+        </section>
+        <section
+          id="karya"
+          class="folio-section"
+          data-portfolio
+          aria-labelledby="work-title"
+        >
+          <div class="folio-section-head">
+            <div>
+              <p class="folio-kicker">Indeks / karya terpilih</p>
+              <h2 id="work-title">Karya dan catatan.</h2>
+            </div>
+            <p
+              class="small muted"
+              role="status"
+              data-work-count
+            >
+              3 karya ditampilkan
+            </p>
+          </div>
+          <div class="folio-work-controls">
+            <label for="work-search"
+              >Cari karya<input
+                id="work-search"
+                type="search"
+                placeholder="Cari judul atau proses..."
+                data-work-search
+            /></label>
+            <div
+              class="folio-filters"
+              aria-label="Filter jenis karya"
+            >
+              <button
+                type="button"
+                data-work-filter="all"
+                aria-pressed="true"
+              >
+                Semua</button
+              ><button
+                type="button"
+                data-work-filter="Analisis"
+                aria-pressed="false"
+              >
+                Analisis</button
+              ><button
+                type="button"
+                data-work-filter="Metode"
+                aria-pressed="false"
+              >
+                Metode
+              </button>
+            </div>
+          </div>
+          <div class="folio-work-grid">
+            <article
+              class="folio-project"
+              data-work
+              data-kind="Analisis"
+            >
+              <figure class="folio-cover">
+                <img
+                  class="folio-work-image"
+                  src="../../../assets/art/product-ui.svg"
+                  alt="Ilustrasi konsep: Pola Pesanan"
+                  width="800"
+                  height="600"
+                /><button
+                  type="button"
+                  data-art-open
+                  aria-label="Perbesar ilustrasi Pola Pesanan"
+                >
+                  Perbesar ↗
+                </button>
+                <figcaption>Ilustrasi konsep / 01</figcaption>
+              </figure>
+              <p class="folio-project-meta">01 / Analisis / Konsep</p>
+              <h3>Pola Pesanan</h3>
+              <p>Total pesanan mencampur status dibayar dan batal.</p>
+              <details
+                class="folio-process"
+                id="proses-1"
+              >
+                <summary>Baca proses: Pola Pesanan</summary>
+                <h4>Konteks dan peran</h4>
+                <p>
+                  Studi mandiri demonstrasi. Peran: data analyst. Total pesanan
+                  mencampur status dibayar dan batal.
+                </p>
+                <h4>Keputusan</h4>
+                <p>Definisikan metrik sebelum agregasi dan visualisasi.</p>
+                <h4>Artefak dan tindak lanjut</h4>
+                <p>
+                  Contoh ini memperlihatkan arah dan dokumentasi proses. Ganti
+                  ilustrasi dengan artefak asli, jelaskan kontribusi pribadi,
+                  dan sertakan hasil validasi yang benar-benar tersedia.
+                </p>
+              </details>
+            </article>
+            <article
+              class="folio-project"
+              data-work
+              data-kind="Metode"
+            >
+              <figure class="folio-cover">
+                <img
+                  class="folio-work-image"
+                  src="../../../assets/art/poster.svg"
+                  alt="Ilustrasi konsep: Kamus Data"
+                  width="800"
+                  height="600"
+                /><button
+                  type="button"
+                  data-art-open
+                  aria-label="Perbesar ilustrasi Kamus Data"
+                >
+                  Perbesar ↗
+                </button>
+                <figcaption>Ilustrasi konsep / 02</figcaption>
+              </figure>
+              <p class="folio-project-meta">02 / Metode / Konsep</p>
+              <h3>Kamus Data</h3>
+              <p>Nama kolom tidak menjelaskan unit dan nilai kosong.</p>
+              <details
+                class="folio-process"
+                id="proses-2"
+              >
+                <summary>Baca proses: Kamus Data</summary>
+                <h4>Konteks dan peran</h4>
+                <p>
+                  Studi mandiri demonstrasi. Peran: data analyst. Nama kolom
+                  tidak menjelaskan unit dan nilai kosong.
+                </p>
+                <h4>Keputusan</h4>
+                <p>Cantumkan tipe, satuan, domain nilai, dan aturan missing.</p>
+                <h4>Artefak dan tindak lanjut</h4>
+                <p>
+                  Contoh ini memperlihatkan arah dan dokumentasi proses. Ganti
+                  ilustrasi dengan artefak asli, jelaskan kontribusi pribadi,
+                  dan sertakan hasil validasi yang benar-benar tersedia.
+                </p>
+              </details>
+            </article>
+            <article
+              class="folio-project"
+              data-work
+              data-kind="Analisis"
+            >
+              <figure class="folio-cover">
+                <img
+                  class="folio-work-image"
+                  src="../../../assets/art/bag.svg"
+                  alt="Ilustrasi konsep: Ketersediaan Stok"
+                  width="800"
+                  height="600"
+                /><button
+                  type="button"
+                  data-art-open
+                  aria-label="Perbesar ilustrasi Ketersediaan Stok"
+                >
+                  Perbesar ↗
+                </button>
+                <figcaption>Ilustrasi konsep / 03</figcaption>
+              </figure>
+              <p class="folio-project-meta">03 / Analisis / Konsep</p>
+              <h3>Ketersediaan Stok</h3>
+              <p>Snapshot stok tidak menjelaskan pergerakan barang.</p>
+              <details
+                class="folio-process"
+                id="proses-3"
+              >
+                <summary>Baca proses: Ketersediaan Stok</summary>
+                <h4>Konteks dan peran</h4>
+                <p>
+                  Studi mandiri demonstrasi. Peran: data analyst. Snapshot stok
+                  tidak menjelaskan pergerakan barang.
+                </p>
+                <h4>Keputusan</h4>
+                <p>Cocokkan saldo awal, perubahan, dan saldo akhir.</p>
+                <h4>Artefak dan tindak lanjut</h4>
+                <p>
+                  Contoh ini memperlihatkan arah dan dokumentasi proses. Ganti
+                  ilustrasi dengan artefak asli, jelaskan kontribusi pribadi,
+                  dan sertakan hasil validasi yang benar-benar tersedia.
+                </p>
+              </details>
+            </article>
+          </div>
+          <div
+            class="folio-empty"
+            data-work-empty
+            hidden
+          >
+            <p>Tidak ada karya yang cocok dengan filter.</p>
+            <button
+              class="btn secondary"
+              type="button"
+              data-work-reset
+            >
+              Reset pencarian
+            </button>
+          </div>
+        </section>
+        <section
+          id="tentang"
+          class="folio-section folio-about-grid"
+        >
+          <div>
+            <p class="folio-kicker">Pendekatan</p>
+            <h2>Alasan di balik pekerjaan.</h2>
+          </div>
+          <div>
+            <p class="lead">
+              Studi analisis menggunakan fixture demonstrasi. Tidak ada klaim
+              kinerja bisnis atau hasil penelitian nyata.
+            </p>
+            <dl class="folio-facts">
+              <div>
+                <dt>Fokus</dt>
+                <dd>Data analyst</dd>
+              </div>
+              <div>
+                <dt>Model</dt>
+                <dd>notebook</dd>
+              </div>
+              <div>
+                <dt>Isi</dt>
+                <dd>Studi konsep dan catatan proses</dd>
+              </div>
+              <div>
+                <dt>Status</dt>
+                <dd>Identitas dan karya fiktif</dd>
+              </div>
+            </dl>
+            <p class="folio-note">
+              Profil contoh untuk membantu penyusunan portofolio. Ganti nama,
+              karya, pengalaman, dan kontak sebelum publikasi.
+            </p>
+          </div>
+        </section>
+        <section
+          id="kontak"
+          class="folio-section folio-contact"
+        >
+          <div>
+            <p class="folio-kicker">Kontak contoh</p>
+            <h2>Mulai percakapan.</h2>
+          </div>
+          <div class="stack">
+            <code data-contact-address>halo@example.com</code>
+            <p class="small muted">
+              Alamat demonstrasi. Ganti dengan alamat milik pemilik portofolio.
+            </p>
+            <div>
+              <button
+                class="btn secondary"
+                type="button"
+                data-copy-contact
+              >
+                Salin alamat contoh
+              </button>
+            </div>
+            <p
+              class="small"
+              role="status"
+              data-contact-status
+            ></p>
+          </div>
+        </section>
+      </main>
+      <footer class="folio-footer">
+        <span>Adit Nugraha / Profil demonstrasi</span
+        ><a href="#main">Kembali ke atas ↑</a>
+      </footer>
+    </div>
+    <dialog
+      class="folio-lightbox"
+      data-art-dialog
+      aria-labelledby="art-dialog-title"
+    >
+      <div class="dialog-head">
+        <h2 id="art-dialog-title">Ilustrasi konsep</h2>
+        <button
+          class="btn secondary"
+          type="button"
+          data-art-close
+        >
+          Tutup
+        </button>
+      </div>
+      <figure>
+        <img
+          src="../../../assets/art/abstract.svg"
+          alt="Ilustrasi konsep terpilih"
+          width="800"
+          height="600"
+        />
+        <figcaption>Ilustrasi konsep.</figcaption>
+      </figure>
+    </dialog>
+  </body>
+</html>

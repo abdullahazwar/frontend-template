@@ -1,0 +1,42 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 800 600"
+>
+  <rect
+    width="800"
+    height="600"
+    fill="#a7b7c4"
+  />
+  <circle
+    cx="640"
+    cy="130"
+    r="70"
+    fill="#e8e7cc"
+  />
+  <path
+    d="M0 430L160 190L300 430L480 120L800 430Z"
+    fill="#718c97"
+  />
+  <path
+    d="M110 480L400 320L690 480L400 580Z"
+    fill="#4c675b"
+  />
+  <path
+    d="M110 480L400 580L690 480L540 590H260Z"
+    fill="#3b4a48"
+  />
+  <path
+    d="M370 360V130L420 100L470 130V360Z"
+    fill="#cec5a5"
+  />
+  <path
+    d="M345 135L420 60L495 135Z"
+    fill="#596159"
+  />
+  <path
+    d="M400 360L400 470L250 510"
+    stroke="#d3c49e"
+    stroke-width="18"
+    fill="none"
+  />
+</svg>

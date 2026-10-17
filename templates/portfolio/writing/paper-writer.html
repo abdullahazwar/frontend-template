@@ -1,0 +1,368 @@
+<!doctype html>
+<!--
+Adapted from satnaing/astro-paper at 35cfa7fbe0b897306d27670d3819e55d5205f3dd.
+Struktur daftar artikel, judul bertaut, tanggal semantik, dan ringkasan.
+
+MIT License
+
+Copyright (c) 2023 Sat Naing
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+-->
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <meta
+      name="description"
+      content="Writer and essayist. Model writer, karya dan proses."
+    />
+    <title>Paper / Writer / Frontend Template</title>
+    <link
+      rel="stylesheet"
+      href="../../../assets/base.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../../assets/portfolio.css"
+    />
+    <style>
+      :root {
+        --bg: #f6f3eb;
+        --surface: #fffdf7;
+        --ink: #282923;
+        --muted: #65685e;
+        --accent: #86502d;
+        --soft: #e6dfcf;
+        --line: #e6dfcf;
+        --accent-ink: #ffffff;
+        color-scheme: light;
+      }
+    </style>
+    <script
+      src="../../../assets/core.js"
+      defer
+    ></script>
+    <script
+      src="../../../assets/runtime.js"
+      defer
+    ></script>
+    <script
+      src="../../../assets/portfolio.js"
+      defer
+    ></script>
+  </head>
+  <body
+    class="folio-page"
+    data-template="paper-writer"
+    data-model="writer"
+  >
+    <a
+      class="skip"
+      href="#main"
+      >Lewati ke konten</a
+    >
+    <div class="demo-bar">
+      <a href="../../../index.html?category=portfolio">← Koleksi portofolio</a
+      ><span>Profil dan karya demonstrasi</span>
+    </div>
+    <div class="folio-shell">
+      <header class="folio-nav">
+        <a
+          class="folio-wordmark"
+          href="#main"
+          >Gita Aksara /</a
+        >
+        <nav aria-label="Navigasi portofolio">
+          <a href="#karya">Karya</a><a href="#tentang">Tentang</a
+          ><a href="#kontak">Kontak</a>
+        </nav>
+      </header>
+      <main id="main">
+        <section class="folio-intro">
+          <div>
+            <p class="folio-kicker">Gita Aksara / Writer and essayist</p>
+            <h1>Catatan tentang hal yang sering terlewat.</h1>
+            <p
+              class="lead"
+              data-profile-summary
+            >
+              Esai dan catatan proses dalam daftar baca yang tenang. Semua judul
+              dan cuplikan adalah materi demonstrasi.
+            </p>
+            <div class="folio-actions">
+              <a
+                class="btn"
+                href="#karya"
+                >Jelajahi karya ↓</a
+              >
+              <button
+                class="btn secondary"
+                type="button"
+                data-profile-download
+              >
+                Unduh profil contoh (.txt)
+              </button>
+            </div>
+          </div>
+        </section>
+        <section
+          id="karya"
+          class="folio-section"
+          data-portfolio
+          aria-labelledby="work-title"
+        >
+          <div class="folio-section-head">
+            <div>
+              <p class="folio-kicker">Indeks / karya terpilih</p>
+              <h2 id="work-title">Karya dan catatan.</h2>
+            </div>
+            <p
+              class="small muted"
+              role="status"
+              data-work-count
+            >
+              3 karya ditampilkan
+            </p>
+          </div>
+          <div class="folio-work-controls">
+            <label for="work-search"
+              >Cari karya<input
+                id="work-search"
+                type="search"
+                placeholder="Cari judul atau proses..."
+                data-work-search
+            /></label>
+            <div
+              class="folio-filters"
+              aria-label="Filter jenis karya"
+            >
+              <button
+                type="button"
+                data-work-filter="all"
+                aria-pressed="true"
+              >
+                Semua</button
+              ><button
+                type="button"
+                data-work-filter="Esai"
+                aria-pressed="false"
+              >
+                Esai</button
+              ><button
+                type="button"
+                data-work-filter="Catatan"
+                aria-pressed="false"
+              >
+                Catatan
+              </button>
+            </div>
+          </div>
+          <div class="folio-work-grid">
+            <article
+              class="folio-project"
+              data-work
+              data-kind="Esai"
+            >
+              <p class="folio-project-meta">
+                <time datetime="2026-10-01">1 Oktober 2026</time> / 01 / Esai /
+                Konsep
+              </p>
+              <h3><a href="#proses-1">Jeda di Antara Pesan</a></h3>
+              <p>
+                Kebiasaan merespons cepat menyisakan sedikit waktu berpikir.
+              </p>
+              <details
+                class="folio-process"
+                id="proses-1"
+              >
+                <summary>Baca proses: Jeda di Antara Pesan</summary>
+                <h4>Konteks dan peran</h4>
+                <p>
+                  Studi mandiri demonstrasi. Peran: writer and essayist.
+                  Kebiasaan merespons cepat menyisakan sedikit waktu berpikir.
+                </p>
+                <h4>Keputusan</h4>
+                <p>Susun pengalaman kecil dan pertanyaan reflektif.</p>
+                <h4>Artefak dan tindak lanjut</h4>
+                <p>
+                  Contoh ini memperlihatkan arah dan dokumentasi proses. Ganti
+                  ilustrasi dengan artefak asli, jelaskan kontribusi pribadi,
+                  dan sertakan hasil validasi yang benar-benar tersedia.
+                </p>
+              </details>
+            </article>
+            <article
+              class="folio-project"
+              data-work
+              data-kind="Catatan"
+            >
+              <p class="folio-project-meta">
+                <time datetime="2026-10-01">1 Oktober 2026</time> / 02 / Catatan
+                / Konsep
+              </p>
+              <h3><a href="#proses-2">Mencatat yang Dekat</a></h3>
+              <p>Bahan tulisan harian mudah hilang.</p>
+              <details
+                class="folio-process"
+                id="proses-2"
+              >
+                <summary>Baca proses: Mencatat yang Dekat</summary>
+                <h4>Konteks dan peran</h4>
+                <p>
+                  Studi mandiri demonstrasi. Peran: writer and essayist. Bahan
+                  tulisan harian mudah hilang.
+                </p>
+                <h4>Keputusan</h4>
+                <p>
+                  Gunakan catatan observasi, konteks, dan pertanyaan lanjutan.
+                </p>
+                <h4>Artefak dan tindak lanjut</h4>
+                <p>
+                  Contoh ini memperlihatkan arah dan dokumentasi proses. Ganti
+                  ilustrasi dengan artefak asli, jelaskan kontribusi pribadi,
+                  dan sertakan hasil validasi yang benar-benar tersedia.
+                </p>
+              </details>
+            </article>
+            <article
+              class="folio-project"
+              data-work
+              data-kind="Esai"
+            >
+              <p class="folio-project-meta">
+                <time datetime="2026-10-01">1 Oktober 2026</time> / 03 / Esai /
+                Konsep
+              </p>
+              <h3><a href="#proses-3">Kota dan Ruang Tunggu</a></h3>
+              <p>Tempat persinggahan jarang menjadi pusat cerita.</p>
+              <details
+                class="folio-process"
+                id="proses-3"
+              >
+                <summary>Baca proses: Kota dan Ruang Tunggu</summary>
+                <h4>Konteks dan peran</h4>
+                <p>
+                  Studi mandiri demonstrasi. Peran: writer and essayist. Tempat
+                  persinggahan jarang menjadi pusat cerita.
+                </p>
+                <h4>Keputusan</h4>
+                <p>Ikuti perubahan aktivitas dalam satu lokasi terbatas.</p>
+                <h4>Artefak dan tindak lanjut</h4>
+                <p>
+                  Contoh ini memperlihatkan arah dan dokumentasi proses. Ganti
+                  ilustrasi dengan artefak asli, jelaskan kontribusi pribadi,
+                  dan sertakan hasil validasi yang benar-benar tersedia.
+                </p>
+              </details>
+            </article>
+          </div>
+          <div
+            class="folio-empty"
+            data-work-empty
+            hidden
+          >
+            <p>Tidak ada karya yang cocok dengan filter.</p>
+            <button
+              class="btn secondary"
+              type="button"
+              data-work-reset
+            >
+              Reset pencarian
+            </button>
+          </div>
+        </section>
+        <section
+          id="tentang"
+          class="folio-section folio-about-grid"
+        >
+          <div>
+            <p class="folio-kicker">Pendekatan</p>
+            <h2>Alasan di balik pekerjaan.</h2>
+          </div>
+          <div>
+            <p class="lead">
+              Esai dan catatan proses dalam daftar baca yang tenang. Semua judul
+              dan cuplikan adalah materi demonstrasi.
+            </p>
+            <dl class="folio-facts">
+              <div>
+                <dt>Fokus</dt>
+                <dd>Writer and essayist</dd>
+              </div>
+              <div>
+                <dt>Model</dt>
+                <dd>writer</dd>
+              </div>
+              <div>
+                <dt>Isi</dt>
+                <dd>Studi konsep dan catatan proses</dd>
+              </div>
+              <div>
+                <dt>Status</dt>
+                <dd>Identitas dan karya fiktif</dd>
+              </div>
+            </dl>
+            <p class="folio-note">
+              Profil contoh untuk membantu penyusunan portofolio. Ganti nama,
+              karya, pengalaman, dan kontak sebelum publikasi.
+            </p>
+          </div>
+        </section>
+        <section
+          id="kontak"
+          class="folio-section folio-contact"
+        >
+          <div>
+            <p class="folio-kicker">Kontak contoh</p>
+            <h2>Mulai percakapan.</h2>
+          </div>
+          <div class="stack">
+            <code data-contact-address>halo@example.com</code>
+            <p class="small muted">
+              Alamat demonstrasi. Ganti dengan alamat milik pemilik portofolio.
+            </p>
+            <div>
+              <button
+                class="btn secondary"
+                type="button"
+                data-copy-contact
+              >
+                Salin alamat contoh
+              </button>
+            </div>
+            <p
+              class="small"
+              role="status"
+              data-contact-status
+            ></p>
+          </div>
+        </section>
+      </main>
+      <footer class="folio-footer">
+        <span>Gita Aksara / Profil demonstrasi</span
+        ><a href="#main">Kembali ke atas ↑</a>
+      </footer>
+    </div>
+  </body>
+</html>

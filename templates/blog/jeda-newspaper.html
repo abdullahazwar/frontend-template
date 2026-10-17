@@ -1,1 +1,163 @@
-<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Majalah bergaya koran dengan masthead, berita utama, dan kolom redaksi."><title>Jeda / Newspaper · Frontend Template</title><link rel="stylesheet" href="../../assets/base.css"><style>:root{--bg:#f4f3ee;--surface:#ffffff;--ink:#222321;--muted:#62635c;--accent:#363c35;--soft:#e5e6de}.newspaper{display:grid;grid-template-columns:2fr 1fr;gap:38px}.newspaper aside{border-left:1px solid var(--line);padding-left:30px}@media(max-width:760px){.newspaper{grid-template-columns:1fr}.newspaper aside{border-left:0;padding-left:0}}</style><script src="../../assets/core.js" defer></script><script src="../../assets/runtime.js" defer></script></head><body data-template="jeda-newspaper"><a class="skip" href="#main">Lewati ke konten</a><div class="demo-bar"><a href="../../index.html">← Koleksi template</a><span>Demo frontend · Jeda / Newspaper</span></div><div class="wrap "><header class="topbar"><a class="brand" href="#main"><span class="brand-mark" aria-hidden="true"></span>jeda /</a><nav aria-label="Navigasi utama"><a href="#jelajahi">Edisi</a><a href="#artikel">Artikel</a></nav></header><main id="main"><header class="editorial-head center" id="jelajahi"><p class="eyebrow">Edisi contoh · Sabtu, 17 Oktober 2026</p><h1>Harian Jeda</h1><p class="muted small">Catatan kota, budaya, dan pekerjaan sehari-hari.</p></header><section class="newspaper section"><article class="stack"><img class="media" src="../../assets/art/building.svg" alt="Ilustrasi ruang kota" width="800" height="600" loading="lazy"><p class="eyebrow">Kota / Esai contoh</p><h2 class="serif" style="font-size:2.7rem">Kota yang memberi ruang untuk berhenti.</h2><p class="lead">Bangku, trotoar, dan tempat teduh mengubah cara orang mengalami lingkungan.</p><a href="#artikel">Baca artikel →</a></article><aside class="stack border-top space"><p class="eyebrow">Dari meja redaksi</p><h2 class="serif">Apa yang membuat sebuah tempat nyaman?</h2><p class="muted">Keterjangkauan, arah yang jelas, dan waktu untuk saling menyapa.</p><details><summary>Catatan edisi</summary><p>Seluruh tulisan dan penulis pada halaman ini adalah konten contoh untuk template editorial.</p></details></aside></section><article id="artikel" class="section reading article-body"><h2>Mulai dari jarak berjalan.</h2><p>Sebuah rute pendek bisa terasa panjang ketika tidak ada tempat berteduh. Sebaliknya, jalur yang memiliki tempat duduk dan penunjuk arah membantu orang menyesuaikan ritme perjalanan.</p><p>Dalam studi konsep ini, kenyamanan dilihat dari tugas sederhana: menemukan pintu masuk, membaca arah, lalu beristirahat. Pertanyaan yang sama berguna ketika menyusun halaman web.</p></article><section id="kontak" class="section border-top"><p class="muted">Redaksi contoh · Tidak menerima kiriman naskah.</p></section></main><footer class="footer row between"><span>jeda / · Identitas dan konten contoh</span><a href="#main">Kembali ke atas ↑</a></footer></div><div class="toast" role="status" hidden></div></body></html>
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1"
+    />
+    <meta
+      name="description"
+      content="Majalah bergaya koran dengan masthead, berita utama, dan kolom redaksi."
+    />
+    <title>Jeda / Newspaper · Frontend Template</title>
+    <link
+      rel="stylesheet"
+      href="../../assets/base.css"
+    />
+    <style>
+      :root {
+        --bg: #f4f3ee;
+        --surface: #ffffff;
+        --ink: #222321;
+        --muted: #62635c;
+        --accent: #363c35;
+        --soft: #e5e6de;
+      }
+      .newspaper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 38px;
+      }
+      .newspaper aside {
+        border-left: 1px solid var(--line);
+        padding-left: 30px;
+      }
+      @media (max-width: 760px) {
+        .newspaper {
+          grid-template-columns: 1fr;
+        }
+        .newspaper aside {
+          border-left: 0;
+          padding-left: 0;
+        }
+      }
+    </style>
+    <script
+      src="../../assets/core.js"
+      defer
+    ></script>
+    <script
+      src="../../assets/runtime.js"
+      defer
+    ></script>
+  </head>
+  <body data-template="jeda-newspaper">
+    <a
+      class="skip"
+      href="#main"
+      >Lewati ke konten</a
+    >
+    <div class="demo-bar">
+      <a href="../../index.html">← Koleksi template</a
+      ><span>Demo frontend · Jeda / Newspaper</span>
+    </div>
+    <div class="wrap">
+      <header class="topbar">
+        <a
+          class="brand"
+          href="#main"
+          ><span
+            class="brand-mark"
+            aria-hidden="true"
+          ></span
+          >jeda /</a
+        >
+        <nav aria-label="Navigasi utama">
+          <a href="#jelajahi">Edisi</a><a href="#artikel">Artikel</a>
+        </nav>
+      </header>
+      <main id="main">
+        <header
+          class="editorial-head center"
+          id="jelajahi"
+        >
+          <p class="eyebrow">Edisi contoh · Sabtu, 17 Oktober 2026</p>
+          <h1>Harian Jeda</h1>
+          <p class="muted small">
+            Catatan kota, budaya, dan pekerjaan sehari-hari.
+          </p>
+        </header>
+        <section class="newspaper section">
+          <article class="stack">
+            <img
+              class="media"
+              src="../../assets/art/building.svg"
+              alt="Ilustrasi ruang kota"
+              width="800"
+              height="600"
+              loading="lazy"
+            />
+            <p class="eyebrow">Kota / Esai contoh</p>
+            <h2
+              class="serif"
+              style="font-size: 2.7rem"
+            >
+              Kota yang memberi ruang untuk berhenti.
+            </h2>
+            <p class="lead">
+              Bangku, trotoar, dan tempat teduh mengubah cara orang mengalami
+              lingkungan.
+            </p>
+            <a href="#artikel">Baca artikel →</a>
+          </article>
+          <aside class="stack border-top space">
+            <p class="eyebrow">Dari meja redaksi</p>
+            <h2 class="serif">Apa yang membuat sebuah tempat nyaman?</h2>
+            <p class="muted">
+              Keterjangkauan, arah yang jelas, dan waktu untuk saling menyapa.
+            </p>
+            <details>
+              <summary>Catatan edisi</summary>
+              <p>
+                Seluruh tulisan dan penulis pada halaman ini adalah konten
+                contoh untuk template editorial.
+              </p>
+            </details>
+          </aside>
+        </section>
+        <article
+          id="artikel"
+          class="section reading article-body"
+        >
+          <h2>Mulai dari jarak berjalan.</h2>
+          <p>
+            Sebuah rute pendek bisa terasa panjang ketika tidak ada tempat
+            berteduh. Sebaliknya, jalur yang memiliki tempat duduk dan penunjuk
+            arah membantu orang menyesuaikan ritme perjalanan.
+          </p>
+          <p>
+            Dalam studi konsep ini, kenyamanan dilihat dari tugas sederhana:
+            menemukan pintu masuk, membaca arah, lalu beristirahat. Pertanyaan
+            yang sama berguna ketika menyusun halaman web.
+          </p>
+        </article>
+        <section
+          id="kontak"
+          class="section border-top"
+        >
+          <p class="muted">Redaksi contoh · Tidak menerima kiriman naskah.</p>
+        </section>
+      </main>
+      <footer class="footer row between">
+        <span>jeda / · Identitas dan konten contoh</span
+        ><a href="#main">Kembali ke atas ↑</a>
+      </footer>
+    </div>
+    <div
+      class="toast"
+      role="status"
+      hidden
+    ></div>
+  </body>
+</html>

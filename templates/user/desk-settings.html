@@ -1,1 +1,171 @@
-<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Pengaturan profil dua kolom dengan formulir terbuka dan konteks privasi di samping."><title>Desk / Settings · Frontend Template</title><link rel="stylesheet" href="../../assets/base.css"><style>:root{--bg:#f4f3ee;--surface:#ffffff;--ink:#222321;--muted:#62635c;--accent:#363c35;--soft:#e5e6de}</style><script src="../../assets/core.js" defer></script><script src="../../assets/runtime.js" defer></script></head><body data-template="desk-settings"><a class="skip" href="#main">Lewati ke konten</a><div class="demo-bar"><a href="../../index.html">← Koleksi template</a><span>Demo frontend · Desk / Settings</span></div><div class="aside-layout"><aside class="sidebar"><a class="brand" href="#main"><span class="brand-mark" aria-hidden="true"></span>desk</a><nav aria-label="Navigasi utama"><a href="#ringkasan" aria-current="page">Ringkasan</a><a href="#aktivitas">Aktivitas</a><a href="#panduan">Panduan</a></nav><p class="sidebar-note">Ruang kerja contoh<br>17 Oktober 2026 · WIB</p></aside><main id="main" class="app-main stack"><header class="stack-sm"><p class="eyebrow">Desk / Akun</p><h1>Pengaturan profil.</h1><p class="lead">Uji validasi tanpa mengirim atau menyimpan data pribadi.</p></header><section id="ringkasan" class="section grid split"><div><form class="form-grid" data-demo-form ><div class="field"><label for="nama-tampilan">Nama tampilan</label><input id="nama-tampilan" name="nama-tampilan" type="text" required maxlength="60" value="Alya Putri"></div><div class="field"><label for="email-demo">Email demo</label><input id="email-demo" name="email-demo" type="email" required value="alya@example.test"></div><div class="field"><label for="bio">Bio singkat</label><textarea id="bio" maxlength="240">Mencatat proses desain produk.</textarea></div><label class="check"><input type="checkbox" checked> Terima rangkuman mingguan</label><button class="btn" type="submit">Validasi perubahan</button><p class="form-status" role="status"></p></form></div><aside class="stack"><div class="border-top space"><h2>Bahasa dan waktu</h2><p class="muted space">Bahasa Indonesia<br>Asia/Jakarta · WIB</p></div><div id="aktivitas" class="border-top space"><h2>Privasi demo</h2><p class="muted space">Gunakan data fiktif. Formulir memeriksa format input tanpa mengubah akun apa pun.</p></div></aside></section><footer id="panduan" class="footer">Mode demo · Semua angka merupakan data ilustrasi. Perubahan hanya bertahan selama halaman terbuka.</footer></main></div><div class="toast" role="status" hidden></div></body></html>
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1"
+    />
+    <meta
+      name="description"
+      content="Pengaturan profil dua kolom: formulir terbuka dan konteks privasi di."
+    />
+    <title>Desk / Settings · Frontend Template</title>
+    <link
+      rel="stylesheet"
+      href="../../assets/base.css"
+    />
+    <style>
+      :root {
+        --bg: #f4f3ee;
+        --surface: #ffffff;
+        --ink: #222321;
+        --muted: #62635c;
+        --accent: #363c35;
+        --soft: #e5e6de;
+      }
+    </style>
+    <script
+      src="../../assets/core.js"
+      defer
+    ></script>
+    <script
+      src="../../assets/runtime.js"
+      defer
+    ></script>
+  </head>
+  <body data-template="desk-settings">
+    <a
+      class="skip"
+      href="#main"
+      >Lewati ke konten</a
+    >
+    <div class="demo-bar">
+      <a href="../../index.html">← Koleksi template</a
+      ><span>Demo frontend · Desk / Settings</span>
+    </div>
+    <div class="aside-layout">
+      <aside class="sidebar">
+        <a
+          class="brand"
+          href="#main"
+          ><span
+            class="brand-mark"
+            aria-hidden="true"
+          ></span
+          >desk</a
+        >
+        <nav aria-label="Navigasi utama">
+          <a
+            href="#ringkasan"
+            aria-current="page"
+            >Ringkasan</a
+          ><a href="#aktivitas">Aktivitas</a><a href="#panduan">Panduan</a>
+        </nav>
+        <p class="sidebar-note">
+          Ruang kerja contoh<br />17 Oktober 2026 · WIB
+        </p>
+      </aside>
+      <main
+        id="main"
+        class="app-main stack"
+      >
+        <header class="stack-sm">
+          <p class="eyebrow">Desk / Akun</p>
+          <h1>Pengaturan profil.</h1>
+          <p class="lead">
+            Uji validasi tanpa mengirim atau menyimpan data pribadi.
+          </p>
+        </header>
+        <section
+          id="ringkasan"
+          class="section grid split"
+        >
+          <div>
+            <form
+              class="form-grid"
+              data-demo-form
+            >
+              <div class="field">
+                <label for="nama-tampilan">Nama tampilan</label
+                ><input
+                  id="nama-tampilan"
+                  name="nama-tampilan"
+                  type="text"
+                  required
+                  maxlength="60"
+                  value="Alya Putri"
+                />
+              </div>
+              <div class="field">
+                <label for="email-demo">Email demo</label
+                ><input
+                  id="email-demo"
+                  name="email-demo"
+                  type="email"
+                  required
+                  value="alya@example.test"
+                />
+              </div>
+              <div class="field">
+                <label for="bio">Bio singkat</label
+                ><textarea
+                  id="bio"
+                  maxlength="240"
+                >
+Mencatat proses desain produk.</textarea
+                >
+              </div>
+              <label class="check"
+                ><input
+                  type="checkbox"
+                  checked
+                />
+                Terima rangkuman mingguan</label
+              ><button
+                class="btn"
+                type="submit"
+              >
+                Validasi perubahan
+              </button>
+              <p
+                class="form-status"
+                role="status"
+              ></p>
+            </form>
+          </div>
+          <aside class="stack">
+            <div class="border-top space">
+              <h2>Bahasa dan waktu</h2>
+              <p class="muted space">
+                Bahasa Indonesia<br />Asia/Jakarta · WIB
+              </p>
+            </div>
+            <div
+              id="aktivitas"
+              class="border-top space"
+            >
+              <h2>Privasi demo</h2>
+              <p class="muted space">
+                Gunakan data fiktif. Formulir memeriksa format input tanpa
+                mengubah akun apa pun.
+              </p>
+            </div>
+          </aside>
+        </section>
+        <footer
+          id="panduan"
+          class="footer"
+        >
+          Mode demo · Semua angka merupakan data ilustrasi. Perubahan hanya
+          bertahan selama halaman terbuka.
+        </footer>
+      </main>
+    </div>
+    <div
+      class="toast"
+      role="status"
+      hidden
+    ></div>
+  </body>
+</html>

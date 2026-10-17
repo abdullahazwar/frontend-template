@@ -1,1 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#e6e4ed"/><path d="M185 335L300 200L370 270L420 240L520 340L625 360Q680 377 650 425H180Q145 390 185 335" fill="#6c6b92"/><path d="M178 400H660L650 440H180Z" fill="#f7f3e9"/><path d="M350 280L430 330M375 270L452 315M405 265L470 300" stroke="#ede9e1" stroke-width="12"/><path d="M220 310L280 350" stroke="#4d4b72" stroke-width="15"/></svg>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 800 600"
+>
+  <rect
+    width="800"
+    height="600"
+    fill="#e6e4ed"
+  />
+  <path
+    d="M185 335L300 200L370 270L420 240L520 340L625 360Q680 377 650 425H180Q145 390 185 335"
+    fill="#6c6b92"
+  />
+  <path
+    d="M178 400H660L650 440H180Z"
+    fill="#f7f3e9"
+  />
+  <path
+    d="M350 280L430 330M375 270L452 315M405 265L470 300"
+    stroke="#ede9e1"
+    stroke-width="12"
+  />
+  <path
+    d="M220 310L280 350"
+    stroke="#4d4b72"
+    stroke-width="15"
+  />
+</svg>

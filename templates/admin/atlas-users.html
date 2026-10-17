@@ -1,1 +1,316 @@
-<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Admin anggota dengan pencarian, filter status, dan kontrol akses per baris."><title>Atlas / Users · Frontend Template</title><link rel="stylesheet" href="../../assets/base.css"><style>:root{--bg:#f5f7fb;--surface:#ffffff;--ink:#22314b;--muted:#586880;--accent:#315fa3;--soft:#e7edf9}</style><script src="../../assets/core.js" defer></script><script src="../../assets/runtime.js" defer></script></head><body data-template="atlas-users"><a class="skip" href="#main">Lewati ke konten</a><div class="demo-bar"><a href="../../index.html">← Koleksi template</a><span>Demo frontend · Atlas / Users</span></div><div class="aside-layout"><aside class="sidebar"><a class="brand" href="#main"><span class="brand-mark" aria-hidden="true"></span>atlas</a><nav aria-label="Navigasi utama"><a href="#ringkasan" aria-current="page">Ringkasan</a><a href="#aktivitas">Aktivitas</a><a href="#panduan">Panduan</a></nav><p class="sidebar-note">Ruang kerja contoh<br>17 Oktober 2026 · WIB</p></aside><main id="main" class="app-main stack"><header class="stack-sm"><p class="eyebrow">Atlas / Akses</p><h1>Anggota ruang kerja.</h1><p class="lead">Cari nama dan ubah status akses pada data demo lokal.</p></header><section id="ringkasan"><section data-collection><div class="toolbar"><label class="search">Pencarian<input type="search" data-search placeholder="Cari anggota"></label><label>Status<select data-filter><option value="">Semua status</option><option value="aktif">Aktif</option><option value="nonaktif">Nonaktif</option></select></label></div><div class="table-scroll" tabindex="0" role="region" aria-label="Daftar anggota"><table><caption>4 akun fiktif. Status hanya berubah di halaman ini.</caption><thead><tr><th scope="col">Anggota</th><th scope="col">Peran</th><th scope="col">Status</th><th scope="col">Tindakan</th></tr></thead><tbody><tr data-item data-search-text="Alya Putri Editor" data-status="aktif"><td><div class="row"><span class="avatar" aria-hidden="true">AL</span><div><b>Alya Putri</b><br><small class="muted">alya@example.test</small></div></div></td><td>Editor</td><td><span class="pill success" data-state-label>Aktif</span></td><td><button class="btn secondary small" data-toggle-state data-label="Alya Putri" data-on="Aktif" data-off="Nonaktif" aria-pressed="true">Nonaktifkan Alya Putri</button></td></tr><tr data-item data-search-text="Reno Adi Operator" data-status="aktif"><td><div class="row"><span class="avatar" aria-hidden="true">RE</span><div><b>Reno Adi</b><br><small class="muted">reno@example.test</small></div></div></td><td>Operator</td><td><span class="pill success" data-state-label>Aktif</span></td><td><button class="btn secondary small" data-toggle-state data-label="Reno Adi" data-on="Aktif" data-off="Nonaktif" aria-pressed="true">Nonaktifkan Reno Adi</button></td></tr><tr data-item data-search-text="Mira Sari Admin" data-status="aktif"><td><div class="row"><span class="avatar" aria-hidden="true">MI</span><div><b>Mira Sari</b><br><small class="muted">mira@example.test</small></div></div></td><td>Admin</td><td><span class="pill success" data-state-label>Aktif</span></td><td><button class="btn secondary small" data-toggle-state data-label="Mira Sari" data-on="Aktif" data-off="Nonaktif" aria-pressed="true">Nonaktifkan Mira Sari</button></td></tr><tr data-item data-search-text="Dian Nusa Viewer" data-status="aktif"><td><div class="row"><span class="avatar" aria-hidden="true">DI</span><div><b>Dian Nusa</b><br><small class="muted">dian@example.test</small></div></div></td><td>Viewer</td><td><span class="pill success" data-state-label>Aktif</span></td><td><button class="btn secondary small" data-toggle-state data-label="Dian Nusa" data-on="Aktif" data-off="Nonaktif" aria-pressed="true">Nonaktifkan Dian Nusa</button></td></tr></tbody></table></div><p class="empty" data-empty hidden>Tidak ada hasil. Ubah pencarian atau pilih semua status.</p><p class="sr-only" data-count role="status"></p></section></section><section id="aktivitas"><details><summary>Aturan akses demo</summary><p>Perubahan status hanya simulasi antarmuka. Implementasi nyata perlu pemeriksaan izin di server dan riwayat perubahan.</p></details></section><footer id="panduan" class="footer">Mode demo · Semua angka merupakan data ilustrasi. Perubahan hanya bertahan selama halaman terbuka.</footer></main></div><div class="toast" role="status" hidden></div></body></html>
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1"
+    />
+    <meta
+      name="description"
+      content="Admin anggota dengan pencarian, filter status, dan kontrol akses per baris."
+    />
+    <title>Atlas / Users · Frontend Template</title>
+    <link
+      rel="stylesheet"
+      href="../../assets/base.css"
+    />
+    <style>
+      :root {
+        --bg: #f5f7fb;
+        --surface: #ffffff;
+        --ink: #22314b;
+        --muted: #586880;
+        --accent: #315fa3;
+        --soft: #e7edf9;
+      }
+    </style>
+    <script
+      src="../../assets/core.js"
+      defer
+    ></script>
+    <script
+      src="../../assets/runtime.js"
+      defer
+    ></script>
+  </head>
+  <body data-template="atlas-users">
+    <a
+      class="skip"
+      href="#main"
+      >Lewati ke konten</a
+    >
+    <div class="demo-bar">
+      <a href="../../index.html">← Koleksi template</a
+      ><span>Demo frontend · Atlas / Users</span>
+    </div>
+    <div class="aside-layout">
+      <aside class="sidebar">
+        <a
+          class="brand"
+          href="#main"
+          ><span
+            class="brand-mark"
+            aria-hidden="true"
+          ></span
+          >atlas</a
+        >
+        <nav aria-label="Navigasi utama">
+          <a
+            href="#ringkasan"
+            aria-current="page"
+            >Ringkasan</a
+          ><a href="#aktivitas">Aktivitas</a><a href="#panduan">Panduan</a>
+        </nav>
+        <p class="sidebar-note">
+          Ruang kerja contoh<br />17 Oktober 2026 · WIB
+        </p>
+      </aside>
+      <main
+        id="main"
+        class="app-main stack"
+      >
+        <header class="stack-sm">
+          <p class="eyebrow">Atlas / Akses</p>
+          <h1>Anggota ruang kerja.</h1>
+          <p class="lead">
+            Cari nama dan ubah status akses pada data demo lokal.
+          </p>
+        </header>
+        <section id="ringkasan">
+          <section data-collection>
+            <div class="toolbar">
+              <label class="search"
+                >Pencarian<input
+                  type="search"
+                  data-search
+                  placeholder="Cari anggota" /></label
+              ><label
+                >Status<select data-filter>
+                  <option value="">Semua status</option>
+                  <option value="aktif">Aktif</option>
+                  <option value="nonaktif">Nonaktif</option>
+                </select></label
+              >
+            </div>
+            <div
+              class="table-scroll"
+              tabindex="0"
+              role="region"
+              aria-label="Daftar anggota"
+            >
+              <table>
+                <caption>
+                  4 akun fiktif. Status hanya berubah di halaman ini.
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Anggota</th>
+                    <th scope="col">Peran</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Tindakan</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr
+                    data-item
+                    data-search-text="Alya Putri Editor"
+                    data-status="aktif"
+                  >
+                    <td>
+                      <div class="row">
+                        <span
+                          class="avatar"
+                          aria-hidden="true"
+                          >AL</span
+                        >
+                        <div>
+                          <b>Alya Putri</b><br /><small class="muted"
+                            >alya@example.test</small
+                          >
+                        </div>
+                      </div>
+                    </td>
+                    <td>Editor</td>
+                    <td>
+                      <span
+                        class="pill success"
+                        data-state-label
+                        >Aktif</span
+                      >
+                    </td>
+                    <td>
+                      <button
+                        class="btn secondary small"
+                        data-toggle-state
+                        data-label="Alya Putri"
+                        data-on="Aktif"
+                        data-off="Nonaktif"
+                        aria-pressed="true"
+                      >
+                        Nonaktifkan Alya Putri
+                      </button>
+                    </td>
+                  </tr>
+                  <tr
+                    data-item
+                    data-search-text="Reno Adi Operator"
+                    data-status="aktif"
+                  >
+                    <td>
+                      <div class="row">
+                        <span
+                          class="avatar"
+                          aria-hidden="true"
+                          >RE</span
+                        >
+                        <div>
+                          <b>Reno Adi</b><br /><small class="muted"
+                            >reno@example.test</small
+                          >
+                        </div>
+                      </div>
+                    </td>
+                    <td>Operator</td>
+                    <td>
+                      <span
+                        class="pill success"
+                        data-state-label
+                        >Aktif</span
+                      >
+                    </td>
+                    <td>
+                      <button
+                        class="btn secondary small"
+                        data-toggle-state
+                        data-label="Reno Adi"
+                        data-on="Aktif"
+                        data-off="Nonaktif"
+                        aria-pressed="true"
+                      >
+                        Nonaktifkan Reno Adi
+                      </button>
+                    </td>
+                  </tr>
+                  <tr
+                    data-item
+                    data-search-text="Mira Sari Admin"
+                    data-status="aktif"
+                  >
+                    <td>
+                      <div class="row">
+                        <span
+                          class="avatar"
+                          aria-hidden="true"
+                          >MI</span
+                        >
+                        <div>
+                          <b>Mira Sari</b><br /><small class="muted"
+                            >mira@example.test</small
+                          >
+                        </div>
+                      </div>
+                    </td>
+                    <td>Admin</td>
+                    <td>
+                      <span
+                        class="pill success"
+                        data-state-label
+                        >Aktif</span
+                      >
+                    </td>
+                    <td>
+                      <button
+                        class="btn secondary small"
+                        data-toggle-state
+                        data-label="Mira Sari"
+                        data-on="Aktif"
+                        data-off="Nonaktif"
+                        aria-pressed="true"
+                      >
+                        Nonaktifkan Mira Sari
+                      </button>
+                    </td>
+                  </tr>
+                  <tr
+                    data-item
+                    data-search-text="Dian Nusa Viewer"
+                    data-status="aktif"
+                  >
+                    <td>
+                      <div class="row">
+                        <span
+                          class="avatar"
+                          aria-hidden="true"
+                          >DI</span
+                        >
+                        <div>
+                          <b>Dian Nusa</b><br /><small class="muted"
+                            >dian@example.test</small
+                          >
+                        </div>
+                      </div>
+                    </td>
+                    <td>Viewer</td>
+                    <td>
+                      <span
+                        class="pill success"
+                        data-state-label
+                        >Aktif</span
+                      >
+                    </td>
+                    <td>
+                      <button
+                        class="btn secondary small"
+                        data-toggle-state
+                        data-label="Dian Nusa"
+                        data-on="Aktif"
+                        data-off="Nonaktif"
+                        aria-pressed="true"
+                      >
+                        Nonaktifkan Dian Nusa
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p
+              class="empty"
+              data-empty
+              hidden
+            >
+              Tidak ada hasil. Ubah pencarian atau pilih semua status.
+            </p>
+            <p
+              class="sr-only"
+              data-count
+              role="status"
+            ></p>
+          </section>
+        </section>
+        <section id="aktivitas">
+          <details>
+            <summary>Aturan akses demo</summary>
+            <p>
+              Perubahan status hanya simulasi antarmuka. Implementasi nyata
+              perlu pemeriksaan izin di server dan riwayat perubahan.
+            </p>
+          </details>
+        </section>
+        <footer
+          id="panduan"
+          class="footer"
+        >
+          Mode demo · Semua angka merupakan data ilustrasi. Perubahan hanya
+          bertahan selama halaman terbuka.
+        </footer>
+      </main>
+    </div>
+    <div
+      class="toast"
+      role="status"
+      hidden
+    ></div>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 800 600"
+>
+  <rect
+    width="800"
+    height="600"
+    fill="#e9e4d9"
+  />
+  <path
+    d="M0 490L800 390V600H0Z"
+    fill="#b1b09a"
+  />
+  <path
+    d="M140 430V210L490 130L680 210V390L350 470Z"
+    fill="#e5d6bd"
+  />
+  <path
+    d="M140 210L350 290L680 210L490 130Z"
+    fill="#f8eee0"
+  />
+  <path
+    d="M350 290V470L680 390V210Z"
+    fill="#b6a38b"
+  />
+  <path
+    d="M400 325L620 270V360L400 415Z"
+    fill="#4d5a52"
+  />
+  <path
+    d="M190 280V385L270 415V310Z"
+    fill="#786953"
+  />
+</svg>

@@ -1,1 +1,203 @@
-<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Forum berbasis daftar topik dengan kategori dan ringkasan diskusi yang bisa dibuka."><title>Commons / Topics · Frontend Template</title><link rel="stylesheet" href="../../assets/base.css"><style>:root{--bg:#f5f7fb;--surface:#ffffff;--ink:#22314b;--muted:#586880;--accent:#315fa3;--soft:#e7edf9}</style><script src="../../assets/core.js" defer></script><script src="../../assets/runtime.js" defer></script></head><body data-template="commons-topics"><a class="skip" href="#main">Lewati ke konten</a><div class="demo-bar"><a href="../../index.html">← Koleksi template</a><span>Demo frontend · Commons / Topics</span></div><div class="wrap "><header class="topbar"><a class="brand" href="#main"><span class="brand-mark" aria-hidden="true"></span>commons</a><nav aria-label="Navigasi utama"><a href="#topik">Topik</a><a href="#aturan">Pedoman</a></nav></header><main id="main"><div class="section"><header class="stack-sm"><p class="eyebrow">Commons / Diskusi</p><h1>Tempat bertukar pengetahuan.</h1><p class="lead">Topik dan anggota fiktif. Cari diskusi berdasarkan kebutuhan.</p></header><section id="topik"><section data-collection><div class="toolbar"><label class="search">Pencarian<input type="search" data-search placeholder="Cari topik"></label></div><article class="" data-item data-search-text="Bagaimana menyusun navigasi toko untuk HP? Desain" data-status=""><div class="topic"><span class="avatar" aria-hidden="true">DE</span><div class="stack-sm"><p class="eyebrow">Desain</p><h2>Bagaimana menyusun navigasi toko untuk HP?</h2><p class="small muted">Penulis demo · 17 Oktober 2026</p><details><summary>Baca diskusi</summary><p>Membatasi navigasi ke katalog, keranjang, dan pesanan dapat menjadi awal. Uji dengan tugas yang paling sering dilakukan.</p></details></div><small class="muted">12 balasan</small></div></article><article class="" data-item data-search-text="Switch atau router untuk kantor kecil? Jaringan" data-status=""><div class="topic"><span class="avatar" aria-hidden="true">JA</span><div class="stack-sm"><p class="eyebrow">Jaringan</p><h2>Switch atau router untuk kantor kecil?</h2><p class="small muted">Penulis demo · 17 Oktober 2026</p><details><summary>Baca diskusi</summary><p>Gunakan switch untuk menghubungkan perangkat LAN. Router menghubungkan LAN dengan jaringan lain seperti internet.</p></details></div><small class="muted">8 balasan</small></div></article><article class="" data-item data-search-text="Cara memisahkan data demo dari produksi Engineering" data-status=""><div class="topic"><span class="avatar" aria-hidden="true">EN</span><div class="stack-sm"><p class="eyebrow">Engineering</p><h2>Cara memisahkan data demo dari produksi</h2><p class="small muted">Penulis demo · 17 Oktober 2026</p><details><summary>Baca diskusi</summary><p>Beri label demo, gunakan fixture lokal, dan cegah aksi demo mengirim data ke layanan produksi.</p></details></div><small class="muted">6 balasan</small></div></article><p class="empty" data-empty hidden>Tidak ada hasil. Ubah pencarian atau pilih semua status.</p><p class="sr-only" data-count role="status"></p></section></section><section id="aturan" class="section border-top"><details><summary>Pedoman komunitas</summary><p>Tuliskan konteks, sampaikan pertanyaan dengan spesifik, dan jaga data pribadi. Balasan yang terlihat pada template adalah percakapan contoh.</p></details></section></div></main><footer class="footer row between"><span>commons · Identitas dan konten contoh</span><a href="#main">Kembali ke atas ↑</a></footer></div><div class="toast" role="status" hidden></div></body></html>
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1"
+    />
+    <meta
+      name="description"
+      content="Forum berbasis daftar topik: kategori dan ringkasan diskusi yang bisa."
+    />
+    <title>Commons / Topics · Frontend Template</title>
+    <link
+      rel="stylesheet"
+      href="../../assets/base.css"
+    />
+    <style>
+      :root {
+        --bg: #f5f7fb;
+        --surface: #ffffff;
+        --ink: #22314b;
+        --muted: #586880;
+        --accent: #315fa3;
+        --soft: #e7edf9;
+      }
+    </style>
+    <script
+      src="../../assets/core.js"
+      defer
+    ></script>
+    <script
+      src="../../assets/runtime.js"
+      defer
+    ></script>
+  </head>
+  <body data-template="commons-topics">
+    <a
+      class="skip"
+      href="#main"
+      >Lewati ke konten</a
+    >
+    <div class="demo-bar">
+      <a href="../../index.html">← Koleksi template</a
+      ><span>Demo frontend · Commons / Topics</span>
+    </div>
+    <div class="wrap">
+      <header class="topbar">
+        <a
+          class="brand"
+          href="#main"
+          ><span
+            class="brand-mark"
+            aria-hidden="true"
+          ></span
+          >commons</a
+        >
+        <nav aria-label="Navigasi utama">
+          <a href="#topik">Topik</a><a href="#aturan">Pedoman</a>
+        </nav>
+      </header>
+      <main id="main">
+        <div class="section">
+          <header class="stack-sm">
+            <p class="eyebrow">Commons / Diskusi</p>
+            <h1>Tempat bertukar pengetahuan.</h1>
+            <p class="lead">
+              Topik dan anggota fiktif. Cari diskusi berdasarkan kebutuhan.
+            </p>
+          </header>
+          <section id="topik">
+            <section data-collection>
+              <div class="toolbar">
+                <label class="search"
+                  >Pencarian<input
+                    type="search"
+                    data-search
+                    placeholder="Cari topik"
+                /></label>
+              </div>
+              <article
+                class=""
+                data-item
+                data-search-text="Bagaimana menyusun navigasi toko untuk HP? Desain"
+                data-status=""
+              >
+                <div class="topic">
+                  <span
+                    class="avatar"
+                    aria-hidden="true"
+                    >DE</span
+                  >
+                  <div class="stack-sm">
+                    <p class="eyebrow">Desain</p>
+                    <h2>Bagaimana menyusun navigasi toko untuk HP?</h2>
+                    <p class="small muted">Penulis demo · 17 Oktober 2026</p>
+                    <details>
+                      <summary>Baca diskusi</summary>
+                      <p>
+                        Membatasi navigasi ke katalog, keranjang, dan pesanan
+                        dapat menjadi awal. Uji dengan tugas yang paling sering
+                        dilakukan.
+                      </p>
+                    </details>
+                  </div>
+                  <small class="muted">12 balasan</small>
+                </div>
+              </article>
+              <article
+                class=""
+                data-item
+                data-search-text="Switch atau router untuk kantor kecil? Jaringan"
+                data-status=""
+              >
+                <div class="topic">
+                  <span
+                    class="avatar"
+                    aria-hidden="true"
+                    >JA</span
+                  >
+                  <div class="stack-sm">
+                    <p class="eyebrow">Jaringan</p>
+                    <h2>Switch atau router untuk kantor kecil?</h2>
+                    <p class="small muted">Penulis demo · 17 Oktober 2026</p>
+                    <details>
+                      <summary>Baca diskusi</summary>
+                      <p>
+                        Gunakan switch untuk menghubungkan perangkat LAN. Router
+                        menghubungkan LAN dengan jaringan lain seperti internet.
+                      </p>
+                    </details>
+                  </div>
+                  <small class="muted">8 balasan</small>
+                </div>
+              </article>
+              <article
+                class=""
+                data-item
+                data-search-text="Cara memisahkan data demo dari produksi Engineering"
+                data-status=""
+              >
+                <div class="topic">
+                  <span
+                    class="avatar"
+                    aria-hidden="true"
+                    >EN</span
+                  >
+                  <div class="stack-sm">
+                    <p class="eyebrow">Engineering</p>
+                    <h2>Cara memisahkan data demo dari produksi</h2>
+                    <p class="small muted">Penulis demo · 17 Oktober 2026</p>
+                    <details>
+                      <summary>Baca diskusi</summary>
+                      <p>
+                        Beri label demo, gunakan fixture lokal, dan cegah aksi
+                        demo mengirim data ke layanan produksi.
+                      </p>
+                    </details>
+                  </div>
+                  <small class="muted">6 balasan</small>
+                </div>
+              </article>
+              <p
+                class="empty"
+                data-empty
+                hidden
+              >
+                Tidak ada hasil. Ubah pencarian atau pilih semua status.
+              </p>
+              <p
+                class="sr-only"
+                data-count
+                role="status"
+              ></p>
+            </section>
+          </section>
+          <section
+            id="aturan"
+            class="section border-top"
+          >
+            <details>
+              <summary>Pedoman komunitas</summary>
+              <p>
+                Tuliskan konteks, sampaikan pertanyaan dengan spesifik, dan jaga
+                data pribadi. Balasan yang terlihat pada template adalah
+                percakapan contoh.
+              </p>
+            </details>
+          </section>
+        </div>
+      </main>
+      <footer class="footer row between">
+        <span>commons · Identitas dan konten contoh</span
+        ><a href="#main">Kembali ke atas ↑</a>
+      </footer>
+    </div>
+    <div
+      class="toast"
+      role="status"
+      hidden
+    ></div>
+  </body>
+</html>

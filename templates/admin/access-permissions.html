@@ -1,1 +1,238 @@
-<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Matriks akses monokrom dengan checkbox native dan penjelasan peran."><title>Access / Permissions · Frontend Template</title><link rel="stylesheet" href="../../assets/base.css"><style>:root{--bg:#f4f3ee;--surface:#ffffff;--ink:#222321;--muted:#62635c;--accent:#363c35;--soft:#e5e6de}</style><script src="../../assets/core.js" defer></script><script src="../../assets/runtime.js" defer></script></head><body data-template="access-permissions"><a class="skip" href="#main">Lewati ke konten</a><div class="demo-bar"><a href="../../index.html">← Koleksi template</a><span>Demo frontend · Access / Permissions</span></div><div class="aside-layout"><aside class="sidebar"><a class="brand" href="#main"><span class="brand-mark" aria-hidden="true"></span>access</a><nav aria-label="Navigasi utama"><a href="#ringkasan" aria-current="page">Ringkasan</a><a href="#aktivitas">Aktivitas</a><a href="#panduan">Panduan</a></nav><p class="sidebar-note">Ruang kerja contoh<br>17 Oktober 2026 · WIB</p></aside><main id="main" class="app-main stack"><header class="stack-sm"><p class="eyebrow">Access / Kebijakan</p><h1>Izin per peran.</h1><p class="lead">Atur matriks antarmuka demo. Izin nyata wajib ditegakkan di server.</p></header><section id="ringkasan" class="section"><div class="table-scroll" role="region" aria-label="Matriks izin lokal, tidak menyimpan perubahan" tabindex="0"><table><caption>Matriks izin lokal, tidak menyimpan perubahan</caption><thead><tr><th scope="col">Kemampuan</th><th scope="col">Admin</th><th scope="col">Editor</th><th scope="col">Viewer</th></tr></thead><tbody><tr><td>Membaca laporan</td><td><input type="checkbox" aria-label="Membaca laporan untuk Admin" checked></td><td><input type="checkbox" aria-label="Membaca laporan untuk Editor" checked></td><td><input type="checkbox" aria-label="Membaca laporan untuk Viewer" checked></td></tr><tr><td>Mengubah konten</td><td><input type="checkbox" aria-label="Mengubah konten untuk Admin" checked></td><td><input type="checkbox" aria-label="Mengubah konten untuk Editor" checked></td><td><input type="checkbox" aria-label="Mengubah konten untuk Viewer" ></td></tr><tr><td>Mengelola anggota</td><td><input type="checkbox" aria-label="Mengelola anggota untuk Admin" checked></td><td><input type="checkbox" aria-label="Mengelola anggota untuk Editor" ></td><td><input type="checkbox" aria-label="Mengelola anggota untuk Viewer" ></td></tr><tr><td>Mengubah penagihan</td><td><input type="checkbox" aria-label="Mengubah penagihan untuk Admin" checked></td><td><input type="checkbox" aria-label="Mengubah penagihan untuk Editor" ></td><td><input type="checkbox" aria-label="Mengubah penagihan untuk Viewer" ></td></tr></tbody></table></div></section><section id="aktivitas" class="grid cols-2"><div><h2>Prinsip akses minimum</h2><p class="lead space">Berikan akses sesuai pekerjaan. Pisahkan izin membaca, mengubah data, dan mengelola akun.</p></div><div><details><summary>Editor</summary><p>Mengelola konten tanpa mengubah anggota atau pengaturan penagihan.</p></details><details><summary>Viewer</summary><p>Membaca laporan tanpa akses perubahan data.</p></details></div></section><footer id="panduan" class="footer">Mode demo · Semua angka merupakan data ilustrasi. Perubahan hanya bertahan selama halaman terbuka.</footer></main></div><div class="toast" role="status" hidden></div></body></html>
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1"
+    />
+    <meta
+      name="description"
+      content="Matriks akses monokrom dengan checkbox native dan penjelasan peran."
+    />
+    <title>Access / Permissions · Frontend Template</title>
+    <link
+      rel="stylesheet"
+      href="../../assets/base.css"
+    />
+    <style>
+      :root {
+        --bg: #f4f3ee;
+        --surface: #ffffff;
+        --ink: #222321;
+        --muted: #62635c;
+        --accent: #363c35;
+        --soft: #e5e6de;
+      }
+    </style>
+    <script
+      src="../../assets/core.js"
+      defer
+    ></script>
+    <script
+      src="../../assets/runtime.js"
+      defer
+    ></script>
+  </head>
+  <body data-template="access-permissions">
+    <a
+      class="skip"
+      href="#main"
+      >Lewati ke konten</a
+    >
+    <div class="demo-bar">
+      <a href="../../index.html">← Koleksi template</a
+      ><span>Demo frontend · Access / Permissions</span>
+    </div>
+    <div class="aside-layout">
+      <aside class="sidebar">
+        <a
+          class="brand"
+          href="#main"
+          ><span
+            class="brand-mark"
+            aria-hidden="true"
+          ></span
+          >access</a
+        >
+        <nav aria-label="Navigasi utama">
+          <a
+            href="#ringkasan"
+            aria-current="page"
+            >Ringkasan</a
+          ><a href="#aktivitas">Aktivitas</a><a href="#panduan">Panduan</a>
+        </nav>
+        <p class="sidebar-note">
+          Ruang kerja contoh<br />17 Oktober 2026 · WIB
+        </p>
+      </aside>
+      <main
+        id="main"
+        class="app-main stack"
+      >
+        <header class="stack-sm">
+          <p class="eyebrow">Access / Kebijakan</p>
+          <h1>Izin per peran.</h1>
+          <p class="lead">
+            Atur matriks antarmuka demo. Izin nyata wajib ditegakkan di server.
+          </p>
+        </header>
+        <section
+          id="ringkasan"
+          class="section"
+        >
+          <div
+            class="table-scroll"
+            role="region"
+            aria-label="Matriks izin lokal, tidak menyimpan perubahan"
+            tabindex="0"
+          >
+            <table>
+              <caption>
+                Matriks izin lokal, tidak menyimpan perubahan
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Kemampuan</th>
+                  <th scope="col">Admin</th>
+                  <th scope="col">Editor</th>
+                  <th scope="col">Viewer</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Membaca laporan</td>
+                  <td>
+                    <input
+                      type="checkbox"
+                      aria-label="Membaca laporan untuk Admin"
+                      checked
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="checkbox"
+                      aria-label="Membaca laporan untuk Editor"
+                      checked
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="checkbox"
+                      aria-label="Membaca laporan untuk Viewer"
+                      checked
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mengubah konten</td>
+                  <td>
+                    <input
+                      type="checkbox"
+                      aria-label="Mengubah konten untuk Admin"
+                      checked
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="checkbox"
+                      aria-label="Mengubah konten untuk Editor"
+                      checked
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="checkbox"
+                      aria-label="Mengubah konten untuk Viewer"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mengelola anggota</td>
+                  <td>
+                    <input
+                      type="checkbox"
+                      aria-label="Mengelola anggota untuk Admin"
+                      checked
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="checkbox"
+                      aria-label="Mengelola anggota untuk Editor"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="checkbox"
+                      aria-label="Mengelola anggota untuk Viewer"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mengubah penagihan</td>
+                  <td>
+                    <input
+                      type="checkbox"
+                      aria-label="Mengubah penagihan untuk Admin"
+                      checked
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="checkbox"
+                      aria-label="Mengubah penagihan untuk Editor"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="checkbox"
+                      aria-label="Mengubah penagihan untuk Viewer"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section
+          id="aktivitas"
+          class="grid cols-2"
+        >
+          <div>
+            <h2>Prinsip akses minimum</h2>
+            <p class="lead space">
+              Berikan akses sesuai pekerjaan. Pisahkan izin membaca, mengubah
+              data, dan mengelola akun.
+            </p>
+          </div>
+          <div>
+            <details>
+              <summary>Editor</summary>
+              <p>
+                Mengelola konten tanpa mengubah anggota atau pengaturan
+                penagihan.
+              </p>
+            </details>
+            <details>
+              <summary>Viewer</summary>
+              <p>Membaca laporan tanpa akses perubahan data.</p>
+            </details>
+          </div>
+        </section>
+        <footer
+          id="panduan"
+          class="footer"
+        >
+          Mode demo · Semua angka merupakan data ilustrasi. Perubahan hanya
+          bertahan selama halaman terbuka.
+        </footer>
+      </main>
+    </div>
+    <div
+      class="toast"
+      role="status"
+      hidden
+    ></div>
+  </body>
+</html>

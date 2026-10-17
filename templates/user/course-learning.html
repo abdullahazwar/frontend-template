@@ -1,1 +1,168 @@
-<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Ruang kursus dengan materi utama lebar dan progres yang mengikuti checklist."><title>Belajar / Course · Frontend Template</title><link rel="stylesheet" href="../../assets/base.css"><style>:root{--bg:#f5f7fb;--surface:#ffffff;--ink:#22314b;--muted:#586880;--accent:#315fa3;--soft:#e7edf9}.lesson-board{background:var(--soft);padding:35px;min-height:280px;display:flex;flex-direction:column;justify-content:space-between;gap:24px}.lesson-board h2{font-size:2rem}</style><script src="../../assets/core.js" defer></script><script src="../../assets/runtime.js" defer></script></head><body data-template="course-learning"><a class="skip" href="#main">Lewati ke konten</a><div class="demo-bar"><a href="../../index.html">← Koleksi template</a><span>Demo frontend · Belajar / Course</span></div><div class="wrap "><header class="topbar"><a class="brand" href="#main"><span class="brand-mark" aria-hidden="true"></span>belajar</a><nav aria-label="Navigasi utama"><a href="#ringkasan">Materi</a><a href="#aktivitas">Tanya jawab</a></nav></header><main id="main"><header class="stack-sm"><p class="eyebrow">Belajar / Kursus</p><h1>Dasar jaringan komputer.</h1><p class="lead">Ikuti 4 materi singkat. Progres hanya tersimpan selama tab terbuka.</p></header><section id="ringkasan" class="grid split section"><div class="stack"><div class="lesson-board"><span class="eyebrow">Materi 01 / Konsep</span><h2>Perangkat saling terhubung.<br>Data bisa dibagikan.</h2><p>Jaringan menghubungkan dua perangkat atau lebih agar dapat bertukar data dan memakai sumber daya bersama.</p></div><h2>Contoh di kantor kecil</h2><p class="lead">Lima komputer terhubung ke switch. Router menghubungkan jaringan kantor ke internet. Printer jaringan dapat digunakan bersama.</p></div><aside class="panel stack" data-course><h2>Daftar materi</h2><p data-course-count>0 dari 4 selesai</p><progress value="0" max="4" aria-label="Materi selesai"></progress><label class="check"><input type="checkbox" data-lesson> Konsep jaringan</label><label class="check"><input type="checkbox" data-lesson> Switch dan router</label><label class="check"><input type="checkbox" data-lesson> Alamat IP</label><label class="check"><input type="checkbox" data-lesson> Studi kasus kantor</label></aside></section><section id="aktivitas"><details><summary>Apa perbedaan switch dan router?</summary><p>Switch menghubungkan perangkat dalam jaringan lokal. Router menghubungkan jaringan yang berbeda dan meneruskan paket antarjaringan.</p></details><details><summary>Apa manfaat LAN?</summary><p>Perangkat kantor dapat berbagi file, printer, dan akses aplikasi pada area lokal.</p></details></section></main><footer class="footer row between"><span>belajar · Identitas dan konten contoh</span><a href="#main">Kembali ke atas ↑</a></footer></div><div class="toast" role="status" hidden></div></body></html>
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1"
+    />
+    <meta
+      name="description"
+      content="Ruang kursus dengan materi utama lebar dan progres yang mengikuti checklist."
+    />
+    <title>Belajar / Course · Frontend Template</title>
+    <link
+      rel="stylesheet"
+      href="../../assets/base.css"
+    />
+    <style>
+      :root {
+        --bg: #f5f7fb;
+        --surface: #ffffff;
+        --ink: #22314b;
+        --muted: #586880;
+        --accent: #315fa3;
+        --soft: #e7edf9;
+      }
+      .lesson-board {
+        background: var(--soft);
+        padding: 35px;
+        min-height: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 24px;
+      }
+      .lesson-board h2 {
+        font-size: 2rem;
+      }
+    </style>
+    <script
+      src="../../assets/core.js"
+      defer
+    ></script>
+    <script
+      src="../../assets/runtime.js"
+      defer
+    ></script>
+  </head>
+  <body data-template="course-learning">
+    <a
+      class="skip"
+      href="#main"
+      >Lewati ke konten</a
+    >
+    <div class="demo-bar">
+      <a href="../../index.html">← Koleksi template</a
+      ><span>Demo frontend · Belajar / Course</span>
+    </div>
+    <div class="wrap">
+      <header class="topbar">
+        <a
+          class="brand"
+          href="#main"
+          ><span
+            class="brand-mark"
+            aria-hidden="true"
+          ></span
+          >belajar</a
+        >
+        <nav aria-label="Navigasi utama">
+          <a href="#ringkasan">Materi</a><a href="#aktivitas">Tanya jawab</a>
+        </nav>
+      </header>
+      <main id="main">
+        <header class="stack-sm">
+          <p class="eyebrow">Belajar / Kursus</p>
+          <h1>Dasar jaringan komputer.</h1>
+          <p class="lead">
+            Ikuti 4 materi singkat. Progres hanya tersimpan selama tab terbuka.
+          </p>
+        </header>
+        <section
+          id="ringkasan"
+          class="grid split section"
+        >
+          <div class="stack">
+            <div class="lesson-board">
+              <span class="eyebrow">Materi 01 / Konsep</span>
+              <h2>Perangkat saling terhubung.<br />Data bisa dibagikan.</h2>
+              <p>
+                Jaringan menghubungkan dua perangkat atau lebih agar dapat
+                bertukar data dan memakai sumber daya bersama.
+              </p>
+            </div>
+            <h2>Contoh di kantor kecil</h2>
+            <p class="lead">
+              Lima komputer terhubung ke switch. Router menghubungkan jaringan
+              kantor ke internet. Printer jaringan dapat digunakan bersama.
+            </p>
+          </div>
+          <aside
+            class="panel stack"
+            data-course
+          >
+            <h2>Daftar materi</h2>
+            <p data-course-count>0 dari 4 selesai</p>
+            <progress
+              value="0"
+              max="4"
+              aria-label="Materi selesai"
+            ></progress
+            ><label class="check"
+              ><input
+                type="checkbox"
+                data-lesson
+              />
+              Konsep jaringan</label
+            ><label class="check"
+              ><input
+                type="checkbox"
+                data-lesson
+              />
+              Switch dan router</label
+            ><label class="check"
+              ><input
+                type="checkbox"
+                data-lesson
+              />
+              Alamat IP</label
+            ><label class="check"
+              ><input
+                type="checkbox"
+                data-lesson
+              />
+              Studi kasus kantor</label
+            >
+          </aside>
+        </section>
+        <section id="aktivitas">
+          <details>
+            <summary>Apa perbedaan switch dan router?</summary>
+            <p>
+              Switch menghubungkan perangkat dalam jaringan lokal. Router
+              menghubungkan jaringan yang berbeda dan meneruskan paket
+              antarjaringan.
+            </p>
+          </details>
+          <details>
+            <summary>Apa manfaat LAN?</summary>
+            <p>
+              Perangkat kantor dapat berbagi file, printer, dan akses aplikasi
+              pada area lokal.
+            </p>
+          </details>
+        </section>
+      </main>
+      <footer class="footer row between">
+        <span>belajar · Identitas dan konten contoh</span
+        ><a href="#main">Kembali ke atas ↑</a>
+      </footer>
+    </div>
+    <div
+      class="toast"
+      role="status"
+      hidden
+    ></div>
+  </body>
+</html>

@@ -1,1 +1,173 @@
-<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Pendaftaran acara dengan pilihan tiket dan total yang mengikuti pilihan."><title>Summit / Event · Frontend Template</title><link rel="stylesheet" href="../../assets/base.css"><style>:root{--bg:#fbf9ef;--surface:#ffffff;--ink:#353424;--muted:#716c50;--accent:#746118;--soft:#f2edcf}</style><script src="../../assets/core.js" defer></script><script src="../../assets/runtime.js" defer></script></head><body data-template="summit-event"><a class="skip" href="#main">Lewati ke konten</a><div class="demo-bar"><a href="../../index.html">← Koleksi template</a><span>Demo frontend · Summit / Event</span></div><div class="wrap "><header class="topbar"><a class="brand" href="#main"><span class="brand-mark" aria-hidden="true"></span>SUMMIT</a><nav aria-label="Navigasi utama"><a href="#detail">Acara</a><a href="#daftar">Daftar</a></nav></header><main id="main"><section class="hero" id="detail"><div class="stack"><header class="stack-sm"><p class="eyebrow">Summit / Temu desain</p><h1>Berbagi proses.<br>Menguji gagasan.</h1><p class="lead">Acara fiktif. Sabtu, 24 Oktober 2026 · 09.00–16.00 WIB · Bandung.</p></header><p class="muted">Lokasi contoh: Studio Terbuka, Bandung.<br>Seluruh tiket pada halaman ini merupakan simulasi.</p></div><img class="hero-art" src="../../assets/art/poster.svg" alt="Poster geometris acara desain" width="800" height="600" loading="lazy"></section><section id="daftar" class="section grid split"><div class="stack"><h2>Pilih tiket demo</h2><form class="form-grid" data-demo-form ><label class="ticket-choice"><input type="radio" name="ticket" value="75000" data-ticket-price required checked><span><b>Harian</b><br><small>Akses sesi diskusi</small></span><b style="margin-left:auto">Rp75.000</b></label><label class="ticket-choice"><input type="radio" name="ticket" value="150000" data-ticket-price required ><span><b>Workshop</b><br><small>Diskusi dan praktik</small></span><b style="margin-left:auto">Rp150.000</b></label><div class="field"><label for="nama-peserta">Nama peserta</label><input id="nama-peserta" name="nama-peserta" type="text" required></div><div class="field"><label for="email-demo">Email demo</label><input id="email-demo" name="email-demo" type="email" required></div><button class="btn" type="submit">Tinjau pendaftaran</button><p class="form-status" role="status"></p></form></div><aside class="well sticky-summary stack"><p class="eyebrow">Ringkasan pilihan</p><h2 data-ticket-total>Rp75.000</h2><p>Pajak dan biaya pembayaran di luar model demo. Tidak membuat tiket atau menagih pembayaran.</p></aside></section></main><footer class="footer row between"><span>SUMMIT · Identitas dan konten contoh</span><a href="#main">Kembali ke atas ↑</a></footer></div><div class="toast" role="status" hidden></div></body></html>
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1"
+    />
+    <meta
+      name="description"
+      content="Pendaftaran acara dengan pilihan tiket dan total yang mengikuti pilihan."
+    />
+    <title>Summit / Event · Frontend Template</title>
+    <link
+      rel="stylesheet"
+      href="../../assets/base.css"
+    />
+    <style>
+      :root {
+        --bg: #fbf9ef;
+        --surface: #ffffff;
+        --ink: #353424;
+        --muted: #716c50;
+        --accent: #746118;
+        --soft: #f2edcf;
+      }
+    </style>
+    <script
+      src="../../assets/core.js"
+      defer
+    ></script>
+    <script
+      src="../../assets/runtime.js"
+      defer
+    ></script>
+  </head>
+  <body data-template="summit-event">
+    <a
+      class="skip"
+      href="#main"
+      >Lewati ke konten</a
+    >
+    <div class="demo-bar">
+      <a href="../../index.html">← Koleksi template</a
+      ><span>Demo frontend · Summit / Event</span>
+    </div>
+    <div class="wrap">
+      <header class="topbar">
+        <a
+          class="brand"
+          href="#main"
+          ><span
+            class="brand-mark"
+            aria-hidden="true"
+          ></span
+          >SUMMIT</a
+        >
+        <nav aria-label="Navigasi utama">
+          <a href="#detail">Acara</a><a href="#daftar">Daftar</a>
+        </nav>
+      </header>
+      <main id="main">
+        <section
+          class="hero"
+          id="detail"
+        >
+          <div class="stack">
+            <header class="stack-sm">
+              <p class="eyebrow">Summit / Temu desain</p>
+              <h1>Berbagi proses.<br />Menguji gagasan.</h1>
+              <p class="lead">
+                Acara fiktif. Sabtu, 24 Oktober 2026 · 09.00–16.00 WIB ·
+                Bandung.
+              </p>
+            </header>
+            <p class="muted">
+              Lokasi contoh: Studio Terbuka, Bandung.<br />Seluruh tiket pada
+              halaman ini merupakan simulasi.
+            </p>
+          </div>
+          <img
+            class="hero-art"
+            src="../../assets/art/poster.svg"
+            alt="Poster geometris acara desain"
+            width="800"
+            height="600"
+            loading="lazy"
+          />
+        </section>
+        <section
+          id="daftar"
+          class="section grid split"
+        >
+          <div class="stack">
+            <h2>Pilih tiket demo</h2>
+            <form
+              class="form-grid"
+              data-demo-form
+            >
+              <label class="ticket-choice"
+                ><input
+                  type="radio"
+                  name="ticket"
+                  value="75000"
+                  data-ticket-price
+                  required
+                  checked
+                /><span
+                  ><b>Harian</b><br /><small>Akses sesi diskusi</small></span
+                ><b style="margin-left: auto">Rp75.000</b></label
+              ><label class="ticket-choice"
+                ><input
+                  type="radio"
+                  name="ticket"
+                  value="150000"
+                  data-ticket-price
+                  required
+                /><span
+                  ><b>Workshop</b><br /><small>Diskusi dan praktik</small></span
+                ><b style="margin-left: auto">Rp150.000</b></label
+              >
+              <div class="field">
+                <label for="nama-peserta">Nama peserta</label
+                ><input
+                  id="nama-peserta"
+                  name="nama-peserta"
+                  type="text"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="email-demo">Email demo</label
+                ><input
+                  id="email-demo"
+                  name="email-demo"
+                  type="email"
+                  required
+                />
+              </div>
+              <button
+                class="btn"
+                type="submit"
+              >
+                Tinjau pendaftaran
+              </button>
+              <p
+                class="form-status"
+                role="status"
+              ></p>
+            </form>
+          </div>
+          <aside class="well sticky-summary stack">
+            <p class="eyebrow">Ringkasan pilihan</p>
+            <h2 data-ticket-total>Rp75.000</h2>
+            <p>
+              Pajak dan biaya pembayaran di luar model demo. Tidak membuat tiket
+              atau menagih pembayaran.
+            </p>
+          </aside>
+        </section>
+      </main>
+      <footer class="footer row between">
+        <span>SUMMIT · Identitas dan konten contoh</span
+        ><a href="#main">Kembali ke atas ↑</a>
+      </footer>
+    </div>
+    <div
+      class="toast"
+      role="status"
+      hidden
+    ></div>
+  </body>
+</html>

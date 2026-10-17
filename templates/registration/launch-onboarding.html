@@ -1,1 +1,192 @@
-<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Form tiga langkah dengan validasi per tahap dan tinjauan jawaban."><title>Launch / Onboarding · Frontend Template</title><link rel="stylesheet" href="../../assets/base.css"><style>:root{--bg:#f7f7fb;--surface:#ffffff;--ink:#252632;--muted:#626574;--accent:#554cc1;--soft:#efedf9}</style><script src="../../assets/core.js" defer></script><script src="../../assets/runtime.js" defer></script></head><body data-template="launch-onboarding"><a class="skip" href="#main">Lewati ke konten</a><div class="demo-bar"><a href="../../index.html">← Koleksi template</a><span>Demo frontend · Launch / Onboarding</span></div><main id="main" class="wrap narrow page stack"><header class="topbar"><a class="brand" href="#main"><span class="brand-mark" aria-hidden="true"></span>launch</a><nav aria-label="Navigasi utama"><a href="#langkah">Langkah</a><a href="#detail">Tentang</a></nav></header><header class="stack-sm"><p class="eyebrow">Launch / Onboarding</p><h1>Ruang kerja baru,<br>dalam tiga langkah.</h1><p class="lead">Wizard demo. Tidak membuat akun atau menyimpan jawaban.</p></header><form class="form-grid" data-wizard><div id="langkah" class="stepper"><span aria-current="step" data-step-label>01 / Identitas</span><span data-step-label>02 / Kebutuhan</span><span data-step-label>03 / Tinjauan</span></div><section data-step class="form-grid"><div class="field"><label for="nama-ruang-kerja">Nama ruang kerja</label><input id="nama-ruang-kerja" name="nama-ruang-kerja" type="text" required maxlength="80"></div><div class="field"><label for="email-demo">Email demo</label><input id="email-demo" name="email-demo" type="email" required></div></section><section data-step class="form-grid" hidden><div class="field"><label for="goal">Tujuan utama</label><select id="goal" name="Tujuan" required><option value="">Pilih tujuan</option><option>Mengelola proyek</option><option>Mengelola toko</option><option>Mengelola konten</option></select></div><div class="field"><label for="jumlah-anggota">Jumlah anggota</label><input id="jumlah-anggota" name="jumlah-anggota" type="number" required min="1" max="100"></div></section><section data-step hidden><h2>Tinjau jawaban</h2><dl data-review class="stack-sm space"></dl></section><div class="row between"><button type="button" class="btn secondary" data-prev hidden>Kembali</button><button type="button" class="btn" data-next>Lanjut</button><button type="submit" class="btn" data-finish hidden>Selesaikan demo</button></div><p class="form-status" role="status"></p></form><section id="detail" class="footer">Semua input hanya berada di memori halaman. Gunakan data fiktif.</section></main><div class="toast" role="status" hidden></div></body></html>
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1"
+    />
+    <meta
+      name="description"
+      content="Form tiga langkah dengan validasi per tahap dan tinjauan jawaban."
+    />
+    <title>Launch / Onboarding · Frontend Template</title>
+    <link
+      rel="stylesheet"
+      href="../../assets/base.css"
+    />
+    <style>
+      :root {
+        --bg: #f7f7fb;
+        --surface: #ffffff;
+        --ink: #252632;
+        --muted: #626574;
+        --accent: #554cc1;
+        --soft: #efedf9;
+      }
+    </style>
+    <script
+      src="../../assets/core.js"
+      defer
+    ></script>
+    <script
+      src="../../assets/runtime.js"
+      defer
+    ></script>
+  </head>
+  <body data-template="launch-onboarding">
+    <a
+      class="skip"
+      href="#main"
+      >Lewati ke konten</a
+    >
+    <div class="demo-bar">
+      <a href="../../index.html">← Koleksi template</a
+      ><span>Demo frontend · Launch / Onboarding</span>
+    </div>
+    <main
+      id="main"
+      class="wrap narrow page stack"
+    >
+      <header class="topbar">
+        <a
+          class="brand"
+          href="#main"
+          ><span
+            class="brand-mark"
+            aria-hidden="true"
+          ></span
+          >launch</a
+        >
+        <nav aria-label="Navigasi utama">
+          <a href="#langkah">Langkah</a><a href="#detail">Tentang</a>
+        </nav>
+      </header>
+      <header class="stack-sm">
+        <p class="eyebrow">Launch / Onboarding</p>
+        <h1>Ruang kerja baru,<br />dalam tiga langkah.</h1>
+        <p class="lead">
+          Wizard demo. Tidak membuat akun atau menyimpan jawaban.
+        </p>
+      </header>
+      <form
+        class="form-grid"
+        data-wizard
+      >
+        <div
+          id="langkah"
+          class="stepper"
+        >
+          <span
+            aria-current="step"
+            data-step-label
+            >01 / Identitas</span
+          ><span data-step-label>02 / Kebutuhan</span
+          ><span data-step-label>03 / Tinjauan</span>
+        </div>
+        <section
+          data-step
+          class="form-grid"
+        >
+          <div class="field">
+            <label for="nama-ruang-kerja">Nama ruang kerja</label
+            ><input
+              id="nama-ruang-kerja"
+              name="nama-ruang-kerja"
+              type="text"
+              required
+              maxlength="80"
+            />
+          </div>
+          <div class="field">
+            <label for="email-demo">Email demo</label
+            ><input
+              id="email-demo"
+              name="email-demo"
+              type="email"
+              required
+            />
+          </div>
+        </section>
+        <section
+          data-step
+          class="form-grid"
+          hidden
+        >
+          <div class="field">
+            <label for="goal">Tujuan utama</label
+            ><select
+              id="goal"
+              name="Tujuan"
+              required
+            >
+              <option value="">Pilih tujuan</option>
+              <option>Mengelola proyek</option>
+              <option>Mengelola toko</option>
+              <option>Mengelola konten</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="jumlah-anggota">Jumlah anggota</label
+            ><input
+              id="jumlah-anggota"
+              name="jumlah-anggota"
+              type="number"
+              required
+              min="1"
+              max="100"
+            />
+          </div>
+        </section>
+        <section
+          data-step
+          hidden
+        >
+          <h2>Tinjau jawaban</h2>
+          <dl
+            data-review
+            class="stack-sm space"
+          ></dl>
+        </section>
+        <div class="row between">
+          <button
+            type="button"
+            class="btn secondary"
+            data-prev
+            hidden
+          >
+            Kembali</button
+          ><button
+            type="button"
+            class="btn"
+            data-next
+          >
+            Lanjut</button
+          ><button
+            type="submit"
+            class="btn"
+            data-finish
+            hidden
+          >
+            Selesaikan demo
+          </button>
+        </div>
+        <p
+          class="form-status"
+          role="status"
+        ></p>
+      </form>
+      <section
+        id="detail"
+        class="footer"
+      >
+        Semua input hanya berada di memori halaman. Gunakan data fiktif.
+      </section>
+    </main>
+    <div
+      class="toast"
+      role="status"
+      hidden
+    ></div>
+  </body>
+</html>

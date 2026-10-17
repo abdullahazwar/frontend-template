@@ -1,0 +1,428 @@
+<!doctype html>
+<!--
+Adapted from cobiwave/simplefolio at af03c0cb90d03844de2b5a4cf2045aa0f72c2442.
+Struktur hero, pengenalan, dan proyek. Primitive CTA diubah ke CSS native.
+
+MIT License
+
+Copyright (c) 2019 Jacobo Martínez
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+-->
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <meta
+      name="description"
+      content="Frontend developer. Model minimal, karya dan proses."
+    />
+    <title>Simple / Developer / Frontend Template</title>
+    <link
+      rel="stylesheet"
+      href="../../../assets/base.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../../assets/portfolio.css"
+    />
+    <style>
+      :root {
+        --bg: #f3f6f1;
+        --surface: #ffffff;
+        --ink: #20392f;
+        --muted: #53675b;
+        --accent: #23614d;
+        --soft: #dfeadf;
+        --line: #dfeadf;
+        --accent-ink: #ffffff;
+        color-scheme: light;
+      }
+    </style>
+    <script
+      src="../../../assets/core.js"
+      defer
+    ></script>
+    <script
+      src="../../../assets/runtime.js"
+      defer
+    ></script>
+    <script
+      src="../../../assets/portfolio.js"
+      defer
+    ></script>
+  </head>
+  <body
+    class="folio-page"
+    data-template="simple-developer"
+    data-model="minimal"
+  >
+    <a
+      class="skip"
+      href="#main"
+      >Lewati ke konten</a
+    >
+    <div class="demo-bar">
+      <a href="../../../index.html?category=portfolio">← Koleksi portofolio</a
+      ><span>Profil dan karya demonstrasi</span>
+    </div>
+    <div class="folio-shell">
+      <header class="folio-nav">
+        <a
+          class="folio-wordmark"
+          href="#main"
+          >Nara Putra /</a
+        >
+        <nav aria-label="Navigasi portofolio">
+          <a href="#karya">Karya</a><a href="#tentang">Tentang</a
+          ><a href="#kontak">Kontak</a>
+        </nav>
+      </header>
+      <main id="main">
+        <section class="folio-intro">
+          <div>
+            <p class="folio-kicker">Nara Putra / Frontend developer</p>
+            <h1>Antarmuka kecil. Keputusan yang jelas.</h1>
+            <p
+              class="lead"
+              data-profile-summary
+            >
+              Menyusun halaman web ringan untuk usaha lokal. Fokus pada akses
+              keyboard dan konten yang terbaca.
+            </p>
+            <div class="folio-actions">
+              <a
+                class="cta-btn"
+                href="#karya"
+                >Jelajahi karya ↓</a
+              >
+              <button
+                class="btn secondary"
+                type="button"
+                data-profile-download
+              >
+                Unduh profil contoh (.txt)
+              </button>
+            </div>
+          </div>
+        </section>
+        <section
+          id="karya"
+          class="folio-section"
+          data-portfolio
+          aria-labelledby="work-title"
+        >
+          <div class="folio-section-head">
+            <div>
+              <p class="folio-kicker">Indeks / karya terpilih</p>
+              <h2 id="work-title">Karya dan catatan.</h2>
+            </div>
+            <p
+              class="small muted"
+              role="status"
+              data-work-count
+            >
+              3 karya ditampilkan
+            </p>
+          </div>
+          <div class="folio-work-controls">
+            <label for="work-search"
+              >Cari karya<input
+                id="work-search"
+                type="search"
+                placeholder="Cari judul atau proses..."
+                data-work-search
+            /></label>
+            <div
+              class="folio-filters"
+              aria-label="Filter jenis karya"
+            >
+              <button
+                type="button"
+                data-work-filter="all"
+                aria-pressed="true"
+              >
+                Semua</button
+              ><button
+                type="button"
+                data-work-filter="Web"
+                aria-pressed="false"
+              >
+                Web</button
+              ><button
+                type="button"
+                data-work-filter="Catatan"
+                aria-pressed="false"
+              >
+                Catatan
+              </button>
+            </div>
+          </div>
+          <div class="folio-work-grid">
+            <article
+              class="folio-project"
+              data-work
+              data-kind="Web"
+            >
+              <figure class="folio-cover">
+                <img
+                  class="folio-work-image"
+                  src="../../../assets/art/code.svg"
+                  alt="Ilustrasi konsep: Katalog Kios"
+                  width="800"
+                  height="600"
+                /><button
+                  type="button"
+                  data-art-open
+                  aria-label="Perbesar ilustrasi Katalog Kios"
+                >
+                  Perbesar ↗
+                </button>
+                <figcaption>Ilustrasi konsep / 01</figcaption>
+              </figure>
+              <p class="folio-project-meta">01 / Web / Konsep</p>
+              <h3>Katalog Kios</h3>
+              <p>Produk sulit ditemukan dari daftar panjang.</p>
+              <details
+                class="folio-process"
+                id="proses-1"
+              >
+                <summary>Baca proses: Katalog Kios</summary>
+                <h4>Konteks dan peran</h4>
+                <p>
+                  Studi mandiri demonstrasi. Peran: frontend developer. Produk
+                  sulit ditemukan dari daftar panjang.
+                </p>
+                <h4>Keputusan</h4>
+                <p>Pencarian langsung dan kategori produk dekat daftar.</p>
+                <h4>Artefak dan tindak lanjut</h4>
+                <p>
+                  Contoh ini memperlihatkan arah dan dokumentasi proses. Ganti
+                  ilustrasi dengan artefak asli, jelaskan kontribusi pribadi,
+                  dan sertakan hasil validasi yang benar-benar tersedia.
+                </p>
+              </details>
+            </article>
+            <article
+              class="folio-project"
+              data-work
+              data-kind="Catatan"
+            >
+              <figure class="folio-cover">
+                <img
+                  class="folio-work-image"
+                  src="../../../assets/art/poster.svg"
+                  alt="Ilustrasi konsep: Catatan Komponen"
+                  width="800"
+                  height="600"
+                /><button
+                  type="button"
+                  data-art-open
+                  aria-label="Perbesar ilustrasi Catatan Komponen"
+                >
+                  Perbesar ↗
+                </button>
+                <figcaption>Ilustrasi konsep / 02</figcaption>
+              </figure>
+              <p class="folio-project-meta">02 / Catatan / Konsep</p>
+              <h3>Catatan Komponen</h3>
+              <p>Tombol yang sama memiliki perilaku berbeda.</p>
+              <details
+                class="folio-process"
+                id="proses-2"
+              >
+                <summary>Baca proses: Catatan Komponen</summary>
+                <h4>Konteks dan peran</h4>
+                <p>
+                  Studi mandiri demonstrasi. Peran: frontend developer. Tombol
+                  yang sama memiliki perilaku berbeda.
+                </p>
+                <h4>Keputusan</h4>
+                <p>Dokumentasikan fokus, label, dan keadaan nonaktif.</p>
+                <h4>Artefak dan tindak lanjut</h4>
+                <p>
+                  Contoh ini memperlihatkan arah dan dokumentasi proses. Ganti
+                  ilustrasi dengan artefak asli, jelaskan kontribusi pribadi,
+                  dan sertakan hasil validasi yang benar-benar tersedia.
+                </p>
+              </details>
+            </article>
+            <article
+              class="folio-project"
+              data-work
+              data-kind="Web"
+            >
+              <figure class="folio-cover">
+                <img
+                  class="folio-work-image"
+                  src="../../../assets/art/abstract.svg"
+                  alt="Ilustrasi konsep: Jadwal Belajar"
+                  width="800"
+                  height="600"
+                /><button
+                  type="button"
+                  data-art-open
+                  aria-label="Perbesar ilustrasi Jadwal Belajar"
+                >
+                  Perbesar ↗
+                </button>
+                <figcaption>Ilustrasi konsep / 03</figcaption>
+              </figure>
+              <p class="folio-project-meta">03 / Web / Konsep</p>
+              <h3>Jadwal Belajar</h3>
+              <p>Kegiatan rutin bercampur dengan tenggat.</p>
+              <details
+                class="folio-process"
+                id="proses-3"
+              >
+                <summary>Baca proses: Jadwal Belajar</summary>
+                <h4>Konteks dan peran</h4>
+                <p>
+                  Studi mandiri demonstrasi. Peran: frontend developer. Kegiatan
+                  rutin bercampur dengan tenggat.
+                </p>
+                <h4>Keputusan</h4>
+                <p>Pisahkan jadwal berulang dan tanggal pengumpulan.</p>
+                <h4>Artefak dan tindak lanjut</h4>
+                <p>
+                  Contoh ini memperlihatkan arah dan dokumentasi proses. Ganti
+                  ilustrasi dengan artefak asli, jelaskan kontribusi pribadi,
+                  dan sertakan hasil validasi yang benar-benar tersedia.
+                </p>
+              </details>
+            </article>
+          </div>
+          <div
+            class="folio-empty"
+            data-work-empty
+            hidden
+          >
+            <p>Tidak ada karya yang cocok dengan filter.</p>
+            <button
+              class="btn secondary"
+              type="button"
+              data-work-reset
+            >
+              Reset pencarian
+            </button>
+          </div>
+        </section>
+        <section
+          id="tentang"
+          class="folio-section folio-about-grid"
+        >
+          <div>
+            <p class="folio-kicker">Pendekatan</p>
+            <h2>Alasan di balik pekerjaan.</h2>
+          </div>
+          <div>
+            <p class="lead">
+              Menyusun halaman web ringan untuk usaha lokal. Fokus pada akses
+              keyboard dan konten yang terbaca.
+            </p>
+            <dl class="folio-facts">
+              <div>
+                <dt>Fokus</dt>
+                <dd>Frontend developer</dd>
+              </div>
+              <div>
+                <dt>Model</dt>
+                <dd>minimal</dd>
+              </div>
+              <div>
+                <dt>Isi</dt>
+                <dd>Studi konsep dan catatan proses</dd>
+              </div>
+              <div>
+                <dt>Status</dt>
+                <dd>Identitas dan karya fiktif</dd>
+              </div>
+            </dl>
+            <p class="folio-note">
+              Profil contoh untuk membantu penyusunan portofolio. Ganti nama,
+              karya, pengalaman, dan kontak sebelum publikasi.
+            </p>
+          </div>
+        </section>
+        <section
+          id="kontak"
+          class="folio-section folio-contact"
+        >
+          <div>
+            <p class="folio-kicker">Kontak contoh</p>
+            <h2>Mulai percakapan.</h2>
+          </div>
+          <div class="stack">
+            <code data-contact-address>halo@example.com</code>
+            <p class="small muted">
+              Alamat demonstrasi. Ganti dengan alamat milik pemilik portofolio.
+            </p>
+            <div>
+              <button
+                class="btn secondary"
+                type="button"
+                data-copy-contact
+              >
+                Salin alamat contoh
+              </button>
+            </div>
+            <p
+              class="small"
+              role="status"
+              data-contact-status
+            ></p>
+          </div>
+        </section>
+      </main>
+      <footer class="folio-footer">
+        <span>Nara Putra / Profil demonstrasi</span
+        ><a href="#main">Kembali ke atas ↑</a>
+      </footer>
+    </div>
+    <dialog
+      class="folio-lightbox"
+      data-art-dialog
+      aria-labelledby="art-dialog-title"
+    >
+      <div class="dialog-head">
+        <h2 id="art-dialog-title">Ilustrasi konsep</h2>
+        <button
+          class="btn secondary"
+          type="button"
+          data-art-close
+        >
+          Tutup
+        </button>
+      </div>
+      <figure>
+        <img
+          src="../../../assets/art/abstract.svg"
+          alt="Ilustrasi konsep terpilih"
+          width="800"
+          height="600"
+        />
+        <figcaption>Ilustrasi konsep.</figcaption>
+      </figure>
+    </dialog>
+  </body>
+</html>

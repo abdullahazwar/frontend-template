@@ -3,7 +3,7 @@
     "id": "pulse-sales",
     "category": "dashboard",
     "name": "Pulse / Sales",
-    "description": "Dashboard penjualan terang dengan metrik tipis, tren mingguan, dan transaksi dalam satu alur.",
+    "description": "Dashboard penjualan terang dengan metrik tipis.",
     "palette": "violet",
     "colors": [
       "#f7f7fb",
@@ -13,18 +13,14 @@
       "#554cc1",
       "#efedf9"
     ],
-    "features": [
-      "period",
-      "csv",
-      "chart"
-    ],
+    "features": ["period", "csv", "chart"],
     "path": "templates/dashboard/pulse-sales.html"
   },
   {
     "id": "runway-finance",
     "category": "dashboard",
     "name": "Runway / Finance",
-    "description": "Ruang finansial gelap dengan saldo dominan dan buku kas tanpa kartu bertumpuk.",
+    "description": "Ruang finansial gelap: saldo dominan dan buku kas tanpa kartu bertumpuk.",
     "palette": "navy",
     "colors": [
       "#111e2b",
@@ -41,7 +37,7 @@
     "id": "orchard-analytics",
     "category": "dashboard",
     "name": "Orchard / Analytics",
-    "description": "Analitik editorial dengan batang horizontal berskala dan rincian kanal terbuka.",
+    "description": "Analitik editorial: batang horizontal berskala dan rincian kanal terbuka.",
     "palette": "green",
     "colors": [
       "#f7f8f4",
@@ -58,7 +54,7 @@
     "id": "dispatch-logistics",
     "category": "dashboard",
     "name": "Dispatch / Logistics",
-    "description": "Dashboard rute dengan diagram wilayah sebagai fokus dan antrean kurir berdampingan.",
+    "description": "Dashboard rute: diagram wilayah sebagai fokus dan antrean kurir.",
     "palette": "orange",
     "colors": [
       "#faf7f1",
@@ -75,7 +71,7 @@
     "id": "sprint-projects",
     "category": "dashboard",
     "name": "Sprint / Projects",
-    "description": "Papan proyek tiga tahap tanpa metrik dekoratif, dilengkapi perpindahan tugas.",
+    "description": "Papan proyek tiga tahap tanpa metrik dekoratif.",
     "palette": "violet",
     "colors": [
       "#f7f7fb",
@@ -85,9 +81,7 @@
       "#554cc1",
       "#efedf9"
     ],
-    "features": [
-      "kanban"
-    ],
+    "features": ["kanban"],
     "path": "templates/dashboard/sprint-projects.html"
   },
   {
@@ -121,10 +115,7 @@
       "#315fa3",
       "#e7edf9"
     ],
-    "features": [
-      "search",
-      "status"
-    ],
+    "features": ["search", "status"],
     "path": "templates/admin/atlas-users.html"
   },
   {
@@ -141,17 +132,14 @@
       "#286148",
       "#e6eee4"
     ],
-    "features": [
-      "search",
-      "stock"
-    ],
+    "features": ["search", "stock"],
     "path": "templates/admin/rak-inventory.html"
   },
   {
     "id": "pressroom-cms",
     "category": "admin",
     "name": "Pressroom / CMS",
-    "description": "Meja redaksi berlanggam editorial, dengan status publikasi pada baris naskah.",
+    "description": "Meja redaksi berlanggam editorial.",
     "palette": "ink",
     "colors": [
       "#f4f3ee",
@@ -178,10 +166,7 @@
       "#216676",
       "#e1eff0"
     ],
-    "features": [
-      "inbox",
-      "reply"
-    ],
+    "features": ["inbox", "reply"],
     "path": "templates/admin/relay-support.html"
   },
   {
@@ -222,7 +207,7 @@
     "id": "nook-profile",
     "category": "user",
     "name": "Nook / Profile",
-    "description": "Profil dengan sampul horizontal, identitas terbuka, dan aktivitas tanpa tumpukan kartu.",
+    "description": "Profil dengan sampul horizontal.",
     "palette": "rose",
     "colors": [
       "#fbf5f3",
@@ -232,9 +217,7 @@
       "#a23f50",
       "#f5e4e6"
     ],
-    "features": [
-      "bookmark"
-    ],
+    "features": ["bookmark"],
     "path": "templates/user/nook-profile.html"
   },
   {
@@ -258,7 +241,7 @@
     "id": "pocket-wallet",
     "category": "user",
     "name": "Pocket / Wallet",
-    "description": "Wallet pribadi dengan ringkasan terbuka, target tabungan, dan riwayat yang bisa difilter.",
+    "description": "Wallet pribadi dengan ringkasan terbuka.",
     "palette": "green",
     "colors": [
       "#f7f8f4",
@@ -285,16 +268,14 @@
       "#315fa3",
       "#e7edf9"
     ],
-    "features": [
-      "progress"
-    ],
+    "features": ["progress"],
     "path": "templates/user/course-learning.html"
   },
   {
     "id": "desk-settings",
     "category": "user",
     "name": "Desk / Settings",
-    "description": "Pengaturan profil dua kolom dengan formulir terbuka dan konteks privasi di samping.",
+    "description": "Pengaturan profil dua kolom: formulir terbuka dan konteks privasi di.",
     "palette": "ink",
     "colors": [
       "#f4f3ee",
@@ -328,7 +309,7 @@
     "id": "rakit-market",
     "category": "shop",
     "name": "Rakit / Marketplace",
-    "description": "Katalog berbasis pencarian dengan grid produk tenang dan informasi stok dekat aksi.",
+    "description": "Katalog berbasis pencarian: grid produk tenang dan informasi stok dekat.",
     "palette": "blue",
     "colors": [
       "#f5f7fb",
@@ -338,17 +319,14 @@
       "#315fa3",
       "#e7edf9"
     ],
-    "features": [
-      "search",
-      "cart"
-    ],
+    "features": ["search", "cart"],
     "path": "templates/shop/rakit-market.html"
   },
   {
     "id": "sumber-wholesale",
     "category": "shop",
     "name": "Sumber / Wholesale",
-    "description": "Toko B2B dengan fokus spesifikasi, kebutuhan pembelian, dan permintaan penawaran.",
+    "description": "Toko B2B dengan fokus spesifikasi.",
     "palette": "orange",
     "colors": [
       "#faf7f1",
@@ -358,17 +336,14 @@
       "#a64c22",
       "#f4e7da"
     ],
-    "features": [
-      "cart",
-      "rfq"
-    ],
+    "features": ["cart", "rfq"],
     "path": "templates/shop/sumber-wholesale.html"
   },
   {
     "id": "sela-furniture",
     "category": "shop",
     "name": "Sela / Furniture",
-    "description": "Toko furnitur editorial dengan satu produk utama besar dan koleksi dua kolom.",
+    "description": "Toko furnitur editorial: satu produk utama besar dan koleksi dua kolom.",
     "palette": "cream",
     "colors": [
       "#f5eee1",
@@ -378,9 +353,7 @@
       "#7b4b32",
       "#ebe0ce"
     ],
-    "features": [
-      "cart"
-    ],
+    "features": ["cart"],
     "path": "templates/shop/sela-furniture.html"
   },
   {
@@ -397,17 +370,14 @@
       "#286148",
       "#e6eee4"
     ],
-    "features": [
-      "cart",
-      "quantity"
-    ],
+    "features": ["cart", "quantity"],
     "path": "templates/shop/pagi-grocery.html"
   },
   {
     "id": "mono-product",
     "category": "shop",
     "name": "Mono / Product",
-    "description": "Detail produk tunggal dengan pemilihan varian, jumlah, dan spesifikasi terlipat.",
+    "description": "Detail produk tunggal dengan pemilihan varian.",
     "palette": "ink",
     "colors": [
       "#f4f3ee",
@@ -417,11 +387,7 @@
       "#363c35",
       "#e5e6de"
     ],
-    "features": [
-      "cart",
-      "variant",
-      "quantity"
-    ],
+    "features": ["cart", "variant", "quantity"],
     "path": "templates/shop/mono-product.html"
   },
   {
@@ -438,9 +404,7 @@
       "#a23f50",
       "#f5e4e6"
     ],
-    "features": [
-      "cart"
-    ],
+    "features": ["cart"],
     "path": "templates/shop/edisi-fashion.html"
   },
   {
@@ -457,10 +421,7 @@
       "#286148",
       "#e6eee4"
     ],
-    "features": [
-      "form",
-      "password-toggle"
-    ],
+    "features": ["form", "password-toggle"],
     "path": "templates/login/paper-split.html"
   },
   {
@@ -477,17 +438,14 @@
       "#b3d5c3",
       "#253f42"
     ],
-    "features": [
-      "form",
-      "password-toggle"
-    ],
+    "features": ["form", "password-toggle"],
     "path": "templates/login/terminal-dev.html"
   },
   {
     "id": "studio-minimal",
     "category": "login",
     "name": "Studio / Minimal",
-    "description": "Login minimal dengan label jelas, validasi native, dan status demo yang jujur.",
+    "description": "Login minimal dengan label jelas.",
     "palette": "ink",
     "colors": [
       "#f4f3ee",
@@ -497,10 +455,7 @@
       "#363c35",
       "#e5e6de"
     ],
-    "features": [
-      "form",
-      "password-toggle"
-    ],
+    "features": ["form", "password-toggle"],
     "path": "templates/login/studio-minimal.html"
   },
   {
@@ -517,17 +472,14 @@
       "#7b4b32",
       "#ebe0ce"
     ],
-    "features": [
-      "form",
-      "password-toggle"
-    ],
+    "features": ["form", "password-toggle"],
     "path": "templates/login/member-warm.html"
   },
   {
     "id": "workspace-account",
     "category": "login",
     "name": "Workspace / Account",
-    "description": "Login account dengan label jelas, validasi native, dan status demo yang jujur.",
+    "description": "Login account dengan label jelas.",
     "palette": "blue",
     "colors": [
       "#f5f7fb",
@@ -537,17 +489,14 @@
       "#315fa3",
       "#e7edf9"
     ],
-    "features": [
-      "form",
-      "password-toggle"
-    ],
+    "features": ["form", "password-toggle"],
     "path": "templates/login/workspace-account.html"
   },
   {
     "id": "link-passwordless",
     "category": "login",
     "name": "Link / Passwordless",
-    "description": "Login passwordless dengan label jelas, validasi native, dan status demo yang jujur.",
+    "description": "Login passwordless dengan label jelas.",
     "palette": "rose",
     "colors": [
       "#fbf5f3",
@@ -557,16 +506,14 @@
       "#a23f50",
       "#f5e4e6"
     ],
-    "features": [
-      "form"
-    ],
+    "features": ["form"],
     "path": "templates/login/link-passwordless.html"
   },
   {
     "id": "folio-graphic",
     "category": "portfolio",
     "name": "Folio / Graphic",
-    "description": "Portofolio grafis dengan tipografi besar, indeks karya, dan proses yang bisa dibuka.",
+    "description": "Portofolio grafis dengan tipografi besar.",
     "palette": "red",
     "colors": [
       "#f6f1e9",
@@ -577,7 +524,13 @@
       "#f0e0d5"
     ],
     "features": [],
-    "path": "templates/portfolio/folio-graphic.html"
+    "path": "templates/portfolio/design/folio-graphic.html",
+    "portfolioType": "design",
+    "model": "graphic-index",
+    "source": {
+      "kind": "original",
+      "references": []
+    }
   },
   {
     "id": "frame-photography",
@@ -594,13 +547,19 @@
       "#e5e6de"
     ],
     "features": [],
-    "path": "templates/portfolio/frame-photography.html"
+    "path": "templates/portfolio/photography/frame-photography.html",
+    "portfolioType": "photography",
+    "model": "masonry",
+    "source": {
+      "kind": "original",
+      "references": []
+    }
   },
   {
     "id": "build-developer",
     "category": "portfolio",
     "name": "Build / Developer",
-    "description": "Portofolio engineer berbasis masalah, keputusan implementasi, dan bukti kerja.",
+    "description": "Portofolio engineer berbasis masalah.",
     "palette": "navy",
     "colors": [
       "#111e2b",
@@ -611,13 +570,19 @@
       "#253f42"
     ],
     "features": [],
-    "path": "templates/portfolio/build-developer.html"
+    "path": "templates/portfolio/developer/build-developer.html",
+    "portfolioType": "developer",
+    "model": "technical-case",
+    "source": {
+      "kind": "original",
+      "references": []
+    }
   },
   {
     "id": "space-architect",
     "category": "portfolio",
     "name": "Space / Architect",
-    "description": "Portofolio arsitek dengan pembuka gambar di kiri dan uraian proyek yang lapang.",
+    "description": "Portfolio arsitek: pembuka gambar di kiri dan uraian proyek yang lapang.",
     "palette": "cream",
     "colors": [
       "#f5eee1",
@@ -628,13 +593,19 @@
       "#ebe0ce"
     ],
     "features": [],
-    "path": "templates/portfolio/space-architect.html"
+    "path": "templates/portfolio/architecture/space-architect.html",
+    "portfolioType": "architecture",
+    "model": "architecture-split",
+    "source": {
+      "kind": "original",
+      "references": []
+    }
   },
   {
     "id": "motion-director",
     "category": "portfolio",
     "name": "Motion / Director",
-    "description": "Portofolio motion gelap dengan indeks film, durasi, dan detail konsep tanpa pemutar palsu.",
+    "description": "Portofolio motion gelap dengan indeks film.",
     "palette": "black",
     "colors": [
       "#131415",
@@ -645,13 +616,19 @@
       "#30392a"
     ],
     "features": [],
-    "path": "templates/portfolio/motion-director.html"
+    "path": "templates/portfolio/creative/motion-director.html",
+    "portfolioType": "creative",
+    "model": "motion-index",
+    "source": {
+      "kind": "original",
+      "references": []
+    }
   },
   {
     "id": "craft-illustrator",
     "category": "portfolio",
     "name": "Craft / Illustrator",
-    "description": "Portofolio ilustrator dengan grid karya besar dan caption yang menjadi navigasi baca.",
+    "description": "Portfolio ilustrator: grid karya besar dan caption yang menjadi navigasi.",
     "palette": "yellow",
     "colors": [
       "#fbf9ef",
@@ -662,13 +639,19 @@
       "#f2edcf"
     ],
     "features": [],
-    "path": "templates/portfolio/craft-illustrator.html"
+    "path": "templates/portfolio/creative/craft-illustrator.html",
+    "portfolioType": "creative",
+    "model": "illustration-grid",
+    "source": {
+      "kind": "original",
+      "references": []
+    }
   },
   {
     "id": "civic-consulting",
     "category": "company",
     "name": "Civic / Consulting",
-    "description": "Company profile konsultasi dengan hierarki editorial dan proses tiga langkah.",
+    "description": "Company profile konsultasi: hierarki editorial dan proses tiga langkah.",
     "palette": "green",
     "colors": [
       "#f7f8f4",
@@ -753,7 +736,7 @@
     "id": "tepat-local",
     "category": "company",
     "name": "Tepat / Local Service",
-    "description": "Bisnis jasa lokal dengan jam, lokasi, cakupan, dan estimasi yang mudah ditemukan.",
+    "description": "Bisnis jasa lokal dengan jam.",
     "palette": "sky",
     "colors": [
       "#f3f8f8",
@@ -787,7 +770,7 @@
     "id": "lapang-journal",
     "category": "blog",
     "name": "Lapang / Journal",
-    "description": "Jurnal alam dengan visual pembuka lebar, metadata tipis, dan kolom baca tenang.",
+    "description": "Jurnal alam dengan visual pembuka lebar.",
     "palette": "green",
     "colors": [
       "#f7f8f4",
@@ -838,7 +821,7 @@
     "id": "signal-magazine",
     "category": "blog",
     "name": "Signal / Magazine",
-    "description": "Majalah teknologi gelap dengan artikel utama dominan dan daftar bacaan ringkas.",
+    "description": "Majalah teknologi gelap: artikel utama dominan dan daftar bacaan ringkas.",
     "palette": "black",
     "colors": [
       "#131415",
@@ -855,7 +838,7 @@
     "id": "indeks-newsletter",
     "category": "blog",
     "name": "Indeks / Newsletter",
-    "description": "Arsip newsletter dengan formulir ringkas, pencarian edisi, dan artikel terintegrasi.",
+    "description": "Arsip newsletter dengan formulir ringkas.",
     "palette": "rose",
     "colors": [
       "#fbf5f3",
@@ -872,7 +855,7 @@
     "id": "commons-topics",
     "category": "forum",
     "name": "Commons / Topics",
-    "description": "Forum berbasis daftar topik dengan kategori dan ringkasan diskusi yang bisa dibuka.",
+    "description": "Forum berbasis daftar topik: kategori dan ringkasan diskusi yang bisa.",
     "palette": "blue",
     "colors": [
       "#f5f7fb",
@@ -899,9 +882,7 @@
       "#a64c22",
       "#f4e7da"
     ],
-    "features": [
-      "vote"
-    ],
+    "features": ["vote"],
     "path": "templates/forum/thread-community.html"
   },
   {
@@ -918,16 +899,14 @@
       "#286148",
       "#e6eee4"
     ],
-    "features": [
-      "vote"
-    ],
+    "features": ["vote"],
     "path": "templates/forum/jawab-qa.html"
   },
   {
     "id": "lobby-gaming",
     "category": "forum",
     "name": "Lobby / Gaming",
-    "description": "Forum gaming gelap dengan empat kanal, tanpa panel statistik yang memenuhi layar.",
+    "description": "Forum gaming gelap dengan empat kanal.",
     "palette": "black",
     "colors": [
       "#131415",
@@ -954,16 +933,14 @@
       "#a23f50",
       "#f5e4e6"
     ],
-    "features": [
-      "bookmark"
-    ],
+    "features": ["bookmark"],
     "path": "templates/forum/circle-makers.html"
   },
   {
     "id": "sekitar-neighborhood",
     "category": "forum",
     "name": "Sekitar / Neighborhood",
-    "description": "Papan warga dengan informasi kegiatan yang lapang dan konteks lokasi di samping.",
+    "description": "Papan warga: informasi kegiatan yang lapang dan konteks lokasi di samping.",
     "palette": "cream",
     "colors": [
       "#f5eee1",
@@ -990,10 +967,7 @@
       "#746118",
       "#f2edcf"
     ],
-    "features": [
-      "form",
-      "ticket-total"
-    ],
+    "features": ["form", "ticket-total"],
     "path": "templates/registration/summit-event.html"
   },
   {
@@ -1010,17 +984,14 @@
       "#554cc1",
       "#efedf9"
     ],
-    "features": [
-      "wizard",
-      "form"
-    ],
+    "features": ["wizard", "form"],
     "path": "templates/registration/launch-onboarding.html"
   },
   {
     "id": "apply-career",
     "category": "registration",
     "name": "Apply / Career",
-    "description": "Pendaftaran kerja dengan uraian peran dan formulir tanpa unggahan data sensitif.",
+    "description": "Pendaftaran kerja: uraian peran dan formulir tanpa unggahan data sensitif.",
     "palette": "ink",
     "colors": [
       "#f4f3ee",
@@ -1030,16 +1001,14 @@
       "#363c35",
       "#e5e6de"
     ],
-    "features": [
-      "form"
-    ],
+    "features": ["form"],
     "path": "templates/registration/apply-career.html"
   },
   {
     "id": "kampus-admissions",
     "category": "registration",
     "name": "Kampus / Admissions",
-    "description": "Pendaftaran pendidikan dengan syarat, program studi, dan alur lanjutan yang jelas.",
+    "description": "Pendaftaran pendidikan dengan syarat.",
     "palette": "blue",
     "colors": [
       "#f5f7fb",
@@ -1049,9 +1018,7 @@
       "#315fa3",
       "#e7edf9"
     ],
-    "features": [
-      "form"
-    ],
+    "features": ["form"],
     "path": "templates/registration/kampus-admissions.html"
   },
   {
@@ -1068,16 +1035,14 @@
       "#286148",
       "#e6eee4"
     ],
-    "features": [
-      "form"
-    ],
+    "features": ["form"],
     "path": "templates/registration/sesi-booking.html"
   },
   {
     "id": "teman-community",
     "category": "registration",
     "name": "Teman / Community",
-    "description": "Pendaftaran komunitas dengan cerita di kiri dan formulir minat tanpa panel berlebih.",
+    "description": "Pendaftaran komunitas: cerita di kiri dan formulir minat tanpa panel.",
     "palette": "rose",
     "colors": [
       "#fbf5f3",
@@ -1087,9 +1052,865 @@
       "#a23f50",
       "#f5e4e6"
     ],
-    "features": [
-      "form"
-    ],
+    "features": ["form"],
     "path": "templates/registration/teman-community.html"
+  },
+  {
+    "id": "simple-developer",
+    "category": "portfolio",
+    "name": "Simple / Developer",
+    "description": "Frontend developer. Model minimal, karya dan proses.",
+    "palette": "jade",
+    "colors": [
+      "#f3f6f1",
+      "#ffffff",
+      "#20392f",
+      "#53675b",
+      "#23614d",
+      "#dfeadf"
+    ],
+    "features": [
+      "work-search",
+      "work-filter",
+      "case-detail",
+      "profile-download"
+    ],
+    "path": "templates/portfolio/developer/simple-developer.html",
+    "portfolioType": "developer",
+    "model": "minimal",
+    "source": {
+      "kind": "open-source-adaptation",
+      "references": ["simplefolio"],
+      "license": "MIT",
+      "upstream": "cobiwave/simplefolio",
+      "ref": "af03c0cb90d03844de2b5a4cf2045aa0f72c2442"
+    }
+  },
+  {
+    "id": "timeline-engineer",
+    "category": "portfolio",
+    "name": "Timeline / Engineer",
+    "description": "Software engineer. Model resume, karya dan proses.",
+    "palette": "cobalt",
+    "colors": [
+      "#f1f3f8",
+      "#ffffff",
+      "#14284c",
+      "#576682",
+      "#214fa0",
+      "#dce4f4"
+    ],
+    "features": [
+      "work-search",
+      "work-filter",
+      "case-detail",
+      "profile-download"
+    ],
+    "path": "templates/portfolio/developer/timeline-engineer.html",
+    "portfolioType": "developer",
+    "model": "resume",
+    "source": {
+      "kind": "open-source-adaptation",
+      "references": ["devportfolio"],
+      "license": "MIT",
+      "upstream": "RyanFitzgerald/devportfolio",
+      "ref": "852d650fb0a8cf0c98f874af5a56a0a9b7d7d4b7"
+    }
+  },
+  {
+    "id": "terminal-backend",
+    "category": "portfolio",
+    "name": "Shell / Backend",
+    "description": "Backend engineer. Model terminal, karya dan proses.",
+    "palette": "carbon",
+    "colors": [
+      "#101715",
+      "#18211d",
+      "#f1f4ed",
+      "#b6c4b8",
+      "#c0df9d",
+      "#2a382d"
+    ],
+    "features": [
+      "work-search",
+      "work-filter",
+      "case-detail",
+      "profile-download"
+    ],
+    "path": "templates/portfolio/developer/terminal-backend.html",
+    "portfolioType": "developer",
+    "model": "terminal",
+    "source": {
+      "kind": "original",
+      "references": ["framer-portfolio"]
+    }
+  },
+  {
+    "id": "split-fullstack",
+    "category": "portfolio",
+    "name": "Split / Fullstack",
+    "description": "Fullstack developer. Model sidebar, karya dan proses.",
+    "palette": "paper",
+    "colors": [
+      "#f6f3eb",
+      "#fffdf7",
+      "#282923",
+      "#65685e",
+      "#86502d",
+      "#e6dfcf"
+    ],
+    "features": [
+      "work-search",
+      "work-filter",
+      "case-detail",
+      "profile-download"
+    ],
+    "path": "templates/portfolio/developer/split-fullstack.html",
+    "portfolioType": "developer",
+    "model": "sidebar",
+    "source": {
+      "kind": "original",
+      "references": ["framer-portfolio"]
+    }
+  },
+  {
+    "id": "cli-maintainer",
+    "category": "portfolio",
+    "name": "Release / Maintainer",
+    "description": "Open source maintainer. Model changelog, karya dan proses.",
+    "palette": "slate",
+    "colors": [
+      "#141b25",
+      "#1d2938",
+      "#edf1f6",
+      "#bac5d5",
+      "#a9cbef",
+      "#2b3f57"
+    ],
+    "features": [
+      "work-search",
+      "work-filter",
+      "case-detail",
+      "profile-download"
+    ],
+    "path": "templates/portfolio/developer/cli-maintainer.html",
+    "portfolioType": "developer",
+    "model": "changelog",
+    "source": {
+      "kind": "original",
+      "references": ["simplefolio"]
+    }
+  },
+  {
+    "id": "case-product",
+    "category": "portfolio",
+    "name": "Casebook / Product",
+    "description": "Product designer. Model casebook, karya dan proses.",
+    "palette": "oxide",
+    "colors": [
+      "#eee9df",
+      "#f8f4ed",
+      "#3f2921",
+      "#766153",
+      "#9b3e25",
+      "#dfd1bf"
+    ],
+    "features": [
+      "work-search",
+      "work-filter",
+      "case-detail",
+      "profile-download"
+    ],
+    "path": "templates/portfolio/design/case-product.html",
+    "portfolioType": "design",
+    "model": "casebook",
+    "source": {
+      "kind": "original",
+      "references": ["framer-portfolio"]
+    }
+  },
+  {
+    "id": "mono-ui",
+    "category": "portfolio",
+    "name": "Mono / Interface",
+    "description": "UI designer. Model sidebar, karya dan proses.",
+    "palette": "ink",
+    "colors": [
+      "#f4f3ef",
+      "#ffffff",
+      "#252521",
+      "#67675f",
+      "#42423a",
+      "#e3e3d9"
+    ],
+    "features": [
+      "work-search",
+      "work-filter",
+      "case-detail",
+      "profile-download"
+    ],
+    "path": "templates/portfolio/design/mono-ui.html",
+    "portfolioType": "design",
+    "model": "sidebar",
+    "source": {
+      "kind": "original",
+      "references": ["framer-portfolio"]
+    }
+  },
+  {
+    "id": "index-brand",
+    "category": "portfolio",
+    "name": "Index / Brand",
+    "description": "Brand designer. Model index, karya dan proses.",
+    "palette": "lime",
+    "colors": [
+      "#e9eddf",
+      "#f5f7ef",
+      "#273122",
+      "#5c6654",
+      "#455c21",
+      "#d4ddbd"
+    ],
+    "features": [
+      "work-search",
+      "work-filter",
+      "case-detail",
+      "profile-download"
+    ],
+    "path": "templates/portfolio/design/index-brand.html",
+    "portfolioType": "design",
+    "model": "index",
+    "source": {
+      "kind": "original",
+      "references": ["framer-portfolio"]
+    }
+  },
+  {
+    "id": "systems-designer",
+    "category": "portfolio",
+    "name": "Tokens / Systems",
+    "description": "Design systems designer. Model systems, karya dan proses.",
+    "palette": "cobalt",
+    "colors": [
+      "#f1f3f8",
+      "#ffffff",
+      "#14284c",
+      "#576682",
+      "#214fa0",
+      "#dce4f4"
+    ],
+    "features": [
+      "work-search",
+      "work-filter",
+      "case-detail",
+      "profile-download"
+    ],
+    "path": "templates/portfolio/design/systems-designer.html",
+    "portfolioType": "design",
+    "model": "systems",
+    "source": {
+      "kind": "original",
+      "references": ["framer-portfolio"]
+    }
+  },
+  {
+    "id": "contact-sheet",
+    "category": "portfolio",
+    "name": "Contact / Sheet",
+    "description": "Fotografer dokumenter. Model contact-sheet, karya dan proses.",
+    "palette": "ink",
+    "colors": [
+      "#f4f3ef",
+      "#ffffff",
+      "#252521",
+      "#67675f",
+      "#42423a",
+      "#e3e3d9"
+    ],
+    "features": [
+      "work-search",
+      "work-filter",
+      "case-detail",
+      "profile-download"
+    ],
+    "path": "templates/portfolio/photography/contact-sheet.html",
+    "portfolioType": "photography",
+    "model": "contact-sheet",
+    "source": {
+      "kind": "original",
+      "references": ["photographer-tnc"]
+    }
+  },
+  {
+    "id": "story-documentary",
+    "category": "portfolio",
+    "name": "Fieldnotes / Documentary",
+    "description": "Visual storyteller. Model documentary, karya dan proses.",
+    "palette": "sand",
+    "colors": [
+      "#f0e9dc",
+      "#fbf6ec",
+      "#3f372b",
+      "#706654",
+      "#695b32",
+      "#dfd2b9"
+    ],
+    "features": [
+      "work-search",
+      "work-filter",
+      "case-detail",
+      "profile-download"
+    ],
+    "path": "templates/portfolio/photography/story-documentary.html",
+    "portfolioType": "photography",
+    "model": "documentary",
+    "source": {
+      "kind": "original",
+      "references": ["photographer-tnc"]
+    }
+  },
+  {
+    "id": "dark-editorial",
+    "category": "portfolio",
+    "name": "Noir / Editorial",
+    "description": "Editorial photographer. Model editorial, karya dan proses.",
+    "palette": "gold",
+    "colors": [
+      "#181a19",
+      "#242823",
+      "#eeefdf",
+      "#bdc1ad",
+      "#d2cc90",
+      "#393c2c"
+    ],
+    "features": [
+      "work-search",
+      "work-filter",
+      "case-detail",
+      "profile-download"
+    ],
+    "path": "templates/portfolio/photography/dark-editorial.html",
+    "portfolioType": "photography",
+    "model": "editorial",
+    "source": {
+      "kind": "original",
+      "references": ["photographer-tnc"]
+    }
+  },
+  {
+    "id": "atelier-architect",
+    "category": "portfolio",
+    "name": "Atelier / Architecture",
+    "description": "Architecture portfolio. Model index, karya dan proses.",
+    "palette": "paper",
+    "colors": [
+      "#f6f3eb",
+      "#fffdf7",
+      "#282923",
+      "#65685e",
+      "#86502d",
+      "#e6dfcf"
+    ],
+    "features": [
+      "work-search",
+      "work-filter",
+      "case-detail",
+      "profile-download"
+    ],
+    "path": "templates/portfolio/architecture/atelier-architect.html",
+    "portfolioType": "architecture",
+    "model": "index",
+    "source": {
+      "kind": "original",
+      "references": ["woodland"]
+    }
+  },
+  {
+    "id": "material-interior",
+    "category": "portfolio",
+    "name": "Material / Interior",
+    "description": "Interior designer. Model interior, karya dan proses.",
+    "palette": "oxide",
+    "colors": [
+      "#eee9df",
+      "#f8f4ed",
+      "#3f2921",
+      "#766153",
+      "#9b3e25",
+      "#dfd1bf"
+    ],
+    "features": [
+      "work-search",
+      "work-filter",
+      "case-detail",
+      "profile-download"
+    ],
+    "path": "templates/portfolio/architecture/material-interior.html",
+    "portfolioType": "architecture",
+    "model": "interior",
+    "source": {
+      "kind": "original",
+      "references": ["woodland"]
+    }
+  },
+  {
+    "id": "object-industrial",
+    "category": "portfolio",
+    "name": "Object / Industrial",
+    "description": "Industrial designer. Model object, karya dan proses.",
+    "palette": "blueprint",
+    "colors": [
+      "#eaf1f4",
+      "#f9fcfe",
+      "#17384b",
+      "#506d7e",
+      "#216a88",
+      "#ccdfe7"
+    ],
+    "features": [
+      "work-search",
+      "work-filter",
+      "case-detail",
+      "profile-download"
+    ],
+    "path": "templates/portfolio/architecture/object-industrial.html",
+    "portfolioType": "architecture",
+    "model": "object",
+    "source": {
+      "kind": "original",
+      "references": ["woodland"]
+    }
+  },
+  {
+    "id": "reel-filmmaker",
+    "category": "portfolio",
+    "name": "Reel / Filmmaker",
+    "description": "Director and editor. Model cinema, karya dan proses.",
+    "palette": "night",
+    "colors": [
+      "#161419",
+      "#231e29",
+      "#f4edf7",
+      "#c6b6cc",
+      "#d6b1e7",
+      "#3b2d46"
+    ],
+    "features": [
+      "work-search",
+      "work-filter",
+      "case-detail",
+      "profile-download"
+    ],
+    "path": "templates/portfolio/creative/reel-filmmaker.html",
+    "portfolioType": "creative",
+    "model": "cinema",
+    "source": {
+      "kind": "original",
+      "references": ["framer-portfolio"]
+    }
+  },
+  {
+    "id": "score-composer",
+    "category": "portfolio",
+    "name": "Score / Composer",
+    "description": "Composer and sound designer. Model score, karya dan proses.",
+    "palette": "wine",
+    "colors": [
+      "#f7f1ea",
+      "#fffaf5",
+      "#43272a",
+      "#785d60",
+      "#8b3542",
+      "#eadbd8"
+    ],
+    "features": [
+      "work-search",
+      "work-filter",
+      "case-detail",
+      "profile-download"
+    ],
+    "path": "templates/portfolio/creative/score-composer.html",
+    "portfolioType": "creative",
+    "model": "score",
+    "source": {
+      "kind": "original",
+      "references": ["framer-portfolio"]
+    }
+  },
+  {
+    "id": "play-gameartist",
+    "category": "portfolio",
+    "name": "Quest / Game Art",
+    "description": "Game environment artist. Model contact-sheet, karya dan proses.",
+    "palette": "slate",
+    "colors": [
+      "#141b25",
+      "#1d2938",
+      "#edf1f6",
+      "#bac5d5",
+      "#a9cbef",
+      "#2b3f57"
+    ],
+    "features": [
+      "work-search",
+      "work-filter",
+      "case-detail",
+      "profile-download"
+    ],
+    "path": "templates/portfolio/creative/play-gameartist.html",
+    "portfolioType": "creative",
+    "model": "contact-sheet",
+    "source": {
+      "kind": "original",
+      "references": ["framer-portfolio"]
+    }
+  },
+  {
+    "id": "type-artdirector",
+    "category": "portfolio",
+    "name": "Type / Art Direction",
+    "description": "Art director. Model art-type, karya dan proses.",
+    "palette": "rose",
+    "colors": [
+      "#f6ecea",
+      "#fff8f7",
+      "#402b2c",
+      "#775b5d",
+      "#9b3e4b",
+      "#e8d2d3"
+    ],
+    "features": [
+      "work-search",
+      "work-filter",
+      "case-detail",
+      "profile-download"
+    ],
+    "path": "templates/portfolio/creative/type-artdirector.html",
+    "portfolioType": "creative",
+    "model": "art-type",
+    "source": {
+      "kind": "original",
+      "references": ["framer-portfolio"]
+    }
+  },
+  {
+    "id": "paper-writer",
+    "category": "portfolio",
+    "name": "Paper / Writer",
+    "description": "Writer and essayist. Model writer, karya dan proses.",
+    "palette": "paper",
+    "colors": [
+      "#f6f3eb",
+      "#fffdf7",
+      "#282923",
+      "#65685e",
+      "#86502d",
+      "#e6dfcf"
+    ],
+    "features": [
+      "work-search",
+      "work-filter",
+      "case-detail",
+      "profile-download"
+    ],
+    "path": "templates/portfolio/writing/paper-writer.html",
+    "portfolioType": "writing",
+    "model": "writer",
+    "source": {
+      "kind": "open-source-adaptation",
+      "references": ["astro-paper"],
+      "license": "MIT",
+      "upstream": "satnaing/astro-paper",
+      "ref": "35cfa7fbe0b897306d27670d3819e55d5205f3dd"
+    }
+  },
+  {
+    "id": "dispatch-journalist",
+    "category": "portfolio",
+    "name": "Dispatch / Journalist",
+    "description": "Independent journalist. Model newspaper, karya dan proses.",
+    "palette": "ink",
+    "colors": [
+      "#f4f3ef",
+      "#ffffff",
+      "#252521",
+      "#67675f",
+      "#42423a",
+      "#e3e3d9"
+    ],
+    "features": [
+      "work-search",
+      "work-filter",
+      "case-detail",
+      "profile-download"
+    ],
+    "path": "templates/portfolio/writing/dispatch-journalist.html",
+    "portfolioType": "writing",
+    "model": "newspaper",
+    "source": {
+      "kind": "original",
+      "references": ["framer-portfolio"]
+    }
+  },
+  {
+    "id": "script-copywriter",
+    "category": "portfolio",
+    "name": "Script / Copywriter",
+    "description": "Copywriter and content designer. Model copy, karya dan proses.",
+    "palette": "lime",
+    "colors": [
+      "#e9eddf",
+      "#f5f7ef",
+      "#273122",
+      "#5c6654",
+      "#455c21",
+      "#d4ddbd"
+    ],
+    "features": [
+      "work-search",
+      "work-filter",
+      "case-detail",
+      "profile-download"
+    ],
+    "path": "templates/portfolio/writing/script-copywriter.html",
+    "portfolioType": "writing",
+    "model": "copy",
+    "source": {
+      "kind": "original",
+      "references": ["framer-portfolio"]
+    }
+  },
+  {
+    "id": "citation-academic",
+    "category": "portfolio",
+    "name": "Citation / Academic",
+    "description": "Academic profile. Model academic, karya dan proses.",
+    "palette": "cobalt",
+    "colors": [
+      "#f1f3f8",
+      "#ffffff",
+      "#14284c",
+      "#576682",
+      "#214fa0",
+      "#dce4f4"
+    ],
+    "features": [
+      "work-search",
+      "work-filter",
+      "case-detail",
+      "profile-download"
+    ],
+    "path": "templates/portfolio/research/citation-academic.html",
+    "portfolioType": "research",
+    "model": "academic",
+    "source": {
+      "kind": "open-source-adaptation",
+      "references": ["astro-paper"],
+      "license": "MIT",
+      "upstream": "satnaing/astro-paper",
+      "ref": "35cfa7fbe0b897306d27670d3819e55d5205f3dd"
+    }
+  },
+  {
+    "id": "lab-researcher",
+    "category": "portfolio",
+    "name": "Lab / Researcher",
+    "description": "Research scientist. Model casebook, karya dan proses.",
+    "palette": "jade",
+    "colors": [
+      "#f3f6f1",
+      "#ffffff",
+      "#20392f",
+      "#53675b",
+      "#23614d",
+      "#dfeadf"
+    ],
+    "features": [
+      "work-search",
+      "work-filter",
+      "case-detail",
+      "profile-download"
+    ],
+    "path": "templates/portfolio/research/lab-researcher.html",
+    "portfolioType": "research",
+    "model": "casebook",
+    "source": {
+      "kind": "original",
+      "references": ["framer-portfolio"]
+    }
+  },
+  {
+    "id": "notebook-data",
+    "category": "portfolio",
+    "name": "Notebook / Data",
+    "description": "Data analyst. Model notebook, karya dan proses.",
+    "palette": "blueprint",
+    "colors": [
+      "#eaf1f4",
+      "#f9fcfe",
+      "#17384b",
+      "#506d7e",
+      "#216a88",
+      "#ccdfe7"
+    ],
+    "features": [
+      "work-search",
+      "work-filter",
+      "case-detail",
+      "profile-download"
+    ],
+    "path": "templates/portfolio/research/notebook-data.html",
+    "portfolioType": "research",
+    "model": "notebook",
+    "source": {
+      "kind": "original",
+      "references": ["framer-portfolio"]
+    }
+  },
+  {
+    "id": "ledger-consultant",
+    "category": "portfolio",
+    "name": "Ledger / Consultant",
+    "description": "Operations consultant. Model ledger, karya dan proses.",
+    "palette": "paper",
+    "colors": [
+      "#f6f3eb",
+      "#fffdf7",
+      "#282923",
+      "#65685e",
+      "#86502d",
+      "#e6dfcf"
+    ],
+    "features": [
+      "work-search",
+      "work-filter",
+      "case-detail",
+      "profile-download"
+    ],
+    "path": "templates/portfolio/professional/ledger-consultant.html",
+    "portfolioType": "professional",
+    "model": "ledger",
+    "source": {
+      "kind": "original",
+      "references": ["framer-portfolio"]
+    }
+  },
+  {
+    "id": "field-engineer",
+    "category": "portfolio",
+    "name": "Field / Engineer",
+    "description": "Field and network engineer. Model object, karya dan proses.",
+    "palette": "blueprint",
+    "colors": [
+      "#eaf1f4",
+      "#f9fcfe",
+      "#17384b",
+      "#506d7e",
+      "#216a88",
+      "#ccdfe7"
+    ],
+    "features": [
+      "work-search",
+      "work-filter",
+      "case-detail",
+      "profile-download"
+    ],
+    "path": "templates/portfolio/professional/field-engineer.html",
+    "portfolioType": "professional",
+    "model": "object",
+    "source": {
+      "kind": "original",
+      "references": ["woodland"]
+    }
+  },
+  {
+    "id": "campus-graduate",
+    "category": "portfolio",
+    "name": "Campus / Graduate",
+    "description": "Fresh graduate. Model resume, karya dan proses.",
+    "palette": "plum",
+    "colors": [
+      "#f3eef4",
+      "#fffcff",
+      "#3e2847",
+      "#74617b",
+      "#7f3e86",
+      "#e5d7e8"
+    ],
+    "features": [
+      "work-search",
+      "work-filter",
+      "case-detail",
+      "profile-download"
+    ],
+    "path": "templates/portfolio/student/campus-graduate.html",
+    "portfolioType": "student",
+    "model": "resume",
+    "source": {
+      "kind": "open-source-adaptation",
+      "references": ["devportfolio"],
+      "license": "MIT",
+      "upstream": "RyanFitzgerald/devportfolio",
+      "ref": "852d650fb0a8cf0c98f874af5a56a0a9b7d7d4b7"
+    }
+  },
+  {
+    "id": "apprentice-tkj",
+    "category": "portfolio",
+    "name": "Labbook / TKJ",
+    "description": "Pelajar TKJ dan teknisi pemula. Model terminal, karya dan proses.",
+    "palette": "cobalt",
+    "colors": [
+      "#f1f3f8",
+      "#ffffff",
+      "#14284c",
+      "#576682",
+      "#214fa0",
+      "#dce4f4"
+    ],
+    "features": [
+      "work-search",
+      "work-filter",
+      "case-detail",
+      "profile-download"
+    ],
+    "path": "templates/portfolio/student/apprentice-tkj.html",
+    "portfolioType": "student",
+    "model": "terminal",
+    "source": {
+      "kind": "original",
+      "references": ["framer-portfolio"]
+    }
+  },
+  {
+    "id": "focus-freelance",
+    "category": "portfolio",
+    "name": "Focus / Freelance",
+    "description": "Independent web designer. Model minimal, karya dan proses.",
+    "palette": "wine",
+    "colors": [
+      "#f7f1ea",
+      "#fffaf5",
+      "#43272a",
+      "#785d60",
+      "#8b3542",
+      "#eadbd8"
+    ],
+    "features": [
+      "work-search",
+      "work-filter",
+      "case-detail",
+      "profile-download"
+    ],
+    "path": "templates/portfolio/professional/focus-freelance.html",
+    "portfolioType": "professional",
+    "model": "minimal",
+    "source": {
+      "kind": "open-source-adaptation",
+      "references": ["simplefolio"],
+      "license": "MIT",
+      "upstream": "cobiwave/simplefolio",
+      "ref": "af03c0cb90d03844de2b5a4cf2045aa0f72c2442"
+    }
   }
 ]

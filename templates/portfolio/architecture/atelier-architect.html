@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <meta
+      name="description"
+      content="Architecture portfolio. Model index, karya dan proses."
+    />
+    <title>Atelier / Architecture / Frontend Template</title>
+    <link
+      rel="stylesheet"
+      href="../../../assets/base.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../../assets/portfolio.css"
+    />
+    <style>
+      :root {
+        --bg: #f6f3eb;
+        --surface: #fffdf7;
+        --ink: #282923;
+        --muted: #65685e;
+        --accent: #86502d;
+        --soft: #e6dfcf;
+        --line: #e6dfcf;
+        --accent-ink: #ffffff;
+        color-scheme: light;
+      }
+    </style>
+    <script
+      src="../../../assets/core.js"
+      defer
+    ></script>
+    <script
+      src="../../../assets/runtime.js"
+      defer
+    ></script>
+    <script
+      src="../../../assets/portfolio.js"
+      defer
+    ></script>
+  </head>
+  <body
+    class="folio-page"
+    data-template="atelier-architect"
+    data-model="index"
+  >
+    <a
+      class="skip"
+      href="#main"
+      >Lewati ke konten</a
+    >
+    <div class="demo-bar">
+      <a href="../../../index.html?category=portfolio">← Koleksi portofolio</a
+      ><span>Profil dan karya demonstrasi</span>
+    </div>
+    <div class="folio-shell">
+      <header class="folio-nav">
+        <a
+          class="folio-wordmark"
+          href="#main"
+          >Garis Atelier /</a
+        >
+        <nav aria-label="Navigasi portofolio">
+          <a href="#karya">Karya</a><a href="#tentang">Tentang</a
+          ><a href="#kontak">Kontak</a>
+        </nav>
+      </header>
+      <main id="main">
+        <section class="folio-intro">
+          <div>
+            <p class="folio-kicker">Garis Atelier / Architecture portfolio</p>
+            <h1>Ruang yang berangkat dari kebiasaan.</h1>
+            <p
+              class="lead"
+              data-profile-summary
+            >
+              Indeks proyek arsitektur konseptual. Lokasi, tahap, tanggung
+              jawab, dan keputusan ruang mengiringi setiap studi.
+            </p>
+            <div class="folio-actions">
+              <a
+                class="btn"
+                href="#karya"
+                >Jelajahi karya ↓</a
+              >
+              <button
+                class="btn secondary"
+                type="button"
+                data-profile-download
+              >
+                Unduh profil contoh (.txt)
+              </button>
+            </div>
+          </div>
+        </section>
+        <section
+          id="karya"
+          class="folio-section"
+          data-portfolio
+          aria-labelledby="work-title"
+        >
+          <div class="folio-section-head">
+            <div>
+              <p class="folio-kicker">Indeks / karya terpilih</p>
+              <h2 id="work-title">Karya dan catatan.</h2>
+            </div>
+            <p
+              class="small muted"
+              role="status"
+              data-work-count
+            >
+              3 karya ditampilkan
+            </p>
+          </div>
+          <div class="folio-work-controls">
+            <label for="work-search"
+              >Cari karya<input
+                id="work-search"
+                type="search"
+                placeholder="Cari judul atau proses..."
+                data-work-search
+            /></label>
+            <div
+              class="folio-filters"
+              aria-label="Filter jenis karya"
+            >
+              <button
+                type="button"
+                data-work-filter="all"
+                aria-pressed="true"
+              >
+                Semua</button
+              ><button
+                type="button"
+                data-work-filter="Hunian"
+                aria-pressed="false"
+              >
+                Hunian</button
+              ><button
+                type="button"
+                data-work-filter="Publik"
+                aria-pressed="false"
+              >
+                Publik
+              </button>
+            </div>
+          </div>
+          <div class="folio-work-grid">
+            <article
+              class="folio-project"
+              data-work
+              data-kind="Hunian"
+            >
+              <figure class="folio-cover">
+                <img
+                  class="folio-work-image"
+                  src="../../../assets/art/atelier-study.svg"
+                  alt="Ilustrasi konsep: Rumah Teras"
+                  width="800"
+                  height="600"
+                /><button
+                  type="button"
+                  data-art-open
+                  aria-label="Perbesar ilustrasi Rumah Teras"
+                >
+                  Perbesar ↗
+                </button>
+                <figcaption>Ilustrasi konsep / 01</figcaption>
+              </figure>
+              <p class="folio-project-meta">01 / Hunian / Konsep</p>
+              <h3>Rumah Teras</h3>
+              <p>Ruang tamu membutuhkan hubungan dengan area luar.</p>
+              <details
+                class="folio-process"
+                id="proses-1"
+              >
+                <summary>Baca proses: Rumah Teras</summary>
+                <h4>Konteks dan peran</h4>
+                <p>
+                  Studi mandiri demonstrasi. Peran: architecture portfolio.
+                  Ruang tamu membutuhkan hubungan dengan area luar.
+                </p>
+                <h4>Keputusan</h4>
+                <p>Buat teras penyangga dan alur sirkulasi yang pendek.</p>
+                <h4>Artefak dan tindak lanjut</h4>
+                <p>
+                  Contoh ini memperlihatkan arah dan dokumentasi proses. Ganti
+                  ilustrasi dengan artefak asli, jelaskan kontribusi pribadi,
+                  dan sertakan hasil validasi yang benar-benar tersedia.
+                </p>
+              </details>
+            </article>
+            <article
+              class="folio-project"
+              data-work
+              data-kind="Publik"
+            >
+              <figure class="folio-cover">
+                <img
+                  class="folio-work-image"
+                  src="../../../assets/art/building.svg"
+                  alt="Ilustrasi konsep: Ruang Baca Warga"
+                  width="800"
+                  height="600"
+                /><button
+                  type="button"
+                  data-art-open
+                  aria-label="Perbesar ilustrasi Ruang Baca Warga"
+                >
+                  Perbesar ↗
+                </button>
+                <figcaption>Ilustrasi konsep / 02</figcaption>
+              </figure>
+              <p class="folio-project-meta">02 / Publik / Konsep</p>
+              <h3>Ruang Baca Warga</h3>
+              <p>Area tenang dan aktivitas kelompok saling mengganggu.</p>
+              <details
+                class="folio-process"
+                id="proses-2"
+              >
+                <summary>Baca proses: Ruang Baca Warga</summary>
+                <h4>Konteks dan peran</h4>
+                <p>
+                  Studi mandiri demonstrasi. Peran: architecture portfolio. Area
+                  tenang dan aktivitas kelompok saling mengganggu.
+                </p>
+                <h4>Keputusan</h4>
+                <p>Zonakan kegiatan dengan transisi dan orientasi bukaan.</p>
+                <h4>Artefak dan tindak lanjut</h4>
+                <p>
+                  Contoh ini memperlihatkan arah dan dokumentasi proses. Ganti
+                  ilustrasi dengan artefak asli, jelaskan kontribusi pribadi,
+                  dan sertakan hasil validasi yang benar-benar tersedia.
+                </p>
+              </details>
+            </article>
+            <article
+              class="folio-project"
+              data-work
+              data-kind="Hunian"
+            >
+              <figure class="folio-cover">
+                <img
+                  class="folio-work-image"
+                  src="../../../assets/art/city-study.svg"
+                  alt="Ilustrasi konsep: Rumah Sudut"
+                  width="800"
+                  height="600"
+                /><button
+                  type="button"
+                  data-art-open
+                  aria-label="Perbesar ilustrasi Rumah Sudut"
+                >
+                  Perbesar ↗
+                </button>
+                <figcaption>Ilustrasi konsep / 03</figcaption>
+              </figure>
+              <p class="folio-project-meta">03 / Hunian / Konsep</p>
+              <h3>Rumah Sudut</h3>
+              <p>Tapak menerima pandangan dari dua sisi jalan.</p>
+              <details
+                class="folio-process"
+                id="proses-3"
+              >
+                <summary>Baca proses: Rumah Sudut</summary>
+                <h4>Konteks dan peran</h4>
+                <p>
+                  Studi mandiri demonstrasi. Peran: architecture portfolio.
+                  Tapak menerima pandangan dari dua sisi jalan.
+                </p>
+                <h4>Keputusan</h4>
+                <p>Atur privasi dengan bidang penutup dan taman antara.</p>
+                <h4>Artefak dan tindak lanjut</h4>
+                <p>
+                  Contoh ini memperlihatkan arah dan dokumentasi proses. Ganti
+                  ilustrasi dengan artefak asli, jelaskan kontribusi pribadi,
+                  dan sertakan hasil validasi yang benar-benar tersedia.
+                </p>
+              </details>
+            </article>
+          </div>
+          <div
+            class="folio-empty"
+            data-work-empty
+            hidden
+          >
+            <p>Tidak ada karya yang cocok dengan filter.</p>
+            <button
+              class="btn secondary"
+              type="button"
+              data-work-reset
+            >
+              Reset pencarian
+            </button>
+          </div>
+        </section>
+        <section
+          id="tentang"
+          class="folio-section folio-about-grid"
+        >
+          <div>
+            <p class="folio-kicker">Pendekatan</p>
+            <h2>Alasan di balik pekerjaan.</h2>
+          </div>
+          <div>
+            <p class="lead">
+              Indeks proyek arsitektur konseptual. Lokasi, tahap, tanggung
+              jawab, dan keputusan ruang mengiringi setiap studi.
+            </p>
+            <dl class="folio-facts">
+              <div>
+                <dt>Fokus</dt>
+                <dd>Architecture portfolio</dd>
+              </div>
+              <div>
+                <dt>Model</dt>
+                <dd>index</dd>
+              </div>
+              <div>
+                <dt>Isi</dt>
+                <dd>Studi konsep dan catatan proses</dd>
+              </div>
+              <div>
+                <dt>Status</dt>
+                <dd>Identitas dan karya fiktif</dd>
+              </div>
+            </dl>
+            <p class="folio-note">
+              Profil contoh untuk membantu penyusunan portofolio. Ganti nama,
+              karya, pengalaman, dan kontak sebelum publikasi.
+            </p>
+          </div>
+        </section>
+        <section
+          id="kontak"
+          class="folio-section folio-contact"
+        >
+          <div>
+            <p class="folio-kicker">Kontak contoh</p>
+            <h2>Mulai percakapan.</h2>
+          </div>
+          <div class="stack">
+            <code data-contact-address>halo@example.com</code>
+            <p class="small muted">
+              Alamat demonstrasi. Ganti dengan alamat milik pemilik portofolio.
+            </p>
+            <div>
+              <button
+                class="btn secondary"
+                type="button"
+                data-copy-contact
+              >
+                Salin alamat contoh
+              </button>
+            </div>
+            <p
+              class="small"
+              role="status"
+              data-contact-status
+            ></p>
+          </div>
+        </section>
+      </main>
+      <footer class="folio-footer">
+        <span>Garis Atelier / Profil demonstrasi</span
+        ><a href="#main">Kembali ke atas ↑</a>
+      </footer>
+    </div>
+    <dialog
+      class="folio-lightbox"
+      data-art-dialog
+      aria-labelledby="art-dialog-title"
+    >
+      <div class="dialog-head">
+        <h2 id="art-dialog-title">Ilustrasi konsep</h2>
+        <button
+          class="btn secondary"
+          type="button"
+          data-art-close
+        >
+          Tutup
+        </button>
+      </div>
+      <figure>
+        <img
+          src="../../../assets/art/abstract.svg"
+          alt="Ilustrasi konsep terpilih"
+          width="800"
+          height="600"
+        />
+        <figcaption>Ilustrasi konsep.</figcaption>
+      </figure>
+    </dialog>
+  </body>
+</html>

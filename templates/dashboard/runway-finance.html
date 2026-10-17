@@ -1,1 +1,183 @@
-<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Ruang finansial gelap dengan saldo dominan dan buku kas tanpa kartu bertumpuk."><title>Runway / Finance · Frontend Template</title><link rel="stylesheet" href="../../assets/base.css"><style>:root{--bg:#111e2b;--surface:#172837;--ink:#eef2f5;--muted:#b1bec8;--accent:#b3d5c3;--soft:#253f42;--line:#3c4b55;--accent-ink:#13251e;--good:#b3d5c3;color-scheme:dark}</style><script src="../../assets/core.js" defer></script><script src="../../assets/runtime.js" defer></script></head><body data-template="runway-finance"><a class="skip" href="#main">Lewati ke konten</a><div class="demo-bar"><a href="../../index.html">← Koleksi template</a><span>Demo frontend · Runway / Finance</span></div><div class="aside-layout"><aside class="sidebar"><a class="brand" href="#main"><span class="brand-mark" aria-hidden="true"></span>runway.</a><nav aria-label="Navigasi utama"><a href="#ringkasan" aria-current="page">Ringkasan</a><a href="#aktivitas">Aktivitas</a><a href="#panduan">Panduan</a></nav><p class="sidebar-note">Ruang kerja contoh<br>17 Oktober 2026 · WIB</p></aside><main id="main" class="app-main stack"><header class="stack-sm"><p class="eyebrow">Runway / Finansial</p><h1>Arus kas, tanpa tebakan.</h1><p class="lead">Snapshot ilustrasi Oktober 2026. Tidak terhubung ke rekening bank.</p></header><section id="ringkasan" class="section grid split"><div class="stack"><p class="muted">Saldo akhir ilustrasi</p><p class="large-number num">Rp48.750.000</p><p class="small muted">Saldo awal Rp42.000.000 + masuk Rp18.250.000 − keluar Rp11.500.000.</p><a class="btn secondary" href="#aktivitas">Lihat buku kas</a></div><div class="well stack-sm"><p class="eyebrow">Alokasi operasional</p><h2>Biaya tetap bulan ini</h2><p>Rp8.500.000 dari anggaran Rp12.000.000</p><progress value="8500000" max="12000000" aria-label="Biaya tetap terpakai"></progress><small>Sisa anggaran Rp3.500.000.</small></div></section><section id="aktivitas" class="stack"><header class="stack-sm"><p class="eyebrow">Buku kas</p><h2>Transaksi terbaru</h2></header><div class="table-scroll" role="region" aria-label="Data ilustrasi untuk mencoba antarmuka" tabindex="0"><table><caption>Data ilustrasi untuk mencoba antarmuka</caption><thead><tr><th scope="col">Tanggal</th><th scope="col">Keterangan</th><th scope="col">Jenis</th><th scope="col">Nilai</th></tr></thead><tbody><tr><td>16 Okt</td><td>Invoice desain #024</td><td>Masuk</td><td>Rp12.000.000</td></tr><tr><td>15 Okt</td><td>Sewa studio</td><td>Keluar</td><td>Rp5.000.000</td></tr><tr><td>14 Okt</td><td>Pemeliharaan</td><td>Keluar</td><td>Rp6.500.000</td></tr><tr><td>13 Okt</td><td>Invoice konsultasi</td><td>Masuk</td><td>Rp6.250.000</td></tr></tbody></table></div></section><footer id="panduan" class="footer">Mode demo · Semua angka merupakan data ilustrasi. Perubahan hanya bertahan selama halaman terbuka.</footer></main></div><div class="toast" role="status" hidden></div></body></html>
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1"
+    />
+    <meta
+      name="description"
+      content="Ruang finansial gelap: saldo dominan dan buku kas tanpa kartu bertumpuk."
+    />
+    <title>Runway / Finance · Frontend Template</title>
+    <link
+      rel="stylesheet"
+      href="../../assets/base.css"
+    />
+    <style>
+      :root {
+        --bg: #111e2b;
+        --surface: #172837;
+        --ink: #eef2f5;
+        --muted: #b1bec8;
+        --accent: #b3d5c3;
+        --soft: #253f42;
+        --line: #3c4b55;
+        --accent-ink: #13251e;
+        --good: #b3d5c3;
+        color-scheme: dark;
+      }
+    </style>
+    <script
+      src="../../assets/core.js"
+      defer
+    ></script>
+    <script
+      src="../../assets/runtime.js"
+      defer
+    ></script>
+  </head>
+  <body data-template="runway-finance">
+    <a
+      class="skip"
+      href="#main"
+      >Lewati ke konten</a
+    >
+    <div class="demo-bar">
+      <a href="../../index.html">← Koleksi template</a
+      ><span>Demo frontend · Runway / Finance</span>
+    </div>
+    <div class="aside-layout">
+      <aside class="sidebar">
+        <a
+          class="brand"
+          href="#main"
+          ><span
+            class="brand-mark"
+            aria-hidden="true"
+          ></span
+          >runway.</a
+        >
+        <nav aria-label="Navigasi utama">
+          <a
+            href="#ringkasan"
+            aria-current="page"
+            >Ringkasan</a
+          ><a href="#aktivitas">Aktivitas</a><a href="#panduan">Panduan</a>
+        </nav>
+        <p class="sidebar-note">
+          Ruang kerja contoh<br />17 Oktober 2026 · WIB
+        </p>
+      </aside>
+      <main
+        id="main"
+        class="app-main stack"
+      >
+        <header class="stack-sm">
+          <p class="eyebrow">Runway / Finansial</p>
+          <h1>Arus kas, tanpa tebakan.</h1>
+          <p class="lead">
+            Snapshot ilustrasi Oktober 2026. Tidak terhubung ke rekening bank.
+          </p>
+        </header>
+        <section
+          id="ringkasan"
+          class="section grid split"
+        >
+          <div class="stack">
+            <p class="muted">Saldo akhir ilustrasi</p>
+            <p class="large-number num">Rp48.750.000</p>
+            <p class="small muted">
+              Saldo awal Rp42.000.000 + masuk Rp18.250.000 − keluar
+              Rp11.500.000.
+            </p>
+            <a
+              class="btn secondary"
+              href="#aktivitas"
+              >Lihat buku kas</a
+            >
+          </div>
+          <div class="well stack-sm">
+            <p class="eyebrow">Alokasi operasional</p>
+            <h2>Biaya tetap bulan ini</h2>
+            <p>Rp8.500.000 dari anggaran Rp12.000.000</p>
+            <progress
+              value="8500000"
+              max="12000000"
+              aria-label="Biaya tetap terpakai"
+            ></progress
+            ><small>Sisa anggaran Rp3.500.000.</small>
+          </div>
+        </section>
+        <section
+          id="aktivitas"
+          class="stack"
+        >
+          <header class="stack-sm">
+            <p class="eyebrow">Buku kas</p>
+            <h2>Transaksi terbaru</h2>
+          </header>
+          <div
+            class="table-scroll"
+            role="region"
+            aria-label="Data ilustrasi untuk mencoba antarmuka"
+            tabindex="0"
+          >
+            <table>
+              <caption>
+                Data ilustrasi untuk mencoba antarmuka
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Tanggal</th>
+                  <th scope="col">Keterangan</th>
+                  <th scope="col">Jenis</th>
+                  <th scope="col">Nilai</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>16 Okt</td>
+                  <td>Invoice desain #024</td>
+                  <td>Masuk</td>
+                  <td>Rp12.000.000</td>
+                </tr>
+                <tr>
+                  <td>15 Okt</td>
+                  <td>Sewa studio</td>
+                  <td>Keluar</td>
+                  <td>Rp5.000.000</td>
+                </tr>
+                <tr>
+                  <td>14 Okt</td>
+                  <td>Pemeliharaan</td>
+                  <td>Keluar</td>
+                  <td>Rp6.500.000</td>
+                </tr>
+                <tr>
+                  <td>13 Okt</td>
+                  <td>Invoice konsultasi</td>
+                  <td>Masuk</td>
+                  <td>Rp6.250.000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <footer
+          id="panduan"
+          class="footer"
+        >
+          Mode demo · Semua angka merupakan data ilustrasi. Perubahan hanya
+          bertahan selama halaman terbuka.
+        </footer>
+      </main>
+    </div>
+    <div
+      class="toast"
+      role="status"
+      hidden
+    ></div>
+  </body>
+</html>

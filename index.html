@@ -1,69 +1,298 @@
 <!doctype html>
 <html lang="id">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="60 template frontend orisinal dalam 10 kategori. HTML ringan, responsif, dan mudah diubah. Dilengkapi contoh React dan Vue.">
-  <title>Frontend / 60 template, banyak kemungkinan.</title>
-  <link rel="stylesheet" href="assets/base.css">
-  <link rel="stylesheet" href="assets/catalog.css">
-  <script src="assets/manifest.js" defer></script>
-  <script src="assets/catalog.js" defer></script>
-</head>
-<body>
-  <a class="skip" href="#koleksi">Lewati ke koleksi</a>
-  <div class="wrap catalog-wrap">
-    <header class="catalog-header">
-      <a class="brand" href="index.html"><span class="collection-mark" aria-hidden="true">f/</span>frontend</a>
-      <nav aria-label="Navigasi utama"><a href="#koleksi">Koleksi</a><a href="#mulai">Cara pakai</a><a href="https://github.com/abdullahazwar/frontend-template">GitHub ↗</a></nav>
-    </header>
-    <main>
-      <section class="catalog-hero">
-        <div class="stack">
-          <p class="eyebrow">Koleksi 01 / Oktober 2026</p>
-          <h1>Halaman yang jelas.<br>Desain yang punya arah.</h1>
-          <p class="lead">60 titik awal untuk pekerjaan berikutnya. Pilih berdasarkan fungsi, temukan komposisinya, lalu jadikan milik sendiri.</p>
-          <div class="row"><a class="btn" href="#koleksi">Jelajahi template ↓</a><span class="small muted">HTML + CSS + JavaScript · Tanpa build</span></div>
-        </div>
-        <aside class="collection-count" aria-label="60 desain dalam 10 kategori">
-          <span class="big-count">60<span aria-hidden="true">↗</span></span>
-          <div class="row between"><span>desain orisinal</span><span>10 kategori</span></div>
-          <p>Setiap kategori mempunyai enam komposisi. Ditambah dua contoh native React dan Vue.</p>
-        </aside>
-      </section>
-      <section id="koleksi" class="collection-section" aria-labelledby="collection-heading">
-        <div class="collection-toolbar">
-          <div><p class="eyebrow">Pilih fondasi</p><h2 id="collection-heading">Koleksi template</h2></div>
-          <label class="catalog-search"><span class="sr-only">Cari nama, fungsi, atau kategori</span><input type="search" id="search" placeholder="Cari dashboard, toko, login..." autocomplete="off"></label>
-          <button id="favorites" class="btn secondary" aria-pressed="false">Tersimpan <span id="favorite-count">0</span></button>
-        </div>
-        <div class="collection-layout">
-          <nav class="category-nav" aria-label="Kategori template" id="categories"></nav>
-          <div class="collection-results">
-            <div class="row between results-heading"><p id="result-count" class="small muted" role="status"></p><label class="small">Urutan <select id="sort" aria-label="Urutan template"><option value="category">Kategori</option><option value="name">Nama A–Z</option></select></label></div>
-            <div id="template-grid" class="template-grid"></div>
-            <div id="no-results" class="empty stack" hidden><h3>Tidak ada template yang cocok.</h3><p>Ubah kata pencarian atau tampilkan seluruh koleksi.</p><button id="reset" class="btn secondary">Reset filter</button></div>
-            <noscript><p class="empty">Aktifkan JavaScript untuk galeri pencarian. Seluruh template tetap tersedia melalui <a href="docs/CATALOG.md">daftar template</a>.</p></noscript>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1"
+    />
+    <meta
+      name="description"
+      content="90 template frontend. 36 portofolio dengan kategori profesi dan model desain."
+    />
+    <title>Frontend / 90 template, banyak kemungkinan.</title>
+    <link
+      rel="stylesheet"
+      href="assets/base.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/catalog.css"
+    />
+    <script
+      src="assets/manifest.js"
+      defer
+    ></script>
+    <script
+      src="assets/catalog-core.js"
+      defer
+    ></script>
+    <script
+      src="assets/catalog.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <a
+      class="skip"
+      href="#koleksi"
+      >Lewati ke koleksi</a
+    >
+    <div class="wrap catalog-wrap">
+      <header class="catalog-header">
+        <a
+          class="brand"
+          href="index.html"
+          ><span
+            class="collection-mark"
+            aria-hidden="true"
+            >f/</span
+          >frontend</a
+        >
+        <nav aria-label="Navigasi utama">
+          <a href="#koleksi">Koleksi</a><a href="#mulai">Cara pakai</a
+          ><a href="https://github.com/abdullahazwar/frontend-template"
+            >GitHub ↗</a
+          >
+        </nav>
+      </header>
+      <main>
+        <section class="catalog-hero">
+          <div class="stack">
+            <p class="eyebrow">Koleksi 01 / Oktober 2026</p>
+            <h1>Halaman yang jelas.<br />Desain yang punya arah.</h1>
+            <p class="lead">
+              90 titik awal untuk pekerjaan berikutnya. Pilih berdasarkan
+              fungsi, temukan komposisinya, lalu jadikan milik sendiri.
+            </p>
+            <div class="row">
+              <a
+                class="btn"
+                href="#koleksi"
+                >Jelajahi template ↓</a
+              ><span class="small muted"
+                >HTML + CSS + JavaScript · Tanpa build</span
+              >
+            </div>
           </div>
+          <aside
+            class="collection-count"
+            aria-label="90 desain dalam 10 kategori"
+          >
+            <span class="big-count">90<span aria-hidden="true">↗</span></span>
+            <div class="row between">
+              <span>template siap diedit</span><span>10 kategori</span>
+            </div>
+            <p>
+              36 portofolio dikelompokkan menurut profesi dan model. Ditambah
+              dua contoh native React dan Vue.
+            </p>
+          </aside>
+        </section>
+        <section
+          id="koleksi"
+          class="collection-section"
+          aria-labelledby="collection-heading"
+        >
+          <div class="collection-toolbar">
+            <div>
+              <p class="eyebrow">Pilih fondasi</p>
+              <h2 id="collection-heading">Koleksi template</h2>
+            </div>
+            <label class="catalog-search"
+              ><span class="sr-only">Cari nama, fungsi, atau kategori</span
+              ><input
+                type="search"
+                id="search"
+                placeholder="Cari dashboard, toko, login..."
+                autocomplete="off"
+            /></label>
+            <button
+              id="favorites"
+              class="btn secondary"
+              aria-pressed="false"
+            >
+              Tersimpan <span id="favorite-count">0</span>
+            </button>
+          </div>
+          <div class="collection-layout">
+            <nav
+              class="category-nav"
+              aria-label="Kategori template"
+              id="categories"
+            ></nav>
+            <div class="collection-results">
+              <div class="row between results-heading">
+                <p
+                  id="result-count"
+                  class="small muted"
+                  role="status"
+                ></p>
+                <label class="small"
+                  >Urutan
+                  <select
+                    id="sort"
+                    aria-label="Urutan template"
+                  >
+                    <option value="category">Kategori</option>
+                    <option value="name">Nama A–Z</option>
+                  </select></label
+                >
+              </div>
+              <div
+                id="portfolio-filters"
+                class="portfolio-catalog-filters"
+                hidden
+              >
+                <label for="portfolio-type"
+                  >Jenis portofolio<select id="portfolio-type">
+                    <option value="all">Semua profesi</option>
+                  </select></label
+                >
+                <label for="portfolio-source"
+                  >Asal kode<select id="portfolio-source">
+                    <option value="all">Semua sumber</option>
+                  </select></label
+                >
+                <a href="templates/portfolio/README.md"
+                  >Panduan model dan kategori ↗</a
+                >
+              </div>
+              <div
+                id="template-grid"
+                class="template-grid"
+              ></div>
+              <div
+                id="no-results"
+                class="empty stack"
+                hidden
+              >
+                <h3>Tidak ada template yang cocok.</h3>
+                <p>Ubah kata pencarian atau tampilkan seluruh koleksi.</p>
+                <button
+                  id="reset"
+                  class="btn secondary"
+                >
+                  Reset filter
+                </button>
+              </div>
+              <noscript
+                ><p class="empty">
+                  Aktifkan JavaScript untuk galeri pencarian. Seluruh template
+                  tetap tersedia melalui
+                  <a href="docs/CATALOG.md">daftar template</a>.
+                </p></noscript
+              >
+            </div>
+          </div>
+        </section>
+        <section
+          id="mulai"
+          class="getting-started"
+        >
+          <div class="stack">
+            <p class="eyebrow">Mulai dari yang diperlukan</p>
+            <h2>Satu halaman.<br />Sudah bisa dijelajahi.</h2>
+            <p class="lead">
+              Buka template langsung di browser. Ubah teks, warna, dan aset.
+              Semua ilustrasi tersimpan di proyek.
+            </p>
+            <a
+              href="https://github.com/abdullahazwar/frontend-template#cara-pakai"
+              >Baca petunjuk lengkap →</a
+            >
+          </div>
+          <ol class="start-steps">
+            <li>
+              <b>01 / Pilih komposisi</b>
+              <p>Coba pratinjau dan interaksi yang sesuai kebutuhan.</p>
+            </li>
+            <li>
+              <b>02 / Ubah isi</b>
+              <p>Template HTML bisa diedit tanpa memasang dependency.</p>
+            </li>
+            <li>
+              <b>03 / Ambil satu halaman</b>
+              <p>
+                Exporter menghasilkan satu file HTML yang bisa dibuka offline.
+              </p>
+            </li>
+          </ol>
+        </section>
+        <section class="framework-section">
+          <div>
+            <p class="eyebrow">Butuh framework?</p>
+            <h2>Mulai dari komponen native.</h2>
+          </div>
+          <a
+            class="framework-link"
+            href="frameworks/react/index.html"
+            ><b>React</b><span>Dashboard penjualan · state, filter, CSV</span
+            ><span aria-hidden="true">↗</span></a
+          >
+          <a
+            class="framework-link"
+            href="frameworks/vue/index.html"
+            ><b>Vue</b><span>Katalog toko · pencarian dan keranjang</span
+            ><span aria-hidden="true">↗</span></a
+          >
+          <p class="small muted">
+            Contoh framework memuat library dari CDN. 90 template HTML dan hasil
+            ekspornya dapat dipakai tanpa CDN.
+          </p>
+        </section>
+      </main>
+      <footer class="catalog-footer">
+        <span>frontend / Dibuat untuk diubah.</span
+        ><span>MIT · Konten dan data demonstrasi</span
+        ><a href="#koleksi">Kembali ke koleksi ↑</a>
+      </footer>
+    </div>
+    <dialog
+      id="preview"
+      aria-labelledby="preview-title"
+    >
+      <div class="preview-toolbar">
+        <div>
+          <h2 id="preview-title">Pratinjau template</h2>
+          <p
+            class="small muted"
+            id="preview-description"
+          ></p>
         </div>
-      </section>
-      <section id="mulai" class="getting-started">
-        <div class="stack"><p class="eyebrow">Mulai dari yang diperlukan</p><h2>Satu halaman.<br>Sudah bisa dijelajahi.</h2><p class="lead">Buka template langsung di browser. Ubah teks, warna, dan aset. Semua ilustrasi tersimpan di proyek.</p><a href="https://github.com/abdullahazwar/frontend-template#cara-pakai">Baca petunjuk lengkap →</a></div>
-        <ol class="start-steps"><li><b>01 / Pilih komposisi</b><p>Coba pratinjau dan interaksi yang sesuai kebutuhan.</p></li><li><b>02 / Ubah isi</b><p>Template HTML bisa diedit tanpa memasang dependency.</p></li><li><b>03 / Ambil satu halaman</b><p>Exporter menghasilkan satu file HTML yang bisa dibuka offline.</p></li></ol>
-      </section>
-      <section class="framework-section">
-        <div><p class="eyebrow">Butuh framework?</p><h2>Mulai dari komponen native.</h2></div>
-        <a class="framework-link" href="frameworks/react/index.html"><b>React</b><span>Dashboard penjualan · state, filter, CSV</span><span aria-hidden="true">↗</span></a>
-        <a class="framework-link" href="frameworks/vue/index.html"><b>Vue</b><span>Katalog toko · pencarian dan keranjang</span><span aria-hidden="true">↗</span></a>
-        <p class="small muted">Contoh framework memuat library dari CDN. 60 template HTML dan hasil ekspornya dapat dipakai tanpa CDN.</p>
-      </section>
-    </main>
-    <footer class="catalog-footer"><span>frontend / Dibuat untuk diubah.</span><span>MIT · Konten dan data demonstrasi</span><a href="#koleksi">Kembali ke koleksi ↑</a></footer>
-  </div>
-  <dialog id="preview" aria-labelledby="preview-title">
-    <div class="preview-toolbar"><div><h2 id="preview-title">Pratinjau template</h2><p class="small muted" id="preview-description"></p></div><div class="row"><button class="btn secondary small" id="mobile-view" aria-pressed="false">Ukuran HP</button><a class="btn small" id="open-template" href="index.html">Buka halaman ↗</a><button class="btn quiet" id="close-preview" aria-label="Tutup pratinjau">✕</button></div></div>
-    <div class="preview-stage"><iframe id="preview-frame" title="Pratinjau template terpilih" sandbox="allow-scripts allow-same-origin allow-forms allow-downloads"></iframe></div>
-  </dialog>
-  <div class="toast" role="status" hidden></div>
-</body>
+        <div class="row">
+          <button
+            class="btn secondary small"
+            id="mobile-view"
+            aria-pressed="false"
+          >
+            Ukuran HP</button
+          ><a
+            class="btn small"
+            id="open-template"
+            href="index.html"
+            >Buka halaman ↗</a
+          ><button
+            class="btn quiet"
+            id="close-preview"
+            aria-label="Tutup pratinjau"
+          >
+            ✕
+          </button>
+        </div>
+      </div>
+      <div class="preview-stage">
+        <iframe
+          id="preview-frame"
+          title="Pratinjau template terpilih"
+          sandbox="allow-scripts allow-same-origin allow-forms allow-downloads"
+        ></iframe>
+      </div>
+    </dialog>
+    <div
+      class="toast"
+      role="status"
+      hidden
+    ></div>
+  </body>
 </html>

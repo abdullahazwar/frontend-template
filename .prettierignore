@@ -1,0 +1,5 @@
+node_modules/
+exports/
+test-results/
+package-lock.json
+licenses/

@@ -6,22 +6,72 @@ import assert from 'node:assert/strict';
 import { runInNewContext } from 'node:vm';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const manifest = JSON.parse(await readFile(resolve(root, 'templates.json'), 'utf8'));
-assert.equal(manifest.length, 60, 'The collection must contain 60 designs');
-assert.equal(new Set(manifest.map(t => t.id)).size, 60, 'IDs must be unique');
-const categories = [...new Set(manifest.map(t => t.category))];
+const manifest = JSON.parse(
+  await readFile(resolve(root, 'templates.json'), 'utf8'),
+);
+assert.equal(manifest.length, 90, 'The collection must contain 90 designs');
+assert.equal(
+  new Set(manifest.map((t) => t.id)).size,
+  manifest.length,
+  'IDs must be unique',
+);
+const categories = [...new Set(manifest.map((t) => t.category))];
 assert.equal(categories.length, 10);
-for (const category of categories) assert.equal(manifest.filter(t => t.category === category).length, 6);
+for (const category of categories) {
+  assert.equal(
+    manifest.filter((t) => t.category === category).length,
+    category === 'portfolio' ? 36 : 6,
+  );
+}
+const portfolios = manifest.filter((t) => t.category === 'portfolio');
+assert.equal(new Set(portfolios.map((t) => t.portfolioType)).size, 9);
+assert.equal(
+  portfolios.filter((t) => t.source.kind === 'open-source-adaptation').length,
+  6,
+);
+for (const template of portfolios) {
+  assert.ok(
+    template.path.startsWith(`templates/portfolio/${template.portfolioType}/`),
+  );
+  assert.ok(template.model);
+  const html = await readFile(resolve(root, template.path), 'utf8');
+  if (template.source.kind === 'open-source-adaptation') {
+    assert.ok(
+      html.includes('MIT License'),
+      'Adapted pages must preserve MIT notices',
+    );
+    assert.ok(html.includes(template.source.ref));
+  }
+}
+const redirects = JSON.parse(
+  await readFile(resolve(root, 'portfolio-redirects.json'), 'utf8'),
+);
+for (const [oldPath, newPath] of Object.entries(redirects)) {
+  const html = await readFile(resolve(root, oldPath), 'utf8');
+  assert.match(html, /http-equiv="refresh"/);
+  assert.ok(manifest.some((t) => t.path === newPath));
+  await readFile(resolve(root, newPath));
+}
 const context = { window: {} };
-runInNewContext(await readFile(resolve(root, 'assets/manifest.js'), 'utf8'), context);
-assert.equal(JSON.stringify(context.window.TEMPLATE_MANIFEST), JSON.stringify(manifest), 'Gallery metadata must match export metadata');
+runInNewContext(
+  await readFile(resolve(root, 'assets/manifest.js'), 'utf8'),
+  context,
+);
+assert.equal(
+  JSON.stringify(context.window.TEMPLATE_MANIFEST),
+  JSON.stringify(manifest),
+  'Gallery metadata must match export metadata',
+);
 
 async function walk(directory) {
   const files = [];
   for (const entry of await readdir(directory, { withFileTypes: true })) {
-    if (['node_modules', 'exports', '.git', 'test-results'].includes(entry.name)) continue;
+    if (
+      ['node_modules', 'exports', '.git', 'test-results'].includes(entry.name)
+    )
+      continue;
     const path = resolve(directory, entry.name);
-    if (entry.isDirectory()) files.push(...await walk(path));
+    if (entry.isDirectory()) files.push(...(await walk(path)));
     else files.push(path);
   }
   return files;
@@ -29,8 +79,13 @@ async function walk(directory) {
 let checked = 0;
 for (const path of await walk(root)) {
   if (!/\.(m?js)$/.test(path)) continue;
-  const result = spawnSync(process.execPath, ['--check', path], { encoding: 'utf8' });
+  const result = spawnSync(process.execPath, ['--check', path], {
+    encoding: 'utf8',
+  });
   assert.equal(result.status, 0, path + '\n' + result.stderr);
   checked++;
 }
-console.log(`Manifest: 60 templates, 10 categories, six per category. Syntax: ${checked} JavaScript files passed.`);
+console.log(
+  'Manifest: 90 templates, 10 categories, 36 portfolios in 9 subcategories. ' +
+    `Syntax: ${checked} JavaScript files passed.`,
+);

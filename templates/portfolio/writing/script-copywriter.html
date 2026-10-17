@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <meta
+      name="description"
+      content="Copywriter and content designer. Model copy, karya dan proses."
+    />
+    <title>Script / Copywriter / Frontend Template</title>
+    <link
+      rel="stylesheet"
+      href="../../../assets/base.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../../assets/portfolio.css"
+    />
+    <style>
+      :root {
+        --bg: #e9eddf;
+        --surface: #f5f7ef;
+        --ink: #273122;
+        --muted: #5c6654;
+        --accent: #455c21;
+        --soft: #d4ddbd;
+        --line: #d4ddbd;
+        --accent-ink: #ffffff;
+        color-scheme: light;
+      }
+    </style>
+    <script
+      src="../../../assets/core.js"
+      defer
+    ></script>
+    <script
+      src="../../../assets/runtime.js"
+      defer
+    ></script>
+    <script
+      src="../../../assets/portfolio.js"
+      defer
+    ></script>
+  </head>
+  <body
+    class="folio-page"
+    data-template="script-copywriter"
+    data-model="copy"
+  >
+    <a
+      class="skip"
+      href="#main"
+      >Lewati ke konten</a
+    >
+    <div class="demo-bar">
+      <a href="../../../index.html?category=portfolio">← Koleksi portofolio</a
+      ><span>Profil dan karya demonstrasi</span>
+    </div>
+    <div class="folio-shell">
+      <header class="folio-nav">
+        <a
+          class="folio-wordmark"
+          href="#main"
+          >Sinta Kata /</a
+        >
+        <nav aria-label="Navigasi portofolio">
+          <a href="#karya">Karya</a><a href="#tentang">Tentang</a
+          ><a href="#kontak">Kontak</a>
+        </nav>
+      </header>
+      <main id="main">
+        <section class="folio-intro">
+          <div>
+            <p class="folio-kicker">
+              Sinta Kata / Copywriter and content designer
+            </p>
+            <h1>Kata yang membantu langkah berikutnya.</h1>
+            <p
+              class="lead"
+              data-profile-summary
+            >
+              Kumpulan contoh microcopy dan naskah kampanye. Setiap perubahan
+              disertai alasan dan konteks pengguna.
+            </p>
+            <div class="folio-actions">
+              <a
+                class="btn"
+                href="#karya"
+                >Jelajahi karya ↓</a
+              >
+              <button
+                class="btn secondary"
+                type="button"
+                data-profile-download
+              >
+                Unduh profil contoh (.txt)
+              </button>
+            </div>
+          </div>
+          <div class="folio-comparison">
+            <div>
+              <p class="folio-kicker">Sebelum / contoh</p>
+              <p>Terjadi kesalahan.</p>
+            </div>
+            <div>
+              <p class="folio-kicker">Sesudah / contoh</p>
+              <p>Alamat belum lengkap. Tambahkan nama jalan dan nomor rumah.</p>
+            </div>
+          </div>
+        </section>
+        <section
+          id="karya"
+          class="folio-section"
+          data-portfolio
+          aria-labelledby="work-title"
+        >
+          <div class="folio-section-head">
+            <div>
+              <p class="folio-kicker">Indeks / karya terpilih</p>
+              <h2 id="work-title">Karya dan catatan.</h2>
+            </div>
+            <p
+              class="small muted"
+              role="status"
+              data-work-count
+            >
+              3 karya ditampilkan
+            </p>
+          </div>
+          <div class="folio-work-controls">
+            <label for="work-search"
+              >Cari karya<input
+                id="work-search"
+                type="search"
+                placeholder="Cari judul atau proses..."
+                data-work-search
+            /></label>
+            <div
+              class="folio-filters"
+              aria-label="Filter jenis karya"
+            >
+              <button
+                type="button"
+                data-work-filter="all"
+                aria-pressed="true"
+              >
+                Semua</button
+              ><button
+                type="button"
+                data-work-filter="UX writing"
+                aria-pressed="false"
+              >
+                UX writing</button
+              ><button
+                type="button"
+                data-work-filter="Naskah"
+                aria-pressed="false"
+              >
+                Naskah
+              </button>
+            </div>
+          </div>
+          <div class="folio-work-grid">
+            <article
+              class="folio-project"
+              data-work
+              data-kind="UX writing"
+            >
+              <p class="folio-project-meta">01 / UX writing / Konsep</p>
+              <h3>Pesanan Tertunda</h3>
+              <p>Pesan status terlalu umum untuk ditindaklanjuti.</p>
+              <details
+                class="folio-process"
+                id="proses-1"
+              >
+                <summary>Baca proses: Pesanan Tertunda</summary>
+                <h4>Konteks dan peran</h4>
+                <p>
+                  Studi mandiri demonstrasi. Peran: copywriter and content
+                  designer. Pesan status terlalu umum untuk ditindaklanjuti.
+                </p>
+                <h4>Keputusan</h4>
+                <p>
+                  Jelaskan kondisi, penyebab yang diketahui, dan opsi
+                  berikutnya.
+                </p>
+                <h4>Artefak dan tindak lanjut</h4>
+                <p>
+                  Contoh ini memperlihatkan arah dan dokumentasi proses. Ganti
+                  ilustrasi dengan artefak asli, jelaskan kontribusi pribadi,
+                  dan sertakan hasil validasi yang benar-benar tersedia.
+                </p>
+              </details>
+            </article>
+            <article
+              class="folio-project"
+              data-work
+              data-kind="Naskah"
+            >
+              <p class="folio-project-meta">02 / Naskah / Konsep</p>
+              <h3>Tentang Sebuah Kedai</h3>
+              <p>Deskripsi belum menyampaikan menu dan lokasi.</p>
+              <details
+                class="folio-process"
+                id="proses-2"
+              >
+                <summary>Baca proses: Tentang Sebuah Kedai</summary>
+                <h4>Konteks dan peran</h4>
+                <p>
+                  Studi mandiri demonstrasi. Peran: copywriter and content
+                  designer. Deskripsi belum menyampaikan menu dan lokasi.
+                </p>
+                <h4>Keputusan</h4>
+                <p>Dahulukan jenis sajian, jam buka, dan cara memesan.</p>
+                <h4>Artefak dan tindak lanjut</h4>
+                <p>
+                  Contoh ini memperlihatkan arah dan dokumentasi proses. Ganti
+                  ilustrasi dengan artefak asli, jelaskan kontribusi pribadi,
+                  dan sertakan hasil validasi yang benar-benar tersedia.
+                </p>
+              </details>
+            </article>
+            <article
+              class="folio-project"
+              data-work
+              data-kind="UX writing"
+            >
+              <p class="folio-project-meta">03 / UX writing / Konsep</p>
+              <h3>Form Alamat</h3>
+              <p>Label field tidak sesuai istilah yang dipakai pelanggan.</p>
+              <details
+                class="folio-process"
+                id="proses-3"
+              >
+                <summary>Baca proses: Form Alamat</summary>
+                <h4>Konteks dan peran</h4>
+                <p>
+                  Studi mandiri demonstrasi. Peran: copywriter and content
+                  designer. Label field tidak sesuai istilah yang dipakai
+                  pelanggan.
+                </p>
+                <h4>Keputusan</h4>
+                <p>Gunakan bahasa sehari-hari dan contoh format yang pendek.</p>
+                <h4>Artefak dan tindak lanjut</h4>
+                <p>
+                  Contoh ini memperlihatkan arah dan dokumentasi proses. Ganti
+                  ilustrasi dengan artefak asli, jelaskan kontribusi pribadi,
+                  dan sertakan hasil validasi yang benar-benar tersedia.
+                </p>
+              </details>
+            </article>
+          </div>
+          <div
+            class="folio-empty"
+            data-work-empty
+            hidden
+          >
+            <p>Tidak ada karya yang cocok dengan filter.</p>
+            <button
+              class="btn secondary"
+              type="button"
+              data-work-reset
+            >
+              Reset pencarian
+            </button>
+          </div>
+        </section>
+        <section
+          id="tentang"
+          class="folio-section folio-about-grid"
+        >
+          <div>
+            <p class="folio-kicker">Pendekatan</p>
+            <h2>Alasan di balik pekerjaan.</h2>
+          </div>
+          <div>
+            <p class="lead">
+              Kumpulan contoh microcopy dan naskah kampanye. Setiap perubahan
+              disertai alasan dan konteks pengguna.
+            </p>
+            <dl class="folio-facts">
+              <div>
+                <dt>Fokus</dt>
+                <dd>Copywriter and content designer</dd>
+              </div>
+              <div>
+                <dt>Model</dt>
+                <dd>copy</dd>
+              </div>
+              <div>
+                <dt>Isi</dt>
+                <dd>Studi konsep dan catatan proses</dd>
+              </div>
+              <div>
+                <dt>Status</dt>
+                <dd>Identitas dan karya fiktif</dd>
+              </div>
+            </dl>
+            <p class="folio-note">
+              Profil contoh untuk membantu penyusunan portofolio. Ganti nama,
+              karya, pengalaman, dan kontak sebelum publikasi.
+            </p>
+          </div>
+        </section>
+        <section
+          id="kontak"
+          class="folio-section folio-contact"
+        >
+          <div>
+            <p class="folio-kicker">Kontak contoh</p>
+            <h2>Mulai percakapan.</h2>
+          </div>
+          <div class="stack">
+            <code data-contact-address>halo@example.com</code>
+            <p class="small muted">
+              Alamat demonstrasi. Ganti dengan alamat milik pemilik portofolio.
+            </p>
+            <div>
+              <button
+                class="btn secondary"
+                type="button"
+                data-copy-contact
+              >
+                Salin alamat contoh
+              </button>
+            </div>
+            <p
+              class="small"
+              role="status"
+              data-contact-status
+            ></p>
+          </div>
+        </section>
+      </main>
+      <footer class="folio-footer">
+        <span>Sinta Kata / Profil demonstrasi</span
+        ><a href="#main">Kembali ke atas ↑</a>
+      </footer>
+    </div>
+  </body>
+</html>

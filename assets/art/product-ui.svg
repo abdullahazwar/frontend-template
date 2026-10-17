@@ -1,0 +1,63 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 800 600"
+>
+  <rect
+    width="800"
+    height="600"
+    fill="#dfd9ce"
+  />
+  <rect
+    x="100"
+    y="80"
+    width="600"
+    height="440"
+    rx="14"
+    fill="#fffbf4"
+  />
+  <rect
+    x="100"
+    y="80"
+    width="600"
+    height="60"
+    rx="14"
+    fill="#313d34"
+  />
+  <circle
+    cx="134"
+    cy="110"
+    r="7"
+    fill="#b5c5a0"
+  />
+  <path
+    d="M140 185H390M140 215H320"
+    stroke="#46513d"
+    stroke-width="14"
+  />
+  <rect
+    x="140"
+    y="260"
+    width="170"
+    height="170"
+    fill="#c9d4bd"
+  />
+  <rect
+    x="340"
+    y="260"
+    width="150"
+    height="170"
+    fill="#dfc5a9"
+  />
+  <rect
+    x="520"
+    y="260"
+    width="140"
+    height="170"
+    fill="#bfcbd3"
+  />
+  <path
+    d="M140 470H660"
+    stroke="#b4b6a8"
+    stroke-width="10"
+  />
+</svg>

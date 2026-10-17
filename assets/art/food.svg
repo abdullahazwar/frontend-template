@@ -1,1 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#e9ead8"/><ellipse cx="400" cy="360" rx="230" ry="125" fill="#d5d9c1"/><circle cx="330" cy="330" r="82" fill="#a4442d"/><path d="M330 250L340 220M330 250L300 225" stroke="#446442" stroke-width="13"/><ellipse cx="475" cy="340" rx="65" ry="115" transform="rotate(28 475 340)" fill="#dda349"/><path d="M480 230L502 180" stroke="#486245" stroke-width="15"/><circle cx="450" cy="435" r="64" fill="#5f7849"/></svg>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 800 600"
+>
+  <rect
+    width="800"
+    height="600"
+    fill="#e9ead8"
+  />
+  <ellipse
+    cx="400"
+    cy="360"
+    rx="230"
+    ry="125"
+    fill="#d5d9c1"
+  />
+  <circle
+    cx="330"
+    cy="330"
+    r="82"
+    fill="#a4442d"
+  />
+  <path
+    d="M330 250L340 220M330 250L300 225"
+    stroke="#446442"
+    stroke-width="13"
+  />
+  <ellipse
+    cx="475"
+    cy="340"
+    rx="65"
+    ry="115"
+    transform="rotate(28 475 340)"
+    fill="#dda349"
+  />
+  <path
+    d="M480 230L502 180"
+    stroke="#486245"
+    stroke-width="15"
+  />
+  <circle
+    cx="450"
+    cy="435"
+    r="64"
+    fill="#5f7849"
+  />
+</svg>

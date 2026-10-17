@@ -1,0 +1,39 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 800 600"
+>
+  <rect
+    width="800"
+    height="600"
+    fill="#1d2530"
+  />
+  <rect
+    y="110"
+    width="800"
+    height="340"
+    fill="#a98362"
+  />
+  <circle
+    cx="610"
+    cy="240"
+    r="75"
+    fill="#e0bb8a"
+  />
+  <path
+    d="M0 420L200 210L390 440L540 290L800 450H0Z"
+    fill="#353b3d"
+  />
+  <path
+    d="M320 450L450 250L510 450Z"
+    fill="#151e26"
+  />
+  <text
+    x="45"
+    y="540"
+    font-family="serif"
+    font-size="42"
+    fill="#f0dfc8"
+  >
+    TIGA PERSIMPANGAN / 01
+  </text>
+</svg>

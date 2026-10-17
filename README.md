@@ -1,86 +1,129 @@
 # Frontend Template
 
-60 desain frontend dalam 10 kategori. Setiap kategori berisi enam komposisi dengan hierarki dan alur yang sesuai fungsinya. Ditambah contoh native React dan Vue.
+90 template HTML dalam 10 kategori. Koleksi portofolio berisi 36 model,
+dikelompokkan ke sembilan profesi. Tersedia juga contoh native React dan Vue.
 
-Template memakai HTML, CSS, dan JavaScript biasa. Tidak memerlukan instalasi dependency, API key, akun Cloudflare, atau proses build. Semua ilustrasi merupakan SVG asli yang tersimpan di repo.
+30 portofolio tambahan mencakup 24 implementasi orisinal dan enam adaptasi
+bagian kode Simplefolio, DevPortfolio, serta AstroPaper yang berlisensi MIT.
+Pemberitahuan lisensi dan sumber tersimpan bersama proyek.
 
-## Cara pakai
+## Mulai
 
-1. Unduh repo, lalu buka `index.html` di browser untuk menjelajahi koleksi.
-2. Cari kategori atau nama. Buka halaman langsung atau gunakan pratinjau ukuran desktop dan HP.
-3. Edit file di `templates/<kategori>/<nama>.html`. Token warna dan gaya khusus halaman ada di elemen `<style>` pada file tersebut.
-4. Pertahankan `assets/` jika menyalin halaman dengan struktur aslinya. Untuk satu file yang mandiri, gunakan exporter.
+1. Unduh repo dan buka `index.html` untuk menjelajahi galeri.
+2. Pilih kategori Portofolio. Saring profesi, asal kode, atau kata pencarian.
+3. Buka halaman langsung atau gunakan pratinjau desktop dan HP.
+4. Edit file HTML yang dipilih. Semua template memakai aset lokal.
 
-Server lokal opsional, Node.js 20 atau lebih baru:
+Tanpa instalasi dependency atau build untuk menjalankan template HTML. Server
+lokal opsional memakai Node.js 20+:
 
 ```sh
 npm start
 ```
 
-Buka `http://127.0.0.1:4173`. Contoh React dan Vue perlu server HTTP serta koneksi CDN. Galeri dan 60 template HTML memakai script klasik sehingga dapat dibuka langsung melalui `file://`. Penyimpanan favorit pada `file://` bergantung pada browser.
+Buka `http://127.0.0.1:4173`. Template HTML dapat dibuka melalui `file://`. Dua
+contoh framework memerlukan server HTTP dan koneksi CDN.
 
-## Ekspor satu file HTML
+## Kategori utama
 
-```sh
-npm run export -- pulse-sales
-npm run export -- all
-```
+- Dashboard: 6 halaman analitik dan operasional.
+- Admin: 6 halaman pengelolaan.
+- User: 6 halaman akun dan aktivitas.
+- Toko daring: 6 model katalog dan produk.
+- Login: 6 model akses akun.
+- Portofolio: 36 model dengan kategori dan asal kode.
+- Perusahaan: 6 halaman bisnis dan layanan.
+- Blog: 6 model tulisan dan publikasi.
+- Forum: 6 model diskusi.
+- Pendaftaran: 6 model registrasi dan onboarding.
 
-Hasil berada di `exports/`. CSS, JavaScript, dan ilustrasi digabung ke dalam setiap file HTML. Link halaman terkait diganti dengan keterangan lokal. Hasil ekspor dapat dibuka offline dan tidak bergantung pada galeri atau CDN.
+[Katalog seluruh halaman](docs/CATALOG.md)
 
-ID template tercantum pada nama file dan `templates.json`. Folder `exports/` diabaikan oleh Git karena dapat dihasilkan kembali.
+## Model portofolio
 
-## Isi koleksi
+- `developer/`: 6 model, termasuk minimal, timeline, terminal, dan release log.
+- `design/`: 5 model untuk UI, UX, brand, dan sistem desain.
+- `photography/`: 4 model lembar kontak, dokumenter, masonry, dan editorial.
+- `architecture/`: 4 model arsitektur, interior, dan desain produk.
+- `creative/`: 6 model film, komposer, game art, ilustrasi, dan art direction.
+- `writing/`: 3 model esai, jurnalistik, dan copywriting.
+- `research/`: 3 model akademik, penelitian, dan analisis data.
+- `professional/`: 3 model konsultan, engineer lapangan, dan freelancer.
+- `student/`: 2 model lulusan serta pelajar TKJ.
 
-| Kategori | Enam desain |
-| --- | --- |
-| Dashboard | Pulse Sales, Runway Finance, Orchard Analytics, Dispatch Logistics, Sprint Projects, Kelas Education |
-| Admin | Atlas Users, Rak Inventory, Pressroom CMS, Relay Support, Roster Team, Access Permissions |
-| User | Nook Profile, Parcel Orders, Pocket Wallet, Belajar Course, Desk Settings, Ruang Membership |
-| Toko daring | Rakit Marketplace, Sumber Wholesale, Sela Furniture, Pagi Grocery, Mono Product, Edisi Fashion |
-| Login | Paper Split, Terminal Dev, Studio Minimal, Member Warm, Workspace Account, Link Passwordless |
-| Portofolio | Folio Graphic, Frame Photography, Build Developer, Space Architect, Motion Director, Craft Illustrator |
-| Perusahaan | Civic Consulting, Forge Industrial, Meja Restaurant, Habitat Studio, Orbit SaaS, Tepat Local Service |
-| Blog | Jeda Newspaper, Lapang Journal, Byte Engineering, Margin Essay, Signal Magazine, Indeks Newsletter |
-| Forum | Commons Topics, Thread Community, Jawab Q&A, Lobby Gaming, Circle Makers, Sekitar Neighborhood |
-| Pendaftaran | Summit Event, Launch Onboarding, Apply Career, Kampus Admissions, Sesi Booking, Teman Community |
+Setiap folder memuat README yang menjelaskan model dan cara mengubah isi. 30
+halaman baru memiliki pencarian karya, filter, detail proses, kontak contoh yang
+bisa disalin, dan unduh profil demonstrasi sebagai `.txt`. Model visual memiliki
+dialog untuk memperbesar ilustrasi.
 
-[Katalog dengan tautan setiap halaman](docs/CATALOG.md)
+Enam alamat portofolio lama tetap berfungsi melalui halaman pengalihan. Lokasi
+kanonis baru ada di `templates/portfolio/<profesi>/`.
 
-## Perilaku yang bisa dicoba
-
-- Galeri: pencarian, kategori, urutan, favorit, URL filter, pratinjau satu halaman, dan ukuran HP.
-- Dashboard penjualan: filter periode yang memperbarui metrik, grafik, tabel, dan ekspor CSV dari fixture yang sama.
-- Admin: filter anggota, status akses/publikasi, penerimaan stok, perpindahan tugas, inbox, balasan lokal, dan matriks checkbox.
-- Toko: pencarian produk, tambah/kurangi keranjang, total, batas stok, varian produk, dan ringkasan demo.
-- Akun: validasi native, tampilkan password demo, checklist progres, dan penanda simpan.
-- Forum: buka diskusi, dukungan yang dapat dibatalkan, dan simpan karya selama tab terbuka.
-- Pendaftaran: validasi input, tiket dengan total dinamis, wizard tiga langkah, dan tinjauan jawaban.
-
-Setiap kontrol mengikuti lingkup demo yang tertulis. Formulir tidak mengirim data. Login tidak mengautentikasi. Checkout tidak membuat pesanan atau pembayaran. Tidak ada integrasi backend atau pengumpulan kredensial.
+[Panduan portofolio](templates/portfolio/README.md)
 
 ## Struktur
 
 ```text
-index.html                Galeri 60 template
-templates/                Halaman yang langsung bisa diedit
-assets/base.css           Token, primitive, layout, responsive
-assets/core.js            Aturan data demo dan fungsi murni
-assets/runtime.js         Interaksi HTML
-assets/catalog.*          Galeri dan pratinjau
-assets/art/               12 ilustrasi SVG asli
-frameworks/react/         Dashboard dengan komponen React native
-frameworks/vue/           Toko dengan state Vue native
-scripts/                  Server, exporter, dan pemeriksaan
-docs/                     Katalog, brief, sumber, dan hasil verifikasi
-templates.json            Metadata untuk tooling/export
+index.html
+assets/
+  base.css
+  core.js
+  runtime.js
+  catalog-core.js
+  catalog.js
+  catalog.css
+  portfolio.css
+  portfolio.js
+  art/
+templates/
+  portfolio/
+    developer/
+    design/
+    photography/
+    architecture/
+    creative/
+    writing/
+    research/
+    professional/
+    student/
+frameworks/
+  react/
+  vue/
+scripts/
+docs/
+licenses/
+templates.json
+portfolio-redirects.json
 ```
 
-## Contoh framework
+## Ekspor satu HTML mandiri
 
-React menggunakan komponen `Metric`, `SalesChart`, `OrdersTable`, dan `Dashboard`, dengan state serta metrik turunan. Vue menggunakan Composition API dengan `ref` dan `computed`. Keduanya mengelola DOM melalui framework masing-masing. Tidak membungkus template HTML dalam iframe atau memanggil runtime DOM milik template biasa.
+```sh
+npm run export -- case-product
+npm run export -- all
+```
 
-Versi dipatok pada React 19.3.0 dan Vue 3.5.44. Contoh memakai ES modules melalui import map dan CDN. Untuk aplikasi produksi, pindahkan komponen ke tooling proyek yang dipilih, kunci dependency, dan sambungkan kontrak backend yang sesuai. Versi ini merupakan snapshot saat koleksi dibuat, bukan rentang `latest`.
+Exporter menggabungkan stylesheet, JavaScript, dan ilustrasi ke satu HTML.
+Folder bertingkat tetap didukung. Hasil di `exports/` dapat dibuka offline.
+Pemberitahuan MIT pada template adaptasi tetap berada dalam hasil ekspor.
+
+## Format kode
+
+Seluruh HTML, CSS, JavaScript, JSON, SVG, dan Markdown dirapikan. Target panjang
+baris 80 karakter. Atribut HTML panjang ditulis per baris. Python memakai
+indentasi empat spasi. `.editorconfig` mendokumentasikan pengaturan untuk
+editor.
+
+Untuk memasang formatter pengembangan yang versinya dipatok:
+
+```sh
+npm ci --ignore-scripts
+npm run format
+npm run format:check
+```
+
+Prettier hanya dependency pengembangan. Template HTML tidak memuatnya. URL,
+nilai data, dan path SVG tertentu dapat melampaui target baris.
 
 ## Pemeriksaan
 
@@ -88,16 +131,36 @@ Versi dipatok pada React 19.3.0 dan Vue 3.5.44. Contoh memakai ES modules melalu
 npm run check
 ```
 
-Pemeriksaan membutuhkan Node.js 20+ dan Python 3. Tidak memasang dependency. Memeriksa sintaks JavaScript, jumlah desain per kategori, struktur HTML, referensi lokal, anchor, label, metrik, filter, batas stok lintas varian, CSV, dan ekspor seluruh 60 halaman.
+Node.js 20+ dan Python 3. Tidak perlu dependency runtime. Pemeriksaan mencakup
+metadata, 90 template kanonis, 99 halaman HTML, redirect lama, sintaks JS,
+referensi lokal, gabungan filter galeri, aturan data demo, dan ekspor seluruh
+halaman.
 
-Lihat [cakupan verifikasi](docs/VERIFICATION.md). Pemeriksaan otomatis tidak menggantikan pengujian visual, keyboard, perangkat nyata, atau integrasi backend.
+[Cakupan dan hasil verifikasi](docs/VERIFICATION.md)
 
-## Prinsip desain
+## Contoh React dan Vue
 
-Konten menentukan susunan. Tabel operasional memakai kepadatan yang terkontrol. Halaman baca menjaga panjang baris. Toko mendekatkan harga, stok, dan aksi. Portofolio menjelaskan konteks karya. Navigasi hanya memuat tujuan yang ada pada halaman. Tidak semua bagian dimasukkan ke dalam kartu.
+Contoh React memakai komponen dashboard native dengan state, periode, dan CSV.
+Contoh Vue memakai Composition API untuk pencarian serta keranjang. Versi CDN
+mengikuti contoh yang sudah ada, React 19.3.0 dan Vue 3.5.44. Tidak mengganti
+stack keduanya dalam pembaruan koleksi portofolio ini.
 
-Lihat [brief desain](docs/DESIGN.md) dan [sumber referensi](docs/REFERENCES.md). Amazon, Alibaba, Stripe, dan Linear dipelajari sebagai pola fungsi. Logo, kode, gambar, dan identitas mereka tidak disalin.
+## Isi demonstrasi
 
-## Lisensi
+Identitas, karya, riwayat, dan angka adalah contoh. Ilustrasi SVG lokal bukan
+foto klien atau bukti hasil pekerjaan. Form demo tidak mengirim data, login
+tidak mengautentikasi, dan checkout tidak memproses pembayaran.
 
-Kode, gaya, konten contoh, dan SVG asli dalam repo ini menggunakan [MIT](LICENSE). Library React dan Vue memiliki lisensi upstream masing-masing. Nama merek dan profil pada demo merupakan ilustrasi, tanpa afiliasi dengan perusahaan yang dirujuk.
+Ganti konten serta kontak dengan informasi yang benar sebelum publikasi.
+
+## Sumber dan lisensi
+
+Kode orisinal dan SVG memakai [MIT](LICENSE). Adaptasi mempertahankan hak cipta
+upstream. [Pemberitahuan pihak ketiga](THIRD_PARTY_NOTICES.md) dan
+[asal per portofolio](docs/PORTFOLIO-SOURCES.md) mencatat commit, path sumber,
+lingkup adaptasi, dan lisensinya.
+
+Framer dan Webflow menjadi acuan kebutuhan serta komposisi. Kode, foto, font,
+dan identitas template marketplace tidak didistribusikan ulang.
+
+[Brief desain](docs/DESIGN.md) dan [referensi awal](docs/REFERENCES.md)

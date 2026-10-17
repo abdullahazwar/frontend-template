@@ -1,1 +1,166 @@
-<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Blog teknis dengan daftar isi di samping dan fokus pada kolom baca."><title>Byte / Engineering · Frontend Template</title><link rel="stylesheet" href="../../assets/base.css"><style>:root{--bg:#f5f7fb;--surface:#ffffff;--ink:#22314b;--muted:#586880;--accent:#315fa3;--soft:#e7edf9}.tech-article{grid-template-columns:180px minmax(0,1fr);gap:45px}.tech-article aside{padding-top:32px}.tech-article .article-body{padding-top:24px}@media(max-width:760px){.tech-article{grid-template-columns:1fr;gap:0}.tech-article aside{border-block:1px solid var(--line);padding-block:20px}}</style><script src="../../assets/core.js" defer></script><script src="../../assets/runtime.js" defer></script></head><body data-template="byte-engineering"><a class="skip" href="#main">Lewati ke konten</a><div class="demo-bar"><a href="../../index.html">← Koleksi template</a><span>Demo frontend · Byte / Engineering</span></div><div class="wrap "><header class="topbar"><a class="brand" href="#main"><span class="brand-mark" aria-hidden="true"></span>byte_</a><nav aria-label="Navigasi utama"><a href="#jelajahi">Tulisan</a><a href="#artikel">Isi</a><a href="#detail">Verifikasi</a></nav></header><main id="main"><div id="jelajahi" class="section"><header class="stack-sm"><p class="eyebrow">Byte / Catatan engineering</p><h1>Antarmuka kecil,<br>tanggung jawab jelas.</h1><p class="lead">Catatan contoh tentang memisahkan tampilan, data, dan perilaku.</p></header><div class="row space muted small"><span>17 Oktober 2026</span><span>5 menit baca</span><span>Penulis fiktif: Raka</span></div><div class="grid tech-article"><aside class="stack-sm"><p class="eyebrow">Dalam tulisan ini</p><a href="#artikel">Kontrak perilaku</a><a href="#data">Data sebagai sumber</a><a href="#detail">Verifikasi</a></aside><div><article id="artikel" class="section reading article-body"><h2>Mulai dari kontrak perilaku.</h2><p>Tombol ekspor sebaiknya menghasilkan berkas yang mengikuti filter aktif. Formulir perlu mempertahankan input ketika validasi gagal. Kontrak ini menjelaskan hasil yang diharapkan pengguna.</p></article><article id="data" class="section reading article-body"><h2>Satu sumber data untuk satu keputusan.</h2><p>Ringkasan dan tabel yang mengambil data berbeda dapat memberi kesan yang keliru. Untuk demo kecil, turunkan keduanya dari fixture yang sama. Untuk aplikasi nyata, sepakati definisi metrik dengan backend.</p></article><article id="detail" class="section reading article-body"><h2>Uji tugas, bukan bentuk implementasi.</h2><p>Uji apakah pencarian menemukan produk, keranjang membatasi stok, dan formulir menolak input yang belum lengkap. Detail internal dapat berubah selama kontrak tersebut tetap terpenuhi.</p></article></div></div><section id="kontak" class="section border-top"><p class="muted">Tulisan demonstrasi, bukan dokumentasi library tertentu.</p></section></div></main><footer class="footer row between"><span>byte_ · Identitas dan konten contoh</span><a href="#main">Kembali ke atas ↑</a></footer></div><div class="toast" role="status" hidden></div></body></html>
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1"
+    />
+    <meta
+      name="description"
+      content="Blog teknis dengan daftar isi di samping dan fokus pada kolom baca."
+    />
+    <title>Byte / Engineering · Frontend Template</title>
+    <link
+      rel="stylesheet"
+      href="../../assets/base.css"
+    />
+    <style>
+      :root {
+        --bg: #f5f7fb;
+        --surface: #ffffff;
+        --ink: #22314b;
+        --muted: #586880;
+        --accent: #315fa3;
+        --soft: #e7edf9;
+      }
+      .tech-article {
+        grid-template-columns: 180px minmax(0, 1fr);
+        gap: 45px;
+      }
+      .tech-article aside {
+        padding-top: 32px;
+      }
+      .tech-article .article-body {
+        padding-top: 24px;
+      }
+      @media (max-width: 760px) {
+        .tech-article {
+          grid-template-columns: 1fr;
+          gap: 0;
+        }
+        .tech-article aside {
+          border-block: 1px solid var(--line);
+          padding-block: 20px;
+        }
+      }
+    </style>
+    <script
+      src="../../assets/core.js"
+      defer
+    ></script>
+    <script
+      src="../../assets/runtime.js"
+      defer
+    ></script>
+  </head>
+  <body data-template="byte-engineering">
+    <a
+      class="skip"
+      href="#main"
+      >Lewati ke konten</a
+    >
+    <div class="demo-bar">
+      <a href="../../index.html">← Koleksi template</a
+      ><span>Demo frontend · Byte / Engineering</span>
+    </div>
+    <div class="wrap">
+      <header class="topbar">
+        <a
+          class="brand"
+          href="#main"
+          ><span
+            class="brand-mark"
+            aria-hidden="true"
+          ></span
+          >byte_</a
+        >
+        <nav aria-label="Navigasi utama">
+          <a href="#jelajahi">Tulisan</a><a href="#artikel">Isi</a
+          ><a href="#detail">Verifikasi</a>
+        </nav>
+      </header>
+      <main id="main">
+        <div
+          id="jelajahi"
+          class="section"
+        >
+          <header class="stack-sm">
+            <p class="eyebrow">Byte / Catatan engineering</p>
+            <h1>Antarmuka kecil,<br />tanggung jawab jelas.</h1>
+            <p class="lead">
+              Catatan contoh tentang memisahkan tampilan, data, dan perilaku.
+            </p>
+          </header>
+          <div class="row space muted small">
+            <span>17 Oktober 2026</span><span>5 menit baca</span
+            ><span>Penulis fiktif: Raka</span>
+          </div>
+          <div class="grid tech-article">
+            <aside class="stack-sm">
+              <p class="eyebrow">Dalam tulisan ini</p>
+              <a href="#artikel">Kontrak perilaku</a
+              ><a href="#data">Data sebagai sumber</a
+              ><a href="#detail">Verifikasi</a>
+            </aside>
+            <div>
+              <article
+                id="artikel"
+                class="section reading article-body"
+              >
+                <h2>Mulai dari kontrak perilaku.</h2>
+                <p>
+                  Tombol ekspor sebaiknya menghasilkan berkas yang mengikuti
+                  filter aktif. Formulir perlu mempertahankan input ketika
+                  validasi gagal. Kontrak ini menjelaskan hasil yang diharapkan
+                  pengguna.
+                </p>
+              </article>
+              <article
+                id="data"
+                class="section reading article-body"
+              >
+                <h2>Satu sumber data untuk satu keputusan.</h2>
+                <p>
+                  Ringkasan dan tabel yang mengambil data berbeda dapat memberi
+                  kesan yang keliru. Untuk demo kecil, turunkan keduanya dari
+                  fixture yang sama. Untuk aplikasi nyata, sepakati definisi
+                  metrik dengan backend.
+                </p>
+              </article>
+              <article
+                id="detail"
+                class="section reading article-body"
+              >
+                <h2>Uji tugas, bukan bentuk implementasi.</h2>
+                <p>
+                  Uji apakah pencarian menemukan produk, keranjang membatasi
+                  stok, dan formulir menolak input yang belum lengkap. Detail
+                  internal dapat berubah selama kontrak tersebut tetap
+                  terpenuhi.
+                </p>
+              </article>
+            </div>
+          </div>
+          <section
+            id="kontak"
+            class="section border-top"
+          >
+            <p class="muted">
+              Tulisan demonstrasi, bukan dokumentasi library tertentu.
+            </p>
+          </section>
+        </div>
+      </main>
+      <footer class="footer row between">
+        <span>byte_ · Identitas dan konten contoh</span
+        ><a href="#main">Kembali ke atas ↑</a>
+      </footer>
+    </div>
+    <div
+      class="toast"
+      role="status"
+      hidden
+    ></div>
+  </body>
+</html>

@@ -1,40 +1,75 @@
 # Verifikasi
 
-Perintah utama: `npm run check`. Node.js dan Python standar, tanpa dependency tambahan.
+Diperiksa pada 17 Oktober 2026 untuk pembaruan koleksi 1.1.0.
+
+## Perintah
+
+```sh
+npm run check
+npm run format:check
+git diff --check
+```
+
+Pemeriksaan utama memakai Node.js 20+ dan Python 3. Formatter pengembangan
+memakai Prettier 3.6.2 yang dipatok pada manifest dan lockfile.
 
 ## Cakupan otomatis
 
-| Area | Pemeriksaan |
-| --- | --- |
-| Manifest | 60 ID unik, 10 kategori, enam desain per kategori, metadata galeri sama dengan metadata ekspor |
-| JavaScript | Sintaks semua file JS/MJS |
-| HTML | 63 halaman: galeri, 60 template, dua contoh framework |
-| Struktur | Nesting elemen, satu main/h1/title, ID unik, bahasa Indonesia |
-| Referensi | File lokal, anchor, target dialog, input jumlah, varian, dan label |
-| Media | Keberadaan alt pada seluruh gambar |
-| Dashboard | Total mingguan, harian, status dibayar, batas tanggal, kondisi tanpa pesanan dibayar, konsistensi grafik |
-| Filter | Huruf besar/kecil, whitespace, hasil nol, gabungan query dan status |
-| Keranjang | Penggabungan item, state sebelumnya tetap, total integer, jumlah invalid, stok gabungan lintas varian |
-| CSV | Koma, tanda kutip, newline, mitigasi formula spreadsheet |
-| Exporter | Seluruh 60 halaman menggabungkan kode/aset dan tidak memiliki tujuan anchor yang hilang |
+- 90 ID template unik dalam 10 kategori.
+- 36 portofolio, sembilan kategori profesi, enam adaptasi MIT.
+- Metadata galeri dan exporter harus sama.
+- Enam pengalihan URL lama mengarah ke template kanonis yang tersedia.
+- 99 dokumen HTML: galeri, 90 template, enam redirect, dan dua framework.
+- Struktur HTML, ID, anchor, referensi file, label, alt, main, h1, dan title.
+- Sintaks 13 file JavaScript dan MJS.
+- 15 tes fungsi dan ekspor, seluruhnya lulus.
+- Gabungan pencarian, profesi, asal kode, favorit, dan hasil kosong.
+- Aturan transaksi, periode, nilai nol, stok, varian, dan escaping CSV.
+- Ekspor seluruh 90 template, termasuk folder bertingkat.
+- Aset lokal digabung dan anchor hasil ekspor tetap tersedia.
+- Ekspor adaptasi mempertahankan komentar lisensi MIT.
+- Tiga hasil ekspor juga dibuka lewat file lokal di browser: Casebook Product,
+  Paper Writer, dan Build Developer. Aset terdekode serta pencarian, keadaan
+  kosong, dan reset pada dua model baru berfungsi.
+- Prettier memeriksa HTML, CSS, JS, MJS, JSON, SVG, dan Markdown.
+- Python dirapikan dengan indentasi empat spasi.
 
-## Batas verifikasi
+## Browser
 
-Lingkungan kerja ini tidak menyediakan jalur kontrol browser yang didukung untuk tugas ini. Tidak menjalankan screenshot desktop/mobile, pengujian keyboard di browser, screen reader, pengukuran contrast pada hasil render, atau pengukuran Core Web Vitals. Tidak mengklaim WCAG compliant atau production ready.
+Chromium 133.0.6943.0 melalui Playwright, headless pada Linux.
 
-Pemuatan CDN pada dua contoh framework belum diuji end-to-end. Kode ESM diperiksa sintaksnya. Aplikasi menampilkan pesan kegagalan saat import CDN gagal. 60 template HTML tidak memerlukan library CDN.
+- 252 kunjungan viewport terhadap 90 template.
+- Semua 36 portofolio: lebar 320, 360, 768, dan 1440 piksel.
+- 54 template lain: lebar 360 dan 1365 piksel.
+- Tidak menemukan exception JavaScript atau request lokal dengan status 4xx/5xx.
+- Tidak menemukan overflow horizontal pada lebar yang diperiksa.
+- 30 portofolio baru: pencarian, hasil kosong, reset, dan filter jenis karya.
+- Detail proses dibuka dengan keyboard.
+- Dialog ilustrasi dibuka dengan keyboard, ditutup melalui Escape, dan
+  mengembalikan fokus ke tombol pembuka.
+- Unduh profil menghasilkan `.txt` dengan nama template dan penanda demo.
+- Tombol salin kontak memberikan status atau fallback pemilihan teks.
+- Galeri: kategori, profesi, sumber, query, reload URL, dan favorit.
+- Pratinjau: buka, ukuran HP, Escape, serta reset ukuran saat dibuka kembali.
+- Seluruh enam URL lama berhasil berpindah ke folder kanonis.
+- Pemeriksaan gambar membedakan media yang menunggu lazy loading dari file yang
+  gagal dimuat. Gambar lazy diminta dan didekode saat pemeriksaan lanjut.
 
-Pemeriksaan fungsi murni memverifikasi aturan demo, bukan interaksi DOM secara end-to-end. Sebelum memakai template untuk produksi, uji pratinjau, form, dialog, navigasi keyboard, reflow 320 px, dan alur pada perangkat sasaran.
+Screenshot desktop dan HP diperiksa untuk galeri, Casebook Product, Atelier
+Architecture, Shell Backend, dan Paper Writer. Judul pada hero split diperkecil
+setelah tinjauan visual agar ritme teks lebih proporsional.
 
-## Skenario tinjauan manual
+## Batas cakupan
 
-1. Galeri: pilih kategori, cari hasil nol, reset, simpan favorit, buka/tutup pratinjau dengan Escape, lalu buka ukuran HP.
-2. Pulse: ganti minggu ke hari. Cocokkan Rp450.000, satu pesanan dibayar, dua baris total, dan isi CSV.
-3. Atlas: cari anggota, nonaktifkan, gunakan filter Nonaktif, lalu aktifkan kembali.
-4. Rak: tambah 10 unit. Cocokkan unit baris dan jumlah SKU stok rendah.
-5. Sprint: pindahkan tugas dan cocokkan jumlah pada dua kolom yang berubah.
-6. Relay: ganti tiket, kirim balasan demo, pindah tiket, lalu kembali untuk memeriksa balasan lokal.
-7. Mono: tambah empat Graphite dan dua Silver. Tambahan ketujuh ditolak oleh stok gabungan.
-8. Login: submit input kosong, email invalid, lalu data fiktif valid. Periksa tombol tampilkan password.
-9. Launch: validasi tahap pertama dan kedua, baca review, kembali, edit, lalu selesaikan demo.
-10. Forum: dukung topik, batalkan dukungan, dan pastikan angka kembali ke semula.
+Viewport merupakan simulasi browser desktop, bukan perangkat fisik. Tidak
+melakukan audit screen reader, pengukuran Core Web Vitals, atau menyatakan
+kepatuhan WCAG secara menyeluruh.
+
+Contoh React dan Vue mempertahankan versi CDN yang sudah ada. Nomor versi
+tersedia pada registry, tetapi pemuatan CDN keduanya belum diuji end-to-end.
+Perubahan Vue menandai literal template HTML agar formatter dapat merapikan
+markup yang sebelumnya memanjang pada satu baris.
+
+Tidak ada backend, autentikasi, pembayaran, pengiriman formulir, atau data
+produksi yang termasuk dalam pengujian. Seluruh profil baru, karya, dan angka
+adalah demonstrasi.

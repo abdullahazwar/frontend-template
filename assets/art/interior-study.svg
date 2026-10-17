@@ -1,0 +1,50 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 800 600"
+>
+  <rect
+    width="800"
+    height="600"
+    fill="#e6dcc9"
+  />
+  <path
+    d="M0 0H800V420H0Z"
+    fill="#eee8dc"
+  />
+  <path
+    d="M0 420L800 360V600H0Z"
+    fill="#b49873"
+  />
+  <rect
+    x="75"
+    y="80"
+    width="240"
+    height="260"
+    fill="#7e967e"
+  />
+  <path
+    d="M195 80V340M75 210H315"
+    stroke="#e6dcc9"
+    stroke-width="14"
+  />
+  <rect
+    x="380"
+    y="300"
+    width="300"
+    height="130"
+    rx="24"
+    fill="#817b5d"
+  />
+  <path
+    d="M405 430V490M655 430V470"
+    stroke="#5a4634"
+    stroke-width="16"
+  />
+  <ellipse
+    cx="250"
+    cy="470"
+    rx="100"
+    ry="28"
+    fill="#705844"
+  />
+</svg>

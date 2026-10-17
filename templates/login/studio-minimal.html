@@ -1,1 +1,145 @@
-<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Login minimal dengan label jelas, validasi native, dan status demo yang jujur."><title>Studio / Minimal · Frontend Template</title><link rel="stylesheet" href="../../assets/base.css"><style>:root{--bg:#f4f3ee;--surface:#ffffff;--ink:#222321;--muted:#62635c;--accent:#363c35;--soft:#e5e6de}.auth-form h1{font-size:2.1rem}.auth-form .lead{font-size:1rem}.auth-form{border-top:3px solid var(--ink)}.brand{letter-spacing:.1em}</style><script src="../../assets/core.js" defer></script><script src="../../assets/runtime.js" defer></script></head><body data-template="studio-minimal"><a class="skip" href="#main">Lewati ke konten</a><div class="demo-bar"><a href="../../index.html">← Koleksi template</a><span>Demo frontend · Studio / Minimal</span></div><main id="main" class="auth-center"><div class="auth-form stack"><a class="brand" href="#main">STUDIO</a><header class="stack-sm"><p class="eyebrow">Akses ruang kerja</p><h1>Selamat datang kembali.</h1><p class="lead">Masuk ke ruang kerja kreatif.</p></header><p class="small muted">Demo antarmuka. Gunakan data fiktif. Tidak ada login atau pengiriman email.</p><form class="form-grid" data-demo-form data-auth-form><div class="field"><label for="email">Email demo</label><input id="email" name="email" type="email" autocomplete="off" required placeholder="nama@example.test"></div><div class="field"><label for="password">Password demo</label><div class="password-wrap"><input id="password" type="password" required minlength="8" autocomplete="off" aria-describedby="password-help"><button class="btn secondary" type="button" data-password="password" aria-pressed="false">Tampilkan</button></div><small id="password-help" class="muted">Gunakan teks fiktif minimal 8 karakter.</small></div><button class="btn" type="submit">Validasi login demo</button><p class="form-status" role="status"></p></form><details><summary>Perlu bantuan?</summary><p>Hubungkan template dengan penyedia autentikasi. Jangan memverifikasi password atau menyimpan token rahasia di frontend.</p></details></div></main><div class="toast" role="status" hidden></div></body></html>
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1"
+    />
+    <meta
+      name="description"
+      content="Login minimal dengan label jelas."
+    />
+    <title>Studio / Minimal · Frontend Template</title>
+    <link
+      rel="stylesheet"
+      href="../../assets/base.css"
+    />
+    <style>
+      :root {
+        --bg: #f4f3ee;
+        --surface: #ffffff;
+        --ink: #222321;
+        --muted: #62635c;
+        --accent: #363c35;
+        --soft: #e5e6de;
+      }
+      .auth-form h1 {
+        font-size: 2.1rem;
+      }
+      .auth-form .lead {
+        font-size: 1rem;
+      }
+      .auth-form {
+        border-top: 3px solid var(--ink);
+      }
+      .brand {
+        letter-spacing: 0.1em;
+      }
+    </style>
+    <script
+      src="../../assets/core.js"
+      defer
+    ></script>
+    <script
+      src="../../assets/runtime.js"
+      defer
+    ></script>
+  </head>
+  <body data-template="studio-minimal">
+    <a
+      class="skip"
+      href="#main"
+      >Lewati ke konten</a
+    >
+    <div class="demo-bar">
+      <a href="../../index.html">← Koleksi template</a
+      ><span>Demo frontend · Studio / Minimal</span>
+    </div>
+    <main
+      id="main"
+      class="auth-center"
+    >
+      <div class="auth-form stack">
+        <a
+          class="brand"
+          href="#main"
+          >STUDIO</a
+        >
+        <header class="stack-sm">
+          <p class="eyebrow">Akses ruang kerja</p>
+          <h1>Selamat datang kembali.</h1>
+          <p class="lead">Masuk ke ruang kerja kreatif.</p>
+        </header>
+        <p class="small muted">
+          Demo antarmuka. Gunakan data fiktif. Tidak ada login atau pengiriman
+          email.
+        </p>
+        <form
+          class="form-grid"
+          data-demo-form
+          data-auth-form
+        >
+          <div class="field">
+            <label for="email">Email demo</label
+            ><input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="off"
+              required
+              placeholder="nama@example.test"
+            />
+          </div>
+          <div class="field">
+            <label for="password">Password demo</label>
+            <div class="password-wrap">
+              <input
+                id="password"
+                type="password"
+                required
+                minlength="8"
+                autocomplete="off"
+                aria-describedby="password-help"
+              /><button
+                class="btn secondary"
+                type="button"
+                data-password="password"
+                aria-pressed="false"
+              >
+                Tampilkan
+              </button>
+            </div>
+            <small
+              id="password-help"
+              class="muted"
+              >Gunakan teks fiktif minimal 8 karakter.</small
+            >
+          </div>
+          <button
+            class="btn"
+            type="submit"
+          >
+            Validasi login demo
+          </button>
+          <p
+            class="form-status"
+            role="status"
+          ></p>
+        </form>
+        <details>
+          <summary>Perlu bantuan?</summary>
+          <p>
+            Hubungkan template dengan penyedia autentikasi. Jangan memverifikasi
+            password atau menyimpan token rahasia di frontend.
+          </p>
+        </details>
+      </div>
+    </main>
+    <div
+      class="toast"
+      role="status"
+      hidden
+    ></div>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 800 600"
+>
+  <rect
+    width="800"
+    height="600"
+    fill="#342d36"
+  />
+  <path
+    d="M0 600L330 0H600L290 600Z"
+    fill="#c4aa9d"
+  />
+  <ellipse
+    cx="450"
+    cy="235"
+    rx="86"
+    ry="106"
+    fill="#73605b"
+  />
+  <path
+    d="M280 600Q285 350 450 350Q650 350 670 600Z"
+    fill="#181c24"
+  />
+  <path
+    d="M370 235Q420 285 480 245"
+    stroke="#b69887"
+    stroke-width="8"
+    fill="none"
+  />
+</svg>

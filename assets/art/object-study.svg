@@ -1,0 +1,39 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 800 600"
+>
+  <rect
+    width="800"
+    height="600"
+    fill="#c9d7da"
+  />
+  <ellipse
+    cx="420"
+    cy="490"
+    rx="220"
+    ry="44"
+    fill="#a1b4b9"
+  />
+  <path
+    d="M280 430V200Q280 160 330 160H480Q530 160 530 200V430Z"
+    fill="#f5efde"
+  />
+  <ellipse
+    cx="405"
+    cy="175"
+    rx="110"
+    ry="28"
+    fill="#5f777d"
+  />
+  <path
+    d="M530 230Q650 200 630 350Q620 405 530 380"
+    fill="none"
+    stroke="#f5efde"
+    stroke-width="35"
+  />
+  <path
+    d="M325 230V400"
+    stroke="#d7cdb9"
+    stroke-width="10"
+  />
+</svg>

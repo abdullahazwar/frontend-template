@@ -1,0 +1,8 @@
+{
+  "templates/portfolio/folio-graphic.html": "templates/portfolio/design/folio-graphic.html",
+  "templates/portfolio/frame-photography.html": "templates/portfolio/photography/frame-photography.html",
+  "templates/portfolio/build-developer.html": "templates/portfolio/developer/build-developer.html",
+  "templates/portfolio/space-architect.html": "templates/portfolio/architecture/space-architect.html",
+  "templates/portfolio/motion-director.html": "templates/portfolio/creative/motion-director.html",
+  "templates/portfolio/craft-illustrator.html": "templates/portfolio/creative/craft-illustrator.html"
+}

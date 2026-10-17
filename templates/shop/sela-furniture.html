@@ -1,1 +1,233 @@
-<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Toko furnitur editorial dengan satu produk utama besar dan koleksi dua kolom."><title>Sela / Furniture · Frontend Template</title><link rel="stylesheet" href="../../assets/base.css"><style>:root{--bg:#f5eee1;--surface:#fffbf3;--ink:#3e352c;--muted:#766b5f;--accent:#7b4b32;--soft:#ebe0ce}h1,h2{font-family:var(--serif);font-weight:400}</style><script src="../../assets/core.js" defer></script><script src="../../assets/runtime.js" defer></script></head><body data-template="sela-furniture"><a class="skip" href="#main">Lewati ke konten</a><div class="demo-bar"><a href="../../index.html">← Koleksi template</a><span>Demo frontend · Sela / Furniture</span></div><div class="wrap"><header class="topbar"><a class="brand" href="#main"><span class="brand-mark" aria-hidden="true"></span>sela.</a><nav aria-label="Navigasi toko"><a href="#produk">Produk</a><a href="#detail">Informasi</a></nav><button class="btn secondary" data-dialog="cart" data-cart-button>Keranjang (0)</button></header><main id="main"><section class="hero"><div class="stack"><header class="stack-sm"><p class="eyebrow">Sela / Koleksi 01</p><h1>Ruang untuk pelan-pelan.</h1><p class="lead">Furnitur sederhana, material hangat, dan ukuran yang mudah dipadukan.</p></header><a class="btn" href="#produk">Jelajahi koleksi</a></div><img class="hero-art" src="../../assets/art/chair.svg" alt="Ilustrasi asli kursi hijau dengan kaki kayu" width="800" height="600" loading="lazy"></section><section id="produk" class="grid cols-2"><article class="product" data-item data-search-text="Kursi Sela Furnitur" data-status="furnitur"><img class="product-media" src="../../assets/art/chair.svg" alt="Kursi Sela" width="800" height="600" loading="lazy"><div><p class="eyebrow">Furnitur</p><h3>Kursi Sela</h3><p class="num space">Rp1.250.000</p><small class="muted">Stok demo 8</small></div><button class="btn" data-add-cart data-id="chair" data-name="Kursi Sela" data-price="1250000" data-stock="8">Tambah ke keranjang</button></article><article class="product" data-item data-search-text="Lampu Arah Pencahayaan" data-status="pencahayaan"><img class="product-media" src="../../assets/art/lamp.svg" alt="Lampu Arah" width="800" height="600" loading="lazy"><div><p class="eyebrow">Pencahayaan</p><h3>Lampu Arah</h3><p class="num space">Rp450.000</p><small class="muted">Stok demo 12</small></div><button class="btn" data-add-cart data-id="lamp" data-name="Lampu Arah" data-price="450000" data-stock="12">Tambah ke keranjang</button></article></section><section id="detail" class="section grid cols-2"><h2 class="serif">Bentuk mengikuti kebiasaan.</h2><div><details><summary>Material dan ukuran contoh</summary><p>Kursi Sela: rangka kayu, dudukan kain, 70 × 65 × 80 cm. Semua spesifikasi merupakan data ilustrasi.</p></details><details><summary>Perawatan</summary><p>Gunakan lap lembut. Untuk produk nyata, ikuti petunjuk material dari produsen.</p></details></div></section></main><footer class="footer">sela. · Toko fiktif · Semua harga dan stok merupakan contoh</footer></div><dialog id="cart"><div class="dialog-head"><h2>Keranjang demo</h2><button class="btn quiet" data-close aria-label="Tutup dialog">✕</button></div><div data-cart-items></div><div class="row between space"><b>Total produk</b><b data-cart-total>Rp0</b></div><p class="small muted">Harga dan stok ilustrasi. Ongkir belum dihitung. Tidak ada pemrosesan pembayaran.</p><div class="space"><button class="btn" data-checkout>Periksa ringkasan demo</button></div><p data-checkout-status class="form-status" role="status"></p></dialog><div class="toast" role="status" hidden></div></body></html>
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1"
+    />
+    <meta
+      name="description"
+      content="Toko furnitur editorial: satu produk utama besar dan koleksi dua kolom."
+    />
+    <title>Sela / Furniture · Frontend Template</title>
+    <link
+      rel="stylesheet"
+      href="../../assets/base.css"
+    />
+    <style>
+      :root {
+        --bg: #f5eee1;
+        --surface: #fffbf3;
+        --ink: #3e352c;
+        --muted: #766b5f;
+        --accent: #7b4b32;
+        --soft: #ebe0ce;
+      }
+      h1,
+      h2 {
+        font-family: var(--serif);
+        font-weight: 400;
+      }
+    </style>
+    <script
+      src="../../assets/core.js"
+      defer
+    ></script>
+    <script
+      src="../../assets/runtime.js"
+      defer
+    ></script>
+  </head>
+  <body data-template="sela-furniture">
+    <a
+      class="skip"
+      href="#main"
+      >Lewati ke konten</a
+    >
+    <div class="demo-bar">
+      <a href="../../index.html">← Koleksi template</a
+      ><span>Demo frontend · Sela / Furniture</span>
+    </div>
+    <div class="wrap">
+      <header class="topbar">
+        <a
+          class="brand"
+          href="#main"
+          ><span
+            class="brand-mark"
+            aria-hidden="true"
+          ></span
+          >sela.</a
+        >
+        <nav aria-label="Navigasi toko">
+          <a href="#produk">Produk</a><a href="#detail">Informasi</a>
+        </nav>
+        <button
+          class="btn secondary"
+          data-dialog="cart"
+          data-cart-button
+        >
+          Keranjang (0)
+        </button>
+      </header>
+      <main id="main">
+        <section class="hero">
+          <div class="stack">
+            <header class="stack-sm">
+              <p class="eyebrow">Sela / Koleksi 01</p>
+              <h1>Ruang untuk pelan-pelan.</h1>
+              <p class="lead">
+                Furnitur sederhana, material hangat, dan ukuran yang mudah
+                dipadukan.
+              </p>
+            </header>
+            <a
+              class="btn"
+              href="#produk"
+              >Jelajahi koleksi</a
+            >
+          </div>
+          <img
+            class="hero-art"
+            src="../../assets/art/chair.svg"
+            alt="Ilustrasi asli kursi hijau dengan kaki kayu"
+            width="800"
+            height="600"
+            loading="lazy"
+          />
+        </section>
+        <section
+          id="produk"
+          class="grid cols-2"
+        >
+          <article
+            class="product"
+            data-item
+            data-search-text="Kursi Sela Furnitur"
+            data-status="furnitur"
+          >
+            <img
+              class="product-media"
+              src="../../assets/art/chair.svg"
+              alt="Kursi Sela"
+              width="800"
+              height="600"
+              loading="lazy"
+            />
+            <div>
+              <p class="eyebrow">Furnitur</p>
+              <h3>Kursi Sela</h3>
+              <p class="num space">Rp1.250.000</p>
+              <small class="muted">Stok demo 8</small>
+            </div>
+            <button
+              class="btn"
+              data-add-cart
+              data-id="chair"
+              data-name="Kursi Sela"
+              data-price="1250000"
+              data-stock="8"
+            >
+              Tambah ke keranjang
+            </button>
+          </article>
+          <article
+            class="product"
+            data-item
+            data-search-text="Lampu Arah Pencahayaan"
+            data-status="pencahayaan"
+          >
+            <img
+              class="product-media"
+              src="../../assets/art/lamp.svg"
+              alt="Lampu Arah"
+              width="800"
+              height="600"
+              loading="lazy"
+            />
+            <div>
+              <p class="eyebrow">Pencahayaan</p>
+              <h3>Lampu Arah</h3>
+              <p class="num space">Rp450.000</p>
+              <small class="muted">Stok demo 12</small>
+            </div>
+            <button
+              class="btn"
+              data-add-cart
+              data-id="lamp"
+              data-name="Lampu Arah"
+              data-price="450000"
+              data-stock="12"
+            >
+              Tambah ke keranjang
+            </button>
+          </article>
+        </section>
+        <section
+          id="detail"
+          class="section grid cols-2"
+        >
+          <h2 class="serif">Bentuk mengikuti kebiasaan.</h2>
+          <div>
+            <details>
+              <summary>Material dan ukuran contoh</summary>
+              <p>
+                Kursi Sela: rangka kayu, dudukan kain, 70 × 65 × 80 cm. Semua
+                spesifikasi merupakan data ilustrasi.
+              </p>
+            </details>
+            <details>
+              <summary>Perawatan</summary>
+              <p>
+                Gunakan lap lembut. Untuk produk nyata, ikuti petunjuk material
+                dari produsen.
+              </p>
+            </details>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        sela. · Toko fiktif · Semua harga dan stok merupakan contoh
+      </footer>
+    </div>
+    <dialog id="cart">
+      <div class="dialog-head">
+        <h2>Keranjang demo</h2>
+        <button
+          class="btn quiet"
+          data-close
+          aria-label="Tutup dialog"
+        >
+          ✕
+        </button>
+      </div>
+      <div data-cart-items></div>
+      <div class="row between space">
+        <b>Total produk</b><b data-cart-total>Rp0</b>
+      </div>
+      <p class="small muted">
+        Harga dan stok ilustrasi. Ongkir belum dihitung. Tidak ada pemrosesan
+        pembayaran.
+      </p>
+      <div class="space">
+        <button
+          class="btn"
+          data-checkout
+        >
+          Periksa ringkasan demo
+        </button>
+      </div>
+      <p
+        data-checkout-status
+        class="form-status"
+        role="status"
+      ></p>
+    </dialog>
+    <div
+      class="toast"
+      role="status"
+      hidden
+    ></div>
+  </body>
+</html>

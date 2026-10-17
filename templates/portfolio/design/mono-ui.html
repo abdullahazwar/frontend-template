@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <meta
+      name="description"
+      content="UI designer. Model sidebar, karya dan proses."
+    />
+    <title>Mono / Interface / Frontend Template</title>
+    <link
+      rel="stylesheet"
+      href="../../../assets/base.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../../assets/portfolio.css"
+    />
+    <style>
+      :root {
+        --bg: #f4f3ef;
+        --surface: #ffffff;
+        --ink: #252521;
+        --muted: #67675f;
+        --accent: #42423a;
+        --soft: #e3e3d9;
+        --line: #e3e3d9;
+        --accent-ink: #ffffff;
+        color-scheme: light;
+      }
+    </style>
+    <script
+      src="../../../assets/core.js"
+      defer
+    ></script>
+    <script
+      src="../../../assets/runtime.js"
+      defer
+    ></script>
+    <script
+      src="../../../assets/portfolio.js"
+      defer
+    ></script>
+  </head>
+  <body
+    class="folio-page"
+    data-template="mono-ui"
+    data-model="sidebar"
+  >
+    <a
+      class="skip"
+      href="#main"
+      >Lewati ke konten</a
+    >
+    <div class="demo-bar">
+      <a href="../../../index.html?category=portfolio">← Koleksi portofolio</a
+      ><span>Profil dan karya demonstrasi</span>
+    </div>
+    <div class="folio-shell">
+      <header class="folio-nav">
+        <a
+          class="folio-wordmark"
+          href="#main"
+          >Intan Sari /</a
+        >
+        <nav aria-label="Navigasi portofolio">
+          <a href="#karya">Karya</a><a href="#tentang">Tentang</a
+          ><a href="#kontak">Kontak</a>
+        </nav>
+      </header>
+      <main id="main">
+        <section class="folio-intro">
+          <aside class="stack-sm">
+            <p class="folio-kicker">Profil / 2026</p>
+            <p>Intan Sari</p>
+            <p class="small muted">UI designer</p>
+            <a href="#tentang">Pendekatan kerja →</a>
+          </aside>
+          <div>
+            <p class="folio-kicker">Intan Sari / UI designer</p>
+            <h1>Ritme, tipografi, dan antarmuka.</h1>
+            <p
+              class="lead"
+              data-profile-summary
+            >
+              Eksplorasi interface dengan hierarki yang tenang. Setiap komposisi
+              mencatat tugas utama dan keadaan yang perlu dirancang.
+            </p>
+            <div class="folio-actions">
+              <a
+                class="btn"
+                href="#karya"
+                >Jelajahi karya ↓</a
+              >
+              <button
+                class="btn secondary"
+                type="button"
+                data-profile-download
+              >
+                Unduh profil contoh (.txt)
+              </button>
+            </div>
+          </div>
+        </section>
+        <section
+          id="karya"
+          class="folio-section"
+          data-portfolio
+          aria-labelledby="work-title"
+        >
+          <div class="folio-section-head">
+            <div>
+              <p class="folio-kicker">Indeks / karya terpilih</p>
+              <h2 id="work-title">Karya dan catatan.</h2>
+            </div>
+            <p
+              class="small muted"
+              role="status"
+              data-work-count
+            >
+              3 karya ditampilkan
+            </p>
+          </div>
+          <div class="folio-work-controls">
+            <label for="work-search"
+              >Cari karya<input
+                id="work-search"
+                type="search"
+                placeholder="Cari judul atau proses..."
+                data-work-search
+            /></label>
+            <div
+              class="folio-filters"
+              aria-label="Filter jenis karya"
+            >
+              <button
+                type="button"
+                data-work-filter="all"
+                aria-pressed="true"
+              >
+                Semua</button
+              ><button
+                type="button"
+                data-work-filter="Interface"
+                aria-pressed="false"
+              >
+                Interface</button
+              ><button
+                type="button"
+                data-work-filter="Proses"
+                aria-pressed="false"
+              >
+                Proses
+              </button>
+            </div>
+          </div>
+          <div class="folio-work-grid">
+            <article
+              class="folio-project"
+              data-work
+              data-kind="Interface"
+            >
+              <figure class="folio-cover">
+                <img
+                  class="folio-work-image"
+                  src="../../../assets/art/poster.svg"
+                  alt="Ilustrasi konsep: Papan Editorial"
+                  width="800"
+                  height="600"
+                /><button
+                  type="button"
+                  data-art-open
+                  aria-label="Perbesar ilustrasi Papan Editorial"
+                >
+                  Perbesar ↗
+                </button>
+                <figcaption>Ilustrasi konsep / 01</figcaption>
+              </figure>
+              <p class="folio-project-meta">01 / Interface / Konsep</p>
+              <h3>Papan Editorial</h3>
+              <p>Draf dan artikel terbit sulit dibedakan.</p>
+              <details
+                class="folio-process"
+                id="proses-1"
+              >
+                <summary>Baca proses: Papan Editorial</summary>
+                <h4>Konteks dan peran</h4>
+                <p>
+                  Studi mandiri demonstrasi. Peran: ui designer. Draf dan
+                  artikel terbit sulit dibedakan.
+                </p>
+                <h4>Keputusan</h4>
+                <p>Gunakan kolom status serta tanggal sunting terakhir.</p>
+                <h4>Artefak dan tindak lanjut</h4>
+                <p>
+                  Contoh ini memperlihatkan arah dan dokumentasi proses. Ganti
+                  ilustrasi dengan artefak asli, jelaskan kontribusi pribadi,
+                  dan sertakan hasil validasi yang benar-benar tersedia.
+                </p>
+              </details>
+            </article>
+            <article
+              class="folio-project"
+              data-work
+              data-kind="Proses"
+            >
+              <figure class="folio-cover">
+                <img
+                  class="folio-work-image"
+                  src="../../../assets/art/product-ui.svg"
+                  alt="Ilustrasi konsep: Kajian Form"
+                  width="800"
+                  height="600"
+                /><button
+                  type="button"
+                  data-art-open
+                  aria-label="Perbesar ilustrasi Kajian Form"
+                >
+                  Perbesar ↗
+                </button>
+                <figcaption>Ilustrasi konsep / 02</figcaption>
+              </figure>
+              <p class="folio-project-meta">02 / Proses / Konsep</p>
+              <h3>Kajian Form</h3>
+              <p>Pesan error muncul jauh dari input.</p>
+              <details
+                class="folio-process"
+                id="proses-2"
+              >
+                <summary>Baca proses: Kajian Form</summary>
+                <h4>Konteks dan peran</h4>
+                <p>
+                  Studi mandiri demonstrasi. Peran: ui designer. Pesan error
+                  muncul jauh dari input.
+                </p>
+                <h4>Keputusan</h4>
+                <p>Letakkan petunjuk dan error pada field yang relevan.</p>
+                <h4>Artefak dan tindak lanjut</h4>
+                <p>
+                  Contoh ini memperlihatkan arah dan dokumentasi proses. Ganti
+                  ilustrasi dengan artefak asli, jelaskan kontribusi pribadi,
+                  dan sertakan hasil validasi yang benar-benar tersedia.
+                </p>
+              </details>
+            </article>
+            <article
+              class="folio-project"
+              data-work
+              data-kind="Interface"
+            >
+              <figure class="folio-cover">
+                <img
+                  class="folio-work-image"
+                  src="../../../assets/art/abstract.svg"
+                  alt="Ilustrasi konsep: Agenda Tim"
+                  width="800"
+                  height="600"
+                /><button
+                  type="button"
+                  data-art-open
+                  aria-label="Perbesar ilustrasi Agenda Tim"
+                >
+                  Perbesar ↗
+                </button>
+                <figcaption>Ilustrasi konsep / 03</figcaption>
+              </figure>
+              <p class="folio-project-meta">03 / Interface / Konsep</p>
+              <h3>Agenda Tim</h3>
+              <p>Agenda penuh membuat jam kerja sukar dipindai.</p>
+              <details
+                class="folio-process"
+                id="proses-3"
+              >
+                <summary>Baca proses: Agenda Tim</summary>
+                <h4>Konteks dan peran</h4>
+                <p>
+                  Studi mandiri demonstrasi. Peran: ui designer. Agenda penuh
+                  membuat jam kerja sukar dipindai.
+                </p>
+                <h4>Keputusan</h4>
+                <p>Utamakan jam, durasi, dan pemilik kegiatan.</p>
+                <h4>Artefak dan tindak lanjut</h4>
+                <p>
+                  Contoh ini memperlihatkan arah dan dokumentasi proses. Ganti
+                  ilustrasi dengan artefak asli, jelaskan kontribusi pribadi,
+                  dan sertakan hasil validasi yang benar-benar tersedia.
+                </p>
+              </details>
+            </article>
+          </div>
+          <div
+            class="folio-empty"
+            data-work-empty
+            hidden
+          >
+            <p>Tidak ada karya yang cocok dengan filter.</p>
+            <button
+              class="btn secondary"
+              type="button"
+              data-work-reset
+            >
+              Reset pencarian
+            </button>
+          </div>
+        </section>
+        <section
+          id="tentang"
+          class="folio-section folio-about-grid"
+        >
+          <div>
+            <p class="folio-kicker">Pendekatan</p>
+            <h2>Alasan di balik pekerjaan.</h2>
+          </div>
+          <div>
+            <p class="lead">
+              Eksplorasi interface dengan hierarki yang tenang. Setiap komposisi
+              mencatat tugas utama dan keadaan yang perlu dirancang.
+            </p>
+            <dl class="folio-facts">
+              <div>
+                <dt>Fokus</dt>
+                <dd>UI designer</dd>
+              </div>
+              <div>
+                <dt>Model</dt>
+                <dd>sidebar</dd>
+              </div>
+              <div>
+                <dt>Isi</dt>
+                <dd>Studi konsep dan catatan proses</dd>
+              </div>
+              <div>
+                <dt>Status</dt>
+                <dd>Identitas dan karya fiktif</dd>
+              </div>
+            </dl>
+            <p class="folio-note">
+              Profil contoh untuk membantu penyusunan portofolio. Ganti nama,
+              karya, pengalaman, dan kontak sebelum publikasi.
+            </p>
+          </div>
+        </section>
+        <section
+          id="kontak"
+          class="folio-section folio-contact"
+        >
+          <div>
+            <p class="folio-kicker">Kontak contoh</p>
+            <h2>Mulai percakapan.</h2>
+          </div>
+          <div class="stack">
+            <code data-contact-address>halo@example.com</code>
+            <p class="small muted">
+              Alamat demonstrasi. Ganti dengan alamat milik pemilik portofolio.
+            </p>
+            <div>
+              <button
+                class="btn secondary"
+                type="button"
+                data-copy-contact
+              >
+                Salin alamat contoh
+              </button>
+            </div>
+            <p
+              class="small"
+              role="status"
+              data-contact-status
+            ></p>
+          </div>
+        </section>
+      </main>
+      <footer class="folio-footer">
+        <span>Intan Sari / Profil demonstrasi</span
+        ><a href="#main">Kembali ke atas ↑</a>
+      </footer>
+    </div>
+    <dialog
+      class="folio-lightbox"
+      data-art-dialog
+      aria-labelledby="art-dialog-title"
+    >
+      <div class="dialog-head">
+        <h2 id="art-dialog-title">Ilustrasi konsep</h2>
+        <button
+          class="btn secondary"
+          type="button"
+          data-art-close
+        >
+          Tutup
+        </button>
+      </div>
+      <figure>
+        <img
+          src="../../../assets/art/abstract.svg"
+          alt="Ilustrasi konsep terpilih"
+          width="800"
+          height="600"
+        />
+        <figcaption>Ilustrasi konsep.</figcaption>
+      </figure>
+    </dialog>
+  </body>
+</html>
